@@ -1,0 +1,212 @@
+{
+  "version": "2026-09-10",
+  "app": "qadam",
+  "subjects": [
+    {
+      "id": "history",
+      "name": "История Казахстана",
+      "short": "История",
+      "kind": "ubt",
+      "color": "#ea580c",
+      "icon": "🏛️",
+      "exam": {
+        "maxPoints": 20,
+        "single": 10,
+        "context": 10,
+        "multi": 0,
+        "match": 0,
+        "optionsSingle": 4,
+        "durationMinutes": 240,
+        "threshold": 5
+      }
+    },
+    {
+      "id": "mathlit",
+      "name": "Математическая грамотность",
+      "short": "Матграм",
+      "kind": "ubt",
+      "color": "#0d9488",
+      "icon": "🧮",
+      "exam": {
+        "maxPoints": 10,
+        "single": 10,
+        "context": 0,
+        "multi": 0,
+        "match": 0,
+        "optionsSingle": 4,
+        "durationMinutes": 240,
+        "threshold": 3
+      }
+    },
+    {
+      "id": "reading",
+      "name": "Грамотность чтения",
+      "short": "Чтение",
+      "kind": "ubt",
+      "color": "#db2777",
+      "icon": "📖",
+      "exam": {
+        "maxPoints": 10,
+        "single": 0,
+        "context": 10,
+        "multi": 0,
+        "match": 0,
+        "optionsSingle": 4,
+        "durationMinutes": 240,
+        "threshold": 3
+      }
+    },
+    {
+      "id": "math",
+      "name": "Математика",
+      "short": "Математика",
+      "kind": "ubt",
+      "color": "#2563eb",
+      "icon": "📐",
+      "exam": {
+        "maxPoints": 50,
+        "single": 25,
+        "context": 5,
+        "multi": 5,
+        "match": 5,
+        "optionsSingle": 4,
+        "optionsMulti": 6,
+        "durationMinutes": 240,
+        "threshold": 5
+      }
+    },
+    {
+      "id": "informatics",
+      "name": "Информатика",
+      "short": "Информатика",
+      "kind": "ubt",
+      "color": "#7c3aed",
+      "icon": "💻",
+      "exam": {
+        "maxPoints": 50,
+        "single": 25,
+        "context": 5,
+        "multi": 5,
+        "match": 5,
+        "optionsSingle": 4,
+        "optionsMulti": 6,
+        "durationMinutes": 240,
+        "threshold": 5
+      }
+    },
+    {
+      "id": "ielts",
+      "name": "IELTS Academic",
+      "short": "IELTS",
+      "kind": "ielts",
+      "color": "#059669",
+      "icon": "🇬🇧"
+    }
+  ],
+  "topics": [
+    {
+      "id": "hist-ancient",
+      "subject": "history",
+      "title": "Древний Казахстан: каменный век, бронза, саки, гунны",
+      "kind": "lesson",
+      "order": 1,
+      "path": "content/history/hist-ancient.json",
+      "weight": 1,
+      "minutes": 25,
+      "summary": "Стоянки каменного века, энеолит и бронза (Ботай, андроновцы), саки, сарматы, уйсуни, кангюй, гунны, Модэ, 530 г. до н.э."
+    },
+    {
+      "id": "mlit-percent-finance",
+      "subject": "mathlit",
+      "title": "Проценты и финансы",
+      "kind": "lesson",
+      "order": 1,
+      "path": "content/mathlit/mlit-percent-finance.json",
+      "weight": 2,
+      "minutes": 20,
+      "summary": "Процент от числа, число по проценту, последовательные изменения цены, скидки и наценки, простые и сложные проценты по вкладу, тарифы и заказы."
+    },
+    {
+      "id": "rdg-facts-details",
+      "subject": "reading",
+      "title": "Извлечение фактов и деталей",
+      "kind": "lesson",
+      "order": 1,
+      "path": "content/reading/rdg-facts-details.json",
+      "weight": 3,
+      "minutes": 20,
+      "summary": "Вопросы «согласно тексту», «утверждение не соответствует», числа и названия. Тексты трёх объёмов с вопросами."
+    },
+    {
+      "id": "math-derivative",
+      "subject": "math",
+      "title": "Производная",
+      "kind": "lesson",
+      "order": 18,
+      "path": "content/math/math-derivative.json",
+      "weight": 2,
+      "minutes": 30,
+      "summary": "Таблица производных, правила дифференцирования, производная сложной функции, физический смысл."
+    },
+    {
+      "id": "inf-number-systems",
+      "subject": "informatics",
+      "title": "Системы счисления",
+      "kind": "lesson",
+      "order": 3,
+      "path": "content/informatics/inf-number-systems.json",
+      "weight": 2,
+      "minutes": 25,
+      "summary": "Перевод 2 ↔ 8 ↔ 10 ↔ 16, развёрнутая форма, признаки чисел в разных системах."
+    },
+    {
+      "id": "ielts-vocab-education",
+      "subject": "ielts",
+      "title": "Education",
+      "kind": "vocab",
+      "order": 9,
+      "path": "content/ielts/ielts-vocab-education.json",
+      "weight": 1,
+      "minutes": 10,
+      "summary": "20 слов и коллокаций об образовании: curriculum, tuition, vocational…",
+      "skill": "vocab"
+    },
+    {
+      "id": "ielts-reading-tfng",
+      "subject": "ielts",
+      "title": "True / False / Not Given",
+      "kind": "lesson",
+      "order": 20,
+      "path": "content/ielts/ielts-reading-tfng.json",
+      "weight": 2,
+      "minutes": 25,
+      "summary": "Разница между «противоречит» и «не сказано»; passage об урбанистике, упор на TFNG.",
+      "skill": "reading"
+    },
+    {
+      "id": "ielts-writing-task2-essay-types",
+      "subject": "ielts",
+      "title": "Task 2: типы эссе и план",
+      "kind": "writing",
+      "order": 31,
+      "path": "content/ielts/ielts-writing-task2-essay-types.json",
+      "weight": 1,
+      "minutes": 45,
+      "summary": "Opinion, discussion, problem-solution, advantages, double question; план 4 абзацев; 3 задания с образцами.",
+      "skill": "writing"
+    },
+    {
+      "id": "ielts-speaking-part2",
+      "subject": "ielts",
+      "title": "Part 2: cue card",
+      "kind": "speaking",
+      "order": 34,
+      "path": "content/ielts/ielts-speaking-part2.json",
+      "weight": 1,
+      "minutes": 15,
+      "summary": "1 минута подготовки, 2 минуты речи; 12 cue cards с модельными ответами и вопросами Part 3.",
+      "skill": "speaking"
+    }
+  ],
+  "planned": 115
+}

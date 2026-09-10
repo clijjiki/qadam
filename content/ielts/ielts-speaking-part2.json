@@ -1,0 +1,73 @@
+{
+  "id": "ielts-speaking-part2",
+  "subject": "ielts",
+  "title": "Part 2: cue card",
+  "summary": "Минута на подготовку, две минуты монолога: структура, связки и модельные ответы.",
+  "theory": [
+    "## Как устроена Part 2\nЭкзаменатор даёт карточку с темой и четырьмя пунктами, лист бумаги и карандаш. У тебя **1 минута** на подготовку и **1–2 минуты** на ответ. Останавливаться раньше нельзя: если замолчишь на 50-й секунде, потеряешь баллы за Fluency. Экзаменатор сам скажет «Thank you».",
+    ":::formula Что писать за минуту подготовки\nНе предложения, а 6–8 слов-опор — по два на каждый пункт карточки:\n\n*what:* chess club, Tuesdays\n*how:* older student, YouTube\n*why hard:* openings, memory\n*feel:* proud, calmer\n\nПоследний пункт («explain why…») — самый важный: на него уйдёт треть ответа.\n:::",
+    "## Структура ответа\n1. **Вступление (10 с):** «I'd like to talk about…» — сразу назови предмет разговора.\n2. **Пункты 1–3 (60 с):** по 2–3 предложения на каждый, с деталями: когда, где, кто, сколько.\n3. **Последний пункт (30 с):** объясни причину или чувства — здесь показываются сложные конструкции.\n4. **Мини-вывод (10 с):** «So that's the … I'd choose if I had to pick one.»",
+    ":::tip Связки, которые звучат естественно\n- *The reason I chose this is that…*\n- *What I found particularly useful was…*\n- *To be honest, at first I…, but eventually…*\n- *It's hard to explain, but…*\n- *Looking back, I'd say that…*\n\nОни дают время подумать и одновременно поднимают Fluency и Lexical Resource.\n:::",
+    ":::warn Ошибки\n- Заучивать ответ наизусть: экзаменатор слышит это сразу и снижает балл.\n- Отвечать одним предложением на пункт и замолчать через 40 секунд.\n- Уходить в другую тему: карточку нужно раскрыть, а не подменить.\n- Долгие паузы «эм-м-м» — лучше связка: *That's an interesting one, let me think…*\n:::",
+    "## Как тренироваться дома\nВключай таймер, говори вслух, записывай себя на телефон. Потом слушай и отмечай: где были паузы длиннее 3 секунд, сколько раз повторил одно слово, дошёл ли до последнего пункта. Три карточки в неделю за два месяца дают заметный рост Fluency."
+  ],
+  "prompts": [
+    {
+      "id": "s2-skill",
+      "part": 2,
+      "topic": "Describe a skill you learned outside school",
+      "bullets": ["what the skill was", "how you learned it", "how difficult it was", "and explain why this skill is useful to you"],
+      "model": "I'd like to talk about programming, which I started learning about two years ago, completely outside my school timetable.\n\nIt began almost by accident. A friend showed me a small game he had written in Python, and I remember thinking that it looked like magic. That evening I found a free course online and wrote my first few lines of code — nothing impressive, just a program that asked for my name and printed a greeting.\n\nAs for how I learned it, I'd say it was mostly self-taught. I followed video lessons in the evenings, usually for about forty minutes after school, and whenever I got stuck I searched for the error message. What I found particularly useful was rewriting other people's code instead of only reading it.\n\nIt was harder than I expected, to be honest. The syntax itself is not complicated, but thinking in algorithms took months. There was a point where I spent an entire weekend on a bug that turned out to be a single missing colon, and I nearly gave up.\n\nThe reason this skill matters to me is that it changed what I think I'm capable of. I'm planning to study computer science, so it's directly connected to my future, but more than that, it taught me to break a big problem into small ones — which, oddly enough, also helps with mathematics and even with exam preparation. So that's the skill I'd choose if I had to pick just one.",
+      "linkers": ["It began almost by accident…", "As for how I learned it…", "What I found particularly useful was…", "To be honest, …", "The reason this matters to me is that…"],
+      "part3": [
+        "Do you think schools should teach practical skills like coding or cooking?",
+        "Is it better to learn a new skill alone or with a teacher?",
+        "How has the internet changed the way people learn new skills?",
+        "Which skills will be most valuable in twenty years' time?"
+      ]
+    },
+    {
+      "id": "s2-place-study",
+      "part": 2,
+      "topic": "Describe a place where you like to study",
+      "bullets": ["where it is", "when you usually go there", "what it is like", "and explain why you study well there"],
+      "model": "The place I'd like to describe is the small kitchen table in our flat, which is probably not the most obvious answer, but it's where I do almost all of my studying.\n\nIt's in the corner of the room, next to a window that looks onto a courtyard. There's nothing special about it — a wooden table, one lamp and a chair that isn't particularly comfortable, which honestly helps, because I can't fall asleep on it.\n\nI usually sit there in the evening, after I get back from school. I'm in the second shift, so I finish around six, and the two hours between dinner and bedtime are the only quiet time I have. Occasionally I work there early in the morning as well, when I need to memorise something.\n\nWhat makes it work for me is a combination of small things. The light is good, my phone stays in another room, and my family knows that when the lamp is on, I'm not to be disturbed. I've also got into the habit of putting everything away when I finish, so the table is always empty when I sit down — there's no pile of yesterday's papers to distract me.\n\nThe main reason I study well there, though, is habit rather than the room itself. After a year of sitting in the same place at the same time, my brain seems to understand what is expected. Looking back, I'd say that choosing one place and sticking to it was more useful than any study technique I've read about.",
+      "linkers": ["The place I'd like to describe is…", "It's in the corner of…", "What makes it work for me is…", "I've got into the habit of…", "Looking back, I'd say that…"],
+      "part3": [
+        "Do students today find it harder to concentrate than in the past?",
+        "Should libraries be completely silent?",
+        "Is studying at home as effective as studying at school?",
+        "How important is the environment for learning?"
+      ]
+    },
+    {
+      "id": "s2-person-influence",
+      "part": 2,
+      "topic": "Describe a person who has influenced you",
+      "bullets": ["who this person is", "how you know them", "what they did", "and explain how they influenced you"],
+      "model": "I'd like to talk about my mathematics teacher, whose name is Aigerim, and who taught our class for two years in secondary school.\n\nI first met her when she replaced our previous teacher in the middle of the year. My marks in maths at that time were quite poor — I'd more or less decided that I simply wasn't a maths person, which is what people often say when they don't understand something.\n\nWhat she did was surprisingly simple. Instead of correcting my answers, she started asking me to explain my reasoning out loud, step by step, and the mistake usually became obvious before she said anything. She also kept a list of the specific things each of us got wrong, so the homework she gave me was different from the homework she gave my classmates.\n\nThe effect took a few months to appear. By the end of that year my marks had gone from the bottom of the class to somewhere in the middle, and, more importantly, I stopped being afraid of problems I couldn't solve immediately.\n\nThe reason I'd call her the most influential person in my education is that she changed something more general than my grades. She convinced me that being bad at something is usually a temporary state rather than a permanent one — and that idea is the reason I'm now preparing for exams in mathematics and computer science rather than avoiding them.",
+      "linkers": ["I first met her when…", "What she did was surprisingly simple…", "The effect took a few months to appear…", "More importantly, …", "The reason I'd call her … is that…"],
+      "part3": [
+        "Who has more influence on teenagers: parents or friends?",
+        "What makes a good teacher?",
+        "Do you think famous people should be role models?",
+        "How has the role of teachers changed with technology?"
+      ]
+    },
+    {
+      "id": "s2-technology-item",
+      "part": 2,
+      "topic": "Describe a piece of technology you use every day",
+      "bullets": ["what it is", "how long you have had it", "what you use it for", "and explain how your life would change without it"],
+      "model": "The piece of technology I'd like to describe is my phone, which is admittedly the least original choice possible, but it's genuinely the device I couldn't manage without.\n\nIt's a fairly ordinary Android phone that I've had for about three years now. The battery is starting to fade and there's a crack in the corner of the screen, but it still does everything I need, so I've never seriously considered replacing it.\n\nI use it for three main things. The first is studying: I keep my exam preparation on it, so I can revise vocabulary on the bus instead of losing that time. The second is communication with my family and friends, and the third — which I'm slightly less proud of — is entertainment, mostly videos late in the evening.\n\nIf I lost it tomorrow, the practical consequences would actually be manageable. I'd use a computer for most tasks and a paper notebook for the rest. What I'd really miss is the flexibility: the ability to study for fifteen minutes in a queue or check something the moment I'm curious about it.\n\nHaving said that, I sometimes think my life would improve slightly without it, at least in the evenings. I've noticed that I concentrate better when the phone is in another room, so perhaps the honest answer is that I'd lose some convenience but gain a couple of hours a week.",
+      "linkers": ["The piece of technology I'd like to describe is…", "I've had it for about…", "I use it for three main things…", "What I'd really miss is…", "Having said that, …"],
+      "part3": [
+        "Do people rely on their phones too much?",
+        "How has technology changed the way families spend time together?",
+        "Should schools ban mobile phones during lessons?",
+        "What technology do you think will disappear in the next twenty years?"
+      ]
+    }
+  ],
+  "questions": []
+}

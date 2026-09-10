@@ -1,0 +1,89 @@
+{
+  "id": "ielts-writing-task2-essay-types",
+  "subject": "ielts",
+  "title": "Task 2: типы эссе и план",
+  "summary": "Пять типов вопросов Task 2, план из четырёх абзацев и что отличает Band 6 от Band 7.",
+  "theory": [
+    "## Условия задания\nTask 2 — эссе минимум 250 слов за 40 минут. Оно весит **в два раза больше**, чем Task 1, поэтому писать всегда начинай со второго задания, если время поджимает. Оценивают по четырём критериям: Task Response (TR), Coherence & Cohesion (CC), Lexical Resource (LR), Grammatical Range & Accuracy (GRA).",
+    "## Пять типов вопросов\n\n| Тип | Формулировка | Что нужно сделать |\n|---|---|---|\n| Opinion | *To what extent do you agree or disagree?* | Занять одну позицию и держать её всё эссе |\n| Discussion | *Discuss both views and give your own opinion* | Разобрать обе точки зрения + сказать свою |\n| Problem–solution | *What problems does this cause and how can they be solved?* | Абзац проблем + абзац решений |\n| Advantages–disadvantages | *Do the advantages outweigh the disadvantages?* | Взвесить и дать прямой ответ |\n| Two-part (double) question | Два вопроса подряд | Ответить на **оба**, по абзацу на каждый |",
+    ":::formula План на 4 абзаца (работает для всех типов)\n**Introduction (40–50 слов):** перефразируй вопрос + сформулируй позицию (thesis).\n**Body 1 (90–110 слов):** одна главная мысль → объяснение почему → конкретный пример.\n**Body 2 (90–110 слов):** вторая мысль → объяснение → пример.\n**Conclusion (35–45 слов):** повтори позицию другими словами, ничего нового.\n:::",
+    ":::example Разбор абзаца (структура PEEL)\n*Point:* Free public transport would reduce traffic in large cities.\n*Explain:* When commuting by bus costs nothing, drivers have a financial reason to leave the car at home.\n*Example:* After Tallinn made buses free for residents in 2013, public transport use rose while car journeys in the centre fell.\n*Link:* This suggests that price, not comfort, is the main barrier to public transport.\n:::",
+    "## Что отличает Band 6 от Band 7\n\n| Критерий | Band 6 | Band 7 |\n|---|---|---|\n| TR | позиция есть, но идеи развиты неравномерно, есть общие фразы | позиция ясна с начала до конца, каждая идея развита и подкреплена |\n| CC | связки есть, но механические (*Firstly, Secondly, In conclusion*) | связки естественные, у каждого абзаца одна главная мысль |\n| LR | хватает слов, есть неточности | точная лексика и коллокации, редкие ошибки |\n| GRA | смесь простых и сложных предложений, ошибки заметны | «error-free sentences are frequent» — большинство предложений без ошибок |",
+    ":::warn Частые потери баллов\n- Не ответил на **все части** вопроса (особенно в two-part) — TR не выше 5.\n- Меньше 250 слов — штраф.\n- Списал формулировку задания вместо перефраза.\n- Один огромный абзац без структуры — CC падает.\n- Выученные шаблонные фразы («Nowadays it is a burning issue…») не поднимают LR: экзаменатор их не засчитывает.\n- Нет времени на проверку: оставь 3 минуты на поиск ошибок в артиклях, окончаниях -s и временах.\n:::",
+    "## Тайминг 40 минут\n5 минут — разобрать вопрос и накидать 2 идеи с примерами. 30 минут — писать. 5 минут — проверка: артикли, множественное число, согласование времён, точки и заглавные буквы."
+  ],
+  "prompts": [
+    {
+      "id": "w2-education-online",
+      "task": 2,
+      "title": "Online vs classroom learning (opinion)",
+      "prompt": "Some people believe that online courses will eventually replace traditional classroom teaching.\n\n**To what extent do you agree or disagree?**\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "minWords": 250,
+      "minutes": 40,
+      "samples": [
+        {
+          "band": 6,
+          "text": "Nowadays online education is very popular topic. Some people think that online courses will replace traditional classrooms in the future. I disagree with this opinion because classrooms have many advantages.\n\nFirstly, online courses are cheap and comfortable. Students can study at home and they don't spend money for transport. Also they can watch video again if they don't understand. For example, my friend studied programming on the internet and now he works in IT company. This shows that online learning can be effective for some people.\n\nHowever, classroom has things that internet cannot give. Teacher sees student's face and understands when student is confused. Students also talk with each other, work in groups and make friends. It is very important for teenagers because they learn how to communicate. In my school, group projects helped me more than any video lesson. Moreover, many students at home are lazy and they don't have motivation, so they stop their course very quickly.\n\nIn addition, some subjects are impossible to study online. Chemistry needs laboratory, medicine needs practice with real patients. Computer cannot give this experience.\n\nIn conclusion, I think online courses are good addition but they will not replace classrooms completely. The best way is to combine two forms of education.",
+          "notes": [
+            "TR: позиция есть, но третий абзац развит слабо — один пример без объяснения.",
+            "CC: связки механические (Firstly, However, In addition, In conclusion), внутри абзацев мыслей больше одной.",
+            "LR: простая лексика («very popular topic», «lazy», «cheap»), нет академических коллокаций вроде «self-discipline» или «practical component».",
+            "GRA: артикли («in IT company», «Classroom has»), «spend money for» вместо «on», почти нет сложных конструкций.",
+            "Итог: идея понятна, но по всем четырём критериям это уровень Band 6."
+          ]
+        },
+        {
+          "band": 7.5,
+          "text": "It is often argued that online courses will eventually make traditional classrooms unnecessary. While digital platforms have clear advantages in flexibility and cost, I believe they will complement rather than replace face-to-face teaching.\n\nThe case for online learning is strong in purely practical terms. Because lessons can be recorded and revisited, students are able to work at their own pace, and those living far from major cities gain access to courses that would otherwise be unavailable. Distance learning also removes the cost of commuting and, in many cases, of the course itself. A student in a rural school in Kazakhstan, for instance, can now follow the same physics lectures as someone in Astana, which was simply impossible a decade ago.\n\nHowever, these benefits depend on a quality that many learners lack: self-discipline. In a classroom, attendance is monitored and a teacher notices immediately when a student has stopped following the explanation; online, that feedback arrives late or not at all, which is why completion rates for open online courses remain low. Classrooms also provide something that no platform reproduces well — the habit of arguing a point in front of others and adjusting it when challenged.\n\nA further limitation is practical. Subjects with a laboratory or clinical component cannot be taught remotely in any meaningful sense, and employers in these fields still expect supervised hours rather than certificates.\n\nIn my view, the realistic outcome is a hybrid model in which theory is delivered online and classroom time is reserved for discussion, experiments and feedback. Rather than making teachers redundant, technology is likely to change what they spend their time on.",
+          "notes": []
+        }
+      ],
+      "checklist": [
+        "Во введении вопрос перефразирован, а не переписан",
+        "Позиция сформулирована в первом абзаце и не меняется",
+        "В каждом body-абзаце ровно одна главная мысль",
+        "У каждой мысли есть объяснение И конкретный пример",
+        "Не меньше 250 слов",
+        "В заключении нет новых аргументов",
+        "Проверены артикли, окончания -s и времена",
+        "Есть 3–4 сложных предложения (although, which, because)"
+      ]
+    },
+    {
+      "id": "w2-city-cars",
+      "task": 2,
+      "title": "Cars in city centres (discussion + opinion)",
+      "prompt": "Some people think that private cars should be banned from city centres. Others believe that such a ban would harm businesses and limit personal freedom.\n\n**Discuss both views and give your own opinion.**\n\nWrite at least 250 words.",
+      "minWords": 250,
+      "minutes": 40,
+      "samples": [
+        {
+          "band": 6,
+          "text": "Traffic in big cities is a serious problem today. Some people say that cars must be banned in the centre, other people are against this idea. In my opinion, cars should be limited but not banned completely.\n\nFrom one side, banning cars has many advantages. The air becomes cleaner because cars produce a lot of emissions. Streets become safer for children and old people. Also, when there are no cars, the city can build parks and bicycle roads. In Europe there are many cities where the centre is only for pedestrians and tourists like it very much.\n\nFrom other side, businesses can lose their customers. If a person cannot park near a shop, maybe he will go to a big shopping mall outside the city. Small shops and cafes in the centre will have problems. Also some people need cars, for example doctors, parents with small children or people with disabilities. For them public transport is not always comfortable.\n\nIn my opinion, the government should not ban all cars. Better solution is to make parking expensive in the centre and to develop buses and metro. Then people will use cars less but they will still have a choice.\n\nTo sum up, both opinions have strong points, but I think limitation is better than full ban.",
+          "notes": [
+            "TR: обе точки зрения рассмотрены, но аргументы поверхностные, нет конкретных примеров с цифрами или названиями.",
+            "CC: «From one side / From other side» — некорректные связки (нужно «On the one hand / On the other hand»).",
+            "LR: повторы «cars», «people», «city centre», простая лексика вместо «congestion», «pedestrianised», «accessibility».",
+            "GRA: артикли и предлоги, «Better solution is» без артикля, мало сложных конструкций.",
+            "Итог: содержательно правильно, но язык держит эссе на Band 6."
+          ]
+        },
+        {
+          "band": 7.5,
+          "text": "Congestion and air pollution have led several European cities to close their historic centres to private vehicles. Supporters see this as the only way to make urban areas liveable, while opponents warn of economic damage and reduced personal freedom. In my view, a carefully designed restriction is preferable to either a complete ban or unrestricted access.\n\nThose in favour of banning cars point mainly to health and safety. Transport is the largest single source of emissions in most cities, and pedestrianised streets record significantly fewer accidents involving children and elderly people. Space is the second argument: a lane that once carried parked vehicles can accommodate a cycle path, a row of trees or seating for a café, which is why cities such as Copenhagen have gradually converted parking areas into public space.\n\nThe opposing case rests on access rather than convenience. Small retailers fear that customers who cannot park nearby will simply drive to a suburban shopping centre, and this concern is not imaginary: several pilot schemes reported a fall in turnover during their first year. More importantly, some groups genuinely depend on private transport, including people with limited mobility and parents of very young children, for whom a crowded bus is not a realistic alternative.\n\nThe evidence suggests, however, that these objections argue for exemptions rather than for keeping the status quo. Cities that combined restricted access with reliable public transport, delivery windows for shops and permits for residents and disabled drivers have generally seen retail activity recover within two or three years.\n\nI would therefore support restricting rather than banning cars: charging for entry, reserving streets for pedestrians at peak hours and investing the revenue in transport that people are willing to use.",
+          "notes": []
+        }
+      ],
+      "checklist": [
+        "Обе точки зрения раскрыты примерно поровну",
+        "Своё мнение сформулировано явно (во введении и в заключении)",
+        "Нет фразы «I will discuss both views» — сразу к делу",
+        "Есть конкретика: города, цифры, ситуации",
+        "Не меньше 250 слов",
+        "Абзацы связаны по смыслу, а не только словами-связками",
+        "Проверены артикли и предлоги"
+      ]
+    }
+  ],
+  "questions": []
+}

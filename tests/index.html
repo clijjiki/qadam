@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Тесты Qadam</title>
+  <link rel="stylesheet" href="../assets/css/app.css">
+  <style>
+    body { padding: 24px; }
+    .t { padding: 6px 10px; border-radius: 8px; margin-bottom: 4px; font-family: var(--font-mono); font-size: .85rem; }
+    .t.pass { background: var(--success-soft); color: var(--success); }
+    .t.fail { background: var(--danger-soft); color: var(--danger); white-space: pre-wrap; }
+    .sum { font: 800 1.4rem var(--font-head); margin: 16px 0; }
+  </style>
+</head>
+<body>
+  <h1>Тесты движка Qadam</h1>
+  <p class="muted">Открывается через локальный сервер: <code>python serve.py</code> → <a href="http://127.0.0.1:8080/tests/">/tests/</a></p>
+  <div id="out">Запускаем…</div>
+  <script type="module" src="run.js"></script>
+</body>
+</html>

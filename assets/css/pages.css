@@ -1,0 +1,148 @@
+/* ============ Qadam: стили страниц и режимов ============ */
+
+/* фокус-режим: практика и экзамен без навигации */
+.shell.focus { grid-template-columns: 1fr; }
+.shell.focus .sidebar, .shell.focus .tabbar, .shell.focus .topbar { display: none !important; }
+.shell.focus .main { padding: 18px 20px 40px; }
+@media (max-width: 900px) { .shell.focus .main { padding: 12px 12px 30px; } }
+.main-col { min-width: 0; }
+
+/* сайдбар: карточка пользователя */
+.user-card { padding: 10px 10px 4px; border-top: 1px solid var(--line); }
+.user-card__name { font-weight: 700; font-family: var(--font-head); }
+
+/* скелетоны */
+.skeleton__line { height: 14px; border-radius: 6px; background: linear-gradient(90deg, var(--bg-sunken) 25%, var(--line) 50%, var(--bg-sunken) 75%); background-size: 200% 100%; animation: shimmer 1.2s infinite; }
+@keyframes shimmer { from { background-position: 200% 0 } to { background-position: -200% 0 } }
+
+/* графики */
+.chart-wrap { width: 100%; }
+.bar-list { display: grid; gap: 8px; }
+.bar-list__row { display: grid; grid-template-columns: 150px 1fr 80px; gap: 10px; align-items: center; font-size: .9rem; }
+.bar-list__val { text-align: right; color: var(--text-2); }
+@media (max-width: 560px) { .bar-list__row { grid-template-columns: 100px 1fr 64px; } }
+.columns { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 6px; align-items: end; }
+.columns__col { display: grid; grid-template-rows: 1fr auto; height: 100%; align-items: end; text-align: center; }
+.columns__bar { border-radius: 6px 6px 2px 2px; min-height: 3px; transition: height .5s var(--ease); }
+.columns__label { font-size: .7rem; color: var(--text-3); margin-top: 4px; }
+
+/* дашборд */
+.hero-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; }
+@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
+.forecast { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+.forecast__num { font: 800 3.4rem var(--font-head); letter-spacing: -.04em; line-height: 1; font-variant-numeric: tabular-nums; }
+.forecast__max { font-size: 1.1rem; opacity: .8; }
+.subject-mini { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+@media (max-width: 700px) { .subject-mini { grid-template-columns: repeat(3, 1fr); } }
+.subject-mini a { display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 10px 6px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg-elev); color: inherit; text-align: center; font-size: .78rem; }
+.subject-mini a:hover { text-decoration: none; background: var(--bg-sunken); }
+.week-strip { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+.week-strip__day { text-align: center; padding: 8px 4px; border-radius: 10px; border: 1px solid var(--line); font-size: .78rem; }
+.week-strip__day.active { background: var(--success-soft); border-color: var(--success); }
+.week-strip__day.today { outline: 2px solid var(--primary); outline-offset: -1px; }
+.week-strip__day b { display: block; font-family: var(--font-head); }
+
+/* тема / теория */
+.topic-tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--line); margin-bottom: 16px; overflow-x: auto; }
+.topic-tabs a, .topic-tabs button { padding: 10px 14px; border: 0; background: none; font-weight: 600; color: var(--text-3); border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap; }
+.topic-tabs .active { color: var(--primary); border-bottom-color: var(--primary); }
+.topic-tabs a:hover { text-decoration: none; color: var(--text); }
+.theory-block { margin-bottom: 8px; }
+.flip-list { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.flip { padding: 14px 16px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg-elev); cursor: pointer; min-height: 90px; }
+.flip__front { font-weight: 700; }
+.flip__back { margin-top: 8px; color: var(--text-2); }
+.flip:not(.open) .flip__back { display: none; }
+.flip:not(.open)::after { content: "Показать ответ"; display: block; margin-top: 8px; font-size: .78rem; color: var(--primary); }
+
+/* практика: двухпанельный режим для чтения */
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+.split__passage { position: sticky; top: 12px; max-height: calc(100vh - 40px); overflow-y: auto; }
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; }
+  .split__passage { position: static; max-height: 300px; }
+}
+.quiz__progress { flex: 1; min-width: 120px; }
+.result-list { display: grid; gap: 10px; }
+.result-item { border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 12px 14px; background: var(--bg-elev); }
+.result-item.ok { border-left: 4px solid var(--success); }
+.result-item.bad { border-left: 4px solid var(--danger); }
+.result-item summary { cursor: pointer; font-weight: 600; }
+.text-answer { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.text-answer .input { max-width: 320px; }
+.text-answer__ok { color: var(--success); font-weight: 600; }
+.text-answer__bad { color: var(--danger); font-weight: 600; }
+
+/* аудио / listening */
+.player { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg-sunken); }
+.player__status { font-size: .85rem; color: var(--text-3); }
+
+/* экзамен */
+.exam-head { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(8px); padding: 8px 0 10px; margin-bottom: 8px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.exam-body { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 18px; align-items: start; }
+@media (max-width: 900px) { .exam-body { grid-template-columns: 1fr; } .exam-side { order: -1; } }
+.exam-side { position: sticky; top: 64px; }
+@media (max-width: 900px) { .exam-side { position: static; } }
+.exam-side .card { padding: 12px; }
+.exam-legend { display: flex; gap: 10px; flex-wrap: wrap; font-size: .75rem; color: var(--text-3); margin-top: 8px; }
+.exam-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 4px; vertical-align: middle; border: 1px solid var(--line); }
+.exam-table td:first-child { font-weight: 600; }
+
+/* онбординг */
+.onboard-steps { display: flex; gap: 6px; margin-bottom: 18px; }
+.onboard-steps span { flex: 1; height: 6px; border-radius: 999px; background: var(--bg-sunken); }
+.onboard-steps span.done { background: var(--primary); }
+.choice-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 8px; }
+.choice { padding: 12px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--bg-elev); cursor: pointer; text-align: center; font-weight: 600; }
+.choice.active { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); }
+
+/* IELTS */
+.skill-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+@media (max-width: 900px) { .skill-grid { grid-template-columns: repeat(2, 1fr); } }
+.band { font: 800 2rem var(--font-head); letter-spacing: -.02em; }
+.vocab-set { display: flex; align-items: center; gap: 12px; }
+.editor { min-height: 320px; font-size: 1rem; line-height: 1.6; }
+.wordcount { font-family: var(--font-mono); font-size: .85rem; }
+.wordcount.low { color: var(--danger); }
+.wordcount.ok { color: var(--success); }
+.rubric { display: grid; gap: 10px; }
+.rubric__row { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; }
+.rubric__scale { display: flex; gap: 4px; flex-wrap: wrap; }
+.rubric__scale button { width: 36px; height: 30px; border-radius: 7px; border: 1px solid var(--line-2); background: var(--bg-elev); font-weight: 600; cursor: pointer; font-size: .8rem; }
+.rubric__scale button.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.sample { border-left: 3px solid var(--c-ielts); padding-left: 12px; }
+.cue-card { border: 2px dashed var(--line-2); border-radius: var(--radius); padding: 18px 20px; background: var(--bg-sunken); }
+.cue-card ul { margin: 8px 0 0; padding-left: 1.2em; }
+
+/* план */
+.phase-bar { display: flex; height: 10px; border-radius: 999px; overflow: hidden; border: 1px solid var(--line); }
+.phase-bar span { display: block; }
+.week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+@media (max-width: 900px) { .week-grid { grid-template-columns: 1fr; } }
+.week-grid .day { grid-template-columns: 1fr; gap: 6px; }
+
+/* статистика */
+.topic-table { width: 100%; font-size: .9rem; }
+.topic-table td, .topic-table th { padding: 6px 8px; }
+.topic-table .progress { min-width: 90px; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+
+/* настройки */
+.setting-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.setting-row:last-child { border-bottom: 0; }
+.setting-row .field { min-width: 200px; }
+
+/* «ещё» */
+.more-grid { display: grid; gap: 10px; }
+.more-grid a { display: flex; align-items: center; gap: 12px; padding: 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg-elev); color: inherit; font-weight: 600; }
+.more-grid a:hover { text-decoration: none; background: var(--bg-sunken); }
+
+/* соответствие: 2 строки × 4 варианта */
+.match { display: grid; gap: 14px; }
+.match__label { font-weight: 600; margin-bottom: 6px; }
+.match__opts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+@media (max-width: 560px) { .match__opts { grid-template-columns: 1fr; } }
+.option--sm { padding: 8px 10px; }
+.writing-layout { grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr); }
+@media (max-width: 720px) { .writing-layout { grid-template-columns: 1fr; } }
+.sample summary { cursor: pointer; }
