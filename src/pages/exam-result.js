@@ -10,7 +10,7 @@ import { emptyState, pageHead, subjectBadge } from '../ui/components.js';
 
 async function questionIndex(detail) {
   try {
-    const exam = await buildExam({ mode: detail.mode, seed: detail.seed });
+    const exam = await buildExam({ mode: detail.mode, seed: detail.seed, lang: detail.lang || 'ru' });
     const map = new Map();
     for (const section of exam.sections) for (const q of section.questions) map.set(q.id, { question: q, topic: section.topicsById[q.topicId] });
     return map;

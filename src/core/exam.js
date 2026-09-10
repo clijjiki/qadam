@@ -1,7 +1,7 @@
 // Сборка пробного экзамена в формате ЕНТ из банка вопросов по темам.
 // Секция состоит из частей: plain (один ответ), multi (несколько ответов), match (соответствие), context (по контексту).
 
-import { loadTopics, topicWeight, topicsOf, ubtSubjects } from './content.js';
+import { loadTopics, normalizeLang, topicWeight, topicsOf, ubtSubjects } from './content.js';
 import { createRng, randomSeed, shuffle, weightedIndex } from './random.js';
 
 export const EXAM_STORAGE_KEY = 'qadam.exam.inprogress';
@@ -111,19 +111,25 @@ function buildSection(section, topics, rng) {
   return { ...section, questions, shortage: section.target - questions.length };
 }
 
-/** Собирает экзамен. Детерминирован по seed (при неизменном контенте). */
-export async function buildExam({ mode = 'full', seed = randomSeed() } = {}) {
+/**
+ * Собирает экзамен. Детерминирован по seed (при неизменном контенте).
+ * lang — язык заданий: 'ru' или 'kk'; темы без перевода берутся на русском.
+ */
+export async function buildExam({ mode = 'full', seed = randomSeed(), lang = 'ru' } = {}) {
   const config = examConfig(mode);
   const rng = createRng(seed);
+  const language = normalizeLang(lang);
   const sections = [];
+  let untranslated = 0;
   for (const section of config.sections) {
     const metas = topicsOf(section.subject, { kind: 'lesson' });
-    const loaded = await loadTopics(metas.map((m) => m.id));
+    const loaded = await loadTopics(metas.map((m) => m.id), language);
     const topics = loaded.map((t, i) => ({ ...t, meta: metas[i] }));
+    untranslated += topics.filter((t) => t.translated === false).length;
     const built = buildSection(section, topics, rng);
     sections.push({ ...built, topicsById: Object.fromEntries(topics.map((t) => [t.id, t])) });
   }
-  return { id: `exam-${seed}`, mode, seed, createdAt: Date.now(), durationMinutes: config.durationMinutes, sections };
+  return { id: `exam-${seed}`, mode, seed, lang: language, untranslated, createdAt: Date.now(), durationMinutes: config.durationMinutes, sections };
 }
 
 function readKey(key) {

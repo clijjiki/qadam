@@ -1,9 +1,12 @@
 // Хаб пробников: формат ЕНТ, запуск полного/мини режима, продолжение, история результатов.
 
 import { append, formatDuration, h, pluralize } from '../core/dom.js';
-import { ubtSubjects } from '../core/content.js';
+import { CONTENT_LANGS, langName, localizedPath, topicsOf, ubtSubjects } from '../core/content.js';
+import { setSettings } from '../core/actions.js';
+import { icon } from '../ui/icons.js';
 import { clearInProgress, examConfig, loadInProgress, loadLastResult } from '../core/exam.js';
 import { examSeries } from '../core/stats.js';
+import { getState } from '../core/store.js';
 import { formatDateTime } from '../core/time.js';
 import { lineChart } from '../ui/charts.js';
 import { confirmDialog } from '../ui/modal.js';
@@ -24,14 +27,49 @@ function formatTable(config) {
   );
 }
 
-function startCard(mode, config, highlight) {
+function startCard(mode, config, highlight, lang) {
   const full = mode === 'full';
   return h(
     'div',
     { class: highlight ? 'card card--accent stack' : 'card stack', style: highlight ? { '--card-accent': 'var(--primary)' } : null },
-    h('div', { class: 'card__title' }, full ? '📝 Полный пробный ЕНТ' : '⚡ Мини-пробник'),
+    h('div', { class: 'card__title row', style: { gap: '8px' } }, icon(full ? 'exam' : 'bolt', { size: 18 }), full ? 'Полный пробный ЕНТ' : 'Мини-пробник'),
     h('p', { class: 'muted', style: { margin: 0 } }, full ? `120 заданий, ${config.durationMinutes} минут, 5 секций подряд — как на настоящем экзамене.` : `Короткий прогон всех секций (~${config.sections.reduce((a, s) => a + s.target, 0)} заданий) за ${config.durationMinutes} минут. Каждую субботу.`),
-    h('a', { class: 'btn btn--primary btn--lg', href: `#/exam/run?mode=${mode}` }, 'Начать'),
+    h('a', { class: 'btn btn--primary btn--lg', href: `#/exam/run?mode=${mode}&lang=${lang}` }, `Начать · ${langName(lang)}`),
+  );
+}
+
+/** Сколько тем ЕНТ уже переведено на выбранный язык (проверяем наличие файлов). */
+async function translationStats(lang) {
+  if (lang === 'ru') return null;
+  const metas = ubtSubjects().flatMap((s) => topicsOf(s.id, { kind: 'lesson' }));
+  const checks = await Promise.all(
+    metas.map(async (meta) => {
+      try {
+        const response = await fetch(localizedPath(meta, lang), { method: 'HEAD', cache: 'no-store' });
+        return response.ok;
+      } catch (error) {
+        return false;
+      }
+    }),
+  );
+  return { total: metas.length, translated: checks.filter(Boolean).length };
+}
+
+function langCard(lang, onPick, stats) {
+  const chips = CONTENT_LANGS.map((item) =>
+    h('button', { class: item.id === lang ? 'chip active' : 'chip', onClick: () => onPick(item.id) }, item.name),
+  );
+  const note = lang === 'ru'
+    ? 'ЕНТ можно сдавать на казахском, русском или английском. Интерфейс сайта всегда на русском.'
+    : stats
+      ? `Заданий на казахском: ${stats.translated} из ${stats.total} тем. Непереведённые темы придут на русском.`
+      : 'Задания будут на казахском языке.';
+  return h(
+    'div',
+    { class: 'card stack' },
+    h('div', { class: 'card__title row', style: { gap: '8px' } }, icon('globe', { size: 18 }), 'Язык заданий'),
+    h('div', { class: 'chips' }, chips),
+    h('p', { class: 'muted small', style: { margin: 0 } }, note),
   );
 }
 
@@ -73,6 +111,7 @@ function historyCard(state) {
       h('div', { class: 'list-item__num' }, e.mode === 'full' ? '📝' : '⚡'),
       h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, `${e.total} из ${e.max}`), h('div', { class: 'list-item__sub' }, `${formatDateTime(e.at)} · ${formatDuration(e.seconds)} · ${e.sections.map((s) => `${s.short || s.name}: ${s.points}/${s.max}`).join(' · ')}`)),
       h('span', { class: 'badge' }, `${Math.round((e.total / e.max) * 100)}%`),
+      e.lang && e.lang !== 'ru' ? h('span', { class: 'badge badge--info' }, langName(e.lang)) : null,
     ),
   );
   return h(
@@ -90,12 +129,19 @@ export async function render(ctx) {
   const config = examConfig('full');
   const mini = examConfig('mini');
   const snapshot = loadInProgress();
+  const lang = query.lang || state.settings.examLang || 'ru';
+  const stats = await translationStats(lang);
   const root = h('div', { class: 'stack' });
-  const rerender = async () => root.replaceChildren(await render(ctx));
+  const rerender = async () => root.replaceChildren(await render({ ...ctx, state: getState() }));
+  const pickLang = (value) => {
+    setSettings({ examLang: value });
+    rerender();
+  };
   append(root, [
     pageHead({ title: 'Пробные экзамены', sub: 'Формат ЕНТ: 5 секций, баллы за мультиответ 2/1/0, таймер без пауз.' }),
     snapshot ? resumeCard(snapshot, rerender) : null,
-    h('div', { class: 'grid grid--2' }, startCard('full', config, query.mode === 'full'), startCard('mini', mini, query.mode === 'mini')),
+    langCard(lang, pickLang, stats),
+    h('div', { class: 'grid grid--2' }, startCard('full', config, query.mode === 'full', lang), startCard('mini', mini, query.mode === 'mini', lang)),
     h('div', { class: 'grid grid--2' }, h('div', { class: 'card stack' }, h('h3', { style: { margin: 0 } }, 'Формат полного пробника'), formatTable(config), h('p', { class: 'muted small', style: { margin: 0 } }, 'Задания с несколькими ответами и на соответствие — по 2 балла. Одна ошибка в мультиответе — 1 балл. Пустой ответ — 0, штрафа нет: отвечай на всё.')), historyCard(state)),
   ]);
   return root;

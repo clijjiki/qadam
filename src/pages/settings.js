@@ -22,6 +22,10 @@ const THEMES = [
   ['light', 'Светлая'],
   ['dark', 'Тёмная'],
 ];
+const EXAM_LANGS = [
+  ['ru', 'Русский'],
+  ['kk', 'Қазақша (казахский)'],
+];
 const FONT_SCALES = [
   ['0.9', 'Мелкий'],
   ['1', 'Обычный'],
@@ -223,6 +227,11 @@ function appearanceCard(state, rerender) {
           saveSettings({ dailyGoalMinutes: minutes }, `Цель: ${minutes} мин в день`, rerender);
         },
       }),
+    ),
+    settingRow(
+      'Язык заданий пробника',
+      'ЕНТ можно сдавать на казахском или русском. Интерфейс сайта остаётся русским.',
+      selectField({ options: EXAM_LANGS, value: settings.examLang || 'ru', onCommit: (v) => saveSettings({ examLang: v }, v === 'kk' ? 'Пробник будет на казахском' : 'Пробник будет на русском', rerender) }),
     ),
     settingRow('Перемешивать варианты', 'Чтобы не запоминать «правильная — буква B».', checkboxField({ checked: settings.shuffleOptions, label: 'Включено', onCommit: (v) => saveSettings({ shuffleOptions: !!v }, v ? 'Варианты перемешиваются' : 'Варианты по порядку', rerender) })),
     settingRow('Показывать таймер', 'Секундомер в практике и пробниках.', checkboxField({ checked: settings.showTimer, label: 'Включено', onCommit: (v) => saveSettings({ showTimer: !!v }, v ? 'Таймер включён' : 'Таймер скрыт', rerender) })),

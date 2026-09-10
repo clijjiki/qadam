@@ -1,4 +1,11 @@
 // Загрузка контента: манифест (список предметов и тем) + JSON темы по требованию.
+// Язык контента: 'ru' (основной) и 'kk' (перевод в content/kk/...). Если перевода нет —
+// возвращаем русскую версию с пометкой translated: false, чтобы страница могла предупредить.
+
+export const CONTENT_LANGS = [
+  { id: 'ru', name: 'Русский', short: 'RU' },
+  { id: 'kk', name: 'Қазақша', short: 'KK' },
+];
 
 let manifest = null;
 const topicIndex = new Map();
@@ -56,6 +63,25 @@ export function allTopics() {
   return getManifest().topics;
 }
 
+export function isContentLang(lang) {
+  return CONTENT_LANGS.some((l) => l.id === lang);
+}
+
+export function normalizeLang(lang) {
+  return isContentLang(lang) ? lang : 'ru';
+}
+
+export function langName(lang) {
+  const found = CONTENT_LANGS.find((l) => l.id === normalizeLang(lang));
+  return found ? found.name : 'Русский';
+}
+
+/** Путь к файлу темы на нужном языке: content/kk/<subject>/<id>.json для казахского. */
+export function localizedPath(meta, lang) {
+  if (normalizeLang(lang) === 'ru') return meta.path;
+  return meta.path.replace(/^content\//, 'content/kk/');
+}
+
 export function topicMeta(id) {
   return topicIndex.get(id) || null;
 }
@@ -66,28 +92,39 @@ export function topicWeight(meta) {
   return PRIORITY_WEIGHT[meta.priority] || 2;
 }
 
-export async function loadTopic(id) {
-  if (topicCache.has(id)) return topicCache.get(id);
-  if (pending.has(id)) return pending.get(id);
+async function fetchTopicData(meta, lang) {
+  if (lang === 'ru') return { data: await fetchJSON(meta.path), lang: 'ru', translated: true };
+  try {
+    return { data: await fetchJSON(localizedPath(meta, lang)), lang, translated: true };
+  } catch (error) {
+    return { data: await fetchJSON(meta.path), lang: 'ru', translated: false };
+  }
+}
+
+export async function loadTopic(id, requested = 'ru') {
+  const lang = normalizeLang(requested);
+  const key = `${lang}:${id}`;
+  if (topicCache.has(key)) return topicCache.get(key);
+  if (pending.has(key)) return pending.get(key);
   const meta = topicMeta(id);
   if (!meta) throw new Error(`Тема «${id}» не найдена в манифесте`);
-  const promise = fetchJSON(meta.path)
-    .then((data) => {
-      const normalized = normalizeTopic(data, meta);
-      topicCache.set(id, normalized);
-      pending.delete(id);
+  const promise = fetchTopicData(meta, lang)
+    .then(({ data, lang: actual, translated }) => {
+      const normalized = { ...normalizeTopic(data, meta), lang: actual, requestedLang: lang, translated };
+      topicCache.set(key, normalized);
+      pending.delete(key);
       return normalized;
     })
     .catch((error) => {
-      pending.delete(id);
+      pending.delete(key);
       throw error;
     });
-  pending.set(id, promise);
+  pending.set(key, promise);
   return promise;
 }
 
-export async function loadTopics(ids) {
-  return Promise.all(ids.map((id) => loadTopic(id)));
+export async function loadTopics(ids, lang = 'ru') {
+  return Promise.all(ids.map((id) => loadTopic(id, lang)));
 }
 
 /** Приводит тему к единому виду: массивы гарантированы, вопросы получают глобальный id topicId:qid. */

@@ -9,6 +9,7 @@ import { isActiveDay, levelInfo, streakInfo, xpForLevel } from '../src/core/stat
 import { createRng, hashString, shuffle } from '../src/core/random.js';
 import { addRoute, matchRoute, parseHash } from '../src/core/router.js';
 import { formatDuration, plural, pluralize } from '../src/core/dom.js';
+import { CONTENT_LANGS, isContentLang, langName, localizedPath, normalizeLang } from '../src/core/content.js';
 
 const results = [];
 
@@ -243,6 +244,27 @@ test('dom: pluralize добавляет число', () => equal(pluralize(3, ['
 test('dom: formatDuration', () => {
   equal(formatDuration(65), '1:05');
   equal(formatDuration(3661), '1:01:01');
+});
+
+// ---------- языки контента ----------
+test('lang: поддерживаются ru и kk', () => {
+  deepEqual(CONTENT_LANGS.map((l) => l.id), ['ru', 'kk']);
+  equal(isContentLang('kk'), true);
+  equal(isContentLang('en'), false);
+});
+test('lang: неизвестный язык откатывается к ru', () => {
+  equal(normalizeLang('en'), 'ru');
+  equal(normalizeLang(undefined), 'ru');
+  equal(normalizeLang('kk'), 'kk');
+});
+test('lang: путь к казахской версии темы', () => {
+  const meta = { path: 'content/math/math-derivative.json' };
+  equal(localizedPath(meta, 'kk'), 'content/kk/math/math-derivative.json');
+  equal(localizedPath(meta, 'ru'), 'content/math/math-derivative.json');
+});
+test('lang: название языка для интерфейса', () => {
+  equal(langName('kk'), 'Қазақша');
+  equal(langName('ru'), 'Русский');
 });
 
 // ---------- вывод ----------

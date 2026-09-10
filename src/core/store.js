@@ -25,6 +25,7 @@ export function createDefaultState() {
       dailyGoalMinutes: 25,
       shuffleOptions: true,
       showTimer: true,
+      examLang: 'ru',
     },
     topics: {},
     questions: {},

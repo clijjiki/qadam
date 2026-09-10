@@ -3,6 +3,8 @@
 import { formatDuration, h, replaceChildren } from '../core/dom.js';
 import { buildExam, clearInProgress, loadInProgress, saveInProgress, saveLastResult } from '../core/exam.js';
 import { recordExam } from '../core/actions.js';
+import { getState } from '../core/store.js';
+import { langName } from '../core/content.js';
 import { badgeById } from '../core/badges.js';
 import { emptySelection, isAnswered, scoreQuestion } from '../core/scoring.js';
 import { renderQuestionCard } from '../ui/quiz.js';
@@ -26,17 +28,18 @@ async function prepare(query) {
   const snapshot = loadInProgress();
   const resume = snapshot && (query.resume === '1' || !query.mode);
   if (resume) {
-    const exam = await buildExam({ mode: snapshot.mode, seed: snapshot.seed });
+    const exam = await buildExam({ mode: snapshot.mode, seed: snapshot.seed, lang: snapshot.lang });
     return { exam, answers: snapshot.answers || {}, flags: new Set(snapshot.flags || []), startedAt: snapshot.startedAt || Date.now() };
   }
-  const exam = await buildExam({ mode: query.mode === 'mini' ? 'mini' : 'full' });
+  const lang = query.lang || getState().settings.examLang;
+  const exam = await buildExam({ mode: query.mode === 'mini' ? 'mini' : 'full', lang });
   const session = { exam, answers: {}, flags: new Set(), startedAt: Date.now() };
   persist(session);
   return session;
 }
 
 function persist({ exam, answers, flags, startedAt }) {
-  saveInProgress({ mode: exam.mode, seed: exam.seed, answers, flags: [...flags], startedAt });
+  saveInProgress({ mode: exam.mode, seed: exam.seed, lang: exam.lang, answers, flags: [...flags], startedAt });
 }
 
 function gradeExam(exam, answers) {
@@ -145,7 +148,7 @@ export async function render({ query, navigate }) {
     const seconds = (Date.now() - startedAt) / 1000;
     const summary = sections.map(({ items, ...rest }) => rest);
     const { badges } = recordExam({ mode: exam.mode, sections: summary, results, seconds, seed: exam.seed });
-    saveLastResult({ at: Date.now(), mode: exam.mode, seed: exam.seed, seconds, total: summary.reduce((s, x) => s + x.points, 0), max: summary.reduce((s, x) => s + x.max, 0), sections });
+    saveLastResult({ at: Date.now(), mode: exam.mode, seed: exam.seed, lang: exam.lang, seconds, total: summary.reduce((s, x) => s + x.points, 0), max: summary.reduce((s, x) => s + x.max, 0), sections });
     clearInProgress();
     if (badges.length) toastBadges(badges, badgeById);
     navigate('/exam/result', { replace: true });
@@ -207,7 +210,8 @@ export async function render({ query, navigate }) {
   const head = h(
     'div',
     { class: 'exam-head' },
-    h('b', {}, exam.mode === 'mini' ? '⚡ Мини-пробник' : '📝 Пробный ЕНТ'),
+    h('b', {}, exam.mode === 'mini' ? 'Мини-пробник' : 'Пробный ЕНТ'),
+    h('span', { class: 'badge' }, langName(exam.lang)),
     timerEl,
     h('span', { class: 'muted small' }, 'Клавиши: 1–8 выбрать · ←/→ вопрос · M пометить'),
     h('span', { class: 'spacer' }),
