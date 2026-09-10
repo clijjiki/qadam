@@ -3,28 +3,29 @@
 import { h, qsa, replaceChildren } from '../core/dom.js';
 import { getState, subscribe } from '../core/store.js';
 import { levelInfo, streakInfo } from '../core/stats.js';
+import { icon } from './icons.js';
 
 const NAV = [
-  { key: 'home', href: '#/', icon: '🏠', label: 'Сегодня' },
+  { key: 'home', href: '#/', icon: 'home', label: 'Сегодня' },
   { section: 'ЕНТ' },
-  { key: 'ubt', href: '#/ubt', icon: '🎓', label: 'Предметы' },
-  { key: 'review', href: '#/practice?mode=review', icon: '🔁', label: 'Повторение' },
-  { key: 'exam', href: '#/exam', icon: '📝', label: 'Пробники' },
+  { key: 'ubt', href: '#/ubt', icon: 'cap', label: 'Предметы' },
+  { key: 'review', href: '#/practice?mode=review', icon: 'repeat', label: 'Повторение' },
+  { key: 'exam', href: '#/exam', icon: 'exam', label: 'Пробники' },
   { section: 'IELTS' },
-  { key: 'ielts', href: '#/ielts', icon: '🇬🇧', label: 'Навыки' },
-  { key: 'vocab', href: '#/ielts/vocab', icon: '🃏', label: 'Словарь' },
+  { key: 'ielts', href: '#/ielts', icon: 'globe', label: 'Навыки' },
+  { key: 'vocab', href: '#/ielts/vocab', icon: 'cards', label: 'Словарь' },
   { section: 'Прогресс' },
-  { key: 'plan', href: '#/plan', icon: '📅', label: 'План' },
-  { key: 'stats', href: '#/stats', icon: '📊', label: 'Статистика' },
-  { key: 'settings', href: '#/settings', icon: '⚙️', label: 'Настройки' },
+  { key: 'plan', href: '#/plan', icon: 'calendar', label: 'План' },
+  { key: 'stats', href: '#/stats', icon: 'chart', label: 'Статистика' },
+  { key: 'settings', href: '#/settings', icon: 'settings', label: 'Настройки' },
 ];
 
 const TABS = [
-  { key: 'home', href: '#/', icon: '🏠', label: 'Сегодня' },
-  { key: 'ubt', href: '#/ubt', icon: '🎓', label: 'ЕНТ' },
-  { key: 'review', href: '#/practice?mode=review', icon: '🔁', label: 'Повтор' },
-  { key: 'ielts', href: '#/ielts', icon: '🇬🇧', label: 'IELTS' },
-  { key: 'more', href: '#/more', icon: '☰', label: 'Ещё' },
+  { key: 'home', href: '#/', icon: 'home', label: 'Сегодня' },
+  { key: 'ubt', href: '#/ubt', icon: 'cap', label: 'ЕНТ' },
+  { key: 'review', href: '#/practice?mode=review', icon: 'repeat', label: 'Повтор' },
+  { key: 'ielts', href: '#/ielts', icon: 'globe', label: 'IELTS' },
+  { key: 'more', href: '#/more', icon: 'more', label: 'Ещё' },
 ];
 
 const MORE_KEYS = new Set(['more', 'plan', 'stats', 'settings', 'exam', 'vocab']);
@@ -34,7 +35,7 @@ function brand() {
 }
 
 function navLink(item) {
-  return h('a', { class: 'nav__link', href: item.href, dataset: { key: item.key } }, h('span', { class: 'ico' }, item.icon), item.label);
+  return h('a', { class: 'nav__link', href: item.href, dataset: { key: item.key } }, h('span', { class: 'ico' }, icon(item.icon, { size: 18 })), item.label);
 }
 
 function userCard(state) {
@@ -46,14 +47,14 @@ function userCard(state) {
     h('div', { class: 'user-card__name' }, state.profile.name || 'Ученик'),
     h('div', { class: 'user-card__meta muted small' }, `Ур. ${level.level} · ${level.title}`),
     h('div', { class: 'progress', style: { marginTop: '6px' } }, h('div', { class: 'progress__bar', style: { width: `${Math.round(level.progress * 100)}%` } })),
-    h('div', { class: 'user-card__meta small', style: { marginTop: '6px' } }, `🔥 Серия: ${streak.current} ${streak.activeToday ? '' : '· сегодня ещё нет'}`),
+    h('div', { class: 'user-card__meta small row', style: { marginTop: '6px', gap: '6px' } }, icon('flame', { size: 14 }), `Серия: ${streak.current}${streak.activeToday ? '' : ' · сегодня ещё нет'}`),
   );
 }
 
 function topbarStats(state) {
   const streak = streakInfo(state);
   const level = levelInfo(state.xp);
-  return h('div', { class: 'row', style: { gap: '8px' } }, h('span', { class: 'badge badge--warn' }, `🔥 ${streak.current}`), h('span', { class: 'badge badge--primary' }, `Ур. ${level.level}`));
+  return h('div', { class: 'row', style: { gap: '8px' } }, h('span', { class: 'badge badge--warn', style: { gap: '4px' } }, icon('flame', { size: 13 }), String(streak.current)), h('span', { class: 'badge badge--primary' }, `Ур. ${level.level}`));
 }
 
 export function createLayout(root) {
@@ -68,7 +69,7 @@ export function createLayout(root) {
     sidebarUser,
   );
   const topbar = h('header', { class: 'topbar' }, brand(), topStats);
-  const tabbar = h('nav', { class: 'tabbar', 'aria-label': 'Вкладки' }, TABS.map((tab) => h('a', { href: tab.href, dataset: { key: tab.key } }, h('span', { class: 'ico' }, tab.icon), tab.label)));
+  const tabbar = h('nav', { class: 'tabbar', 'aria-label': 'Вкладки' }, TABS.map((tab) => h('a', { href: tab.href, dataset: { key: tab.key } }, h('span', { class: 'ico' }, icon(tab.icon, { size: 20 })), tab.label)));
   const main = h('main', { class: 'main' }, page);
   const shell = h('div', { class: 'shell' }, sidebar, h('div', { class: 'main-col' }, topbar, main), tabbar);
   replaceChildren(root, shell);

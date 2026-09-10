@@ -37,6 +37,7 @@ export function createDefaultState() {
     xp: 0,
     badges: [],
     missions: {},
+    forecast: {},
   };
 }
 
@@ -71,6 +72,7 @@ export function migrate(saved) {
     xp: Number(saved.xp) || 0,
     badges: Array.isArray(saved.badges) ? saved.badges : [],
     missions: saved.missions || {},
+    forecast: saved.forecast || {},
   };
 }
 

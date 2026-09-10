@@ -4,7 +4,7 @@ import { getState, setIn, update } from './store.js';
 import { emptyTopicStats } from './mastery.js';
 import { GRADES, gradeFromCorrect, isGraduated, review } from './srs.js';
 import { newlyEarned } from './badges.js';
-import { todayKey } from './time.js';
+import { todayKey, weekStartKey } from './time.js';
 
 export const XP = {
   correct: 2,
@@ -231,6 +231,18 @@ export function setSettings(patch) {
 export function addStudyMinutes(minutes) {
   if (!minutes || minutes <= 0) return;
   update((state) => bumpDaily(state, { minutes }, Date.now()));
+}
+
+/**
+ * Снимок прогноза на текущую неделю (пишется один раз в неделю).
+ * По этим снимкам считается дельта «+N за неделю» на дашборде.
+ */
+export function recordForecastSnapshot(ent, band) {
+  const week = weekStartKey();
+  const state = getState();
+  const prev = state.forecast[week];
+  if (prev && prev.ent === ent && prev.band === band) return;
+  update((current) => ({ ...current, forecast: { ...current.forecast, [week]: { ent, band: band ?? null, at: Date.now() } } }));
 }
 
 export function currentState() {
