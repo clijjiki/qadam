@@ -6,6 +6,7 @@ import { pageHead, progressBar } from '../ui/components.js';
 
 const LINKS = [
   ['📅', 'План подготовки', '#/plan'],
+  ['🏫', 'Программа по классам', '#/curriculum'],
   ['📝', 'Пробники ЕНТ', '#/exam'],
   ['🃏', 'Словарь IELTS', '#/ielts/vocab'],
   ['✍️', 'IELTS Writing', '#/ielts/writing'],

@@ -1,7 +1,7 @@
 // Результат последнего пробника: баллы по секциям, слабые темы, разбор каждого вопроса.
 
 import { formatDuration, h, pluralize } from '../core/dom.js';
-import { topicMeta } from '../core/content.js';
+import { langOf, topicMeta, topicTitle } from '../core/content.js';
 import { buildExam, loadLastResult } from '../core/exam.js';
 import { gradeLabel } from '../core/scoring.js';
 import { formatDateTime } from '../core/time.js';
@@ -67,7 +67,7 @@ function reviewList(detail, index, onlyWrong) {
   );
 }
 
-export async function render() {
+export async function render({ state }) {
   const detail = loadLastResult();
   if (!detail) return emptyState({ icon: '📝', title: 'Результатов пока нет', sub: 'Пройди пробник — здесь появится разбор.', action: { label: 'К пробникам', href: '#/exam' } });
   const index = await questionIndex(detail);
@@ -87,7 +87,7 @@ export async function render() {
     { class: 'stack' },
     pageHead({ title: detail.mode === 'mini' ? 'Результат мини-пробника' : 'Результат пробного ЕНТ', sub: `${formatDateTime(detail.at)} · ${formatDuration(detail.seconds)}`, actions: [h('a', { class: 'btn', href: '#/exam' }, 'К пробникам'), h('a', { class: 'btn btn--primary', href: `#/exam/run?mode=${detail.mode}` }, 'Ещё пробник')] }),
     h('div', { class: 'card result-hero' }, h('div', { class: 'big' }, String(detail.total), h('small', {}, ` / ${detail.max}`)), h('div', { class: `badge badge--${grade.tone}`, style: { marginTop: '8px' } }, grade.label)),
-    h('div', { class: 'grid grid--2' }, h('div', { class: 'card' }, h('h3', {}, 'По секциям'), sectionTable(detail)), h('div', { class: 'card stack' }, h('h3', { style: { margin: 0 } }, 'Слабые темы этого пробника'), weak.length ? h('div', { class: 'list' }, weak.map((t) => h('a', { class: 'list-item', href: `#/topic/${t.id}` }, h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, t.meta.title), h('div', { class: 'list-item__sub' }, `${pluralize(t.count, ['вопрос', 'вопроса', 'вопросов'])} · ${Math.round(t.ratio * 100)}%`)), h('span', { class: 'badge badge--danger' }, 'учить')))) : h('p', { class: 'muted', style: { margin: 0 } }, 'Провалов по темам нет.'))),
+    h('div', { class: 'grid grid--2' }, h('div', { class: 'card' }, h('h3', {}, 'По секциям'), sectionTable(detail)), h('div', { class: 'card stack' }, h('h3', { style: { margin: 0 } }, 'Слабые темы этого пробника'), weak.length ? h('div', { class: 'list' }, weak.map((t) => h('a', { class: 'list-item', href: `#/topic/${t.id}` }, h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, topicTitle(t.meta, langOf(state))), h('div', { class: 'list-item__sub' }, `${pluralize(t.count, ['вопрос', 'вопроса', 'вопросов'])} · ${Math.round(t.ratio * 100)}%`)), h('span', { class: 'badge badge--danger' }, 'учить')))) : h('p', { class: 'muted', style: { margin: 0 } }, 'Провалов по темам нет.'))),
     h('h3', {}, 'Разбор'),
     filters,
     list,

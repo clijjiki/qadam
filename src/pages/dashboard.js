@@ -1,7 +1,7 @@
 // Главная «Сегодня»: прогноз, миссия дня, предметы, неделя, быстрые действия.
 
 import { formatMinutes, h, pluralize } from '../core/dom.js';
-import { ieltsSubject, subject, ubtSubjects } from '../core/content.js';
+import { ieltsSubject, langOf, subject, topicTitle, ubtSubjects } from '../core/content.js';
 import { ieltsReadiness, overallReadiness } from '../core/mastery.js';
 import { recordForecastSnapshot } from '../core/actions.js';
 import { countdown, dailyMissions, nextTopics } from '../core/plan.js';
@@ -197,7 +197,7 @@ function nextTopicsCard(state) {
           'a',
           { class: 'next', href: `#/topic/${topic.id}`, style: { '--subj': subjectColor(topic.subject) } },
           h('span', { class: 'next__ico' }, subjectIcon(topic.subject, { size: 16 })),
-          h('span', { class: 'next__main' }, h('span', { class: 'next__title' }, topic.title), h('span', { class: 'next__sub' }, `${meta ? meta.short || meta.name : topic.subject} · ≈ ${topic.minutes || 20} мин`)),
+          h('span', { class: 'next__main' }, h('span', { class: 'next__title' }, topicTitle(topic, langOf(state))), h('span', { class: 'next__sub' }, `${meta ? meta.short || meta.name : topic.subject} · ≈ ${topic.minutes || 20} мин`)),
           icon('chevronRight', { size: 16, className: 'next__arrow' }),
         );
       }),

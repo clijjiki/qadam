@@ -158,6 +158,20 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 1.2em 0; }
 .nav__link .ico { width: 20px; text-align: center; font-size: 1.05rem; }
 .nav__dot { width: 8px; height: 8px; border-radius: 50%; margin-left: auto; }
 .sidebar__foot { margin-top: auto; padding: 10px 8px 0; font-size: .78rem; color: var(--text-3); }
+
+/* Переключатель языка материалов (RU / KZ) */
+.langsw { display: inline-flex; gap: 2px; padding: 2px; border-radius: 999px; background: var(--bg-sunken); border: 1px solid var(--line); }
+.langsw__btn {
+  min-width: 34px; padding: 4px 10px; border: 0; border-radius: 999px; cursor: pointer;
+  background: transparent; color: var(--text-3); font: 700 .72rem/1.4 var(--font-head); letter-spacing: .04em;
+  transition: background .15s, color .15s;
+}
+.langsw__btn:hover { color: var(--text); }
+.langsw__btn.active { background: var(--bg-elev); color: var(--primary); box-shadow: var(--shadow-1); }
+.langsw__btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+.langsw-row { display: flex; align-items: center; gap: 8px; padding: 2px 8px 12px; color: var(--text-3); }
+.langsw-row__ico { display: inline-flex; }
+.langsw-row__label { font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; margin-right: auto; }
 .main { min-width: 0; padding: 26px 30px 60px; }
 .container { max-width: 1040px; margin: 0 auto; }
 .topbar { display: none; }
@@ -441,3 +455,9 @@ a.mission:hover { text-decoration: none; background: var(--bg-sunken); }
 .badge-tile__name { font-weight: 600; font-size: .8rem; margin-top: 4px; }
 .onboard { max-width: 560px; margin: 40px auto; }
 @media print { .sidebar, .tabbar, .topbar, .btn { display: none !important; } .main { padding: 0; } }
+
+/* ---------- программа по классам (#/curriculum) и трек в плане ---------- */
+.quarter--current { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+.curriculum-item--planned { opacity: .62; }
+.curriculum-item--planned .list-item__num { background: transparent; border: 1px dashed var(--line-2); }
+.phase-row--active { border-color: var(--primary); background: var(--primary-soft); }

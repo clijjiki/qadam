@@ -1,7 +1,7 @@
 // IELTS Writing: список заданий, редактор с таймером и автосохранением, самопроверка по критериям.
 
 import { h, formatDuration, replaceChildren } from '../../core/dom.js';
-import { loadTopic, topicMeta, topicsOf } from '../../core/content.js';
+import { langOf, loadTopic, topicMeta, topicsOf } from '../../core/content.js';
 import { renderMarkdown } from '../../core/markdown.js';
 import { mountMath } from '../../core/math.js';
 import { saveWriting } from '../../core/actions.js';
@@ -84,7 +84,7 @@ function stopTimers() {
 
 async function loadSafely(meta) {
   try {
-    return { meta, topic: await loadTopic(meta.id), error: null };
+    return { meta, topic: await loadTopic(meta.id, langOf(getState())), error: null };
   } catch (error) {
     console.error('Не удалось загрузить тему письма', meta.id, error);
     return { meta, topic: null, error };

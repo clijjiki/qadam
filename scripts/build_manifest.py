@@ -80,7 +80,7 @@ MATH = [
     ("math-linear-systems", "Системы линейных уравнений", 1, "Методы подстановки и сложения, графический метод, число решений, задачи на составление систем."),
     ("math-nonlinear-systems", "Системы нелинейных уравнений", 2, "Системы с квадратными, показательными, логарифмическими, иррациональными и тригонометрическими уравнениями; симметрические системы."),
     ("math-linear-quadratic-rational-inequalities", "Линейные, квадратные и рациональные неравенства", 1, "Метод интервалов, неравенства с модулем, ОДЗ, целые решения на промежутке."),
-    ("math-exp-log-irrational-trig-inequalities", "Показательные, логарифмические, иррациональные, тригонометрические неравенства", 1, "Монотонность функций, ОДЗ, равносильные переходы, простейшие тригонометрические неравенства."),
+    ("math-exp-log-irrational-inequalities", "Показательные, логарифмические и иррациональные неравенства", 1, "Монотонность функций, ОДЗ, равносильные переходы, метод рационализации."),
     ("math-systems-of-inequalities", "Системы неравенств", 1, "Пересечение решений, системы с модулем, дробно-рациональные, показательные и логарифмические системы неравенств."),
     ("math-arithmetic-progression", "Арифметическая прогрессия", 1, "Формула n-го члена, сумма n членов, характеристическое свойство, задачи на составление."),
     ("math-geometric-progression", "Геометрическая прогрессия", 2, "Формула n-го члена, сумма, бесконечно убывающая прогрессия, смешанные задачи с арифметической прогрессией."),
@@ -97,8 +97,61 @@ MATH = [
     ("math-polyhedra", "Многогранники: призма, пирамида, куб", 2, "Сечения, площади поверхности, объёмы, правильные многогранники, углы между прямыми и плоскостями."),
     ("math-solids-of-revolution", "Тела вращения: цилиндр, конус, шар", 3, "Площади и объёмы, осевые сечения, вписанные и описанные тела — основа контекстных заданий."),
     ("math-space-vectors-coordinates", "Векторы и координаты в пространстве", 1, "Координаты точки и вектора в пространстве, длина, скалярное произведение, уравнение плоскости и сферы."),
+    ("math-inverse-trig-functions", "Обратные тригонометрические функции", 1, "arcsin, arccos, arctg, arcctg: определения, области значений, свойства, вычисление значений и упрощение выражений."),
+    ("math-trigonometric-inequalities", "Тригонометрические неравенства", 1, "Простейшие неравенства на единичной окружности, запись серий решений, сведение к простейшим."),
+    ("math-polynomials", "Многочлены: деление, теорема Безу, схема Горнера", 1, "Деление многочленов уголком, теорема Безу, схема Горнера, рациональные корни, разложение на множители."),
+    ("math-limits-continuity", "Предел функции и непрерывность", 0, "Предел последовательности и функции, замечательные пределы, непрерывность, асимптоты — школьная база перед производной."),
+    ("math-random-variables", "Случайные величины и их числовые характеристики", 0, "Дискретная случайная величина, закон распределения, математическое ожидание, дисперсия, среднее квадратическое отклонение."),
+    ("math-stereometry-axioms-parallel", "Аксиомы стереометрии. Параллельность прямых и плоскостей", 1, "Аксиомы и следствия, взаимное расположение прямых, параллельность прямой и плоскости, параллельные плоскости, скрещивающиеся прямые."),
+    ("math-stereometry-perpendicular", "Перпендикулярность прямых и плоскостей", 1, "Признак перпендикулярности, теорема о трёх перпендикулярах, расстояния, угол между прямой и плоскостью, двугранный угол."),
     ("math-exam-strategy", "Форматы заданий ЕНТ по математике и стратегия", 0, "Множественный выбор (до 3 из 6), соответствие (2 строки), контекст, тайминг 2 минуты на задание, частичные баллы, типичные ловушки."),
 ]
+
+# Школьная программа (ЕМН, обновлённое содержание): класс, линия, четверть и порядок внутри четверти.
+# Нужна для трека «сначала программа своего класса, потом с 7-го»: см. src/core/curriculum.js.
+MATH_CURRICULUM = {
+    # 7 класс
+    "math-powers-exponents": (7, "algebra", 1, 1),
+    "math-algebraic-expressions": (7, "algebra", 2, 1),
+    "math-linear-systems": (7, "algebra", 3, 1),
+    "math-triangles": (7, "geometry", 2, 1),
+    # 8 класс
+    "math-radicals-numeric-expressions": (8, "algebra", 1, 1),
+    "math-linear-quadratic-rational-equations": (8, "algebra", 2, 1),
+    "math-linear-quadratic-rational-inequalities": (8, "algebra", 3, 1),
+    "math-word-problems-modeling": (8, "algebra", 4, 1),
+    "math-quadrilaterals-polygons-circle": (8, "geometry", 1, 1),
+    # 9 класс
+    "math-nonlinear-systems": (9, "algebra", 1, 1),
+    "math-systems-of-inequalities": (9, "algebra", 1, 2),
+    "math-arithmetic-progression": (9, "algebra", 2, 1),
+    "math-geometric-progression": (9, "algebra", 2, 2),
+    "math-trigonometry-basics": (9, "algebra", 3, 1),
+    "math-plane-vectors-transformations": (9, "geometry", 1, 1),
+    # 10 класс
+    "math-functions-and-graphs": (10, "algebra", 1, 1),
+    "math-inverse-trig-functions": (10, "algebra", 1, 2),
+    "math-trigonometric-equations": (10, "algebra", 2, 1),
+    "math-trigonometric-inequalities": (10, "algebra", 2, 2),
+    "math-combinatorics-probability": (10, "algebra", 2, 3),
+    "math-polynomials": (10, "algebra", 3, 1),
+    "math-limits-continuity": (10, "algebra", 3, 2),
+    "math-derivative": (10, "algebra", 3, 3),
+    "math-derivative-applications": (10, "algebra", 4, 1),
+    "math-random-variables": (10, "algebra", 4, 2),
+    "math-stereometry-axioms-parallel": (10, "geometry", 1, 1),
+    "math-stereometry-perpendicular": (10, "geometry", 2, 1),
+    "math-space-vectors-coordinates": (10, "geometry", 3, 1),
+    # 11 класс
+    "math-antiderivative-integral": (11, "algebra", 1, 1),
+    "math-definite-integral-area": (11, "algebra", 1, 2),
+    "math-irrational-equations": (11, "algebra", 2, 1),
+    "math-exponential-equations": (11, "algebra", 2, 2),
+    "math-logarithmic-equations": (11, "algebra", 2, 3),
+    "math-exp-log-irrational-inequalities": (11, "algebra", 3, 1),
+    "math-polyhedra": (11, "geometry", 1, 1),
+    "math-solids-of-revolution": (11, "geometry", 2, 1),
+}
 
 INFORMATICS = [
     ("inf-information-measurement", "Информация и её измерение", 2, "Бит и байт, единицы, формула N = 2^i, объём текста, скорость передачи, время передачи."),
@@ -181,6 +234,10 @@ IELTS_SPEAKING = [
 ]
 
 
+# Что нужно странице «По классам» о теме без контента: без path/weight/minutes, чтобы манифест не разбухал.
+PLANNED_FIELDS = ("id", "subject", "title", "summary", "kind", "order", "grade", "line", "quarter", "seq")
+
+
 def build():
     topics = []
 
@@ -190,6 +247,9 @@ def build():
                      "path": f"content/{subject}/{tid}.json", "weight": weight, "minutes": minutes, "summary": summary}
             if skill:
                 topic["skill"] = skill
+            if tid in MATH_CURRICULUM:
+                grade, line, quarter, seq = MATH_CURRICULUM[tid]
+                topic.update({"grade": grade, "line": line, "quarter": quarter, "seq": seq})
             topics.append(topic)
 
     add("history", HISTORY, minutes=25)
@@ -208,6 +268,36 @@ def build():
     return {"version": "2026-09-10", "app": "qadam", "subjects": SUBJECTS, "topics": topics}
 
 
+def localized_path(path, lang):
+    """content/math/x.json -> content/kk/math/x.json"""
+    return path.replace("content/", f"content/{lang}/", 1) if lang != "ru" else path
+
+
+def add_translations(topics, langs=("kk",)):
+    """Заголовок и описание темы на других языках берём из переведённых файлов.
+
+    Нужно для списков (главная, предмет, план): без этого при выборе KZ
+    подписи остались бы русскими, хотя сам урок открывается на казахском.
+    """
+    for topic in topics:
+        for lang in langs:
+            path = os.path.join(ROOT, localized_path(topic["path"], lang))
+            if not os.path.exists(path):
+                continue
+            try:
+                with open(path, encoding="utf-8") as f:
+                    data = json.load(f)
+            except (OSError, ValueError) as error:
+                print(f"  ! {path}: {error}")
+                continue
+            suffix = lang.capitalize()
+            if data.get("title"):
+                topic[f"title{suffix}"] = data["title"]
+            if data.get("summary"):
+                topic[f"summary{suffix}"] = data["summary"]
+    return topics
+
+
 def main():
     manifest = build()
     # В манифест попадают только темы, для которых уже есть файл контента:
@@ -217,8 +307,10 @@ def main():
     with open(os.path.join(ROOT, "scripts", "topic-order.json"), "w", encoding="utf-8") as f:
         json.dump(manifest["topics"], f, ensure_ascii=False, indent=2)
     print(f"готово тем: {len(ready)}, в плане: {len(planned)}")
-    manifest["topics"] = ready
-    manifest["planned"] = len(planned)
+    manifest["topics"] = add_translations(ready)
+    # Темы без файла тоже попадают в манифест (planned): страница «По классам» показывает
+    # полную дорожную карту, а остальной сайт работает только с topics.
+    manifest["planned"] = [{k: t[k] for k in PLANNED_FIELDS if k in t} for t in planned]
     os.makedirs(os.path.join(ROOT, "content"), exist_ok=True)
     for subject in SUBJECTS:
         os.makedirs(os.path.join(ROOT, "content", subject["id"]), exist_ok=True)

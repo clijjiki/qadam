@@ -1,6 +1,7 @@
 // План подготовки: выбор следующей темы, ежедневные миссии, недельный план, обратный отсчёт.
 
-import { allTopics, ieltsSubject, subject, topicWeight, topicsOf, ubtSubjects } from './content.js';
+import { allTopics, ieltsSubject, langOf, subject, topicTitle, topicWeight, topicsOf, ubtSubjects } from './content.js';
+import { normalizeGrade, sortByCurriculum, usesCurriculum } from './curriculum.js';
 import { MASTERED_THRESHOLD, masteryOf } from './mastery.js';
 import { dueIds } from './srs.js';
 import { addDaysKey, daysSince, daysUntil, fromDayKey, todayKey, toDayKey, weekStartKey } from './time.js';
@@ -18,27 +19,37 @@ export function topicPriority(state, topic, nowTs = Date.now()) {
   return score;
 }
 
-/** Следующие N тем ЕНТ для изучения (чередуем предметы). */
+/**
+ * Неосвоенные уроки предмета в порядке изучения.
+ * Математика на треке «school» идёт по школьной программе (свой класс → с 7-го → старшие),
+ * остальные предметы — по приоритету для ЕНТ.
+ */
+export function rankedTopics(state, subjectId, nowTs = Date.now()) {
+  const pool = topicsOf(subjectId, { kind: 'lesson' }).filter((t) => masteryOf(state, t.id, nowTs) < MASTERED_THRESHOLD);
+  if (usesCurriculum(state?.profile, subjectId)) return sortByCurriculum(pool, normalizeGrade(state?.profile?.grade));
+  return [...pool].sort((a, b) => topicPriority(state, b, nowTs) - topicPriority(state, a, nowTs));
+}
+
+/** Берём по одной теме из каждой очереди по кругу, пока не наберём count. */
+export function interleave(queues, count) {
+  const rounds = queues.reduce((max, q) => Math.max(max, q.length), 0);
+  const picked = [];
+  for (let round = 0; round < rounds && picked.length < count; round += 1) {
+    for (const queue of queues) {
+      if (queue[round] && picked.length < count) picked.push(queue[round]);
+    }
+  }
+  return picked;
+}
+
+/** Следующие N тем ЕНТ для изучения (чередуем предметы; порядок предметов — по приоритету их первой темы). */
 export function nextTopics(state, count = 3, { exclude = [], nowTs = Date.now() } = {}) {
   const excluded = new Set(exclude);
-  const candidates = ubtSubjects()
-    .flatMap((s) => topicsOf(s.id, { kind: 'lesson' }))
-    .filter((t) => !excluded.has(t.id) && masteryOf(state, t.id, nowTs) < MASTERED_THRESHOLD)
-    .map((t) => ({ topic: t, score: topicPriority(state, t, nowTs) }))
-    .sort((a, b) => b.score - a.score);
-  const picked = [];
-  const usedSubjects = new Set();
-  for (const c of candidates) {
-    if (picked.length >= count) break;
-    if (usedSubjects.has(c.topic.subject) && candidates.some((x) => !usedSubjects.has(x.topic.subject) && !picked.includes(x))) continue;
-    picked.push(c);
-    usedSubjects.add(c.topic.subject);
-  }
-  for (const c of candidates) {
-    if (picked.length >= count) break;
-    if (!picked.includes(c)) picked.push(c);
-  }
-  return picked.map((c) => c.topic);
+  const queues = ubtSubjects()
+    .map((s) => rankedTopics(state, s.id, nowTs).filter((t) => !excluded.has(t.id)))
+    .filter((q) => q.length > 0)
+    .sort((a, b) => topicPriority(state, b[0], nowTs) - topicPriority(state, a[0], nowTs));
+  return interleave(queues, count);
 }
 
 export function nextIeltsLesson(state, nowTs = Date.now()) {
@@ -78,7 +89,7 @@ export function dailyMissions(state, nowTs = Date.now()) {
     missions.push({
       id: 'topic',
       icon: '📘',
-      title: topicDone ? 'Тема дня пройдена' : `Тема: ${topic.title}`,
+      title: topicDone ? 'Тема дня пройдена' : `Тема: ${topicTitle(topic, langOf(state))}`,
       sub: `${subj?.name || topic.subject} · теория + практика`,
       href: `#/topic/${topic.id}`,
       minutes: 20,
@@ -140,10 +151,16 @@ const WEEK_TEMPLATE = [
   { day: 0, focus: [], ielts: 'speaking', rest: true },
 ];
 
+/** В школьном треке два дня математики в неделю — как в школе: один на алгебру, другой на геометрию. */
+export function pickForWeek(pool, usedLines) {
+  return pool.find((t) => t.line && !usedLines.has(t.line)) || pool[0] || null;
+}
+
 /** Недельный план: 7 дней с рекомендациями по темам. */
 export function weeklyPlan(state, { weekStart = weekStartKey(), nowTs = Date.now() } = {}) {
   const today = todayKey(new Date(nowTs));
   const used = new Set();
+  const usedLines = new Set();
   const days = [];
   const hoursPerWeek = Number(state.profile.hoursPerWeek) || 6;
   const minutesPerDay = Math.round((hoursPerWeek * 60) / 6);
@@ -152,13 +169,12 @@ export function weeklyPlan(state, { weekStart = weekStartKey(), nowTs = Date.now
     const template = WEEK_TEMPLATE.find((t) => t.day === fromDayKey(key).getDay());
     const items = [];
     for (const subjectId of template.focus) {
-      const pool = topicsOf(subjectId, { kind: 'lesson' })
-        .filter((t) => !used.has(t.id) && masteryOf(state, t.id, nowTs) < MASTERED_THRESHOLD)
-        .sort((a, b) => topicPriority(state, b, nowTs) - topicPriority(state, a, nowTs));
-      const pick = pool[0];
+      const pool = rankedTopics(state, subjectId, nowTs).filter((t) => !used.has(t.id));
+      const pick = usesCurriculum(state.profile, subjectId) ? pickForWeek(pool, usedLines) : pool[0];
       if (pick) {
         used.add(pick.id);
-        items.push({ kind: 'topic', topicId: pick.id, title: pick.title, subject: subjectId, href: `#/topic/${pick.id}` });
+        if (pick.line) usedLines.add(pick.line);
+        items.push({ kind: 'topic', topicId: pick.id, title: topicTitle(pick, langOf(state)), subject: subjectId, href: `#/topic/${pick.id}` });
       }
     }
     if (!template.rest) items.push({ kind: 'review', title: 'Повторение ошибок (10 мин)', href: '#/practice?mode=review' });

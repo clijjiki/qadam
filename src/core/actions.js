@@ -1,6 +1,7 @@
 // Действия, меняющие прогресс. Все они проходят через store.update и возвращают новое состояние.
 
 import { getState, setIn, update } from './store.js';
+import { normalizeLang } from './content.js';
 import { emptyTopicStats } from './mastery.js';
 import { GRADES, gradeFromCorrect, isGraduated, review } from './srs.js';
 import { newlyEarned } from './badges.js';
@@ -226,6 +227,13 @@ export function setProfile(patch) {
 
 export function setSettings(patch) {
   update((state) => ({ ...state, settings: { ...state.settings, ...patch } }));
+}
+
+/** Язык контента (уроки, вопросы, пробники). Возвращает применённый язык. */
+export function setContentLang(lang) {
+  const next = normalizeLang(lang);
+  update((state) => (state.settings.contentLang === next ? state : { ...state, settings: { ...state.settings, contentLang: next } }));
+  return next;
 }
 
 export function addStudyMinutes(minutes) {

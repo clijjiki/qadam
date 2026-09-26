@@ -1,7 +1,7 @@
 // Хаб IELTS: общий band, четыре навыка, словарь, грамматика, списки уроков и формат экзамена.
 
 import { h, pluralize } from '../../core/dom.js';
-import { ieltsSubject, topicsOf } from '../../core/content.js';
+import { ieltsSubject, langOf, topicTitle, topicsOf } from '../../core/content.js';
 import { MASTERED_THRESHOLD, ieltsReadiness, masteryOf } from '../../core/mastery.js';
 import { dueIds } from '../../core/srs.js';
 import { daysUntil, formatDate } from '../../core/time.js';
@@ -128,7 +128,7 @@ function grammarRow(state, topic, index) {
     'a',
     { class: 'list-item', href: `#/topic/${topic.id}` },
     h('span', { class: 'list-item__num' }, String(index + 1)),
-    h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, topic.title), h('div', { class: 'list-item__sub' }, topic.minutes ? `≈ ${topic.minutes} мин` : '')),
+    h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, topicTitle(topic, langOf(state))), h('div', { class: 'list-item__sub' }, topic.minutes ? `≈ ${topic.minutes} мин` : '')),
     h('div', { style: { minWidth: '160px' } }, masteryRow(mastery, { color: subjectColor('ielts') })),
   );
 }
@@ -164,7 +164,7 @@ function promptRow(state, topic, index, page) {
     'a',
     { class: 'list-item', href: `#/ielts/${page}?topic=${topic.id}` },
     h('span', { class: 'list-item__num' }, String(index + 1)),
-    h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, topic.title), h('div', { class: 'list-item__sub' }, sub)),
+    h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, topicTitle(topic, langOf(state))), h('div', { class: 'list-item__sub' }, sub)),
     h('span', { class: 'muted' }, '→'),
   );
 }

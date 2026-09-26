@@ -4,11 +4,13 @@ import { h, qsa, replaceChildren } from '../core/dom.js';
 import { getState, subscribe } from '../core/store.js';
 import { levelInfo, streakInfo } from '../core/stats.js';
 import { icon } from './icons.js';
+import { langSwitch } from './lang-switch.js';
 
 const NAV = [
   { key: 'home', href: '#/', icon: 'home', label: 'Сегодня' },
   { section: 'ЕНТ' },
   { key: 'ubt', href: '#/ubt', icon: 'cap', label: 'Предметы' },
+  { key: 'school', href: '#/curriculum', icon: 'book', label: 'По классам' },
   { key: 'review', href: '#/practice?mode=review', icon: 'repeat', label: 'Повторение' },
   { key: 'exam', href: '#/exam', icon: 'exam', label: 'Пробники' },
   { section: 'IELTS' },
@@ -28,7 +30,7 @@ const TABS = [
   { key: 'more', href: '#/more', icon: 'more', label: 'Ещё' },
 ];
 
-const MORE_KEYS = new Set(['more', 'plan', 'stats', 'settings', 'exam', 'vocab']);
+const MORE_KEYS = new Set(['more', 'plan', 'stats', 'settings', 'exam', 'vocab', 'school']);
 
 function brand() {
   return h('a', { class: 'brand', href: '#/' }, h('div', { class: 'brand__logo' }, 'Q'), h('div', {}, h('div', { class: 'brand__name' }, 'Qadam'), h('div', { class: 'brand__sub' }, 'ЕНТ · IELTS')));
@@ -65,10 +67,11 @@ export function createLayout(root) {
     'aside',
     { class: 'sidebar' },
     brand(),
+    langSwitch({ withIcon: true, label: 'Язык' }),
     h('nav', { class: 'nav', 'aria-label': 'Главное меню' }, NAV.map((item) => (item.section ? h('div', { class: 'nav__section' }, item.section) : navLink(item)))),
     sidebarUser,
   );
-  const topbar = h('header', { class: 'topbar' }, brand(), topStats);
+  const topbar = h('header', { class: 'topbar' }, brand(), h('div', { class: 'row', style: { gap: '8px' } }, langSwitch(), topStats));
   const tabbar = h('nav', { class: 'tabbar', 'aria-label': 'Вкладки' }, TABS.map((tab) => h('a', { href: tab.href, dataset: { key: tab.key } }, h('span', { class: 'ico' }, icon(tab.icon, { size: 20 })), tab.label)));
   const main = h('main', { class: 'main' }, page);
   const shell = h('div', { class: 'shell' }, sidebar, h('div', { class: 'main-col' }, topbar, main), tabbar);

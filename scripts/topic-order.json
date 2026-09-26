@@ -393,7 +393,11 @@
     "path": "content/math/math-radicals-numeric-expressions.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Свойства корней n-й степени, вынесение из-под корня, сравнение чисел, действия с дробями и десятичными дробями, порядок действий."
+    "summary": "Свойства корней n-й степени, вынесение из-под корня, сравнение чисел, действия с дробями и десятичными дробями, порядок действий.",
+    "grade": 8,
+    "line": "algebra",
+    "quarter": 1,
+    "seq": 1
   },
   {
     "id": "math-powers-exponents",
@@ -404,7 +408,11 @@
     "path": "content/math/math-powers-exponents.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Свойства степеней, отрицательный и дробный показатель, стандартный вид числа, упрощение степенных выражений."
+    "summary": "Свойства степеней, отрицательный и дробный показатель, стандартный вид числа, упрощение степенных выражений.",
+    "grade": 7,
+    "line": "algebra",
+    "quarter": 1,
+    "seq": 1
   },
   {
     "id": "math-algebraic-expressions",
@@ -415,7 +423,11 @@
     "path": "content/math/math-algebraic-expressions.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "ФСУ, разложение на множители, сокращение алгебраических дробей, упрощение рациональных и иррациональных выражений."
+    "summary": "ФСУ, разложение на множители, сокращение алгебраических дробей, упрощение рациональных и иррациональных выражений.",
+    "grade": 7,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 1
   },
   {
     "id": "math-trigonometry-basics",
@@ -426,7 +438,11 @@
     "path": "content/math/math-trigonometry-basics.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Определения, знаки по четвертям, основные тождества, формулы приведения, суммы и двойного угла, значения табличных углов."
+    "summary": "Определения, знаки по четвертям, основные тождества, формулы приведения, суммы и двойного угла, значения табличных углов.",
+    "grade": 9,
+    "line": "algebra",
+    "quarter": 3,
+    "seq": 1
   },
   {
     "id": "math-linear-quadratic-rational-equations",
@@ -437,7 +453,11 @@
     "path": "content/math/math-linear-quadratic-rational-equations.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Дискриминант, теорема Виета, неполные квадратные, замена переменной, ОДЗ дробно-рациональных, уравнения с модулем."
+    "summary": "Дискриминант, теорема Виета, неполные квадратные, замена переменной, ОДЗ дробно-рациональных, уравнения с модулем.",
+    "grade": 8,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 1
   },
   {
     "id": "math-irrational-equations",
@@ -448,7 +468,11 @@
     "path": "content/math/math-irrational-equations.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Возведение в степень, проверка корней, ОДЗ, замена переменной."
+    "summary": "Возведение в степень, проверка корней, ОДЗ, замена переменной.",
+    "grade": 11,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 1
   },
   {
     "id": "math-trigonometric-equations",
@@ -459,7 +483,11 @@
     "path": "content/math/math-trigonometric-equations.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Простейшие уравнения и их серии, отбор корней, сведение к квадратному, однородные уравнения."
+    "summary": "Простейшие уравнения и их серии, отбор корней, сведение к квадратному, однородные уравнения.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 1
   },
   {
     "id": "math-exponential-equations",
@@ -470,7 +498,11 @@
     "path": "content/math/math-exponential-equations.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Приведение к одному основанию, вынесение множителя, замена переменной, показательно-степенные уравнения."
+    "summary": "Приведение к одному основанию, вынесение множителя, замена переменной, показательно-степенные уравнения.",
+    "grade": 11,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 2
   },
   {
     "id": "math-logarithmic-equations",
@@ -481,7 +513,11 @@
     "path": "content/math/math-logarithmic-equations.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Определение и свойства логарифмов, переход к новому основанию, ОДЗ, замена переменной."
+    "summary": "Определение и свойства логарифмов, переход к новому основанию, ОДЗ, замена переменной.",
+    "grade": 11,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 3
   },
   {
     "id": "math-linear-systems",
@@ -492,7 +528,11 @@
     "path": "content/math/math-linear-systems.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Методы подстановки и сложения, графический метод, число решений, задачи на составление систем."
+    "summary": "Методы подстановки и сложения, графический метод, число решений, задачи на составление систем.",
+    "grade": 7,
+    "line": "algebra",
+    "quarter": 3,
+    "seq": 1
   },
   {
     "id": "math-nonlinear-systems",
@@ -503,7 +543,11 @@
     "path": "content/math/math-nonlinear-systems.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Системы с квадратными, показательными, логарифмическими, иррациональными и тригонометрическими уравнениями; симметрические системы."
+    "summary": "Системы с квадратными, показательными, логарифмическими, иррациональными и тригонометрическими уравнениями; симметрические системы.",
+    "grade": 9,
+    "line": "algebra",
+    "quarter": 1,
+    "seq": 1
   },
   {
     "id": "math-linear-quadratic-rational-inequalities",
@@ -514,18 +558,26 @@
     "path": "content/math/math-linear-quadratic-rational-inequalities.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Метод интервалов, неравенства с модулем, ОДЗ, целые решения на промежутке."
+    "summary": "Метод интервалов, неравенства с модулем, ОДЗ, целые решения на промежутке.",
+    "grade": 8,
+    "line": "algebra",
+    "quarter": 3,
+    "seq": 1
   },
   {
-    "id": "math-exp-log-irrational-trig-inequalities",
+    "id": "math-exp-log-irrational-inequalities",
     "subject": "math",
-    "title": "Показательные, логарифмические, иррациональные, тригонометрические неравенства",
+    "title": "Показательные, логарифмические и иррациональные неравенства",
     "kind": "lesson",
     "order": 13,
-    "path": "content/math/math-exp-log-irrational-trig-inequalities.json",
+    "path": "content/math/math-exp-log-irrational-inequalities.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Монотонность функций, ОДЗ, равносильные переходы, простейшие тригонометрические неравенства."
+    "summary": "Монотонность функций, ОДЗ, равносильные переходы, метод рационализации.",
+    "grade": 11,
+    "line": "algebra",
+    "quarter": 3,
+    "seq": 1
   },
   {
     "id": "math-systems-of-inequalities",
@@ -536,7 +588,11 @@
     "path": "content/math/math-systems-of-inequalities.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Пересечение решений, системы с модулем, дробно-рациональные, показательные и логарифмические системы неравенств."
+    "summary": "Пересечение решений, системы с модулем, дробно-рациональные, показательные и логарифмические системы неравенств.",
+    "grade": 9,
+    "line": "algebra",
+    "quarter": 1,
+    "seq": 2
   },
   {
     "id": "math-arithmetic-progression",
@@ -547,7 +603,11 @@
     "path": "content/math/math-arithmetic-progression.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Формула n-го члена, сумма n членов, характеристическое свойство, задачи на составление."
+    "summary": "Формула n-го члена, сумма n членов, характеристическое свойство, задачи на составление.",
+    "grade": 9,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 1
   },
   {
     "id": "math-geometric-progression",
@@ -558,7 +618,11 @@
     "path": "content/math/math-geometric-progression.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Формула n-го члена, сумма, бесконечно убывающая прогрессия, смешанные задачи с арифметической прогрессией."
+    "summary": "Формула n-го члена, сумма, бесконечно убывающая прогрессия, смешанные задачи с арифметической прогрессией.",
+    "grade": 9,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 2
   },
   {
     "id": "math-functions-and-graphs",
@@ -569,7 +633,11 @@
     "path": "content/math/math-functions-and-graphs.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Область определения и значений, чётность, монотонность, квадратичная функция, графики с модулем, преобразования графиков."
+    "summary": "Область определения и значений, чётность, монотонность, квадратичная функция, графики с модулем, преобразования графиков.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 1,
+    "seq": 1
   },
   {
     "id": "math-derivative",
@@ -580,7 +648,11 @@
     "path": "content/math/math-derivative.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Таблица производных, правила дифференцирования, производная сложной функции, физический смысл."
+    "summary": "Таблица производных, правила дифференцирования, производная сложной функции, физический смысл.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 3,
+    "seq": 3
   },
   {
     "id": "math-derivative-applications",
@@ -591,7 +663,11 @@
     "path": "content/math/math-derivative-applications.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Касательная, монотонность, экстремумы, наибольшее и наименьшее значение на отрезке, геометрический смысл."
+    "summary": "Касательная, монотонность, экстремумы, наибольшее и наименьшее значение на отрезке, геометрический смысл.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 4,
+    "seq": 1
   },
   {
     "id": "math-antiderivative-integral",
@@ -602,7 +678,11 @@
     "path": "content/math/math-antiderivative-integral.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Таблица первообразных, правила, первообразная, график которой проходит через точку."
+    "summary": "Таблица первообразных, правила, первообразная, график которой проходит через точку.",
+    "grade": 11,
+    "line": "algebra",
+    "quarter": 1,
+    "seq": 1
   },
   {
     "id": "math-definite-integral-area",
@@ -613,7 +693,11 @@
     "path": "content/math/math-definite-integral-area.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Формула Ньютона–Лейбница, площадь криволинейной трапеции и фигуры между графиками."
+    "summary": "Формула Ньютона–Лейбница, площадь криволинейной трапеции и фигуры между графиками.",
+    "grade": 11,
+    "line": "algebra",
+    "quarter": 1,
+    "seq": 2
   },
   {
     "id": "math-word-problems-modeling",
@@ -624,7 +708,11 @@
     "path": "content/math/math-word-problems-modeling.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Проценты, движение, работа, смеси и сплавы, числовые зависимости, задачи на прогрессии в жизни."
+    "summary": "Проценты, движение, работа, смеси и сплавы, числовые зависимости, задачи на прогрессии в жизни.",
+    "grade": 8,
+    "line": "algebra",
+    "quarter": 4,
+    "seq": 1
   },
   {
     "id": "math-combinatorics-probability",
@@ -635,7 +723,11 @@
     "path": "content/math/math-combinatorics-probability.json",
     "weight": 0,
     "minutes": 30,
-    "summary": "Перестановки, размещения, сочетания, бином Ньютона, классическая вероятность, среднее и дисперсия — встречаются в демоверсиях."
+    "summary": "Перестановки, размещения, сочетания, бином Ньютона, классическая вероятность, среднее и дисперсия — встречаются в демоверсиях.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 3
   },
   {
     "id": "math-triangles",
@@ -646,7 +738,11 @@
     "path": "content/math/math-triangles.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Метрические соотношения, теоремы синусов и косинусов, площадь, вписанная и описанная окружности, медианы и биссектрисы."
+    "summary": "Метрические соотношения, теоремы синусов и косинусов, площадь, вписанная и описанная окружности, медианы и биссектрисы.",
+    "grade": 7,
+    "line": "geometry",
+    "quarter": 2,
+    "seq": 1
   },
   {
     "id": "math-quadrilaterals-polygons-circle",
@@ -657,7 +753,11 @@
     "path": "content/math/math-quadrilaterals-polygons-circle.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Параллелограмм, трапеция, ромб, правильные многоугольники, окружность и её элементы, вписанные и описанные четырёхугольники."
+    "summary": "Параллелограмм, трапеция, ромб, правильные многоугольники, окружность и её элементы, вписанные и описанные четырёхугольники.",
+    "grade": 8,
+    "line": "geometry",
+    "quarter": 1,
+    "seq": 1
   },
   {
     "id": "math-plane-vectors-transformations",
@@ -668,7 +768,11 @@
     "path": "content/math/math-plane-vectors-transformations.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Координаты вектора, длина, скалярное произведение, угол между векторами, уравнение прямой и окружности, преобразования."
+    "summary": "Координаты вектора, длина, скалярное произведение, угол между векторами, уравнение прямой и окружности, преобразования.",
+    "grade": 9,
+    "line": "geometry",
+    "quarter": 1,
+    "seq": 1
   },
   {
     "id": "math-polyhedra",
@@ -679,7 +783,11 @@
     "path": "content/math/math-polyhedra.json",
     "weight": 2,
     "minutes": 30,
-    "summary": "Сечения, площади поверхности, объёмы, правильные многогранники, углы между прямыми и плоскостями."
+    "summary": "Сечения, площади поверхности, объёмы, правильные многогранники, углы между прямыми и плоскостями.",
+    "grade": 11,
+    "line": "geometry",
+    "quarter": 1,
+    "seq": 1
   },
   {
     "id": "math-solids-of-revolution",
@@ -690,7 +798,11 @@
     "path": "content/math/math-solids-of-revolution.json",
     "weight": 3,
     "minutes": 30,
-    "summary": "Площади и объёмы, осевые сечения, вписанные и описанные тела — основа контекстных заданий."
+    "summary": "Площади и объёмы, осевые сечения, вписанные и описанные тела — основа контекстных заданий.",
+    "grade": 11,
+    "line": "geometry",
+    "quarter": 2,
+    "seq": 1
   },
   {
     "id": "math-space-vectors-coordinates",
@@ -701,14 +813,123 @@
     "path": "content/math/math-space-vectors-coordinates.json",
     "weight": 1,
     "minutes": 30,
-    "summary": "Координаты точки и вектора в пространстве, длина, скалярное произведение, уравнение плоскости и сферы."
+    "summary": "Координаты точки и вектора в пространстве, длина, скалярное произведение, уравнение плоскости и сферы.",
+    "grade": 10,
+    "line": "geometry",
+    "quarter": 3,
+    "seq": 1
+  },
+  {
+    "id": "math-inverse-trig-functions",
+    "subject": "math",
+    "title": "Обратные тригонометрические функции",
+    "kind": "lesson",
+    "order": 30,
+    "path": "content/math/math-inverse-trig-functions.json",
+    "weight": 1,
+    "minutes": 30,
+    "summary": "arcsin, arccos, arctg, arcctg: определения, области значений, свойства, вычисление значений и упрощение выражений.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 1,
+    "seq": 2
+  },
+  {
+    "id": "math-trigonometric-inequalities",
+    "subject": "math",
+    "title": "Тригонометрические неравенства",
+    "kind": "lesson",
+    "order": 31,
+    "path": "content/math/math-trigonometric-inequalities.json",
+    "weight": 1,
+    "minutes": 30,
+    "summary": "Простейшие неравенства на единичной окружности, запись серий решений, сведение к простейшим.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 2,
+    "seq": 2
+  },
+  {
+    "id": "math-polynomials",
+    "subject": "math",
+    "title": "Многочлены: деление, теорема Безу, схема Горнера",
+    "kind": "lesson",
+    "order": 32,
+    "path": "content/math/math-polynomials.json",
+    "weight": 1,
+    "minutes": 30,
+    "summary": "Деление многочленов уголком, теорема Безу, схема Горнера, рациональные корни, разложение на множители.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 3,
+    "seq": 1
+  },
+  {
+    "id": "math-limits-continuity",
+    "subject": "math",
+    "title": "Предел функции и непрерывность",
+    "kind": "lesson",
+    "order": 33,
+    "path": "content/math/math-limits-continuity.json",
+    "weight": 0,
+    "minutes": 30,
+    "summary": "Предел последовательности и функции, замечательные пределы, непрерывность, асимптоты — школьная база перед производной.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 3,
+    "seq": 2
+  },
+  {
+    "id": "math-random-variables",
+    "subject": "math",
+    "title": "Случайные величины и их числовые характеристики",
+    "kind": "lesson",
+    "order": 34,
+    "path": "content/math/math-random-variables.json",
+    "weight": 0,
+    "minutes": 30,
+    "summary": "Дискретная случайная величина, закон распределения, математическое ожидание, дисперсия, среднее квадратическое отклонение.",
+    "grade": 10,
+    "line": "algebra",
+    "quarter": 4,
+    "seq": 2
+  },
+  {
+    "id": "math-stereometry-axioms-parallel",
+    "subject": "math",
+    "title": "Аксиомы стереометрии. Параллельность прямых и плоскостей",
+    "kind": "lesson",
+    "order": 35,
+    "path": "content/math/math-stereometry-axioms-parallel.json",
+    "weight": 1,
+    "minutes": 30,
+    "summary": "Аксиомы и следствия, взаимное расположение прямых, параллельность прямой и плоскости, параллельные плоскости, скрещивающиеся прямые.",
+    "grade": 10,
+    "line": "geometry",
+    "quarter": 1,
+    "seq": 1
+  },
+  {
+    "id": "math-stereometry-perpendicular",
+    "subject": "math",
+    "title": "Перпендикулярность прямых и плоскостей",
+    "kind": "lesson",
+    "order": 36,
+    "path": "content/math/math-stereometry-perpendicular.json",
+    "weight": 1,
+    "minutes": 30,
+    "summary": "Признак перпендикулярности, теорема о трёх перпендикулярах, расстояния, угол между прямой и плоскостью, двугранный угол.",
+    "grade": 10,
+    "line": "geometry",
+    "quarter": 2,
+    "seq": 1
   },
   {
     "id": "math-exam-strategy",
     "subject": "math",
     "title": "Форматы заданий ЕНТ по математике и стратегия",
     "kind": "lesson",
-    "order": 30,
+    "order": 37,
     "path": "content/math/math-exam-strategy.json",
     "weight": 0,
     "minutes": 30,

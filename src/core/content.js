@@ -4,8 +4,10 @@
 
 export const CONTENT_LANGS = [
   { id: 'ru', name: 'Русский', short: 'RU' },
-  { id: 'kk', name: 'Қазақша', short: 'KK' },
+  { id: 'kk', name: 'Қазақша', short: 'KZ' },
 ];
+
+export const DEFAULT_LANG = 'ru';
 
 let manifest = null;
 const topicIndex = new Map();
@@ -63,17 +65,68 @@ export function allTopics() {
   return getManifest().topics;
 }
 
+/** Темы, для которых контента ещё нет (build_manifest.py кладёт их в planned). Сайт их не открывает. */
+export function plannedTopics() {
+  const planned = getManifest().planned;
+  return Array.isArray(planned) ? planned : [];
+}
+
+/**
+ * Готовые и запланированные уроки предмета с флагом ready — для дорожной карты по классам.
+ * Готовые темы совпадают с topicsOf(), остальной сайт про planned не знает.
+ */
+export function curriculumTopicsOf(subjectId) {
+  const ready = topicsOf(subjectId, { kind: 'lesson' }).map((t) => ({ ...t, ready: true }));
+  const planned = plannedTopics()
+    .filter((t) => t.subject === subjectId && (t.kind || 'lesson') === 'lesson')
+    .map((t) => ({ ...t, ready: false }));
+  return [...ready, ...planned].sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+}
+
 export function isContentLang(lang) {
   return CONTENT_LANGS.some((l) => l.id === lang);
 }
 
 export function normalizeLang(lang) {
-  return isContentLang(lang) ? lang : 'ru';
+  return isContentLang(lang) ? lang : DEFAULT_LANG;
 }
 
 export function langName(lang) {
   const found = CONTENT_LANGS.find((l) => l.id === normalizeLang(lang));
   return found ? found.name : 'Русский';
+}
+
+export function langShort(lang) {
+  const found = CONTENT_LANGS.find((l) => l.id === normalizeLang(lang));
+  return found ? found.short : 'RU';
+}
+
+/** Язык контента, выбранный пользователем в настройках. */
+export function langOf(state) {
+  return normalizeLang(state?.settings?.contentLang);
+}
+
+/**
+ * Поле темы из манифеста на выбранном языке: titleKk / summaryKk кладёт build_manifest.py
+ * рядом с русским значением. Нет перевода — отдаём русский.
+ */
+function localizedField(meta, field, lang) {
+  const language = normalizeLang(lang);
+  if (language === DEFAULT_LANG) return meta[field];
+  const suffix = language.charAt(0).toUpperCase() + language.slice(1);
+  return meta[`${field}${suffix}`] || meta[field];
+}
+
+/** Заголовок темы для списков и навигации на выбранном языке. */
+export function topicTitle(meta, lang) {
+  if (!meta) return '';
+  return localizedField(meta, 'title', lang) || meta.id;
+}
+
+/** Краткое описание темы на выбранном языке. */
+export function topicSummary(meta, lang) {
+  if (!meta) return '';
+  return localizedField(meta, 'summary', lang) || '';
 }
 
 /** Путь к файлу темы на нужном языке: content/kk/<subject>/<id>.json для казахского. */
@@ -101,7 +154,7 @@ async function fetchTopicData(meta, lang) {
   }
 }
 
-export async function loadTopic(id, requested = 'ru') {
+export async function loadTopic(id, requested = DEFAULT_LANG) {
   const lang = normalizeLang(requested);
   const key = `${lang}:${id}`;
   if (topicCache.has(key)) return topicCache.get(key);
@@ -123,7 +176,7 @@ export async function loadTopic(id, requested = 'ru') {
   return promise;
 }
 
-export async function loadTopics(ids, lang = 'ru') {
+export async function loadTopics(ids, lang = DEFAULT_LANG) {
   return Promise.all(ids.map((id) => loadTopic(id, lang)));
 }
 

@@ -1,9 +1,10 @@
 // Настройки: профиль, оформление, данные (экспорт/импорт/сброс) и сведения о сайте.
 
 import { h, pluralize } from '../core/dom.js';
-import { getManifest } from '../core/content.js';
+import { CONTENT_LANGS, getManifest, langOf } from '../core/content.js';
+import { GRADES, TRACKS, normalizeGrade, normalizeTrack } from '../core/curriculum.js';
 import { exportJSON, getState, importJSON, resetState } from '../core/store.js';
-import { setProfile, setSettings } from '../core/actions.js';
+import { setContentLang, setProfile, setSettings } from '../core/actions.js';
 import { todayKey } from '../core/time.js';
 import { pageHead } from '../ui/components.js';
 import { confirmDialog } from '../ui/modal.js';
@@ -22,10 +23,7 @@ const THEMES = [
   ['light', 'Светлая'],
   ['dark', 'Тёмная'],
 ];
-const EXAM_LANGS = [
-  ['ru', 'Русский'],
-  ['kk', 'Қазақша (казахский)'],
-];
+const CONTENT_LANG_OPTIONS = CONTENT_LANGS.map((l) => [l.id, l.id === 'kk' ? `${l.name} (казахский)` : l.name]);
 const FONT_SCALES = [
   ['0.9', 'Мелкий'],
   ['1', 'Обычный'],
@@ -181,6 +179,24 @@ function profileRowsB(profile, rerender) {
       }),
     ),
     settingRow(
+      'Класс',
+      'Математика в плане идёт сначала по программе твоего класса, потом с 7-го.',
+      selectField({
+        options: GRADES.map((g) => [String(g), `${g} класс`]),
+        value: normalizeGrade(profile.grade),
+        onCommit: (v) => saveProfile({ grade: normalizeGrade(v) }, `Класс: ${normalizeGrade(v)}`, rerender),
+      }),
+    ),
+    settingRow(
+      'Порядок тем по математике',
+      'По классам — школьная программа, БЖБ и ТЖБ. По весу — сначала темы, которые дают больше баллов на ЕНТ.',
+      selectField({
+        options: TRACKS.map((t) => [t.id, t.name]),
+        value: normalizeTrack(profile.track),
+        onCommit: (v) => saveProfile({ track: normalizeTrack(v) }, 'Порядок тем обновлён', rerender),
+      }),
+    ),
+    settingRow(
       'Смена в школе',
       'Влияет на время занятий в плане.',
       selectField({
@@ -229,9 +245,17 @@ function appearanceCard(state, rerender) {
       }),
     ),
     settingRow(
-      'Язык заданий пробника',
-      'ЕНТ можно сдавать на казахском или русском. Интерфейс сайта остаётся русским.',
-      selectField({ options: EXAM_LANGS, value: settings.examLang || 'ru', onCommit: (v) => saveSettings({ examLang: v }, v === 'kk' ? 'Пробник будет на казахском' : 'Пробник будет на русском', rerender) }),
+      'Язык материалов',
+      'Уроки, вопросы и пробники. Интерфейс сайта остаётся русским. Тот же переключатель есть в шапке сайта.',
+      selectField({
+        options: CONTENT_LANG_OPTIONS,
+        value: langOf(state),
+        onCommit: (v) => {
+          const applied = setContentLang(v);
+          toast(applied === 'kk' ? 'Материалы на казахском' : 'Материалы на русском', { tone: 'success' });
+          rerender();
+        },
+      }),
     ),
     settingRow('Перемешивать варианты', 'Чтобы не запоминать «правильная — буква B».', checkboxField({ checked: settings.shuffleOptions, label: 'Включено', onCommit: (v) => saveSettings({ shuffleOptions: !!v }, v ? 'Варианты перемешиваются' : 'Варианты по порядку', rerender) })),
     settingRow('Показывать таймер', 'Секундомер в практике и пробниках.', checkboxField({ checked: settings.showTimer, label: 'Включено', onCommit: (v) => saveSettings({ showTimer: !!v }, v ? 'Таймер включён' : 'Таймер скрыт', rerender) })),

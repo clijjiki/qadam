@@ -1,12 +1,13 @@
 // Страница темы: теория, карточки, статистика и переход к практике.
 
 import { h, pluralize } from '../core/dom.js';
-import { loadTopic, subject, topicMeta, topicWeight, topicsOf } from '../core/content.js';
+import { langOf, loadTopic, subject, topicMeta, topicTitle, topicWeight, topicsOf } from '../core/content.js';
 import { masteryLevel, masteryOf } from '../core/mastery.js';
 import { renderMarkdown } from '../core/markdown.js';
 import { recordTheory } from '../core/actions.js';
 import { formatDate } from '../core/time.js';
 import { emptyState, pageHead, ring, subjectColor } from '../ui/components.js';
+import { translationNote } from '../ui/lang-switch.js';
 
 const SKILL_LABEL = { reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', grammar: 'Grammar', vocab: 'Vocabulary' };
 
@@ -88,7 +89,8 @@ function tabs(topic, meta, active, setActive) {
 export async function render({ params, state }) {
   const meta = topicMeta(params.topicId);
   if (!meta) return emptyState({ icon: '🧭', title: 'Тема не найдена', action: { label: 'К предметам', href: '#/ubt' } });
-  const topic = await loadTopic(meta.id);
+  const lang = langOf(state);
+  const topic = await loadTopic(meta.id, lang);
   const subj = subject(meta.subject);
   if (topic.theory.length) recordTheory(meta.id);
   const { prev, next } = neighbours(meta);
@@ -110,8 +112,9 @@ export async function render({ params, state }) {
       sub: topic.summary || '',
       crumbs: [{ label: subj?.kind === 'ielts' ? 'IELTS' : 'ЕНТ', href: subj?.kind === 'ielts' ? '#/ielts' : '#/ubt' }, { label: subj?.name || meta.subject, href: subj?.kind === 'ielts' ? '#/ielts' : `#/subject/${meta.subject}` }],
     }),
+    translationNote(topic),
     h('div', { class: 'row' }, skill, meta.minutes ? h('span', { class: 'badge' }, `≈ ${meta.minutes} мин`) : null, ...practiceLinks(meta, topic)),
     h('div', { class: 'grid', style: { gridTemplateColumns: 'minmax(0, 2fr) minmax(240px, 1fr)' } }, h('div', { class: 'stack' }, tabBar, body), statsCard(state, meta)),
-    h('div', { class: 'row row--between' }, prev ? h('a', { class: 'btn', href: `#/topic/${prev.id}` }, `← ${prev.title}`) : h('span'), next ? h('a', { class: 'btn', href: `#/topic/${next.id}` }, `${next.title} →`) : h('span')),
+    h('div', { class: 'row row--between' }, prev ? h('a', { class: 'btn', href: `#/topic/${prev.id}` }, `← ${topicTitle(prev, lang)}`) : h('span'), next ? h('a', { class: 'btn', href: `#/topic/${next.id}` }, `${topicTitle(next, lang)} →`) : h('span')),
   );
 }

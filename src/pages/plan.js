@@ -1,16 +1,19 @@
 // План подготовки: обратный отсчёт и фазы, недельная сетка, настройки темпа, «что дальше».
 
 import { append, h, pluralize } from '../core/dom.js';
-import { subject } from '../core/content.js';
+import { curriculumTopicsOf, langOf, subject, topicTitle } from '../core/content.js';
+import { CURRICULUM_SUBJECTS, normalizeGrade, trackPhases, usesCurriculum } from '../core/curriculum.js';
 import { getState } from '../core/store.js';
 import { setProfile } from '../core/actions.js';
 import { masteryOf } from '../core/mastery.js';
 import { countdown, nextTopics, weeklyPlan } from '../core/plan.js';
 import { formatDate, toDayKey, weekdayShort } from '../core/time.js';
 import { emptyState, masteryRow, pageHead, subjectBadge, subjectColor } from '../ui/components.js';
+import { activePhaseIndex, phaseRow, trackFields } from '../ui/curriculum-ui.js';
 import { toast } from '../ui/toast.js';
 
 const HOURS_OPTIONS = [4, 6, 8, 10, 12];
+const CURRICULUM_SUBJECT = CURRICULUM_SUBJECTS[0];
 const KIND_ICONS = { topic: '📘', review: '🔁', ielts: '🇬🇧', exam: '📝' };
 
 const PHASES = [
@@ -169,7 +172,24 @@ function settingsCard(state, apply) {
     { class: 'card stack' },
     h('h2', { style: { margin: 0 } }, 'Настройки плана'),
     h('div', { class: 'field' }, h('label', {}, 'Сколько часов в неделю готов заниматься'), hoursChips(state, apply), h('div', { class: 'help' }, 'План разложит минуты по дням: шесть учебных дней и лёгкое воскресенье.')),
+    trackFields(state, apply),
     h('div', { class: 'grid grid--2' }, dateField('Дата ЕНТ', 'examDate', state.profile.examDate, apply), dateField('Дата IELTS', 'ieltsDate', state.profile.ieltsDate, apply)),
+  );
+}
+
+// ---------- трек по математике ----------
+
+function trackCard(state) {
+  if (!usesCurriculum(state.profile, CURRICULUM_SUBJECT)) return null;
+  const grade = normalizeGrade(state.profile.grade);
+  const phases = trackPhases(curriculumTopicsOf(CURRICULUM_SUBJECT), grade);
+  const activeIndex = activePhaseIndex(state, phases, CURRICULUM_SUBJECT);
+  return h(
+    'div',
+    { class: 'card stack' },
+    h('div', { class: 'row row--between' }, h('h2', { style: { margin: 0 } }, `Математика: ${grade} класс, потом с 7-го`), h('a', { href: '#/curriculum' }, 'Программа по классам →')),
+    h('p', { class: 'muted small', style: { margin: 0 } }, 'Сначала темы своего класса — то, что спросят на БЖБ и ТЖБ. Потом фундамент с 7 класса по порядку, затем старшие классы.'),
+    h('div', { class: 'list' }, phases.map((p, i) => phaseRow(state, p, i, { active: i === activeIndex, subjectId: CURRICULUM_SUBJECT }))),
   );
 }
 
@@ -185,7 +205,7 @@ function nextRow(state, topic, index) {
     h(
       'div',
       { class: 'list-item__main' },
-      h('div', { class: 'list-item__title' }, topic.title),
+      h('div', { class: 'list-item__title' }, topicTitle(topic, langOf(state))),
       h('div', { class: 'list-item__sub row', style: { gap: '8px' } }, subjectBadge(topic.subject), h('span', {}, `${subj?.name || topic.subject}${topic.minutes ? ` · ≈ ${topic.minutes} мин` : ''}`)),
       masteryRow(mastery, { color: subjectColor(topic.subject) }),
     ),
@@ -201,13 +221,14 @@ function nextCard(state) {
     'div',
     { class: 'card stack' },
     h('div', { class: 'row row--between' }, h('h2', { style: { margin: 0 } }, 'Что дальше'), h('a', { href: '#/ubt' }, 'Все темы →')),
-    h('p', { class: 'muted small', style: { margin: 0 } }, 'Шесть тем с самым большим эффектом для балла. Предметы чередуются.'),
+    h('p', { class: 'muted small', style: { margin: 0 } }, usesCurriculum(state.profile, CURRICULUM_SUBJECT) ? 'Математика — по школьной программе (свой класс, потом с 7-го), остальные предметы — по эффекту для балла. Предметы чередуются.' : 'Шесть тем с самым большим эффектом для балла. Предметы чередуются.'),
     h('div', { class: 'list' }, topics.map((t, i) => nextRow(state, t, i))),
   );
 }
 
 function howCard() {
   const bullets = [
+    'Математика идёт по школьной программе: сначала темы своего класса (к БЖБ и ТЖБ), потом фундамент с 7 класса, затем старшие классы. Два дня математики в неделю — один на алгебру, другой на геометрию. В настройках плана можно переключить на «по весу на ЕНТ».',
     'Приоритет темы = её вес на ЕНТ × (1 − мастерство) × коэффициент профильного предмета. Сначала — то, что даст больше баллов.',
     'Предметы чередуются по дням: мозгу проще запоминать, когда темы не сливаются.',
     'Повторение ошибок — каждый день по 10 минут: интервальные повторения (SRS) закрепляют слабые вопросы.',
@@ -238,7 +259,7 @@ export async function render(ctx) {
     try {
       setProfile(patch);
       if (message) toast(message, { tone: 'success' });
-      root.replaceChildren(await render({ ...ctx, state: getState() }));
+      root.replaceChildren(...(await render({ ...ctx, state: getState() })).childNodes);
     } catch (error) {
       console.error('Не удалось сохранить настройки плана:', error);
       toast('Не удалось сохранить. Попробуй ещё раз.', { tone: 'danger' });
@@ -249,6 +270,7 @@ export async function render(ctx) {
     noExamDateAlert(cd),
     countdownCard(cd),
     weekCard(state),
+    trackCard(state),
     h('div', { class: 'grid grid--2' }, settingsCard(state, apply), nextCard(state)),
     howCard(),
   ]);

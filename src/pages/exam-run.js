@@ -4,7 +4,7 @@ import { formatDuration, h, replaceChildren } from '../core/dom.js';
 import { buildExam, clearInProgress, loadInProgress, saveInProgress, saveLastResult } from '../core/exam.js';
 import { recordExam } from '../core/actions.js';
 import { getState } from '../core/store.js';
-import { langName } from '../core/content.js';
+import { langName, langOf } from '../core/content.js';
 import { badgeById } from '../core/badges.js';
 import { emptySelection, isAnswered, scoreQuestion } from '../core/scoring.js';
 import { renderQuestionCard } from '../ui/quiz.js';
@@ -31,7 +31,7 @@ async function prepare(query) {
     const exam = await buildExam({ mode: snapshot.mode, seed: snapshot.seed, lang: snapshot.lang });
     return { exam, answers: snapshot.answers || {}, flags: new Set(snapshot.flags || []), startedAt: snapshot.startedAt || Date.now() };
   }
-  const lang = query.lang || getState().settings.examLang;
+  const lang = query.lang || langOf(getState());
   const exam = await buildExam({ mode: query.mode === 'mini' ? 'mini' : 'full', lang });
   const session = { exam, answers: {}, flags: new Set(), startedAt: Date.now() };
   persist(session);

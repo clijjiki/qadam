@@ -1,8 +1,8 @@
 // Точка входа Qadam: загрузка манифеста контента, тема, оболочка, роутер и рендер страниц.
 
-import { loadManifest } from './core/content.js';
-import { getState } from './core/store.js';
-import { addRoute, navigate, onRoute, startRouter } from './core/router.js';
+import { langOf, loadManifest } from './core/content.js';
+import { getState, subscribe } from './core/store.js';
+import { addRoute, currentRoute, navigate, onRoute, startRouter } from './core/router.js';
 import { loadKatex, mountMath, onKatexReady } from './core/math.js';
 import { h } from './core/dom.js';
 import { initTheme } from './ui/theme.js';
@@ -99,6 +99,17 @@ function fatal(error) {
   );
 }
 
+/** Смена языка материалов перерисовывает текущую страницу — контент грузится заново. */
+function watchContentLang() {
+  let last = langOf(getState());
+  subscribe((state) => {
+    const next = langOf(state);
+    if (next === last) return;
+    last = next;
+    showPage(currentRoute());
+  });
+}
+
 async function boot() {
   initTheme();
   loadKatex();
@@ -113,6 +124,7 @@ async function boot() {
   layout = createLayout(app);
   for (const route of ROUTES) addRoute(route.pattern, route);
   onRoute(showPage);
+  watchContentLang();
   startRouter();
 }
 

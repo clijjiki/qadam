@@ -9,7 +9,10 @@ import { isActiveDay, levelInfo, streakInfo, xpForLevel } from '../src/core/stat
 import { createRng, hashString, shuffle } from '../src/core/random.js';
 import { addRoute, matchRoute, parseHash } from '../src/core/router.js';
 import { formatDuration, plural, pluralize } from '../src/core/dom.js';
-import { CONTENT_LANGS, isContentLang, langName, localizedPath, normalizeLang } from '../src/core/content.js';
+import { CONTENT_LANGS, isContentLang, langName, langOf, langShort, localizedPath, normalizeLang, topicSummary, topicTitle } from '../src/core/content.js';
+import { createDefaultState, migrateProfile, migrateSettings } from '../src/core/store.js';
+import { curriculumKey, gradeProgram, gradeSequence, gradesLabel, normalizeGrade, normalizeTrack, schoolQuarter, sortByCurriculum, trackPhases, usesCurriculum } from '../src/core/curriculum.js';
+import { interleave, pickForWeek } from '../src/core/plan.js';
 
 const results = [];
 
@@ -265,6 +268,163 @@ test('lang: путь к казахской версии темы', () => {
 test('lang: название языка для интерфейса', () => {
   equal(langName('kk'), 'Қазақша');
   equal(langName('ru'), 'Русский');
+});
+test('lang: короткая подпись для переключателя', () => {
+  equal(langShort('kk'), 'KZ');
+  equal(langShort('ru'), 'RU');
+  equal(langShort('en'), 'RU');
+});
+test('lang: заголовок темы берёт перевод из манифеста', () => {
+  const meta = { id: 'math-derivative', title: 'Производная', titleKk: 'Туынды', summary: 'Про то', summaryKk: 'Ол туралы' };
+  equal(topicTitle(meta, 'kk'), 'Туынды');
+  equal(topicTitle(meta, 'ru'), 'Производная');
+  equal(topicSummary(meta, 'kk'), 'Ол туралы');
+});
+test('lang: без перевода заголовок остаётся русским', () => {
+  const meta = { id: 'ielts-reading-tfng', title: 'True / False / Not Given' };
+  equal(topicTitle(meta, 'kk'), 'True / False / Not Given');
+  equal(topicSummary(meta, 'kk'), '');
+});
+test('lang: заголовок пустой темы не ломает список', () => {
+  equal(topicTitle(null, 'kk'), '');
+  equal(topicTitle({ id: 'x' }, 'kk'), 'x');
+});
+test('lang: langOf читает язык из настроек', () => {
+  equal(langOf({ settings: { contentLang: 'kk' } }), 'kk');
+  equal(langOf({ settings: { contentLang: 'en' } }), 'ru');
+  equal(langOf({ settings: {} }), 'ru');
+  equal(langOf(undefined), 'ru');
+});
+test('settings: старый examLang становится contentLang', () => {
+  const base = createDefaultState().settings;
+  equal(migrateSettings(base, { examLang: 'kk' }).contentLang, 'kk');
+  equal('examLang' in migrateSettings(base, { examLang: 'kk' }), false);
+});
+test('settings: contentLang важнее старого examLang', () => {
+  const base = createDefaultState().settings;
+  equal(migrateSettings(base, { examLang: 'ru', contentLang: 'kk' }).contentLang, 'kk');
+  equal(migrateSettings(base, { examLang: 'kk', contentLang: 'ru' }).contentLang, 'ru');
+});
+test('settings: без сохранённого языка остаётся ru', () => {
+  const base = createDefaultState().settings;
+  equal(migrateSettings(base, {}).contentLang, 'ru');
+  equal(migrateSettings(base).contentLang, 'ru');
+});
+test('settings: миграция не теряет остальные настройки', () => {
+  const base = createDefaultState().settings;
+  const next = migrateSettings(base, { examLang: 'kk', dailyGoalMinutes: 40 });
+  equal(next.dailyGoalMinutes, 40);
+  equal(next.theme, base.theme);
+});
+
+// ---------- школьная программа (curriculum) ----------
+const CUR = [
+  { id: 'p7', grade: 7, line: 'algebra', quarter: 1, order: 2 },
+  { id: 'g10', grade: 10, line: 'geometry', quarter: 1, order: 27 },
+  { id: 'a10', grade: 10, line: 'algebra', quarter: 1, order: 17 },
+  { id: 'a10q3', grade: 10, line: 'algebra', quarter: 3, order: 18 },
+  { id: 'a11', grade: 11, line: 'algebra', quarter: 1, order: 20 },
+  { id: 'none', order: 30 },
+  { id: 'g8', grade: 8, line: 'geometry', quarter: 1, order: 25 },
+];
+test('curriculum: порядок классов для 10-го — 10, 7, 8, 9, 11', () => deepEqual(gradeSequence(10), [10, 7, 8, 9, 11]));
+test('curriculum: порядок классов для 7-го — по возрастанию', () => deepEqual(gradeSequence(7), [7, 8, 9, 10, 11]));
+test('curriculum: порядок классов для 11-го — 11, затем 7–10', () => deepEqual(gradeSequence(11), [11, 7, 8, 9, 10]));
+test('curriculum: normalizeGrade принимает строку и отбрасывает мусор', () => {
+  equal(normalizeGrade('9'), 9);
+  equal(normalizeGrade(5), 10);
+  equal(normalizeGrade(undefined), 10);
+});
+test('curriculum: normalizeTrack по умолчанию school', () => {
+  equal(normalizeTrack('ent'), 'ent');
+  equal(normalizeTrack('x'), 'school');
+});
+test('curriculum: usesCurriculum только для математики на треке school', () => {
+  equal(usesCurriculum({ track: 'school' }, 'math'), true);
+  equal(usesCurriculum({ track: 'ent' }, 'math'), false);
+  equal(usesCurriculum({ track: 'school' }, 'history'), false);
+  equal(usesCurriculum(undefined, 'math'), true);
+});
+test('curriculum: четверть по дате — учебные дни', () => {
+  equal(schoolQuarter('2026-09-15').quarter, 1);
+  equal(schoolQuarter('2026-09-15').holiday, false);
+  equal(schoolQuarter('2026-12-01').quarter, 2);
+  equal(schoolQuarter('2027-02-10').quarter, 3);
+  equal(schoolQuarter('2027-04-20').quarter, 4);
+});
+test('curriculum: на каникулах — следующая четверть с пометкой', () => {
+  deepEqual([schoolQuarter('2026-10-29').quarter, schoolQuarter('2026-10-29').holiday], [2, true]);
+  deepEqual([schoolQuarter('2027-01-03').quarter, schoolQuarter('2027-01-03').holiday], [3, true]);
+  deepEqual([schoolQuarter('2027-07-01').quarter, schoolQuarter('2027-07-01').holiday], [1, true]);
+  deepEqual([schoolQuarter('2026-12-31').quarter, schoolQuarter('2026-12-31').holiday], [3, true]);
+  deepEqual([schoolQuarter('2027-03-25').quarter, schoolQuarter('2027-03-25').holiday], [4, true]);
+});
+test('curriculum: сортировка — свой класс, потом 7-й, старшие, без класса', () => {
+  deepEqual(sortByCurriculum(CUR, 10).map((t) => t.id), ['a10', 'g10', 'a10q3', 'p7', 'g8', 'a11', 'none']);
+});
+test('curriculum: сортировка не меняет исходный массив', () => {
+  const before = CUR.map((t) => t.id);
+  sortByCurriculum(CUR, 10);
+  deepEqual(CUR.map((t) => t.id), before);
+});
+test('curriculum: ключ темы без класса уходит в конец', () => ok(curriculumKey({ id: 'x' }, 10)[0] > curriculumKey({ grade: 11 }, 10)[0]));
+test('curriculum: внутри четверти порядок задаёт seq, а не место в ЕНТ-списке', () => {
+  const q3 = [
+    { id: 'derivative', grade: 10, line: 'algebra', quarter: 3, seq: 3, order: 18 },
+    { id: 'limits', grade: 10, line: 'algebra', quarter: 3, seq: 2, order: 33 },
+    { id: 'polynomials', grade: 10, line: 'algebra', quarter: 3, seq: 1, order: 32 },
+  ];
+  deepEqual(sortByCurriculum(q3, 10).map((t) => t.id), ['polynomials', 'limits', 'derivative']);
+});
+test('curriculum: без seq тема встаёт после тем с seq', () => {
+  const list = [{ id: 'noseq', grade: 10, line: 'algebra', quarter: 1, order: 1 }, { id: 'seq', grade: 10, line: 'algebra', quarter: 1, seq: 2, order: 40 }];
+  deepEqual(sortByCurriculum(list, 10).map((t) => t.id), ['seq', 'noseq']);
+});
+test('curriculum: подпись классов — один или диапазон', () => {
+  equal(gradesLabel([7]), '7 класс');
+  equal(gradesLabel([7, 8, 9]), '7–9 классы');
+  equal(gradesLabel([]), '');
+  equal(trackPhases(CUR, 8)[1].title, 'Фундамент: 7 класс');
+});
+test('plan: чередование берёт по одной теме из каждой очереди по кругу', () => {
+  deepEqual(interleave([['a1', 'a2'], ['b1'], ['c1', 'c2']], 4), ['a1', 'b1', 'c1', 'a2']);
+  deepEqual(interleave([['a1'], []], 5), ['a1']);
+  deepEqual(interleave([], 3), []);
+});
+test('plan: второй день математики берёт другую линию', () => {
+  const pool = [{ id: 'a', line: 'algebra' }, { id: 'b', line: 'algebra' }, { id: 'g', line: 'geometry' }];
+  equal(pickForWeek(pool, new Set()).id, 'a');
+  equal(pickForWeek(pool, new Set(['algebra'])).id, 'g');
+  equal(pickForWeek(pool, new Set(['algebra', 'geometry'])).id, 'a');
+  equal(pickForWeek([], new Set()), null);
+});
+test('curriculum: программа класса раскладывает темы по четвертям и линиям', () => {
+  const program = gradeProgram(CUR, 10);
+  deepEqual(program.quarters[0].lines[0].topics.map((t) => t.id), ['a10']);
+  deepEqual(program.quarters[0].lines[1].topics.map((t) => t.id), ['g10']);
+  deepEqual(program.quarters[2].lines[0].topics.map((t) => t.id), ['a10q3']);
+  equal(program.topics.length, 3);
+});
+test('curriculum: этапы трека для 10 класса', () => {
+  const phases = trackPhases(CUR, 10);
+  deepEqual(phases.map((p) => p.key), ['own', 'base', 'ahead', 'other']);
+  deepEqual(phases[0].topics.map((t) => t.id), ['a10', 'g10', 'a10q3']);
+  deepEqual(phases[1].topics.map((t) => t.id), ['p7', 'g8']);
+  deepEqual(phases[2].topics.map((t) => t.id), ['a11']);
+});
+test('curriculum: у 11 класса нет этапа «на опережение»', () => deepEqual(trackPhases(CUR, 11).map((p) => p.key), ['own', 'base', 'other']));
+test('profile: старому профилю добавляются класс и трек по умолчанию', () => {
+  const base = createDefaultState().profile;
+  const next = migrateProfile(base, { name: 'Айдана', hoursPerWeek: 8 });
+  equal(next.grade, 10);
+  equal(next.track, 'school');
+  equal(next.hoursPerWeek, 8);
+});
+test('profile: сохранённые класс и трек не сбрасываются', () => {
+  const base = createDefaultState().profile;
+  const next = migrateProfile(base, { grade: '8', track: 'ent' });
+  equal(next.grade, 8);
+  equal(next.track, 'ent');
 });
 
 // ---------- вывод ----------

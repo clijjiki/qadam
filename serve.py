@@ -1,7 +1,6 @@
 """Локальный запуск сайта Qadam: python serve.py [порт]"""
 import http.server
 import os
-import socketserver
 import sys
 import threading
 import webbrowser
@@ -28,8 +27,9 @@ Handler.extensions_map.update({".js": "text/javascript", ".mjs": "text/javascrip
 
 
 def main():
-    socketserver.TCPServer.allow_reuse_address = True
-    with socketserver.TCPServer(("127.0.0.1", PORT), Handler) as httpd:
+    # Многопоточный сервер: браузер держит несколько соединений сразу,
+    # однопоточный TCPServer на них зависает («долго думает»).
+    with http.server.ThreadingHTTPServer(("127.0.0.1", PORT), Handler) as httpd:
         url = f"http://127.0.0.1:{PORT}/"
         print(f"Qadam запущен: {url}  (Ctrl+C — остановить)")
         threading.Timer(0.6, lambda: webbrowser.open(url)).start()

@@ -1,7 +1,7 @@
 // Словарь IELTS: наборы слов, режим «учить новые» и очередь интервального повторения.
 
 import { h, formatDuration, pluralize, replaceChildren } from '../../core/dom.js';
-import { loadTopics, topicsOf } from '../../core/content.js';
+import { langOf, loadTopics, topicsOf } from '../../core/content.js';
 import { getState } from '../../core/store.js';
 import { finishVocabSession, recordVocabReview } from '../../core/actions.js';
 import { GRADES, dueIds } from '../../core/srs.js';
@@ -34,7 +34,7 @@ async function loadSets() {
   await Promise.all(
     metas.map(async (meta) => {
       try {
-        const [topic] = await loadTopics([meta.id]);
+        const [topic] = await loadTopics([meta.id], langOf(getState()));
         loaded.push({ meta, topic });
       } catch (error) {
         missing.push(meta.title);

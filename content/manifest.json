@@ -113,7 +113,9 @@
       "path": "content/history/hist-ancient.json",
       "weight": 1,
       "minutes": 25,
-      "summary": "Стоянки каменного века, энеолит и бронза (Ботай, андроновцы), саки, сарматы, уйсуни, кангюй, гунны, Модэ, 530 г. до н.э."
+      "summary": "Стоянки каменного века, энеолит и бронза (Ботай, андроновцы), саки, сарматы, уйсуни, кангюй, гунны, Модэ, 530 г. до н.э.",
+      "titleKk": "Ежелгі Қазақстан: тас дәуірі, қола дәуірі, сақтар, ғұндар",
+      "summaryKk": "Тас дәуірі тұрақтарынан бастап сақ, үйсін, қаңлы және ғұн тайпалық одақтарына дейін."
     },
     {
       "id": "mlit-percent-finance",
@@ -124,7 +126,9 @@
       "path": "content/mathlit/mlit-percent-finance.json",
       "weight": 2,
       "minutes": 20,
-      "summary": "Процент от числа, число по проценту, последовательные изменения цены, скидки и наценки, простые и сложные проценты по вкладу, тарифы и заказы."
+      "summary": "Процент от числа, число по проценту, последовательные изменения цены, скидки и наценки, простые и сложные проценты по вкладу, тарифы и заказы.",
+      "titleKk": "Пайыздар және қаржы",
+      "summaryKk": "Саннан пайыз табу, пайызы бойынша санды табу, жеңілдіктер мен үстеме бағалар, салымдар мен тарифтер."
     },
     {
       "id": "rdg-facts-details",
@@ -135,7 +139,24 @@
       "path": "content/reading/rdg-facts-details.json",
       "weight": 3,
       "minutes": 20,
-      "summary": "Вопросы «согласно тексту», «утверждение не соответствует», числа и названия. Тексты трёх объёмов с вопросами."
+      "summary": "Вопросы «согласно тексту», «утверждение не соответствует», числа и названия. Тексты трёх объёмов с вопросами.",
+      "titleKk": "Мәліметтер мен нақты деректерді табу",
+      "summaryKk": "Мәтіннен нақты деректі, санды не атауды жылдам тауып, «дұрысқа ұқсас» нұсқаларға алданбау жолы."
+    },
+    {
+      "id": "math-functions-and-graphs",
+      "subject": "math",
+      "title": "Функции и графики",
+      "kind": "lesson",
+      "order": 17,
+      "path": "content/math/math-functions-and-graphs.json",
+      "weight": 1,
+      "minutes": 30,
+      "summary": "Область определения и значений, чётность, монотонность, квадратичная функция, графики с модулем, преобразования графиков.",
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 1,
+      "seq": 1
     },
     {
       "id": "math-derivative",
@@ -146,7 +167,43 @@
       "path": "content/math/math-derivative.json",
       "weight": 2,
       "minutes": 30,
-      "summary": "Таблица производных, правила дифференцирования, производная сложной функции, физический смысл."
+      "summary": "Таблица производных, правила дифференцирования, производная сложной функции, физический смысл.",
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 3,
+      "seq": 3,
+      "titleKk": "Туынды",
+      "summaryKk": "Туындылар кестесі, дифференциалдау ережелері, күрделі функцияның туындысы."
+    },
+    {
+      "id": "math-inverse-trig-functions",
+      "subject": "math",
+      "title": "Обратные тригонометрические функции",
+      "kind": "lesson",
+      "order": 30,
+      "path": "content/math/math-inverse-trig-functions.json",
+      "weight": 1,
+      "minutes": 30,
+      "summary": "arcsin, arccos, arctg, arcctg: определения, области значений, свойства, вычисление значений и упрощение выражений.",
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 1,
+      "seq": 2
+    },
+    {
+      "id": "math-stereometry-axioms-parallel",
+      "subject": "math",
+      "title": "Аксиомы стереометрии. Параллельность прямых и плоскостей",
+      "kind": "lesson",
+      "order": 35,
+      "path": "content/math/math-stereometry-axioms-parallel.json",
+      "weight": 1,
+      "minutes": 30,
+      "summary": "Аксиомы и следствия, взаимное расположение прямых, параллельность прямой и плоскости, параллельные плоскости, скрещивающиеся прямые.",
+      "grade": 10,
+      "line": "geometry",
+      "quarter": 1,
+      "seq": 1
     },
     {
       "id": "inf-number-systems",
@@ -157,7 +214,9 @@
       "path": "content/informatics/inf-number-systems.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Перевод 2 ↔ 8 ↔ 10 ↔ 16, развёрнутая форма, признаки чисел в разных системах."
+      "summary": "Перевод 2 ↔ 8 ↔ 10 ↔ 16, развёрнутая форма, признаки чисел в разных системах.",
+      "titleKk": "Санау жүйелері",
+      "summaryKk": "Сандарды екілік, сегіздік, ондық және он алтылық санау жүйелерінің арасында аудару."
     },
     {
       "id": "ielts-vocab-education",
@@ -208,5 +267,1086 @@
       "skill": "speaking"
     }
   ],
-  "planned": 115
+  "planned": [
+    {
+      "id": "hist-turkic-khaganates",
+      "subject": "history",
+      "title": "Тюркские каганаты VI–IX вв.",
+      "summary": "Тюркский (552–603), Западно-Тюркский (603–704), Тюргешский (704–756), Атлахская битва 751, Карлукский (756–940) каганаты.",
+      "kind": "lesson",
+      "order": 2
+    },
+    {
+      "id": "hist-oguz-kimak-karakhanids",
+      "subject": "history",
+      "title": "Огузы, кимаки, Караханиды, кыпчаки",
+      "summary": "Огузское государство, Кимакский каганат, Караханиды (942–1212, ислам 960), найманы, кереиты, жалаиры, Кыпчакское ханство, Дешт-и Кипчак, хозяйство.",
+      "kind": "lesson",
+      "order": 3
+    },
+    {
+      "id": "hist-mongols-golden-horde",
+      "subject": "history",
+      "title": "Монгольское нашествие, Золотая Орда, Ак Орда, Могулистан",
+      "summary": "Походы Чингисхана, оборона Отрара, улусы, Золотая Орда (хан Узбек), Ак Орда, Могулистан, походы Тимура, Ногайская Орда, ханство Абулхаира (1428–1468), путешественники.",
+      "kind": "lesson",
+      "order": 4
+    },
+    {
+      "id": "hist-kazakh-khanate-formation",
+      "subject": "history",
+      "title": "Формирование народа и образование Казахского ханства",
+      "summary": "Этногенез, этноним «казах», жузы, предпосылки образования ханства, Жанибек и Керей, 1465 г., первые годы, значение.",
+      "kind": "lesson",
+      "order": 5
+    },
+    {
+      "id": "hist-khans-16-17",
+      "subject": "history",
+      "title": "Ханы XVI–XVII вв.: Касым, Хакназар, Тауекель, Есим, Жангир",
+      "summary": "Внутренняя и внешняя политика ханов, «Исконный путь Есима», Орбулакская битва 1643, отношения с Ногайской Ордой, Бухарой, Россией.",
+      "kind": "lesson",
+      "order": 6
+    },
+    {
+      "id": "hist-tauke-society",
+      "subject": "history",
+      "title": "Тауке хан, «Жеты жаргы», устройство и хозяйство ханства",
+      "summary": "Тауке (1680–1715), «Жеты жаргы», великие бии Толе, Казыбек, Айтеке, административное устройство, социальная структура, кочевое скотоводство и земледелие.",
+      "kind": "lesson",
+      "order": 7
+    },
+    {
+      "id": "hist-dzhungar-wars",
+      "subject": "history",
+      "title": "Казахско-джунгарские войны",
+      "summary": "Джунгарское ханство, «Актабан шубырынды» 1723, курултаи Каракум и Ордабасы 1726, Булантинская 1728 и Аныракайская 1730 битвы, батыры, войны 30–40-х гг.",
+      "kind": "lesson",
+      "order": 8
+    },
+    {
+      "id": "hist-russia-abylai",
+      "subject": "history",
+      "title": "Подданство Абулхаира и Аблай хан",
+      "summary": "Цели Российской империи, экспедиции и крепости, принятие подданства 1731, политика России 30–50-х гг., Аблай хан (1771–1781): внутренняя и внешняя политика.",
+      "kind": "lesson",
+      "order": 9
+    },
+    {
+      "id": "hist-uprisings-18-19",
+      "subject": "history",
+      "title": "Восстания конца XVIII – XIX вв. и реформы 1822–1824",
+      "summary": "Сырым Датов (1783–1797), Уставы 1822 и 1824, Жоламан Тленшиев, Саржан Касымов, Исатай и Махамбет 1836–1838, Кенесары Касымов 1837–1847, Жанхожа, Есет Котибаров.",
+      "kind": "lesson",
+      "order": 10
+    },
+    {
+      "id": "hist-colonial-19",
+      "subject": "history",
+      "title": "Реформы 1867–1868, переселение и общество XIX в.",
+      "summary": "«Временные положения», области и уезды, аграрная и переселенческая политика, восстания 1868–1870, ярмарки и капитализм, трансформация общества, общественная мысль.",
+      "kind": "lesson",
+      "order": 11
+    },
+    {
+      "id": "hist-early-20-alash",
+      "subject": "history",
+      "title": "Начало XX в., 1916 год, «Алаш» и революции 1917 г.",
+      "summary": "Промышленность и торговля, восстание 1916 г., Февраль и Октябрь 1917, газета «Казах», журнал «Айкап», партия «Алаш» (июль 1917), Алаш-Орда (декабрь 1917), лидеры.",
+      "kind": "lesson",
+      "order": 12
+    },
+    {
+      "id": "hist-soviet-power-kazassr",
+      "subject": "history",
+      "title": "Советская власть, Гражданская война, КазАССР, НЭП",
+      "summary": "Установление советской власти, «Уш Жуз», Гражданская война 1918–1920, Кокандская автономия, КазАССР 26.08.1920, военный коммунизм, голод 1921, НЭП, 1925 г.",
+      "kind": "lesson",
+      "order": 13
+    },
+    {
+      "id": "hist-collectivization-repressions",
+      "subject": "history",
+      "title": "Индустриализация, коллективизация, голод 1931–1933, репрессии",
+      "summary": "«Малый Октябрь» Голощёкина, конфискация байских хозяйств, Турксиб, насильственная коллективизация, голод и его последствия, «Письмо пяти», репрессии 1937–1938, Карлаг и АЛЖИР.",
+      "kind": "lesson",
+      "order": 14
+    },
+    {
+      "id": "hist-wwii",
+      "subject": "history",
+      "title": "Казахстан в Великой Отечественной войне",
+      "summary": "Мобилизация и эвакуация, дивизии (8-я гвардейская Панфилова), герои (Момышулы, Маметова, Молдагулова), тыл, депортации народов, культура в годы войны.",
+      "kind": "lesson",
+      "order": 15
+    },
+    {
+      "id": "hist-postwar-thaw",
+      "subject": "history",
+      "title": "Послевоенные годы, целина, «оттепель»",
+      "summary": "1946–1953: промышленность, «Дело Бекмаханова», Семипалатинский полигон 1949; 1954–1964: целина и её последствия, Байконур, Темиртау 1959, Шаяхметов, Кунаев.",
+      "kind": "lesson",
+      "order": 16
+    },
+    {
+      "id": "hist-stagnation-perestroika",
+      "subject": "history",
+      "title": "«Застой», перестройка, Декабрь 1986",
+      "summary": "1965–1985: сырьевая экономика, урбанизация, Целиноград 1979, Кунаев; перестройка, Декабрьские события 1986, Декларация о суверенитете 25.10.1990, Закон о языках 1989.",
+      "kind": "lesson",
+      "order": 17
+    },
+    {
+      "id": "hist-independence",
+      "subject": "history",
+      "title": "Независимость: 1991 г. – наши дни",
+      "summary": "Закрытие полигона 29.08.1991, выборы Президента 01.12.1991, Конституционный закон 16.12.1991, символы, тенге 1993, Конституция 1995, Астана 1997, ОБСЕ 2010, ЭКСПО 2017, 2019 г.",
+      "kind": "lesson",
+      "order": 18
+    },
+    {
+      "id": "hist-culture-ancient-medieval",
+      "subject": "history",
+      "title": "Культура древности и средневековья",
+      "summary": "«Звериный стиль», «Золотой человек» Иссык, Берель, Бесшатыр, Великий Шёлковый путь, руническая письменность, аль-Фараби, Баласагуни, Кашгари, Йасауи, ислам, культура XIII–XVIII вв., жырау.",
+      "kind": "lesson",
+      "order": 19
+    },
+    {
+      "id": "hist-culture-19-20",
+      "subject": "history",
+      "title": "Культура XIX–XX вв. и современности",
+      "summary": "Уалиханов, Алтынсарин, Абай, Жангир хан и школы, джадидизм, Шакарим, Байтурсынов, алфавиты, первые вузы, Сатпаев, Ауэзов, театр и кино, культура независимого Казахстана.",
+      "kind": "lesson",
+      "order": 20
+    },
+    {
+      "id": "hist-dates",
+      "subject": "history",
+      "title": "100 дат по истории Казахстана",
+      "summary": "Официальный список дат НЦТ (99 позиций): карточки «дата ↔ событие» и тренировка «в каком году».",
+      "kind": "lesson",
+      "order": 21
+    },
+    {
+      "id": "mlit-charts-tables",
+      "subject": "mathlit",
+      "title": "Чтение диаграмм и таблиц",
+      "summary": "Круговые и столбчатые диаграммы (данные даны таблицей), доли в процентах, таблицы тарифов/отметок/расписаний, средневзвешенное по таблице частот.",
+      "kind": "lesson",
+      "order": 2
+    },
+    {
+      "id": "mlit-statistics",
+      "subject": "mathlit",
+      "title": "Статистика: среднее, мода, медиана, размах",
+      "summary": "Среднее арифметическое, восстановление элемента по среднему, мода и медиана ряда, размах, таблицы частот.",
+      "kind": "lesson",
+      "order": 3
+    },
+    {
+      "id": "mlit-combinatorics-probability",
+      "subject": "mathlit",
+      "title": "Комбинаторика и вероятность",
+      "summary": "Правило произведения, сочетания и размещения, рукопожатия, классическая вероятность, множества и логика.",
+      "kind": "lesson",
+      "order": 4
+    },
+    {
+      "id": "mlit-geometry-plane",
+      "subject": "mathlit",
+      "title": "Геометрия в жизни: периметр и площадь",
+      "summary": "Прямоугольник, квадрат, треугольник, круг, составные фигуры, теорема Пифагора, расход материалов, нестандартные задачи с периметром.",
+      "kind": "lesson",
+      "order": 5
+    },
+    {
+      "id": "mlit-solids",
+      "subject": "mathlit",
+      "title": "Площадь поверхности и объём тел",
+      "summary": "Куб, параллелепипед, фигуры из кубиков, цилиндр, объём аквариума, площадь полной поверхности.",
+      "kind": "lesson",
+      "order": 6
+    },
+    {
+      "id": "mlit-word-problems",
+      "subject": "mathlit",
+      "title": "Текстовые задачи через уравнение",
+      "summary": "Движение, работа, возраст, «на сколько больше», пропорции, единицы измерения, логические задачи с числами.",
+      "kind": "lesson",
+      "order": 7
+    },
+    {
+      "id": "mlit-dependencies-sequences",
+      "subject": "mathlit",
+      "title": "Зависимости и последовательности",
+      "summary": "Прямая и обратная пропорциональность, арифметические закономерности, «найдите x в фигурах», анализ данных таблицы.",
+      "kind": "lesson",
+      "order": 8
+    },
+    {
+      "id": "rdg-main-idea",
+      "subject": "reading",
+      "title": "Основная мысль и тема текста",
+      "summary": "Тема, основная мысль, «из текста можно узнать», пословица, соответствующая содержанию, заголовок.",
+      "kind": "lesson",
+      "order": 2
+    },
+    {
+      "id": "rdg-inference",
+      "subject": "reading",
+      "title": "Вывод и умозаключение",
+      "summary": "Причина и следствие, что следует из текста, «если…, то нужно знать», предположения автора.",
+      "kind": "lesson",
+      "order": 3
+    },
+    {
+      "id": "rdg-structure",
+      "subject": "reading",
+      "title": "Структура текста",
+      "summary": "Итоговое предложение, номер абзаца с информацией, связь абзацев, место вывода, план текста.",
+      "kind": "lesson",
+      "order": 4
+    },
+    {
+      "id": "rdg-author-purpose",
+      "subject": "reading",
+      "title": "Цель текста и позиция автора",
+      "summary": "Цель текста, позиция автора и героя, о чём заставило задуматься, отношение к описываемому.",
+      "kind": "lesson",
+      "order": 5
+    },
+    {
+      "id": "rdg-vocabulary-style",
+      "subject": "reading",
+      "title": "Значение слова, средства связи, стиль",
+      "summary": "Значение термина в контексте, слово на месте пропуска (союзы, вводные слова), стиль и жанр текста.",
+      "kind": "lesson",
+      "order": 6
+    },
+    {
+      "id": "math-radicals-numeric-expressions",
+      "subject": "math",
+      "title": "Действия с радикалами и числовые выражения",
+      "summary": "Свойства корней n-й степени, вынесение из-под корня, сравнение чисел, действия с дробями и десятичными дробями, порядок действий.",
+      "kind": "lesson",
+      "order": 1,
+      "grade": 8,
+      "line": "algebra",
+      "quarter": 1,
+      "seq": 1
+    },
+    {
+      "id": "math-powers-exponents",
+      "subject": "math",
+      "title": "Степени с целым и рациональным показателем",
+      "summary": "Свойства степеней, отрицательный и дробный показатель, стандартный вид числа, упрощение степенных выражений.",
+      "kind": "lesson",
+      "order": 2,
+      "grade": 7,
+      "line": "algebra",
+      "quarter": 1,
+      "seq": 1
+    },
+    {
+      "id": "math-algebraic-expressions",
+      "subject": "math",
+      "title": "Формулы сокращённого умножения и упрощение выражений",
+      "summary": "ФСУ, разложение на множители, сокращение алгебраических дробей, упрощение рациональных и иррациональных выражений.",
+      "kind": "lesson",
+      "order": 3,
+      "grade": 7,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 1
+    },
+    {
+      "id": "math-trigonometry-basics",
+      "subject": "math",
+      "title": "Тригонометрия: тождества, формулы приведения, значения углов",
+      "summary": "Определения, знаки по четвертям, основные тождества, формулы приведения, суммы и двойного угла, значения табличных углов.",
+      "kind": "lesson",
+      "order": 4,
+      "grade": 9,
+      "line": "algebra",
+      "quarter": 3,
+      "seq": 1
+    },
+    {
+      "id": "math-linear-quadratic-rational-equations",
+      "subject": "math",
+      "title": "Линейные, квадратные и дробно-рациональные уравнения",
+      "summary": "Дискриминант, теорема Виета, неполные квадратные, замена переменной, ОДЗ дробно-рациональных, уравнения с модулем.",
+      "kind": "lesson",
+      "order": 5,
+      "grade": 8,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 1
+    },
+    {
+      "id": "math-irrational-equations",
+      "subject": "math",
+      "title": "Иррациональные уравнения",
+      "summary": "Возведение в степень, проверка корней, ОДЗ, замена переменной.",
+      "kind": "lesson",
+      "order": 6,
+      "grade": 11,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 1
+    },
+    {
+      "id": "math-trigonometric-equations",
+      "subject": "math",
+      "title": "Тригонометрические уравнения",
+      "summary": "Простейшие уравнения и их серии, отбор корней, сведение к квадратному, однородные уравнения.",
+      "kind": "lesson",
+      "order": 7,
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 1
+    },
+    {
+      "id": "math-exponential-equations",
+      "subject": "math",
+      "title": "Показательные уравнения",
+      "summary": "Приведение к одному основанию, вынесение множителя, замена переменной, показательно-степенные уравнения.",
+      "kind": "lesson",
+      "order": 8,
+      "grade": 11,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 2
+    },
+    {
+      "id": "math-logarithmic-equations",
+      "subject": "math",
+      "title": "Логарифмы и логарифмические уравнения",
+      "summary": "Определение и свойства логарифмов, переход к новому основанию, ОДЗ, замена переменной.",
+      "kind": "lesson",
+      "order": 9,
+      "grade": 11,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 3
+    },
+    {
+      "id": "math-linear-systems",
+      "subject": "math",
+      "title": "Системы линейных уравнений",
+      "summary": "Методы подстановки и сложения, графический метод, число решений, задачи на составление систем.",
+      "kind": "lesson",
+      "order": 10,
+      "grade": 7,
+      "line": "algebra",
+      "quarter": 3,
+      "seq": 1
+    },
+    {
+      "id": "math-nonlinear-systems",
+      "subject": "math",
+      "title": "Системы нелинейных уравнений",
+      "summary": "Системы с квадратными, показательными, логарифмическими, иррациональными и тригонометрическими уравнениями; симметрические системы.",
+      "kind": "lesson",
+      "order": 11,
+      "grade": 9,
+      "line": "algebra",
+      "quarter": 1,
+      "seq": 1
+    },
+    {
+      "id": "math-linear-quadratic-rational-inequalities",
+      "subject": "math",
+      "title": "Линейные, квадратные и рациональные неравенства",
+      "summary": "Метод интервалов, неравенства с модулем, ОДЗ, целые решения на промежутке.",
+      "kind": "lesson",
+      "order": 12,
+      "grade": 8,
+      "line": "algebra",
+      "quarter": 3,
+      "seq": 1
+    },
+    {
+      "id": "math-exp-log-irrational-inequalities",
+      "subject": "math",
+      "title": "Показательные, логарифмические и иррациональные неравенства",
+      "summary": "Монотонность функций, ОДЗ, равносильные переходы, метод рационализации.",
+      "kind": "lesson",
+      "order": 13,
+      "grade": 11,
+      "line": "algebra",
+      "quarter": 3,
+      "seq": 1
+    },
+    {
+      "id": "math-systems-of-inequalities",
+      "subject": "math",
+      "title": "Системы неравенств",
+      "summary": "Пересечение решений, системы с модулем, дробно-рациональные, показательные и логарифмические системы неравенств.",
+      "kind": "lesson",
+      "order": 14,
+      "grade": 9,
+      "line": "algebra",
+      "quarter": 1,
+      "seq": 2
+    },
+    {
+      "id": "math-arithmetic-progression",
+      "subject": "math",
+      "title": "Арифметическая прогрессия",
+      "summary": "Формула n-го члена, сумма n членов, характеристическое свойство, задачи на составление.",
+      "kind": "lesson",
+      "order": 15,
+      "grade": 9,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 1
+    },
+    {
+      "id": "math-geometric-progression",
+      "subject": "math",
+      "title": "Геометрическая прогрессия",
+      "summary": "Формула n-го члена, сумма, бесконечно убывающая прогрессия, смешанные задачи с арифметической прогрессией.",
+      "kind": "lesson",
+      "order": 16,
+      "grade": 9,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 2
+    },
+    {
+      "id": "math-derivative-applications",
+      "subject": "math",
+      "title": "Применение производной",
+      "summary": "Касательная, монотонность, экстремумы, наибольшее и наименьшее значение на отрезке, геометрический смысл.",
+      "kind": "lesson",
+      "order": 19,
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 4,
+      "seq": 1
+    },
+    {
+      "id": "math-antiderivative-integral",
+      "subject": "math",
+      "title": "Первообразная и неопределённый интеграл",
+      "summary": "Таблица первообразных, правила, первообразная, график которой проходит через точку.",
+      "kind": "lesson",
+      "order": 20,
+      "grade": 11,
+      "line": "algebra",
+      "quarter": 1,
+      "seq": 1
+    },
+    {
+      "id": "math-definite-integral-area",
+      "subject": "math",
+      "title": "Определённый интеграл и площадь фигуры",
+      "summary": "Формула Ньютона–Лейбница, площадь криволинейной трапеции и фигуры между графиками.",
+      "kind": "lesson",
+      "order": 21,
+      "grade": 11,
+      "line": "algebra",
+      "quarter": 1,
+      "seq": 2
+    },
+    {
+      "id": "math-word-problems-modeling",
+      "subject": "math",
+      "title": "Текстовые задачи и математическое моделирование",
+      "summary": "Проценты, движение, работа, смеси и сплавы, числовые зависимости, задачи на прогрессии в жизни.",
+      "kind": "lesson",
+      "order": 22,
+      "grade": 8,
+      "line": "algebra",
+      "quarter": 4,
+      "seq": 1
+    },
+    {
+      "id": "math-combinatorics-probability",
+      "subject": "math",
+      "title": "Комбинаторика, вероятность и статистика",
+      "summary": "Перестановки, размещения, сочетания, бином Ньютона, классическая вероятность, среднее и дисперсия — встречаются в демоверсиях.",
+      "kind": "lesson",
+      "order": 23,
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 3
+    },
+    {
+      "id": "math-triangles",
+      "subject": "math",
+      "title": "Треугольники",
+      "summary": "Метрические соотношения, теоремы синусов и косинусов, площадь, вписанная и описанная окружности, медианы и биссектрисы.",
+      "kind": "lesson",
+      "order": 24,
+      "grade": 7,
+      "line": "geometry",
+      "quarter": 2,
+      "seq": 1
+    },
+    {
+      "id": "math-quadrilaterals-polygons-circle",
+      "subject": "math",
+      "title": "Четырёхугольники, многоугольники, окружность",
+      "summary": "Параллелограмм, трапеция, ромб, правильные многоугольники, окружность и её элементы, вписанные и описанные четырёхугольники.",
+      "kind": "lesson",
+      "order": 25,
+      "grade": 8,
+      "line": "geometry",
+      "quarter": 1,
+      "seq": 1
+    },
+    {
+      "id": "math-plane-vectors-transformations",
+      "subject": "math",
+      "title": "Векторы и координаты на плоскости",
+      "summary": "Координаты вектора, длина, скалярное произведение, угол между векторами, уравнение прямой и окружности, преобразования.",
+      "kind": "lesson",
+      "order": 26,
+      "grade": 9,
+      "line": "geometry",
+      "quarter": 1,
+      "seq": 1
+    },
+    {
+      "id": "math-polyhedra",
+      "subject": "math",
+      "title": "Многогранники: призма, пирамида, куб",
+      "summary": "Сечения, площади поверхности, объёмы, правильные многогранники, углы между прямыми и плоскостями.",
+      "kind": "lesson",
+      "order": 27,
+      "grade": 11,
+      "line": "geometry",
+      "quarter": 1,
+      "seq": 1
+    },
+    {
+      "id": "math-solids-of-revolution",
+      "subject": "math",
+      "title": "Тела вращения: цилиндр, конус, шар",
+      "summary": "Площади и объёмы, осевые сечения, вписанные и описанные тела — основа контекстных заданий.",
+      "kind": "lesson",
+      "order": 28,
+      "grade": 11,
+      "line": "geometry",
+      "quarter": 2,
+      "seq": 1
+    },
+    {
+      "id": "math-space-vectors-coordinates",
+      "subject": "math",
+      "title": "Векторы и координаты в пространстве",
+      "summary": "Координаты точки и вектора в пространстве, длина, скалярное произведение, уравнение плоскости и сферы.",
+      "kind": "lesson",
+      "order": 29,
+      "grade": 10,
+      "line": "geometry",
+      "quarter": 3,
+      "seq": 1
+    },
+    {
+      "id": "math-trigonometric-inequalities",
+      "subject": "math",
+      "title": "Тригонометрические неравенства",
+      "summary": "Простейшие неравенства на единичной окружности, запись серий решений, сведение к простейшим.",
+      "kind": "lesson",
+      "order": 31,
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 2,
+      "seq": 2
+    },
+    {
+      "id": "math-polynomials",
+      "subject": "math",
+      "title": "Многочлены: деление, теорема Безу, схема Горнера",
+      "summary": "Деление многочленов уголком, теорема Безу, схема Горнера, рациональные корни, разложение на множители.",
+      "kind": "lesson",
+      "order": 32,
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 3,
+      "seq": 1
+    },
+    {
+      "id": "math-limits-continuity",
+      "subject": "math",
+      "title": "Предел функции и непрерывность",
+      "summary": "Предел последовательности и функции, замечательные пределы, непрерывность, асимптоты — школьная база перед производной.",
+      "kind": "lesson",
+      "order": 33,
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 3,
+      "seq": 2
+    },
+    {
+      "id": "math-random-variables",
+      "subject": "math",
+      "title": "Случайные величины и их числовые характеристики",
+      "summary": "Дискретная случайная величина, закон распределения, математическое ожидание, дисперсия, среднее квадратическое отклонение.",
+      "kind": "lesson",
+      "order": 34,
+      "grade": 10,
+      "line": "algebra",
+      "quarter": 4,
+      "seq": 2
+    },
+    {
+      "id": "math-stereometry-perpendicular",
+      "subject": "math",
+      "title": "Перпендикулярность прямых и плоскостей",
+      "summary": "Признак перпендикулярности, теорема о трёх перпендикулярах, расстояния, угол между прямой и плоскостью, двугранный угол.",
+      "kind": "lesson",
+      "order": 36,
+      "grade": 10,
+      "line": "geometry",
+      "quarter": 2,
+      "seq": 1
+    },
+    {
+      "id": "math-exam-strategy",
+      "subject": "math",
+      "title": "Форматы заданий ЕНТ по математике и стратегия",
+      "summary": "Множественный выбор (до 3 из 6), соответствие (2 строки), контекст, тайминг 2 минуты на задание, частичные баллы, типичные ловушки.",
+      "kind": "lesson",
+      "order": 37
+    },
+    {
+      "id": "inf-information-measurement",
+      "subject": "informatics",
+      "title": "Информация и её измерение",
+      "summary": "Бит и байт, единицы, формула N = 2^i, объём текста, скорость передачи, время передачи.",
+      "kind": "lesson",
+      "order": 1
+    },
+    {
+      "id": "inf-encoding",
+      "subject": "informatics",
+      "title": "Кодирование текста, графики и звука",
+      "summary": "ASCII и Unicode, растровая графика (глубина цвета, объём изображения), дискретизация звука, RGB.",
+      "kind": "lesson",
+      "order": 2
+    },
+    {
+      "id": "inf-binary-arithmetic",
+      "subject": "informatics",
+      "title": "Арифметика в двоичной, восьмеричной и шестнадцатеричной системах",
+      "summary": "Сложение, вычитание, умножение в позиционных системах, сравнение чисел.",
+      "kind": "lesson",
+      "order": 4
+    },
+    {
+      "id": "inf-logic-basics",
+      "subject": "informatics",
+      "title": "Логические операции и таблицы истинности",
+      "summary": "НЕ, И, ИЛИ, импликация, эквивалентность, приоритет операций, законы логики, упрощение выражений.",
+      "kind": "lesson",
+      "order": 5
+    },
+    {
+      "id": "inf-logic-circuits",
+      "subject": "informatics",
+      "title": "Логические элементы и схемы",
+      "summary": "Инвертор, конъюнктор, дизъюнктор, сумматор, чтение и построение схем (схемы описываются текстом/формулой).",
+      "kind": "lesson",
+      "order": 6
+    },
+    {
+      "id": "inf-computer-devices",
+      "subject": "informatics",
+      "title": "Устройства компьютера",
+      "summary": "Процессор, регистры, память ОЗУ/ПЗУ, шина, тактовая частота, устройства ввода-вывода, характеристики.",
+      "kind": "lesson",
+      "order": 7
+    },
+    {
+      "id": "inf-software-os",
+      "subject": "informatics",
+      "title": "Программное обеспечение и ОС",
+      "summary": "Виды ПО, операционные системы, файловая система и пути, утилиты, драйверы, конфигурация компьютера.",
+      "kind": "lesson",
+      "order": 8
+    },
+    {
+      "id": "inf-networks",
+      "subject": "informatics",
+      "title": "Компьютерные сети",
+      "summary": "Топологии, коммутатор/маршрутизатор/концентратор, IP-адрес и маска, протоколы TCP/IP, HTTP, DNS, пропускная способность.",
+      "kind": "lesson",
+      "order": 9
+    },
+    {
+      "id": "inf-security",
+      "subject": "informatics",
+      "title": "Информационная безопасность",
+      "summary": "Вирусы и антивирусы, идентификация и аутентификация, криптография, ЭЦП, кибербуллинг, сетевой этикет, авторское право.",
+      "kind": "lesson",
+      "order": 10
+    },
+    {
+      "id": "inf-python-basics",
+      "subject": "informatics",
+      "title": "Python: переменные, типы, операторы",
+      "summary": "Типы данных, операторы / // % **, input/print, sep/end, преобразование типов, приоритет.",
+      "kind": "lesson",
+      "order": 11
+    },
+    {
+      "id": "inf-python-branching-loops",
+      "subject": "informatics",
+      "title": "Python: условия и циклы",
+      "summary": "if/elif/else, for/range, while, break/continue, трассировка программ, подсчёт итераций.",
+      "kind": "lesson",
+      "order": 12
+    },
+    {
+      "id": "inf-python-lists-strings",
+      "subject": "informatics",
+      "title": "Python: списки и строки",
+      "summary": "Индексы и срезы, методы списков и строк, двумерные списки, генераторы, сортировка.",
+      "kind": "lesson",
+      "order": 13
+    },
+    {
+      "id": "inf-python-functions-recursion",
+      "subject": "informatics",
+      "title": "Python: функции и рекурсия",
+      "summary": "Определение функций, параметры, return, области видимости, рекурсия, трассировка рекурсивных вызовов.",
+      "kind": "lesson",
+      "order": 14
+    },
+    {
+      "id": "inf-python-files",
+      "subject": "informatics",
+      "title": "Python: работа с файлами",
+      "summary": "open и режимы, чтение и запись, обработка данных из файла, with, кодировки.",
+      "kind": "lesson",
+      "order": 15
+    },
+    {
+      "id": "inf-algorithms-sorting-search",
+      "subject": "informatics",
+      "title": "Сортировка и поиск",
+      "summary": "Пузырьковая, выбором, вставками, бинарный поиск, число сравнений, сложность O-нотация.",
+      "kind": "lesson",
+      "order": 16
+    },
+    {
+      "id": "inf-graphs",
+      "subject": "informatics",
+      "title": "Графы",
+      "summary": "Представление графов, матрица смежности, обход в ширину и глубину, кратчайший путь, деревья.",
+      "kind": "lesson",
+      "order": 17
+    },
+    {
+      "id": "inf-algorithms-flowcharts",
+      "subject": "informatics",
+      "title": "Алгоритмы и блок-схемы",
+      "summary": "Свойства алгоритма, виды алгоритмов, блок-схемы (описываются словами и псевдокодом), исполнение по шагам.",
+      "kind": "lesson",
+      "order": 18
+    },
+    {
+      "id": "inf-db-relational",
+      "subject": "informatics",
+      "title": "Реляционные базы данных",
+      "summary": "Таблицы, поля, записи, ключи, связи 1:М, формы и отчёты, СУБД, типы данных.",
+      "kind": "lesson",
+      "order": 19
+    },
+    {
+      "id": "inf-sql-queries",
+      "subject": "informatics",
+      "title": "SQL и структурированные запросы",
+      "summary": "SELECT, WHERE, ORDER BY, GROUP BY, JOIN, агрегатные функции, запросы в MS Access.",
+      "kind": "lesson",
+      "order": 20
+    },
+    {
+      "id": "inf-it-trends",
+      "subject": "informatics",
+      "title": "Современные IT-тенденции",
+      "summary": "ИИ и машинное обучение, big data, блокчейн, облака, VR/AR, IoT, IT-стартап, краудфандинг, 3D-моделирование.",
+      "kind": "lesson",
+      "order": 21
+    },
+    {
+      "id": "inf-spreadsheets",
+      "subject": "informatics",
+      "title": "Электронные таблицы",
+      "summary": "Ячейки и типы данных, формулы, относительные/абсолютные/смешанные ссылки, копирование формул, функции, диаграммы.",
+      "kind": "lesson",
+      "order": 22
+    },
+    {
+      "id": "inf-information-objects",
+      "subject": "informatics",
+      "title": "Информационные объекты и форматы",
+      "summary": "Текст, графика, презентации, форматы файлов, векторная и растровая графика, сжатие.",
+      "kind": "lesson",
+      "order": 23
+    },
+    {
+      "id": "inf-web-design",
+      "subject": "informatics",
+      "title": "Веб-проектирование: HTML, CSS, сайт",
+      "summary": "HTML-теги и атрибуты, CSS-свойства, скрипты, домен, хостинг, структура сайта.",
+      "kind": "lesson",
+      "order": 24
+    },
+    {
+      "id": "ielts-grammar-tenses",
+      "subject": "ielts",
+      "title": "Времена глагола для IELTS",
+      "summary": "Present/Past/Future, Perfect и Continuous, согласование времён; ошибки русскоязычных.",
+      "kind": "lesson",
+      "order": 1
+    },
+    {
+      "id": "ielts-grammar-articles",
+      "subject": "ielts",
+      "title": "Артикли и существительные",
+      "summary": "a/an/the/zero article, исчисляемые и неисчисляемые, типичные ошибки русскоязычных.",
+      "kind": "lesson",
+      "order": 2
+    },
+    {
+      "id": "ielts-grammar-conditionals",
+      "subject": "ielts",
+      "title": "Условные предложения и wish",
+      "summary": "Zero–Third conditionals, mixed, wish/if only, hedging для Task 2 и Speaking Part 3.",
+      "kind": "lesson",
+      "order": 3
+    },
+    {
+      "id": "ielts-grammar-passive",
+      "subject": "ielts",
+      "title": "Пассивный залог и описание процессов",
+      "summary": "Passive во всех временах, описание процессов и карт в Task 1.",
+      "kind": "lesson",
+      "order": 4
+    },
+    {
+      "id": "ielts-grammar-relative-clauses",
+      "subject": "ielts",
+      "title": "Относительные придаточные",
+      "summary": "which/that/who/whose/where, defining и non-defining, сокращённые придаточные.",
+      "kind": "lesson",
+      "order": 5
+    },
+    {
+      "id": "ielts-grammar-modals",
+      "subject": "ielts",
+      "title": "Модальные глаголы и степени уверенности",
+      "summary": "may/might/could/must/should, hedging, советы и предположения в Speaking и Writing.",
+      "kind": "lesson",
+      "order": 6
+    },
+    {
+      "id": "ielts-grammar-complex-sentences",
+      "subject": "ielts",
+      "title": "Сложные предложения и связки",
+      "summary": "Although/whereas/despite, linking words, participle clauses, инверсия — путь к GRA Band 7.",
+      "kind": "lesson",
+      "order": 7
+    },
+    {
+      "id": "ielts-grammar-common-errors",
+      "subject": "ielts",
+      "title": "Типичные ошибки русскоязычных",
+      "summary": "Порядок слов, предлоги, согласование, «very» и академическая лексика, пунктуация, самопроверка error-free sentences.",
+      "kind": "lesson",
+      "order": 8
+    },
+    {
+      "id": "ielts-vocab-environment",
+      "subject": "ielts",
+      "title": "Environment",
+      "summary": "20 слов: emissions, biodiversity, sustainable, deforestation…",
+      "kind": "vocab",
+      "order": 10
+    },
+    {
+      "id": "ielts-vocab-technology",
+      "subject": "ielts",
+      "title": "Technology",
+      "summary": "20 слов: automation, breakthrough, obsolete, cutting-edge…",
+      "kind": "vocab",
+      "order": 11
+    },
+    {
+      "id": "ielts-vocab-health",
+      "subject": "ielts",
+      "title": "Health",
+      "summary": "20 слов: sedentary, obesity, preventive, well-being…",
+      "kind": "vocab",
+      "order": 12
+    },
+    {
+      "id": "ielts-vocab-work-career",
+      "subject": "ielts",
+      "title": "Work & Career",
+      "summary": "20 слов: workforce, redundancy, promotion, flexible hours…",
+      "kind": "vocab",
+      "order": 13
+    },
+    {
+      "id": "ielts-vocab-society-culture",
+      "subject": "ielts",
+      "title": "Society & Culture",
+      "summary": "20 слов: heritage, inequality, integration, tradition…",
+      "kind": "vocab",
+      "order": 14
+    },
+    {
+      "id": "ielts-vocab-cities-transport",
+      "subject": "ielts",
+      "title": "Cities & Transport",
+      "summary": "20 слов: congestion, infrastructure, commute, urban sprawl…",
+      "kind": "vocab",
+      "order": 15
+    },
+    {
+      "id": "ielts-vocab-science-research",
+      "subject": "ielts",
+      "title": "Science & Research",
+      "summary": "20 слов: hypothesis, evidence, significant, methodology…",
+      "kind": "vocab",
+      "order": 16
+    },
+    {
+      "id": "ielts-vocab-media-communication",
+      "subject": "ielts",
+      "title": "Media & Communication",
+      "summary": "20 слов: censorship, bias, coverage, misinformation…",
+      "kind": "vocab",
+      "order": 17
+    },
+    {
+      "id": "ielts-vocab-academic-linkers",
+      "subject": "ielts",
+      "title": "Academic linkers & essay phrases",
+      "summary": "20 связок и академических фраз: furthermore, consequently, it is widely believed that…",
+      "kind": "vocab",
+      "order": 18
+    },
+    {
+      "id": "ielts-reading-skimming-scanning",
+      "subject": "ielts",
+      "title": "Skimming, scanning и тайминг",
+      "summary": "Как читать passage за 20 минут; passage «The history of timekeeping» с 13 вопросами разных типов.",
+      "kind": "lesson",
+      "order": 19
+    },
+    {
+      "id": "ielts-reading-matching-headings",
+      "subject": "ielts",
+      "title": "Matching headings",
+      "summary": "Главная идея абзаца vs деталь; passage о психологии сна, упор на matching headings.",
+      "kind": "lesson",
+      "order": 21
+    },
+    {
+      "id": "ielts-reading-matching-info-features",
+      "subject": "ielts",
+      "title": "Matching information & features",
+      "summary": "Сопоставление деталей с абзацами и исследователями; passage о биологии.",
+      "kind": "lesson",
+      "order": 22
+    },
+    {
+      "id": "ielts-reading-completion",
+      "subject": "ielts",
+      "title": "Sentence / summary / note completion",
+      "summary": "Лимит слов и точное копирование форм; passage о технологиях, упор на completion.",
+      "kind": "lesson",
+      "order": 23
+    },
+    {
+      "id": "ielts-reading-mcq-short-answer",
+      "subject": "ielts",
+      "title": "Multiple choice и short answer",
+      "summary": "Дистракторы и парафраз; passage об образовании, упор на MCQ.",
+      "kind": "lesson",
+      "order": 24
+    },
+    {
+      "id": "ielts-listening-part1-forms",
+      "subject": "ielts",
+      "title": "Part 1: формы, числа, spelling",
+      "summary": "Диалог о бронировании/регистрации: form completion, числа, имена по буквам.",
+      "kind": "lesson",
+      "order": 25
+    },
+    {
+      "id": "ielts-listening-part2-maps",
+      "subject": "ielts",
+      "title": "Part 2: монолог, карты и matching",
+      "summary": "Экскурсия/объявление: описание плана словами и matching.",
+      "kind": "lesson",
+      "order": 26
+    },
+    {
+      "id": "ielts-listening-part3-discussion",
+      "subject": "ielts",
+      "title": "Part 3: обсуждение и мнения",
+      "summary": "Студенты и преподаватель: multiple choice, смена мнений.",
+      "kind": "lesson",
+      "order": 27
+    },
+    {
+      "id": "ielts-listening-part4-lecture",
+      "subject": "ielts",
+      "title": "Part 4: лекция и конспект",
+      "summary": "Академическая лекция: note completion.",
+      "kind": "lesson",
+      "order": 28
+    },
+    {
+      "id": "ielts-writing-task1-graphs",
+      "subject": "ielts",
+      "title": "Task 1: графики, таблицы, диаграммы",
+      "summary": "Структура overview + детали, лексика тенденций, 2 задания (данные таблицей) с образцами Band 6/7/8.",
+      "kind": "writing",
+      "order": 29
+    },
+    {
+      "id": "ielts-writing-task1-process-map",
+      "subject": "ielts",
+      "title": "Task 1: процессы и карты",
+      "summary": "Пассив, последовательность, изменения на карте (описание словами); 2 задания с образцами.",
+      "kind": "writing",
+      "order": 30
+    },
+    {
+      "id": "ielts-writing-task2-cohesion-lexis",
+      "subject": "ielts",
+      "title": "Task 2: связность, лексика, самопроверка",
+      "summary": "Развитие абзаца, связки, апгрейд лексики, поиск ошибок; 3 задания с образцами.",
+      "kind": "writing",
+      "order": 32
+    },
+    {
+      "id": "ielts-speaking-part1",
+      "subject": "ielts",
+      "title": "Part 1: развёрнутые ответы",
+      "summary": "Answer + reason + example; банк вопросов по 12 темам с примерами ответов.",
+      "kind": "speaking",
+      "order": 33
+    },
+    {
+      "id": "ielts-speaking-part3",
+      "subject": "ielts",
+      "title": "Part 3: дискуссия",
+      "summary": "Мнение, сравнение, прогноз, hedging; наборы вопросов Part 3 с примерами ответов.",
+      "kind": "speaking",
+      "order": 35
+    }
+  ]
 }

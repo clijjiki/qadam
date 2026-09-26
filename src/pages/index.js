@@ -6,6 +6,7 @@ export const ROUTES = [
   { pattern: '/onboarding', nav: 'home', title: 'Начало', focus: true, public: true, load: () => import('./onboarding.js') },
   { pattern: '/ubt', nav: 'ubt', title: 'ЕНТ', load: () => import('./ubt.js') },
   { pattern: '/subject/:subjectId', nav: 'ubt', title: 'Предмет', load: () => import('./subject.js') },
+  { pattern: '/curriculum', nav: 'school', title: 'По классам', load: () => import('./curriculum.js') },
   { pattern: '/topic/:topicId', nav: 'ubt', title: 'Тема', load: () => import('./topic.js') },
   { pattern: '/practice/:topicId', nav: 'ubt', title: 'Практика', focus: true, load: () => import('./practice.js') },
   { pattern: '/practice', nav: 'review', title: 'Повторение', focus: true, load: () => import('./practice.js') },

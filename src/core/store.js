@@ -1,5 +1,8 @@
 // Хранилище прогресса в localStorage. Состояние иммутабельно: update(fn) возвращает новый объект.
 
+import { normalizeLang } from './content.js';
+import { DEFAULT_GRADE, DEFAULT_TRACK, normalizeGrade, normalizeTrack } from './curriculum.js';
+
 export const STORAGE_KEY = 'qadam.v1';
 export const STATE_VERSION = 1;
 
@@ -17,6 +20,8 @@ export function createDefaultState() {
       ieltsTarget: 7,
       hoursPerWeek: 6,
       shift: 2,
+      grade: DEFAULT_GRADE,
+      track: DEFAULT_TRACK,
       onboarded: false,
       createdAt: Date.now(),
     },
@@ -25,7 +30,7 @@ export function createDefaultState() {
       dailyGoalMinutes: 25,
       shuffleOptions: true,
       showTimer: true,
-      examLang: 'ru',
+      contentLang: 'ru',
     },
     topics: {},
     questions: {},
@@ -52,6 +57,23 @@ function safeParse(raw) {
   }
 }
 
+/**
+ * Настройки: `examLang` (язык только для пробников) стал общим `contentLang` —
+ * переносим старое значение, чтобы выбор пользователя не сбросился.
+ */
+export function migrateSettings(base, saved = {}) {
+  const { examLang, ...rest } = { ...base, ...saved };
+  // Порядок важен: у base всегда есть contentLang, поэтому сначала смотрим на сохранённые значения.
+  const chosen = saved?.contentLang || examLang || base.contentLang;
+  return { ...rest, contentLang: normalizeLang(chosen) };
+}
+
+/** Профиль: класс и трек появились позже — старым профилям ставим значения по умолчанию. */
+export function migrateProfile(base, saved = {}) {
+  const merged = { ...base, ...(saved || {}) };
+  return { ...merged, grade: normalizeGrade(merged.grade), track: normalizeTrack(merged.track) };
+}
+
 /** Приводит старые/неполные данные к актуальной форме, не теряя прогресс. */
 export function migrate(saved) {
   const base = createDefaultState();
@@ -60,8 +82,8 @@ export function migrate(saved) {
     ...base,
     ...saved,
     version: STATE_VERSION,
-    profile: { ...base.profile, ...(saved.profile || {}) },
-    settings: { ...base.settings, ...(saved.settings || {}) },
+    profile: migrateProfile(base.profile, saved.profile),
+    settings: migrateSettings(base.settings, saved.settings),
     topics: saved.topics || {},
     questions: saved.questions || {},
     vocab: saved.vocab || {},

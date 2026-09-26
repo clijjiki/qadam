@@ -1,7 +1,7 @@
 // Статистика: сводка, активность, точность, пробники, прогноз по предметам, таблица тем, бейджи.
 
 import { h, formatMinutes, pluralize } from '../core/dom.js';
-import { ieltsSubject, topicWeight, topicsOf, ubtSubjects } from '../core/content.js';
+import { ieltsSubject, langOf, topicTitle, topicWeight, topicsOf, ubtSubjects } from '../core/content.js';
 import { ieltsReadiness, masteryLevel, masteryOf, overallReadiness } from '../core/mastery.js';
 import { accuracySeries, activityCells, examSeries, levelInfo, streakInfo } from '../core/stats.js';
 import { addDaysKey, formatDate, todayKey, weekdayShort } from '../core/time.js';
@@ -148,13 +148,13 @@ function forecastCard(state) {
 function collectTopics(state) {
   const subjectsList = [...ubtSubjects(), ieltsSubject()].filter(Boolean);
   return subjectsList.flatMap((s) =>
-    topicsOf(s.id, { kind: 'lesson' }).map((meta) => ({ meta, mastery: masteryOf(state, meta.id), stats: state.topics?.[meta.id] || null, weight: topicWeight(meta) })),
+    topicsOf(s.id, { kind: 'lesson' }).map((meta) => ({ meta, title: topicTitle(meta, langOf(state)), mastery: masteryOf(state, meta.id), stats: state.topics?.[meta.id] || null, weight: topicWeight(meta) })),
   );
 }
 
 function sortRows(rows, sortKey) {
   const copy = [...rows];
-  if (sortKey === 'title') return copy.sort((a, b) => a.meta.title.localeCompare(b.meta.title, 'ru'));
+  if (sortKey === 'title') return copy.sort((a, b) => a.title.localeCompare(b.title, 'ru'));
   if (sortKey === 'weight') return copy.sort((a, b) => b.weight - a.weight || a.mastery - b.mastery);
   return copy.sort((a, b) => a.mastery - b.mastery || b.weight - a.weight);
 }
@@ -167,7 +167,7 @@ function topicRow(row, index) {
     'tr',
     {},
     h('td', { class: 'muted' }, String(index + 1)),
-    h('td', {}, h('a', { href: `#/topic/${row.meta.id}` }, row.meta.title)),
+    h('td', {}, h('a', { href: `#/topic/${row.meta.id}` }, row.title)),
     h('td', {}, subjectBadge(row.meta.subject)),
     h('td', {}, h('div', { class: 'row', style: { gap: '8px' } }, progressBar(row.mastery, { color }), h('span', { class: 'nowrap small' }, `${Math.round(row.mastery * 100)}%`))),
     h('td', { class: 'right' }, String(answered)),

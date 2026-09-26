@@ -2,6 +2,7 @@
 
 import { h, replaceChildren } from '../core/dom.js';
 import { setProfile } from '../core/actions.js';
+import { GRADES, normalizeGrade } from '../core/curriculum.js';
 import { daysUntil, todayKey } from '../core/time.js';
 import { toast } from '../ui/toast.js';
 
@@ -34,6 +35,7 @@ export async function render(ctx) {
     ieltsTarget: profile.ieltsTarget || 7,
     hoursPerWeek: profile.hoursPerWeek || 6,
     shift: profile.shift || 2,
+    grade: normalizeGrade(profile.grade),
     ielts: true,
   };
   let step = 0;
@@ -71,6 +73,7 @@ export async function render(ctx) {
       ieltsTarget: Number(draft.ieltsTarget) || 7,
       hoursPerWeek: Number(draft.hoursPerWeek) || 6,
       shift: Number(draft.shift) || 2,
+      grade: normalizeGrade(draft.grade),
       onboarded: true,
     });
     toast('Готово! Начинаем 🚀', { tone: 'success' });
@@ -116,8 +119,10 @@ export async function render(ctx) {
     [1, 2].forEach(function (shift) {
       shiftRow.append(h('button', { class: Number(draft.shift) === shift ? 'choice active' : 'choice', onClick: function () { set({ shift: shift }); } }, shift + '-я смена'));
     });
+    const gradeRow = chips(GRADES, Number(draft.grade), function (value) { set({ grade: value }); }, function (value) { return value + ' класс'; });
     return [
-      h('h2', {}, 'Сколько времени есть на подготовку?'),
+      h('h2', {}, 'Класс и время на подготовку'),
+      field('В каком ты классе?', gradeRow, 'Математику начнём с программы твоего класса — под БЖБ и ТЖБ, — а потом пройдём всё с 7-го.'),
       field('Часов в неделю', hoursRow, 'Это примерно 40–100 минут в день. Можно поменять в любой момент.'),
       field('Смена в школе', shiftRow, 'Вторая смена — планируем короткие вечерние и утренние сессии.'),
     ];
@@ -138,6 +143,7 @@ export async function render(ctx) {
         summaryRow('Имя', draft.name || '—'),
         summaryRow('ЕНТ', draft.examDate + ' · через ' + days + ' дн. · цель ' + draft.targetScore),
         summaryRow('IELTS', ieltsLine),
+        summaryRow('Класс', draft.grade + '-й · математика сначала по программе класса, потом с 7-го'),
         summaryRow('Время', draft.hoursPerWeek + ' ч в неделю, ' + draft.shift + '-я смена'),
       ),
       h('p', { class: 'muted small' }, 'Прогресс хранится в этом браузере. В настройках есть экспорт в файл — делай его раз в месяц.'),

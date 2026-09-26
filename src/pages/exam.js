@@ -1,8 +1,7 @@
 // Хаб пробников: формат ЕНТ, запуск полного/мини режима, продолжение, история результатов.
 
 import { append, formatDuration, h, pluralize } from '../core/dom.js';
-import { CONTENT_LANGS, langName, localizedPath, topicsOf, ubtSubjects } from '../core/content.js';
-import { setSettings } from '../core/actions.js';
+import { langName, langOf, localizedPath, topicsOf, ubtSubjects } from '../core/content.js';
 import { icon } from '../ui/icons.js';
 import { clearInProgress, examConfig, loadInProgress, loadLastResult } from '../core/exam.js';
 import { examSeries } from '../core/stats.js';
@@ -11,6 +10,7 @@ import { formatDateTime } from '../core/time.js';
 import { lineChart } from '../ui/charts.js';
 import { confirmDialog } from '../ui/modal.js';
 import { pageHead, subjectBadge } from '../ui/components.js';
+import { langSwitch } from '../ui/lang-switch.js';
 
 function pointsOf(parts) {
   return (parts.plain || 0) + (parts.context || 0) + 2 * (parts.multi || 0) + 2 * (parts.match || 0);
@@ -55,12 +55,9 @@ async function translationStats(lang) {
   return { total: metas.length, translated: checks.filter(Boolean).length };
 }
 
-function langCard(lang, onPick, stats) {
-  const chips = CONTENT_LANGS.map((item) =>
-    h('button', { class: item.id === lang ? 'chip active' : 'chip', onClick: () => onPick(item.id) }, item.name),
-  );
+function langCard(lang, stats) {
   const note = lang === 'ru'
-    ? 'ЕНТ можно сдавать на казахском, русском или английском. Интерфейс сайта всегда на русском.'
+    ? 'ЕНТ можно сдавать на казахском или русском. Переключатель вверху меняет язык всех материалов; интерфейс сайта остаётся русским.'
     : stats
       ? `Заданий на казахском: ${stats.translated} из ${stats.total} тем. Непереведённые темы придут на русском.`
       : 'Задания будут на казахском языке.';
@@ -68,7 +65,7 @@ function langCard(lang, onPick, stats) {
     'div',
     { class: 'card stack' },
     h('div', { class: 'card__title row', style: { gap: '8px' } }, icon('globe', { size: 18 }), 'Язык заданий'),
-    h('div', { class: 'chips' }, chips),
+    langSwitch(),
     h('p', { class: 'muted small', style: { margin: 0 } }, note),
   );
 }
@@ -129,18 +126,14 @@ export async function render(ctx) {
   const config = examConfig('full');
   const mini = examConfig('mini');
   const snapshot = loadInProgress();
-  const lang = query.lang || state.settings.examLang || 'ru';
+  const lang = langOf(state);
   const stats = await translationStats(lang);
   const root = h('div', { class: 'stack' });
   const rerender = async () => root.replaceChildren(await render({ ...ctx, state: getState() }));
-  const pickLang = (value) => {
-    setSettings({ examLang: value });
-    rerender();
-  };
   append(root, [
     pageHead({ title: 'Пробные экзамены', sub: 'Формат ЕНТ: 5 секций, баллы за мультиответ 2/1/0, таймер без пауз.' }),
     snapshot ? resumeCard(snapshot, rerender) : null,
-    langCard(lang, pickLang, stats),
+    langCard(lang, stats),
     h('div', { class: 'grid grid--2' }, startCard('full', config, query.mode === 'full', lang), startCard('mini', mini, query.mode === 'mini', lang)),
     h('div', { class: 'grid grid--2' }, h('div', { class: 'card stack' }, h('h3', { style: { margin: 0 } }, 'Формат полного пробника'), formatTable(config), h('p', { class: 'muted small', style: { margin: 0 } }, 'Задания с несколькими ответами и на соответствие — по 2 балла. Одна ошибка в мультиответе — 1 балл. Пустой ответ — 0, штрафа нет: отвечай на всё.')), historyCard(state)),
   ]);
