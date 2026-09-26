@@ -3,6 +3,7 @@
 import { h } from '../core/dom.js';
 import { levelInfo, streakInfo } from '../core/stats.js';
 import { pageHead, progressBar } from '../ui/components.js';
+import { COPYRIGHT } from '../ui/layout.js';
 
 const LINKS = [
   ['📅', 'План подготовки', '#/plan'],
@@ -32,5 +33,6 @@ export async function render({ state }) {
     ),
     h('div', { class: 'more-grid' }, LINKS.map(([icon, label, href]) => h('a', { href }, h('span', {}, icon), label))),
     h('p', { class: 'muted small' }, 'Прогресс хранится только в этом браузере. Сделай экспорт в ', h('a', { href: '#/settings' }, 'настройках'), ', чтобы не потерять его.'),
+    h('p', { class: 'copyright' }, COPYRIGHT),
   );
 }

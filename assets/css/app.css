@@ -158,6 +158,7 @@ hr { border: 0; border-top: 1px solid var(--line); margin: 1.2em 0; }
 .nav__link .ico { width: 20px; text-align: center; font-size: 1.05rem; }
 .nav__dot { width: 8px; height: 8px; border-radius: 50%; margin-left: auto; }
 .sidebar__foot { margin-top: auto; padding: 10px 8px 0; font-size: .78rem; color: var(--text-3); }
+.copyright { padding: 8px 8px 0; font-size: .7rem; color: var(--text-3); line-height: 1.4; }
 
 /* Переключатель языка материалов (RU / KZ) */
 .langsw { display: inline-flex; gap: 2px; padding: 2px; border-radius: 999px; background: var(--bg-sunken); border: 1px solid var(--line); }
