@@ -23,8 +23,8 @@ function matches(key, mastery, started) {
 }
 
 export async function render({ params, state, navigate }) {
-  if (params.subjectId === 'ielts') {
-    navigate('/ielts', { replace: true });
+  if (params.subjectId === 'ielts' || params.subjectId === 'english') {
+    navigate(params.subjectId === 'english' ? '/english' : '/ielts', { replace: true });
     return h('div', {});
   }
   const meta = subject(params.subjectId);

@@ -6,6 +6,8 @@ import { emptyTopicStats } from './mastery.js';
 import { GRADES, gradeFromCorrect, isGraduated, review } from './srs.js';
 import { newlyEarned } from './badges.js';
 import { todayKey, weekStartKey } from './time.js';
+import { withPyAttempt } from './pytrainer.js';
+import { withCheck, withCounter, withSentences } from './english.js';
 
 export const XP = {
   correct: 2,
@@ -18,6 +20,8 @@ export const XP = {
   fullExam: 80,
   writing: 15,
   speaking: 8,
+  python: 5,
+  sentence: 2,
 };
 
 function bumpDaily(state, patch, nowTs) {
@@ -187,11 +191,11 @@ export function recordVocabReview(wordId, grade, seconds = 0.5) {
   });
 }
 
-export function finishVocabSession(count, seconds) {
+export function finishVocabSession(count, seconds, subject = 'ielts') {
   if (!count) return;
   const nowTs = Date.now();
   update((state) => {
-    const session = { at: nowTs, kind: 'vocab', topicId: null, subject: 'ielts', correct: count, total: count, points: 0, maxPoints: 0, seconds: Math.round(seconds), xp: 0 };
+    const session = { at: nowTs, kind: 'vocab', topicId: null, subject, correct: count, total: count, points: 0, maxPoints: 0, seconds: Math.round(seconds), xp: 0 };
     let next = { ...state, sessions: [...state.sessions, session].slice(-2000) };
     next = bumpDaily(next, { sessions: 1 }, nowTs);
     const badged = withBadges(next);
@@ -218,6 +222,54 @@ export function saveSpeaking(cardId, patch) {
     let next = setIn(state, ['speaking', cardId], { ...prev, ...patch, updatedAt: nowTs });
     if (isNew) next = bumpDaily(next, { xp: XP.speaking, minutes: 4, sessions: 1 }, nowTs);
     return withBadges(next).state;
+  });
+}
+
+// Защита localStorage от вставки огромного текста: при переполнении перестал бы сохраняться весь прогресс.
+const MAX_CODE_LENGTH = 20000;
+
+/** Черновик кода задачи (без попытки проверки). */
+export function savePyCode(taskId, rawCode) {
+  const code = String(rawCode ?? '').slice(0, MAX_CODE_LENGTH);
+  update((state) => {
+    const prev = state.python[taskId];
+    if (prev?.code === code) return state;
+    const base = prev || { attempts: 0, solved: false, solvedAt: null };
+    return { ...state, python: { ...state.python, [taskId]: { ...base, code, updatedAt: Date.now() } } };
+  });
+}
+
+/** Результат проверки задачи тренажёра. XP — только за первое решение. Возвращает true, если задача решена впервые. */
+export function recordPyCheck(taskId, { ok, code: rawCode, level = 1 }) {
+  const nowTs = Date.now();
+  const code = String(rawCode ?? '').slice(0, MAX_CODE_LENGTH);
+  let firstSolve = false;
+  update((state) => {
+    firstSolve = Boolean(ok) && !state.python[taskId]?.solved;
+    let next = { ...state, python: withPyAttempt(state.python, taskId, { ok, code, at: nowTs }) };
+    // answered/correct не трогаем: они про точность в тестах ЕНТ, а не про попытки в тренажёре.
+    if (firstSolve) next = bumpDaily(next, { xp: XP.python * level, minutes: 5 }, nowTs);
+    return withBadges(next).state;
+  });
+  return firstSolve;
+}
+
+/** Английский: +1 серия/фильм (delta может быть -1, если нажал по ошибке). */
+export function bumpEnglishCounter(goalId, delta = 1) {
+  update((state) => ({ ...state, english: withCounter(state.english, goalId, delta) }));
+}
+
+export function setEnglishCheck(goalId, value) {
+  update((state) => ({ ...state, english: withCheck(state.english, goalId, value) }));
+}
+
+/** Предложения, составленные из выученных слов. */
+export function recordSentences(count) {
+  if (!count || count <= 0) return;
+  const nowTs = Date.now();
+  update((state) => {
+    const next = { ...state, english: withSentences(state.english, todayKey(new Date(nowTs)), count) };
+    return bumpDaily(next, { xp: count * XP.sentence, minutes: count * 2, sessions: 1 }, nowTs);
   });
 }
 

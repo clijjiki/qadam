@@ -22,6 +22,17 @@ async function fetchJSON(path) {
   return response.json();
 }
 
+let pyCatalog = null;
+
+/** Каталог задач тренажёра Python (content/python/tasks.json). */
+export async function loadPyCatalog() {
+  if (pyCatalog) return pyCatalog;
+  const data = await fetchJSON('content/python/tasks.json');
+  if (!data || !Array.isArray(data.units)) throw new Error('Каталог задач Python повреждён (нет units)');
+  pyCatalog = data;
+  return pyCatalog;
+}
+
 export async function loadManifest() {
   if (manifest) return manifest;
   const data = await fetchJSON('content/manifest.json');

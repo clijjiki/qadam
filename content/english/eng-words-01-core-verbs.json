@@ -1,0 +1,454 @@
+{
+  "id": "eng-words-01-core-verbs",
+  "subject": "english",
+  "title": "Самые нужные глаголы",
+  "summary": "20 глаголов, без которых не построить ни одного предложения: be, have, do, go, get, make, know, want, like, need…",
+  "theory": [
+    "## Как учить эти слова\nЭто первые 20 из 1500 самых частых английских слов. Без этих глаголов не получится сказать почти ничего, поэтому начинаем с них.\n\n1. **15 новых слов в день** — не больше. Остальное время — повторение по карточкам.\n2. **Говори вслух**: слово, транскрипция и пример — по 3 раза.\n3. **Пиши свои предложения**: 5 коротких фраз про себя (*I have a brother. I like tea.*).\n4. **Встречай слова в жизни**: смотри Extra English и лови эти глаголы на слух.",
+    "## Совет: неправильные глаголы\nВ прошедшем времени (Past Simple) многие из этих глаголов меняются целиком. Учи их сразу парой:\n\n| Глагол | Прошедшее |\n|---|---|\n| be | was / were |\n| have | had |\n| do | did |\n| go | went |\n| get | got |\n| make | made |\n| see | saw |\n| come | came |\n| give | gave |\n| say | said |\n\nЕщё: know → knew, think → thought, take → took, find → found, can → could. Правильные глаголы просто получают *-ed*: want → wanted, like → liked, look → looked. И не забывай *-s* после he / she: *he goes, she has, he does*."
+  ],
+  "words": [
+    {
+      "id": "w01-be",
+      "word": "be",
+      "pos": "v",
+      "ipa": "/biː/",
+      "ru": "быть, являться; находиться",
+      "def": "a word we use to say who, what or where someone or something is",
+      "example": "My brother is at school now.",
+      "collocations": [
+        "be at home",
+        "be late",
+        "be ready"
+      ]
+    },
+    {
+      "id": "w01-have",
+      "word": "have",
+      "pos": "v",
+      "ipa": "/hæv/",
+      "ru": "иметь; у меня есть",
+      "def": "to own something; also to eat or drink something",
+      "example": "I have two brothers and one sister.",
+      "collocations": [
+        "have breakfast",
+        "have a phone",
+        "have a good time"
+      ]
+    },
+    {
+      "id": "w01-do",
+      "word": "do",
+      "pos": "v",
+      "ipa": "/duː/",
+      "ru": "делать",
+      "def": "to work on something or act in some way",
+      "example": "I do my homework after school.",
+      "collocations": [
+        "do homework",
+        "do sport",
+        "do the dishes"
+      ]
+    },
+    {
+      "id": "w01-go",
+      "word": "go",
+      "pos": "v",
+      "ipa": "/ɡəʊ/",
+      "ru": "идти, ехать",
+      "def": "to move from one place to another place",
+      "example": "We go to school at eight.",
+      "collocations": [
+        "go home",
+        "go to school",
+        "go to bed"
+      ]
+    },
+    {
+      "id": "w01-get",
+      "word": "get",
+      "pos": "v",
+      "ipa": "/ɡet/",
+      "ru": "получать; добираться; становиться",
+      "def": "to receive something; also to arrive at a place",
+      "example": "I got a message from my friend yesterday.",
+      "collocations": [
+        "get up",
+        "get home",
+        "get a message"
+      ]
+    },
+    {
+      "id": "w01-make",
+      "word": "make",
+      "pos": "v",
+      "ipa": "/meɪk/",
+      "ru": "делать, создавать, готовить",
+      "def": "to build, cook or create something new",
+      "example": "My mother makes very good bread.",
+      "collocations": [
+        "make tea",
+        "make friends",
+        "make a mistake"
+      ]
+    },
+    {
+      "id": "w01-know",
+      "word": "know",
+      "pos": "v",
+      "ipa": "/nəʊ/",
+      "ru": "знать",
+      "def": "to have some information in your head",
+      "example": "I don't know his name.",
+      "collocations": [
+        "I know",
+        "know the answer",
+        "know English"
+      ]
+    },
+    {
+      "id": "w01-think",
+      "word": "think",
+      "pos": "v",
+      "ipa": "/θɪŋk/",
+      "ru": "думать, считать",
+      "def": "to have an idea or opinion in your head",
+      "example": "I think this film is very good.",
+      "collocations": [
+        "I think so",
+        "think about",
+        "think of"
+      ]
+    },
+    {
+      "id": "w01-take",
+      "word": "take",
+      "pos": "v",
+      "ipa": "/teɪk/",
+      "ru": "брать; занимать (время)",
+      "def": "to put your hand on something and carry it with you",
+      "example": "I take my phone to school every day.",
+      "collocations": [
+        "take a photo",
+        "take a shower",
+        "take time"
+      ]
+    },
+    {
+      "id": "w01-see",
+      "word": "see",
+      "pos": "v",
+      "ipa": "/siː/",
+      "ru": "видеть; встречаться",
+      "def": "to notice something with your eyes",
+      "example": "I see my grandmother every Sunday.",
+      "collocations": [
+        "see a film",
+        "see a friend",
+        "see you later"
+      ]
+    },
+    {
+      "id": "w01-come",
+      "word": "come",
+      "pos": "v",
+      "ipa": "/kʌm/",
+      "ru": "приходить, приезжать",
+      "def": "to move to the place where you are or where another person is",
+      "example": "Come to my house after school!",
+      "collocations": [
+        "come home",
+        "come back",
+        "come in"
+      ]
+    },
+    {
+      "id": "w01-want",
+      "word": "want",
+      "pos": "v",
+      "ipa": "/wɒnt/",
+      "ru": "хотеть",
+      "def": "to wish to have or do something",
+      "example": "I want a new phone.",
+      "collocations": [
+        "want to go",
+        "want to eat",
+        "want some tea"
+      ]
+    },
+    {
+      "id": "w01-like",
+      "word": "like",
+      "pos": "v",
+      "ipa": "/laɪk/",
+      "ru": "нравиться, любить",
+      "def": "to think that something or someone is nice or good",
+      "example": "I like football and music.",
+      "collocations": [
+        "I like it",
+        "like music",
+        "would like"
+      ]
+    },
+    {
+      "id": "w01-need",
+      "word": "need",
+      "pos": "v",
+      "ipa": "/niːd/",
+      "ru": "нуждаться; нужно",
+      "def": "to want something because it is very important for you",
+      "example": "I need a pen for the test.",
+      "collocations": [
+        "need help",
+        "need time",
+        "need to go"
+      ]
+    },
+    {
+      "id": "w01-give",
+      "word": "give",
+      "pos": "v",
+      "ipa": "/ɡɪv/",
+      "ru": "давать, дарить",
+      "def": "to put something in another person's hand; to let someone have it",
+      "example": "My dad gave me a new bag for my birthday.",
+      "collocations": [
+        "give me",
+        "give a present",
+        "give an answer"
+      ]
+    },
+    {
+      "id": "w01-say",
+      "word": "say",
+      "pos": "v",
+      "ipa": "/seɪ/",
+      "ru": "говорить, сказать",
+      "def": "to speak some words",
+      "example": "She said hello to me in the morning.",
+      "collocations": [
+        "say hello",
+        "say goodbye",
+        "say sorry"
+      ]
+    },
+    {
+      "id": "w01-look",
+      "word": "look",
+      "pos": "v",
+      "ipa": "/lʊk/",
+      "ru": "смотреть; выглядеть",
+      "def": "to turn your eyes to something to see it",
+      "example": "Look at this photo!",
+      "collocations": [
+        "look at",
+        "look for",
+        "look good"
+      ]
+    },
+    {
+      "id": "w01-use",
+      "word": "use",
+      "pos": "v",
+      "ipa": "/juːz/",
+      "ru": "использовать, пользоваться",
+      "def": "to do something with a thing because it helps you",
+      "example": "I use my phone for music and games.",
+      "collocations": [
+        "use a computer",
+        "use the internet",
+        "use a word"
+      ]
+    },
+    {
+      "id": "w01-find",
+      "word": "find",
+      "pos": "v",
+      "ipa": "/faɪnd/",
+      "ru": "находить",
+      "def": "to see or get something that you looked for",
+      "example": "I can't find my pen.",
+      "collocations": [
+        "find a friend",
+        "find the answer",
+        "find out"
+      ]
+    },
+    {
+      "id": "w01-can",
+      "word": "can",
+      "pos": "v",
+      "ipa": "/kæn/",
+      "ru": "мочь, уметь",
+      "def": "a word that says you are able to do something",
+      "example": "I can swim, but I can't play the guitar.",
+      "collocations": [
+        "can help",
+        "can speak English",
+        "Can I…?"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „хотеть“?",
+      "options": [
+        "like",
+        "take",
+        "need",
+        "want"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Want — хотеть (*I want a new phone*). Need — нуждаться, like — нравиться, take — брать."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „знать“?",
+      "options": [
+        "know",
+        "say",
+        "see",
+        "think"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Know — знать (*I don't know*). Think — думать, see — видеть, say — сказать."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „давать, дарить“?",
+      "options": [
+        "give",
+        "take",
+        "get",
+        "have"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Give — давать. Take — наоборот, брать; get — получать; have — иметь."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „находить“?",
+      "options": [
+        "come",
+        "use",
+        "find",
+        "look"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Find — находить (*I can't find my pen*). Look — смотреть, use — использовать, come — приходить."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: I ___ breakfast at 7.",
+      "options": [
+        "go",
+        "see",
+        "do",
+        "have"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Have breakfast — завтракать. С едой англичане говорят have: *have lunch, have dinner*."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: We ___ to school every day.",
+      "options": [
+        "make",
+        "do",
+        "go",
+        "give"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Go to school — ходить в школу. Go — это движение из одного места в другое."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: I ___ my homework in the evening.",
+      "options": [
+        "say",
+        "make",
+        "do",
+        "take"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Говорят *do homework* — делать домашнее задание. Make — это создать что-то новое: *make tea, make a cake*."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „говорить, сказать“?",
+      "options": [
+        "say",
+        "know",
+        "look",
+        "think"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Say — сказать (*say hello*). Look — смотреть, think — думать, know — знать."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: Yesterday I ___ to the cinema.",
+      "options": [
+        "go",
+        "went",
+        "goes",
+        "going"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Yesterday — вчера, значит нужно прошедшее время. Go — неправильный глагол: go → **went**."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „мочь, уметь“?",
+      "options": [
+        "use",
+        "need",
+        "can",
+        "want"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Can — мочь, уметь (*I can swim*). После can глагол идёт без to: *I can speak English*."
+    }
+  ]
+}

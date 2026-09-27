@@ -1,4 +1,5 @@
-// Словарь IELTS: наборы слов, режим «учить новые» и очередь интервального повторения.
+// Словарь: наборы слов, режим «учить новые» и очередь интервального повторения.
+// Один модуль на два раздела — IELTS (#/ielts/vocab) и английский с нуля (#/english/words).
 
 import { h, formatDuration, pluralize, replaceChildren } from '../../core/dom.js';
 import { langOf, loadTopics, topicsOf } from '../../core/content.js';
@@ -8,7 +9,26 @@ import { GRADES, dueIds } from '../../core/srs.js';
 import { emptyState, pageHead, progressBar } from '../../ui/components.js';
 import { toast } from '../../ui/toast.js';
 
-const LEARN_BATCH = 10;
+const CONFIGS = {
+  ielts: {
+    subject: 'ielts',
+    base: '#/ielts/vocab',
+    home: { label: 'IELTS', href: '#/ielts' },
+    title: 'Словарь IELTS',
+    sub: 'Академическая лексика с интервальным повторением',
+    color: 'var(--c-ielts)',
+    batch: 10,
+  },
+  english: {
+    subject: 'english',
+    base: '#/english/words',
+    home: { label: 'Английский', href: '#/english' },
+    title: 'Слова',
+    sub: '1500 самых нужных слов — по 15 новых в день, с интервальным повторением',
+    color: 'var(--c-ielts)',
+    batch: 15,
+  },
+};
 const REVIEW_LIMIT = 30;
 const RATES = [
   { grade: GRADES.AGAIN, label: 'Не помню', hint: '1' },
@@ -27,8 +47,8 @@ function isLearned(item) {
   return !!item && (item.reps || 0) >= 3;
 }
 
-async function loadSets() {
-  const metas = topicsOf('ielts', { kind: 'vocab' });
+async function loadSets(cfg) {
+  const metas = topicsOf(cfg.subject, { kind: 'vocab' });
   const loaded = [];
   const missing = [];
   await Promise.all(
@@ -51,7 +71,7 @@ function wordIndex(sets) {
   return map;
 }
 
-function overview(sets, missing, state) {
+function overview(cfg, sets, missing, state) {
   const index = wordIndex(sets);
   const total = index.size;
   const learned = [...index.keys()].filter((id) => isLearned(state.vocab[id])).length;
@@ -64,14 +84,14 @@ function overview(sets, missing, state) {
       'div',
       { class: 'card stack', style: { gap: '8px' } },
       h('div', { class: 'row row--between' }, h('b', {}, topic.title || meta.title), h('span', { class: 'badge' }, `${known} / ${ids.length}`)),
-      progressBar(ids.length ? known / ids.length : 0, { color: 'var(--c-ielts)' }),
-      h('div', { class: 'row' }, fresh ? h('a', { class: 'btn btn--sm btn--primary', href: `#/ielts/vocab?mode=learn&set=${meta.id}` }, `Учить новые (${Math.min(fresh, LEARN_BATCH)})`) : h('span', { class: 'muted small' }, 'Все слова уже открыты'), h('a', { class: 'btn btn--sm', href: `#/topic/${meta.id}` }, 'Список слов')),
+      progressBar(ids.length ? known / ids.length : 0, { color: cfg.color }),
+      h('div', { class: 'row' }, fresh ? h('a', { class: 'btn btn--sm btn--primary', href: `${cfg.base}?mode=learn&set=${meta.id}` }, `Учить новые (${Math.min(fresh, cfg.batch)})`) : h('span', { class: 'muted small' }, 'Все слова уже открыты'), h('a', { class: 'btn btn--sm', href: `#/topic/${meta.id}` }, 'Список слов')),
     );
   });
   return h(
     'div',
     { class: 'stack' },
-    pageHead({ title: 'Словарь IELTS', sub: 'Академическая лексика с интервальным повторением', crumbs: [{ label: 'IELTS', href: '#/ielts' }, { label: 'Словарь' }] }),
+    pageHead({ title: cfg.title, sub: cfg.sub, crumbs: [cfg.home, { label: 'Слова' }] }),
     missing.length ? h('div', { class: 'alert alert--warn' }, `Наборы ещё не загружены: ${missing.join(', ')}`) : null,
     h(
       'div',
@@ -80,9 +100,9 @@ function overview(sets, missing, state) {
       h('div', { class: 'stat' }, h('div', { class: 'stat__val' }, String(learned)), h('div', { class: 'stat__label' }, 'выучено')),
       h('div', { class: 'stat' }, h('div', { class: 'stat__val' }, String(due)), h('div', { class: 'stat__label' }, 'к повторению')),
       h('span', { class: 'spacer' }),
-      due ? h('a', { class: 'btn btn--primary btn--lg', href: '#/ielts/vocab?mode=review' }, `Повторить (${due})`) : h('span', { class: 'muted small' }, 'Повторять пока нечего — учи новые слова'),
+      due ? h('a', { class: 'btn btn--primary btn--lg', href: `${cfg.base}?mode=review` }, `Повторить (${due})`) : h('span', { class: 'muted small' }, 'Повторять пока нечего — учи новые слова'),
     ),
-    rows.length ? h('div', { class: 'grid grid--2' }, rows) : emptyState({ icon: '🃏', title: 'Наборы слов появятся позже', sub: 'Файлы словаря ещё не добавлены в content/ielts.', action: { label: 'К IELTS', href: '#/ielts' } }),
+    rows.length ? h('div', { class: 'grid grid--2' }, rows) : emptyState({ icon: '🃏', title: 'Наборы слов появятся позже', sub: `Файлы словаря ещё не добавлены в content/${cfg.subject}.`, action: cfg.home }),
   );
 }
 
@@ -100,7 +120,7 @@ function cardFace(entry, flipped) {
   ];
 }
 
-function session({ queue, mode, root, setName }) {
+function session({ cfg, queue, mode, root, setName }) {
   const startedAt = Date.now();
   let index = 0;
   let flipped = false;
@@ -126,16 +146,16 @@ function session({ queue, mode, root, setName }) {
 
   function finishScreen() {
     const seconds = (Date.now() - startedAt) / 1000;
-    finishVocabSession(done, seconds);
+    finishVocabSession(done, seconds, cfg.subject);
     replaceChildren(
       root,
-      pageHead({ title: 'Готово!', crumbs: [{ label: 'IELTS', href: '#/ielts' }, { label: 'Словарь', href: '#/ielts/vocab' }] }),
+      pageHead({ title: 'Готово!', crumbs: [cfg.home, { label: 'Слова', href: cfg.base }] }),
       h(
         'div',
         { class: 'card result-hero stack' },
         h('div', { class: 'big' }, String(done)),
         h('div', { class: 'muted' }, `${pluralize(done, ['карточка', 'карточки', 'карточек'])} за ${formatDuration(seconds)} · знал ${done ? Math.round((good / done) * 100) : 0}%`),
-        h('div', { class: 'row', style: { justifyContent: 'center' } }, h('a', { class: 'btn btn--primary', href: '#/ielts/vocab' }, 'Ещё'), h('a', { class: 'btn', href: '#/ielts' }, 'К IELTS'), h('a', { class: 'btn', href: '#/' }, 'На главную')),
+        h('div', { class: 'row', style: { justifyContent: 'center' } }, h('a', { class: 'btn btn--primary', href: cfg.base }, 'Ещё'), h('a', { class: 'btn', href: cfg.home.href }, `К разделу «${cfg.home.label}»`), h('a', { class: 'btn', href: '#/' }, 'На главную')),
       ),
     );
   }
@@ -158,7 +178,7 @@ function session({ queue, mode, root, setName }) {
       : h('button', { class: 'btn btn--primary btn--lg btn--block', onClick: flip }, 'Показать перевод');
     replaceChildren(
       root,
-      h('div', { class: 'row row--between' }, h('b', {}, mode === 'learn' ? `Новые слова · ${setName}` : 'Повторение'), h('a', { class: 'btn btn--ghost btn--sm', href: '#/ielts/vocab' }, 'Выйти ✕')),
+      h('div', { class: 'row row--between' }, h('b', {}, mode === 'learn' ? `Новые слова · ${setName}` : 'Повторение'), h('a', { class: 'btn btn--ghost btn--sm', href: cfg.base }, 'Выйти ✕')),
       h('div', { class: 'progress' }, h('div', { class: 'progress__bar', style: { width: `${Math.round((index / queue.length) * 100)}%` } })),
       h('div', { class: 'muted small' }, `${index + 1} из ${queue.length} · ${entry.set.title}`),
       card,
@@ -185,11 +205,12 @@ function session({ queue, mode, root, setName }) {
   draw();
 }
 
-export async function render({ query }) {
+export async function render({ query, path = '' }) {
   unmount();
-  const { sets, missing } = await loadSets();
+  const cfg = path.startsWith('/english') ? CONFIGS.english : CONFIGS.ielts;
+  const { sets, missing } = await loadSets(cfg);
   const state = getState();
-  if (!sets.length) return overview(sets, missing, state);
+  if (!sets.length) return overview(cfg, sets, missing, state);
   const index = wordIndex(sets);
 
   if (query.mode === 'review') {
@@ -197,9 +218,9 @@ export async function render({ query }) {
       .filter((id) => index.has(id))
       .slice(0, REVIEW_LIMIT)
       .map((id) => ({ id, ...index.get(id) }));
-    if (!queue.length) return emptyState({ icon: '🎉', title: 'Нечего повторять', sub: 'Все слова на сегодня закрыты. Открой новый набор.', action: { label: 'К наборам', href: '#/ielts/vocab' } });
+    if (!queue.length) return emptyState({ icon: '🎉', title: 'Нечего повторять', sub: 'Все слова на сегодня закрыты. Открой новый набор.', action: { label: 'К наборам', href: cfg.base } });
     const root = h('div', { class: 'stack' });
-    session({ queue, mode: 'review', root, setName: '' });
+    session({ cfg, queue, mode: 'review', root, setName: '' });
     return root;
   }
 
@@ -208,17 +229,17 @@ export async function render({ query }) {
     const queue = target.topic.words
       .map((w) => ({ id: wordId(target.meta.id, w), word: w, set: target.meta }))
       .filter((e) => !state.vocab[e.id])
-      .slice(0, LEARN_BATCH);
+      .slice(0, cfg.batch);
     if (!queue.length) {
       toast('В этом наборе все слова уже открыты — повтори их');
-      return overview(sets, missing, getState());
+      return overview(cfg, sets, missing, getState());
     }
     const root = h('div', { class: 'stack' });
-    session({ queue, mode: 'learn', root, setName: target.topic.title || target.meta.title });
+    session({ cfg, queue, mode: 'learn', root, setName: target.topic.title || target.meta.title });
     return root;
   }
 
-  return overview(sets, missing, state);
+  return overview(cfg, sets, missing, state);
 }
 
 export function unmount() {

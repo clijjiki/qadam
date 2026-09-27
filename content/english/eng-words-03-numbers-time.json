@@ -1,0 +1,451 @@
+{
+  "id": "eng-words-03-numbers-time",
+  "subject": "english",
+  "title": "Числа, дни и время",
+  "summary": "20 слов о времени: day, week, today, morning, Monday, hour, first… плюс все дни недели.",
+  "theory": [
+    "## Как учить эти слова\nСлова о времени нужны каждый день: чтобы договориться о встрече, сказать, когда урок, и понять расписание.\n\n1. **15 новых слов в день** — не больше. Остальное время — повторение по карточкам.\n2. **Говори вслух**: слово, транскрипция и пример — по 3 раза.\n3. **Пиши свои предложения**: 5 фраз о своём дне (*I get up at seven. On Monday I have English.*).\n4. **Встречай слова в жизни**: в Extra English герои всё время договариваются «когда» — лови эти слова на слух.",
+    "## Совет: дни недели и маленькие слова in / on / at\nДни недели всегда пишутся **с большой буквы**:\n\n| Английский | Русский |\n|---|---|\n| Monday | понедельник |\n| Tuesday | вторник |\n| Wednesday | среда |\n| Thursday | четверг |\n| Friday | пятница |\n| Saturday | суббота |\n| Sunday | воскресенье |\n\nПеред днём — *on*: **on** Monday. Перед частью дня — *in*: **in** the morning, **in** the evening. Перед точным временем — *at*: **at** 7 o'clock, **at** night, **at** the weekend."
+  ],
+  "words": [
+    {
+      "id": "w03-time",
+      "word": "time",
+      "pos": "n",
+      "ipa": "/taɪm/",
+      "ru": "время; раз",
+      "def": "what we measure in minutes and hours",
+      "example": "What time is it? — It's seven o'clock.",
+      "collocations": [
+        "what time",
+        "free time",
+        "on time"
+      ]
+    },
+    {
+      "id": "w03-day",
+      "word": "day",
+      "pos": "n",
+      "ipa": "/deɪ/",
+      "ru": "день, сутки",
+      "def": "24 hours; also the time when it is light",
+      "example": "I study English every day.",
+      "collocations": [
+        "every day",
+        "all day",
+        "a day off"
+      ]
+    },
+    {
+      "id": "w03-week",
+      "word": "week",
+      "pos": "n",
+      "ipa": "/wiːk/",
+      "ru": "неделя",
+      "def": "seven days, from Monday to Sunday",
+      "example": "We have English three times a week.",
+      "collocations": [
+        "next week",
+        "last week",
+        "every week"
+      ]
+    },
+    {
+      "id": "w03-month",
+      "word": "month",
+      "pos": "n",
+      "ipa": "/mʌnθ/",
+      "ru": "месяц",
+      "def": "one of the twelve parts of a year, like May or June",
+      "example": "My birthday is next month.",
+      "collocations": [
+        "next month",
+        "last month",
+        "this month"
+      ]
+    },
+    {
+      "id": "w03-year",
+      "word": "year",
+      "pos": "n",
+      "ipa": "/jɪə/",
+      "ru": "год",
+      "def": "twelve months, or 365 days",
+      "example": "I am sixteen years old.",
+      "collocations": [
+        "this year",
+        "last year",
+        "years old"
+      ]
+    },
+    {
+      "id": "w03-hour",
+      "word": "hour",
+      "pos": "n",
+      "ipa": "/ˈaʊə/",
+      "ru": "час (60 минут)",
+      "def": "sixty minutes",
+      "example": "I do my homework for two hours every evening.",
+      "collocations": [
+        "an hour",
+        "two hours",
+        "for an hour"
+      ]
+    },
+    {
+      "id": "w03-minute",
+      "word": "minute",
+      "pos": "n",
+      "ipa": "/ˈmɪnɪt/",
+      "ru": "минута",
+      "def": "sixty seconds; a short time",
+      "example": "The bus comes in five minutes.",
+      "collocations": [
+        "five minutes",
+        "a minute",
+        "in a minute"
+      ]
+    },
+    {
+      "id": "w03-today",
+      "word": "today",
+      "pos": "adv",
+      "ipa": "/təˈdeɪ/",
+      "ru": "сегодня",
+      "def": "on this day",
+      "example": "Today is Friday.",
+      "collocations": [
+        "today is",
+        "today's lesson"
+      ]
+    },
+    {
+      "id": "w03-tomorrow",
+      "word": "tomorrow",
+      "pos": "adv",
+      "ipa": "/təˈmɒrəʊ/",
+      "ru": "завтра",
+      "def": "on the day after today",
+      "example": "I will see you tomorrow.",
+      "collocations": [
+        "see you tomorrow",
+        "tomorrow morning"
+      ]
+    },
+    {
+      "id": "w03-yesterday",
+      "word": "yesterday",
+      "pos": "adv",
+      "ipa": "/ˈjestədeɪ/",
+      "ru": "вчера",
+      "def": "on the day before today",
+      "example": "Yesterday I was at my grandmother's house.",
+      "collocations": [
+        "yesterday evening",
+        "the day before yesterday"
+      ]
+    },
+    {
+      "id": "w03-morning",
+      "word": "morning",
+      "pos": "n",
+      "ipa": "/ˈmɔːnɪŋ/",
+      "ru": "утро",
+      "def": "the early part of the day, before 12 o'clock",
+      "example": "I get up at seven in the morning.",
+      "collocations": [
+        "in the morning",
+        "good morning",
+        "this morning"
+      ]
+    },
+    {
+      "id": "w03-evening",
+      "word": "evening",
+      "pos": "n",
+      "ipa": "/ˈiːvnɪŋ/",
+      "ru": "вечер",
+      "def": "the end of the day, before night",
+      "example": "In the evening I watch TV with my family.",
+      "collocations": [
+        "in the evening",
+        "good evening",
+        "this evening"
+      ]
+    },
+    {
+      "id": "w03-night",
+      "word": "night",
+      "pos": "n",
+      "ipa": "/naɪt/",
+      "ru": "ночь; поздний вечер",
+      "def": "the time when it is dark and people sleep",
+      "example": "I went to bed late last night.",
+      "collocations": [
+        "at night",
+        "last night",
+        "good night"
+      ]
+    },
+    {
+      "id": "w03-weekend",
+      "word": "weekend",
+      "pos": "n",
+      "ipa": "/ˌwiːkˈend/",
+      "ru": "выходные",
+      "def": "Saturday and Sunday, when there is no school",
+      "example": "At the weekend I play football with my friends.",
+      "collocations": [
+        "at the weekend",
+        "next weekend",
+        "this weekend"
+      ]
+    },
+    {
+      "id": "w03-monday",
+      "word": "Monday",
+      "pos": "n",
+      "ipa": "/ˈmʌndeɪ/",
+      "ru": "понедельник",
+      "def": "the first day of the school week, after Sunday",
+      "example": "On Monday we have a maths test.",
+      "collocations": [
+        "on Monday",
+        "next Monday",
+        "every Monday"
+      ]
+    },
+    {
+      "id": "w03-sunday",
+      "word": "Sunday",
+      "pos": "n",
+      "ipa": "/ˈsʌndeɪ/",
+      "ru": "воскресенье",
+      "def": "the day after Saturday and before Monday",
+      "example": "On Sunday we visit my grandparents.",
+      "collocations": [
+        "on Sunday",
+        "last Sunday",
+        "Sunday morning"
+      ]
+    },
+    {
+      "id": "w03-first",
+      "word": "first",
+      "pos": "num",
+      "ipa": "/fɜːst/",
+      "ru": "первый; сначала",
+      "def": "number one in order; before all the others",
+      "example": "My first lesson starts at eight.",
+      "collocations": [
+        "the first day",
+        "the first time",
+        "at first"
+      ]
+    },
+    {
+      "id": "w03-second",
+      "word": "second",
+      "pos": "num",
+      "ipa": "/ˈsekənd/",
+      "ru": "второй; секунда",
+      "def": "number two in order; also a very short time — sixty of them make a minute",
+      "example": "Our classroom is on the second floor.",
+      "collocations": [
+        "the second day",
+        "second floor",
+        "just a second"
+      ]
+    },
+    {
+      "id": "w03-hundred",
+      "word": "hundred",
+      "pos": "num",
+      "ipa": "/ˈhʌndrəd/",
+      "ru": "сто",
+      "def": "the number 100",
+      "example": "Our school has nine hundred students.",
+      "collocations": [
+        "a hundred",
+        "two hundred",
+        "hundreds of"
+      ]
+    },
+    {
+      "id": "w03-now",
+      "word": "now",
+      "pos": "adv",
+      "ipa": "/naʊ/",
+      "ru": "сейчас, теперь",
+      "def": "at this time",
+      "example": "My family lives in Astana now.",
+      "collocations": [
+        "right now",
+        "just now",
+        "from now on"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „завтра“?",
+      "options": [
+        "yesterday",
+        "today",
+        "tomorrow",
+        "tonight"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Tomorrow — завтра, yesterday — вчера, today — сегодня, tonight — сегодня вечером."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „неделя“?",
+      "options": [
+        "week",
+        "weekend",
+        "month",
+        "year"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Week — неделя (7 дней). Weekend — выходные, month — месяц, year — год."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „понедельник“?",
+      "options": [
+        "Monday",
+        "Sunday",
+        "Tuesday",
+        "Friday"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Monday — понедельник. Sunday — воскресенье, Friday — пятница, Tuesday — вторник."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „час“ (60 минут)?",
+      "options": [
+        "hour",
+        "minute",
+        "day",
+        "time"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Hour — час. Читается без звука h: /ˈaʊə/, поэтому пишут *an hour*."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: I get up at 7 in the ___.",
+      "options": [
+        "week",
+        "morning",
+        "night",
+        "year"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In the morning — утром. В 7 часов обычно встают утром, а не ночью."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: What ___ is it? — It's five o'clock.",
+      "options": [
+        "week",
+        "time",
+        "day",
+        "hour"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*What time is it?* — Который час? Это готовая фраза, её нужно запомнить целиком."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „вчера“?",
+      "options": [
+        "today",
+        "tomorrow",
+        "now",
+        "yesterday"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Yesterday — вчера. После него глагол ставим в прошедшее время: *Yesterday I was at home*."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „сто“?",
+      "options": [
+        "ten",
+        "hundred",
+        "thousand",
+        "first"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Hundred — сто (100). Thousand — тысяча, ten — десять, first — первый."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: Saturday and Sunday are the ___.",
+      "options": [
+        "weekend",
+        "week",
+        "morning",
+        "month"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Weekend — выходные: суббота и воскресенье. Week — вся неделя."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски „первый“ (по порядку)?",
+      "options": [
+        "first",
+        "one",
+        "second",
+        "hundred"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "First — первый (*my first lesson*). One — это число «один», second — второй."
+    }
+  ]
+}

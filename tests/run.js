@@ -10,7 +10,9 @@ import { createRng, hashString, shuffle } from '../src/core/random.js';
 import { addRoute, matchRoute, parseHash } from '../src/core/router.js';
 import { formatDuration, plural, pluralize } from '../src/core/dom.js';
 import { CONTENT_LANGS, isContentLang, langName, langOf, langShort, localizedPath, normalizeLang, topicSummary, topicTitle } from '../src/core/content.js';
-import { createDefaultState, migrateProfile, migrateSettings } from '../src/core/store.js';
+import { createDefaultState, migrate, migrateProfile, migrateSettings } from '../src/core/store.js';
+import { ENGLISH_STAGES, activeStageId, recentWordKeys, stageProgress, totalSentences, withCheck, withCounter, withSentences, wordsLearned } from '../src/core/english.js';
+import { compareOutput, evaluateRuns, explainError, findTask, nextTaskId, normalizeOutput, taskProgress, withPyAttempt } from '../src/core/pytrainer.js';
 import { curriculumKey, gradeProgram, gradeSequence, gradesLabel, normalizeGrade, normalizeTrack, schoolQuarter, sortByCurriculum, trackPhases, usesCurriculum } from '../src/core/curriculum.js';
 import { interleave, pickForWeek } from '../src/core/plan.js';
 
@@ -171,6 +173,8 @@ test('markdown: javascript-ссылка обезврежена', () => {
   const html = renderInline('[клик](javascript:alert(1))');
   ok(!html.includes('javascript:'));
 });
+test('markdown: ссылка внутри сайта открывается в той же вкладке', () => ok(!renderInline('[тренажёр](#/python)').includes('_blank')));
+test('markdown: внешняя ссылка открывается в новой вкладке', () => ok(renderInline('[сайт](https://ok.kz)').includes('_blank')));
 test('markdown: обычная ссылка сохраняется', () => ok(renderInline('[сайт](https://ok.kz)').includes('https://ok.kz')));
 
 // ---------- time ----------
@@ -425,6 +429,134 @@ test('profile: сохранённые класс и трек не сбрасыв
   const next = migrateProfile(base, { grade: '8', track: 'ent' });
   equal(next.grade, 8);
   equal(next.track, 'ent');
+});
+
+// ---------- тренажёр Python ----------
+const PY_CATALOG = {
+  units: [
+    { id: 'u1', title: 'Вывод', tasks: [{ id: 't1', tests: [] }, { id: 't2', tests: [] }] },
+    { id: 'u2', title: 'Условия', tasks: [{ id: 't3', tests: [] }] },
+  ],
+};
+test('python: перевод строк Windows и хвостовые пробелы не важны', () => equal(normalizeOutput('1 \r\n2\t\r\n\r\n'), '1\n2'));
+test('python: пустой вывод нормализуется в пустую строку', () => equal(normalizeOutput(''), ''));
+test('python: совпадающий вывод засчитывается', () => equal(compareOutput('5\n', '5').ok, true));
+test('python: первая отличающаяся строка указывается с номером', () => {
+  const res = compareOutput('1\n3\n', '1\n2');
+  equal(res.ok, false);
+  equal(res.line, 2);
+  equal(res.expectedLine, '2');
+  equal(res.actualLine, '3');
+});
+test('python: лишняя строка в выводе — ошибка', () => {
+  const res = compareOutput('1\n2\n', '1');
+  equal(res.ok, false);
+  equal(res.line, 2);
+  equal(res.expectedLine, '');
+});
+test('python: пробелы внутри строки важны', () => equal(compareOutput('1  2', '1 2').ok, false));
+test('python: проверка по тестам — таймаут и ошибка различаются', () => {
+  const tests = [{ output: '1' }, { output: '2' }, { output: '3' }];
+  const runs = [{ stdout: '1\n' }, { stdout: '', error: 'NameError: x' }, { stdout: '', timedOut: true }];
+  const res = evaluateRuns(tests, runs);
+  equal(res.passed, 1);
+  equal(res.total, 3);
+  deepEqual(res.results.map((r) => r.reason), [null, 'error', 'timeout']);
+});
+test('python: тесты после таймаута помечаются как пропущенные', () => {
+  const res = evaluateRuns([{ output: '1' }, { output: '2' }], [{ stdout: '', timedOut: true }]);
+  deepEqual(res.results.map((r) => r.reason), ['timeout', 'skipped']);
+});
+test('python: подсказка к NameError', () => equal(explainError('Traceback...\nNameError: name \'prnt\' is not defined').kind, 'NameError'));
+test('python: подсказка к IndentationError', () => ok(explainError('  File "<код>", line 2\nIndentationError: expected an indented block').hint.length > 10));
+test('python: незнакомая ошибка — без подсказки', () => equal(explainError('SomethingWeird: boom'), null));
+test('python: номер строки берётся из ошибки', () => equal(explainError('  File "<код>", line 3, in <module>\nZeroDivisionError: division by zero').line, 3));
+test('python: попытка без решения увеличивает счётчик и сохраняет код', () => {
+  const next = withPyAttempt({}, 't1', { ok: false, code: 'print(1)', at: 10 });
+  deepEqual(next.t1, { attempts: 1, solved: false, solvedAt: null, code: 'print(1)', updatedAt: 10 });
+});
+test('python: решённая задача остаётся решённой после неверной попытки', () => {
+  const solved = withPyAttempt({}, 't1', { ok: true, code: 'a', at: 5 });
+  const next = withPyAttempt(solved, 't1', { ok: false, code: 'b', at: 9 });
+  equal(next.t1.solved, true);
+  equal(next.t1.solvedAt, 5);
+  equal(next.t1.attempts, 2);
+});
+test('python: withPyAttempt не мутирует исходный объект', () => {
+  const prev = {};
+  withPyAttempt(prev, 't1', { ok: true, code: '', at: 1 });
+  deepEqual(prev, {});
+});
+test('python: прогресс по разделам и следующая задача', () => {
+  const py = { t1: { solved: true }, t3: { solved: true } };
+  const prog = taskProgress(PY_CATALOG, py);
+  equal(prog.solved, 2);
+  equal(prog.total, 3);
+  deepEqual(prog.units.map((u) => `${u.id}:${u.solved}/${u.total}`), ['u1:1/2', 'u2:1/1']);
+  equal(nextTaskId(PY_CATALOG, py), 't2');
+});
+test('python: все решены — следующей задачи нет', () => equal(nextTaskId(PY_CATALOG, { t1: { solved: true }, t2: { solved: true }, t3: { solved: true } }), null));
+test('python: поиск задачи с соседями', () => {
+  const found = findTask(PY_CATALOG, 't2');
+  equal(found.unit.id, 'u1');
+  equal(found.prevId, 't1');
+  equal(found.nextId, 't3');
+  equal(findTask(PY_CATALOG, 'нет'), null);
+});
+test('store: прогресс Python переживает миграцию', () => deepEqual(migrate({ python: { t1: { solved: true } } }).python, { t1: { solved: true } }));
+test('store: у нового состояния есть пустой прогресс Python', () => deepEqual(createDefaultState().python, {}));
+
+// ---------- английский ----------
+test('english: три этапа из плана, первый — с нуля до B1', () => {
+  deepEqual(ENGLISH_STAGES.map((s) => s.id), ['a0-b1', 'b1-b2', 'b2-c1']);
+  ok(ENGLISH_STAGES[0].goals.some((g) => g.id === 'extra'));
+});
+test('english: счётчик увеличивается и не уходит ниже нуля', () => {
+  const one = withCounter({}, 'extra', 1);
+  equal(one.counters.extra, 1);
+  equal(withCounter(one, 'extra', -5).counters.extra, 0);
+});
+test('english: withCounter не мутирует исходный объект', () => {
+  const prev = { counters: { extra: 2 } };
+  withCounter(prev, 'extra', 1);
+  equal(prev.counters.extra, 2);
+});
+test('english: отметка переключается', () => {
+  const on = withCheck({}, 'partner', true);
+  equal(on.checks.partner, true);
+  equal(withCheck(on, 'partner', false).checks.partner, false);
+});
+test('english: предложения за день суммируются', () => {
+  const a = withSentences({}, '2026-09-27', 3);
+  const b = withSentences(a, '2026-09-27', 2);
+  equal(b.sentences['2026-09-27'], 5);
+  equal(totalSentences(b), 5);
+});
+test('english: прогресс цели по словам берётся из метрик', () => {
+  const stage = ENGLISH_STAGES[0];
+  const res = stageProgress(stage, {}, { wordsLearned: 750, grammarDone: 0 });
+  const words = res.goals.find((g) => g.id === 'words');
+  equal(words.value, 750);
+  equal(words.target, 1500);
+  close(words.ratio, 0.5);
+  equal(res.done, false);
+});
+test('english: слова второго этапа считаются сверх первых 1500', () => {
+  const res = stageProgress(ENGLISH_STAGES[1], {}, { wordsLearned: 2000, grammarDone: 5 });
+  equal(res.goals.find((g) => g.id === 'words2').value, 500);
+});
+test('english: выученными считаются слова английских наборов с 3+ повторениями', () => {
+  const vocab = { 'eng-words-01:w01-go': { reps: 3 }, 'eng-words-01:w01-be': { reps: 1 }, 'ielts-vocab-education:x': { reps: 5 } };
+  equal(wordsLearned(vocab, ['eng-words-01']), 1);
+});
+test('english: для предложений берутся последние повторённые слова', () => {
+  const vocab = { 'eng-words-01:a': { lastAt: 5 }, 'eng-words-01:b': { lastAt: 9 }, 'eng-words-02:c': { lastAt: 7 }, 'ielts-x:d': { lastAt: 99 } };
+  deepEqual(recentWordKeys(vocab, ['eng-words-01', 'eng-words-02'], 2), ['eng-words-01:b', 'eng-words-02:c']);
+});
+test('english: активный этап — первый незавершённый', () => {
+  equal(activeStageId({}, { wordsLearned: 0, grammarDone: 0 }), 'a0-b1');
+  const eng = { counters: { extra: 30, sentences: 0 }, sentences: { d: 300 } };
+  equal(activeStageId(eng, { wordsLearned: 1500, grammarDone: 5 }), 'b1-b2');
 });
 
 // ---------- вывод ----------

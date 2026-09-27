@@ -27,6 +27,7 @@ const PATHS = {
   spark: '<path d="M12 3v5M12 16v5M3 12h5M16 12h5"/><path d="m6.5 6.5 3 3M14.5 14.5l3 3M17.5 6.5l-3 3M9.5 14.5l-3 3"/>',
   bolt: '<path d="M13 2 4 14h6l-1 8 9-12h-6Z"/>',
   medal: '<circle cx="12" cy="15" r="6"/><path d="m8 3 2.5 5M16 3l-2.5 5"/><path d="m12 12.5 1 2 2.2.3-1.6 1.6.4 2.2-2-1-2 1 .4-2.2-1.6-1.6 2.2-.3Z"/>',
+  code: '<path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/><path d="m14 4-4 16"/>',
   layers: '<path d="m12 3 9 5-9 5-9-5Z"/><path d="m3 13 9 5 9-5"/>',
 };
 
@@ -58,12 +59,12 @@ export function hasIcon(name) {
 
 /** Иконка предмета по его id из манифеста. */
 export function subjectIcon(subjectId, options) {
-  const map = { history: 'layers', mathlit: 'chart', reading: 'book', math: 'target', informatics: 'bolt', ielts: 'globe' };
+  const map = { history: 'layers', mathlit: 'chart', reading: 'book', math: 'target', informatics: 'bolt', ielts: 'globe', english: 'globe' };
   return icon(map[subjectId] || 'book', options);
 }
 
 /** Иконка типа миссии. */
 export function missionIcon(kind, options) {
-  const map = { topic: 'book', review: 'repeat', vocab: 'cards', ielts: 'globe', exam: 'exam', weak: 'target' };
+  const map = { topic: 'book', review: 'repeat', vocab: 'cards', ielts: 'globe', english: 'globe', python: 'code', exam: 'exam', weak: 'target' };
   return icon(map[kind] || 'spark', options);
 }

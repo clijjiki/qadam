@@ -1,0 +1,436 @@
+{
+  "id": "eng-words-15-feelings",
+  "subject": "english",
+  "title": "Чувства и характер",
+  "summary": "20 слов о чувствах и характере: счастливый, грустный, злой, уставший, добрый, смешной, любить.",
+  "theory": [
+    "## Как учить эти 20 слов\nНе учи список сверху вниз за один вечер. Работай по шагам:\n1. **15 новых слов в день** — не больше. Оставшиеся 5 возьми завтра вместе с повторением.\n2. **Говори вслух.** Каждый вечер скажи, как ты себя чувствуешь: *Today I am tired but happy.*\n3. **Напиши 5 своих предложений** о друзьях: *My friend is funny and kind.*\n4. **Встречай слова снова** — в карточках и в разделе Extra English. Слово выучено, когда ты сам говоришь его в речи.",
+    "## Совет к набору: -ed и -ing, маленькие слова после чувств\nОкончание **-ed** — это то, что **ты чувствуешь**, **-ing** — какая **вещь**:\n- *I am bored.* — Мне скучно.\n- *The film is boring.* — Фильм скучный.\n\nНе говори «I am boring», если скучно тебе: это значит «я скучный человек».\n\nПосле многих слов-чувств идёт своё маленькое слово:\n\n| Фраза | Перевод |\n|---|---|\n| afraid **of** | бояться чего-то |\n| angry **with** | злиться на кого-то |\n| worried **about** | волноваться о чём-то |\n| excited **about** | радостно ждать чего-то |\n\n:::tip Как спросить\n*How do you feel?* — Как ты себя чувствуешь? — *I feel happy.*\n:::"
+  ],
+  "words": [
+    {
+      "id": "w15-feel",
+      "word": "feel",
+      "pos": "v",
+      "ipa": "/fiːl/",
+      "ru": "чувствовать (себя)",
+      "def": "to have a feeling, like happy or sad, or a feeling in your body",
+      "example": "I feel happy today.",
+      "collocations": [
+        "feel good",
+        "feel bad",
+        "feel tired"
+      ]
+    },
+    {
+      "id": "w15-happy",
+      "word": "happy",
+      "pos": "adj",
+      "ipa": "/ˈhæpi/",
+      "ru": "счастливый, радостный",
+      "def": "feeling very good",
+      "example": "I am happy because it is Friday.",
+      "collocations": [
+        "happy birthday",
+        "feel happy"
+      ]
+    },
+    {
+      "id": "w15-sad",
+      "word": "sad",
+      "pos": "adj",
+      "ipa": "/sæd/",
+      "ru": "грустный, печальный",
+      "def": "not happy",
+      "example": "I was sad after the film.",
+      "collocations": [
+        "feel sad",
+        "a sad song"
+      ]
+    },
+    {
+      "id": "w15-angry",
+      "word": "angry",
+      "pos": "adj",
+      "ipa": "/ˈæŋɡri/",
+      "ru": "сердитый, злой",
+      "def": "feeling very bad because of what someone did",
+      "example": "My mum was angry because I came home late.",
+      "collocations": [
+        "get angry",
+        "angry with someone"
+      ]
+    },
+    {
+      "id": "w15-tired",
+      "word": "tired",
+      "pos": "adj",
+      "ipa": "/ˈtaɪəd/",
+      "ru": "уставший",
+      "def": "wanting to rest or sleep",
+      "example": "I am very tired after training.",
+      "collocations": [
+        "feel tired",
+        "too tired"
+      ]
+    },
+    {
+      "id": "w15-afraid",
+      "word": "afraid",
+      "pos": "adj",
+      "ipa": "/əˈfreɪd/",
+      "ru": "испуганный; бояться (be afraid)",
+      "def": "thinking that something bad can happen to you",
+      "example": "My little brother is afraid of dogs.",
+      "collocations": [
+        "afraid of",
+        "I'm afraid"
+      ]
+    },
+    {
+      "id": "w15-bored",
+      "word": "bored",
+      "pos": "adj",
+      "ipa": "/bɔːd/",
+      "ru": "скучающий; мне скучно",
+      "def": "not interested, with nothing to do",
+      "example": "I was bored at home, so I called my friend.",
+      "collocations": [
+        "feel bored",
+        "get bored"
+      ]
+    },
+    {
+      "id": "w15-excited",
+      "word": "excited",
+      "pos": "adj",
+      "ipa": "/ɪkˈsaɪtɪd/",
+      "ru": "взволнованный (радостно), в предвкушении",
+      "def": "very happy because something good will happen soon",
+      "example": "I am so excited about the concert!",
+      "collocations": [
+        "excited about",
+        "very excited"
+      ]
+    },
+    {
+      "id": "w15-worried",
+      "word": "worried",
+      "pos": "adj",
+      "ipa": "/ˈwʌrid/",
+      "ru": "обеспокоенный, встревоженный",
+      "def": "thinking about problems and not calm",
+      "example": "I am worried about my brother.",
+      "collocations": [
+        "worried about",
+        "look worried"
+      ]
+    },
+    {
+      "id": "w15-surprised",
+      "word": "surprised",
+      "pos": "adj",
+      "ipa": "/səˈpraɪzd/",
+      "ru": "удивлённый",
+      "def": "feeling this when something happens and you did not know it would happen",
+      "example": "I was surprised to see you here!",
+      "collocations": [
+        "very surprised",
+        "surprised to see"
+      ]
+    },
+    {
+      "id": "w15-kind",
+      "word": "kind",
+      "pos": "adj",
+      "ipa": "/kaɪnd/",
+      "ru": "добрый",
+      "def": "nice to other people and ready to help",
+      "example": "Our neighbour is very kind.",
+      "collocations": [
+        "kind to someone",
+        "a kind person"
+      ]
+    },
+    {
+      "id": "w15-friendly",
+      "word": "friendly",
+      "pos": "adj",
+      "ipa": "/ˈfrendli/",
+      "ru": "дружелюбный",
+      "def": "nice and easy to talk to",
+      "example": "The people in my class are friendly.",
+      "collocations": [
+        "friendly smile",
+        "friendly people"
+      ]
+    },
+    {
+      "id": "w15-funny",
+      "word": "funny",
+      "pos": "adj",
+      "ipa": "/ˈfʌni/",
+      "ru": "смешной, забавный",
+      "def": "making you laugh",
+      "example": "My friend tells funny stories.",
+      "collocations": [
+        "funny film",
+        "funny story"
+      ]
+    },
+    {
+      "id": "w15-clever",
+      "word": "clever",
+      "pos": "adj",
+      "ipa": "/ˈklevə/",
+      "ru": "умный, сообразительный",
+      "def": "able to learn and understand things quickly",
+      "example": "She is very clever. She speaks three languages.",
+      "collocations": [
+        "very clever",
+        "clever idea"
+      ]
+    },
+    {
+      "id": "w15-lazy",
+      "word": "lazy",
+      "pos": "adj",
+      "ipa": "/ˈleɪzi/",
+      "ru": "ленивый",
+      "def": "not wanting to work or do anything",
+      "example": "I was lazy on Sunday and stayed in bed.",
+      "collocations": [
+        "lazy day",
+        "too lazy"
+      ]
+    },
+    {
+      "id": "w15-shy",
+      "word": "shy",
+      "pos": "adj",
+      "ipa": "/ʃaɪ/",
+      "ru": "застенчивый, стеснительный",
+      "def": "afraid to talk to new people",
+      "example": "He is shy, so he doesn't speak much in class.",
+      "collocations": [
+        "a bit shy",
+        "shy person"
+      ]
+    },
+    {
+      "id": "w15-love",
+      "word": "love",
+      "pos": "v",
+      "ipa": "/lʌv/",
+      "ru": "любить; любовь",
+      "def": "to like someone or something very, very much",
+      "example": "I love my family.",
+      "collocations": [
+        "love music",
+        "in love",
+        "with love"
+      ]
+    },
+    {
+      "id": "w15-hate",
+      "word": "hate",
+      "pos": "v",
+      "ipa": "/heɪt/",
+      "ru": "ненавидеть",
+      "def": "to not like something at all",
+      "example": "I hate cold weather.",
+      "collocations": [
+        "really hate",
+        "hate it when"
+      ]
+    },
+    {
+      "id": "w15-smile",
+      "word": "smile",
+      "pos": "v",
+      "ipa": "/smaɪl/",
+      "ru": "улыбаться; улыбка",
+      "def": "to move your mouth up at the ends because you are happy",
+      "example": "She always smiles at me.",
+      "collocations": [
+        "smile at someone",
+        "a big smile"
+      ]
+    },
+    {
+      "id": "w15-cry",
+      "word": "cry",
+      "pos": "v",
+      "ipa": "/kraɪ/",
+      "ru": "плакать",
+      "def": "to have water come from your eyes because you are sad or hurt",
+      "example": "The baby cried all night.",
+      "collocations": [
+        "start to cry",
+        "cry for help"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «грустный»?",
+      "options": [
+        "happy",
+        "angry",
+        "sad",
+        "tired"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Sad — грустный. Happy — счастливый, angry — злой, tired — уставший."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «уставший»?",
+      "options": [
+        "tired",
+        "lazy",
+        "bored",
+        "shy"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Tired — уставший. Bored — скучающий, lazy — ленивый, shy — застенчивый."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «сердитый, злой»?",
+      "options": [
+        "funny",
+        "angry",
+        "kind",
+        "afraid"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Angry — сердитый: *My mum was angry.* Afraid — испуганный, kind — добрый."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 2,
+      "text": "My little sister is afraid ___ dogs.",
+      "options": [
+        "with",
+        "of",
+        "on",
+        "about"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Бояться чего-то — *be afraid of*: *afraid of dogs*."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски «добрый»?",
+      "options": [
+        "funny",
+        "friendly",
+        "kind",
+        "clever"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Kind — добрый, готовый помочь. Friendly — дружелюбный, с ним легко общаться. Clever — умный, funny — смешной."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 2,
+      "text": "The film was very long. I was ___.",
+      "options": [
+        "funny",
+        "excited",
+        "boring",
+        "bored"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Про свои чувства — окончание -ed: *I was bored* (мне было скучно). *I was boring* значило бы «я был скучным человеком»."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «улыбаться»?",
+      "options": [
+        "feel",
+        "smile",
+        "cry",
+        "love"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Smile — улыбаться, cry — плакать."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «ленивый»?",
+      "options": [
+        "tired",
+        "lazy",
+        "sad",
+        "shy"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Lazy — ленивый: *Don't be lazy!* — Не ленись!"
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "I ___ my mum and dad very much. They are the best!",
+      "options": [
+        "cry",
+        "feel",
+        "love",
+        "hate"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Love — любить. *They are the best* — значит, мы их любим, а не ненавидим (hate)."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «застенчивый»?",
+      "options": [
+        "clever",
+        "kind",
+        "shy",
+        "funny"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Shy — застенчивый, стеснительный: боится говорить с новыми людьми."
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "id": "eng-words-13-work-jobs",
+  "subject": "english",
+  "title": "Работа и профессии",
+  "summary": "20 слов о работе и профессиях: работа, деньги, начальник, офис, инженер, зарабатывать.",
+  "theory": [
+    "## Как учить эти 20 слов\nНе учи список сверху вниз за один вечер. Работай по шагам:\n1. **15 новых слов в день** — не больше. Оставшиеся 5 возьми завтра вместе с повторением.\n2. **Говори вслух.** Прочитай слово, транскрипцию и пример три раза.\n3. **Напиши 5 своих предложений** о семье: *My dad is a driver. My mum works in an office.*\n4. **Встречай слова снова** — в карточках и в разделе Extra English. Слово выучено, когда ты сам говоришь его в речи.",
+    "## Совет к набору: a/an перед профессией\nВ английском перед профессией всегда стоит **a** или **an**: *I am a driver*, *She is a nurse*. Перед гласным звуком — **an**: *an engineer*, *an office worker*.\n\nМногие профессии делаются из глагола + **-er**: work → **worker**, drive → **driver**, farm → **farmer**, build → **builder**, program → **programmer**.\n\n:::tip Job или work?\n**job** — конкретное место работы, его можно посчитать: *a new job, two jobs*. **work** — работа вообще, без a: *I go to work.* Сказать «a new work» — ошибка.\n:::"
+  ],
+  "words": [
+    {
+      "id": "w13-job",
+      "word": "job",
+      "pos": "n",
+      "ipa": "/dʒɒb/",
+      "ru": "работа (место, должность)",
+      "def": "the work that you do to get money",
+      "example": "My dad has a new job in Astana.",
+      "collocations": [
+        "get a job",
+        "good job!",
+        "part-time job"
+      ]
+    },
+    {
+      "id": "w13-work",
+      "word": "work",
+      "pos": "v",
+      "ipa": "/wɜːk/",
+      "ru": "работать; работа",
+      "def": "to do a job",
+      "example": "My mother works in a hospital.",
+      "collocations": [
+        "go to work",
+        "at work",
+        "work hard"
+      ]
+    },
+    {
+      "id": "w13-worker",
+      "word": "worker",
+      "pos": "n",
+      "ipa": "/ˈwɜːkə/",
+      "ru": "работник, рабочий",
+      "def": "a person who works",
+      "example": "The factory has two hundred workers.",
+      "collocations": [
+        "office worker",
+        "hard worker"
+      ]
+    },
+    {
+      "id": "w13-money",
+      "word": "money",
+      "pos": "n",
+      "ipa": "/ˈmʌni/",
+      "ru": "деньги",
+      "def": "what you use to buy things",
+      "example": "I want to earn some money in the summer.",
+      "collocations": [
+        "earn money",
+        "save money",
+        "spend money"
+      ]
+    },
+    {
+      "id": "w13-boss",
+      "word": "boss",
+      "pos": "n",
+      "ipa": "/bɒs/",
+      "ru": "начальник, босс",
+      "def": "the person who tells other workers what to do",
+      "example": "My mum's boss is very kind.",
+      "collocations": [
+        "my boss",
+        "new boss"
+      ]
+    },
+    {
+      "id": "w13-office",
+      "word": "office",
+      "pos": "n",
+      "ipa": "/ˈɒfɪs/",
+      "ru": "офис, кабинет",
+      "def": "a room or building where people work at desks",
+      "example": "She works in an office in the city centre.",
+      "collocations": [
+        "in the office",
+        "office work"
+      ]
+    },
+    {
+      "id": "w13-company",
+      "word": "company",
+      "pos": "n",
+      "ipa": "/ˈkʌmpəni/",
+      "ru": "компания, фирма",
+      "def": "a business that makes or sells things",
+      "example": "He works for a big oil company.",
+      "collocations": [
+        "work for a company",
+        "IT company"
+      ]
+    },
+    {
+      "id": "w13-business",
+      "word": "business",
+      "pos": "n",
+      "ipa": "/ˈbɪznəs/",
+      "ru": "бизнес, дело",
+      "def": "buying and selling things to get money",
+      "example": "My uncle has a small business.",
+      "collocations": [
+        "small business",
+        "start a business"
+      ]
+    },
+    {
+      "id": "w13-meeting",
+      "word": "meeting",
+      "pos": "n",
+      "ipa": "/ˈmiːtɪŋ/",
+      "ru": "встреча, собрание",
+      "def": "a time when people come together to talk about something",
+      "example": "We have a meeting at ten o'clock.",
+      "collocations": [
+        "have a meeting",
+        "at a meeting"
+      ]
+    },
+    {
+      "id": "w13-factory",
+      "word": "factory",
+      "pos": "n",
+      "ipa": "/ˈfæktri/",
+      "ru": "завод, фабрика",
+      "def": "a building where people or machines make things",
+      "example": "My grandfather worked in a car factory.",
+      "collocations": [
+        "work in a factory",
+        "car factory"
+      ]
+    },
+    {
+      "id": "w13-engineer",
+      "word": "engineer",
+      "pos": "n",
+      "ipa": "/ˌendʒɪˈnɪə/",
+      "ru": "инженер",
+      "def": "a person who plans and builds machines, roads or bridges",
+      "example": "I want to be an engineer.",
+      "collocations": [
+        "software engineer",
+        "oil engineer"
+      ]
+    },
+    {
+      "id": "w13-driver",
+      "word": "driver",
+      "pos": "n",
+      "ipa": "/ˈdraɪvə/",
+      "ru": "водитель",
+      "def": "a person who drives a car, bus or taxi",
+      "example": "The bus driver said hello to us.",
+      "collocations": [
+        "bus driver",
+        "taxi driver"
+      ]
+    },
+    {
+      "id": "w13-farmer",
+      "word": "farmer",
+      "pos": "n",
+      "ipa": "/ˈfɑːmə/",
+      "ru": "фермер",
+      "def": "a person who grows food or keeps animals on a farm",
+      "example": "My grandfather is a farmer in the village.",
+      "collocations": [
+        "sheep farmer",
+        "a farmer's market"
+      ]
+    },
+    {
+      "id": "w13-nurse",
+      "word": "nurse",
+      "pos": "n",
+      "ipa": "/nɜːs/",
+      "ru": "медсестра, медбрат",
+      "def": "a person who helps doctors and looks after sick people",
+      "example": "The nurse gave me some medicine.",
+      "collocations": [
+        "school nurse",
+        "hospital nurse"
+      ]
+    },
+    {
+      "id": "w13-police-officer",
+      "word": "police officer",
+      "pos": "n",
+      "ipa": "/pəˈliːs ˌɒfɪsə/",
+      "ru": "полицейский",
+      "def": "a person who works for the police and helps people be safe",
+      "example": "Ask the police officer for help.",
+      "collocations": [
+        "call the police",
+        "a young police officer"
+      ]
+    },
+    {
+      "id": "w13-manager",
+      "word": "manager",
+      "pos": "n",
+      "ipa": "/ˈmænɪdʒə/",
+      "ru": "менеджер, руководитель",
+      "def": "a person who controls a shop, an office or a team",
+      "example": "I want to talk to the manager.",
+      "collocations": [
+        "shop manager",
+        "hotel manager"
+      ]
+    },
+    {
+      "id": "w13-programmer",
+      "word": "programmer",
+      "pos": "n",
+      "ipa": "/ˈprəʊɡræmə/",
+      "ru": "программист",
+      "def": "a person who writes programs for computers",
+      "example": "My cousin is a programmer. He makes apps.",
+      "collocations": [
+        "computer programmer",
+        "Python programmer"
+      ]
+    },
+    {
+      "id": "w13-shop-assistant",
+      "word": "shop assistant",
+      "pos": "n",
+      "ipa": "/ˈʃɒp əˌsɪstənt/",
+      "ru": "продавец (в магазине)",
+      "def": "a person who helps people in a shop",
+      "example": "The shop assistant helped me find a jacket.",
+      "collocations": [
+        "work as a shop assistant"
+      ]
+    },
+    {
+      "id": "w13-builder",
+      "word": "builder",
+      "pos": "n",
+      "ipa": "/ˈbɪldə/",
+      "ru": "строитель",
+      "def": "a person who builds houses and other buildings",
+      "example": "The builders finished our new school in one year.",
+      "collocations": [
+        "a good builder",
+        "house builder"
+      ]
+    },
+    {
+      "id": "w13-earn",
+      "word": "earn",
+      "pos": "v",
+      "ipa": "/ɜːn/",
+      "ru": "зарабатывать",
+      "def": "to get money for your work",
+      "example": "She earns good money as a doctor.",
+      "collocations": [
+        "earn money",
+        "earn a living"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «начальник»?",
+      "options": [
+        "nurse",
+        "boss",
+        "driver",
+        "worker"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Boss — начальник, тот, кто говорит работникам (workers), что делать."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «зарабатывать»?",
+      "options": [
+        "earn",
+        "pay",
+        "buy",
+        "sell"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Earn — зарабатывать: *earn money*. Pay — платить, buy — покупать, sell — продавать."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «деньги»?",
+      "options": [
+        "money",
+        "office",
+        "job",
+        "business"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Money — деньги. Business — бизнес, job — работа, office — офис."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «завод, фабрика»?",
+      "options": [
+        "meeting",
+        "office",
+        "factory",
+        "company"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Factory — завод, фабрика, где делают вещи. Office — офис, company — фирма."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «водитель»?",
+      "options": [
+        "driver",
+        "engineer",
+        "farmer",
+        "builder"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Driver — водитель (от drive — водить). Farmer — фермер, builder — строитель, engineer — инженер."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 2,
+      "text": "My brother is ___ engineer.",
+      "options": [
+        "an",
+        "a",
+        "—",
+        "is"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Перед профессией нужен артикль. Engineer начинается с гласного звука, поэтому an: *an engineer*."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "She is a ___. She helps doctors in the hospital.",
+      "options": [
+        "builder",
+        "programmer",
+        "nurse",
+        "farmer"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Помогает врачам в больнице — медсестра, nurse."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «встреча, собрание»?",
+      "options": [
+        "business",
+        "meeting",
+        "money",
+        "company"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Meeting — встреча, собрание: *We have a meeting at ten.*"
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "I have a new ___! I start on Monday.",
+      "options": [
+        "job",
+        "work",
+        "boss",
+        "money"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "С артиклем a говорят job: *a new job*. Work — работа вообще, с a её не употребляют."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «программист»?",
+      "options": [
+        "engineer",
+        "shop assistant",
+        "manager",
+        "programmer"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Programmer — программист, пишет программы для компьютеров."
+    }
+  ]
+}

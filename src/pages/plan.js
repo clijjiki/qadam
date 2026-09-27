@@ -6,7 +6,7 @@ import { CURRICULUM_SUBJECTS, normalizeGrade, trackPhases, usesCurriculum } from
 import { getState } from '../core/store.js';
 import { setProfile } from '../core/actions.js';
 import { masteryOf } from '../core/mastery.js';
-import { countdown, nextTopics, weeklyPlan } from '../core/plan.js';
+import { countdown, nextTopics, pythonSolvedOn, weeklyPlan } from '../core/plan.js';
 import { formatDate, toDayKey, weekdayShort } from '../core/time.js';
 import { emptyState, masteryRow, pageHead, subjectBadge, subjectColor } from '../ui/components.js';
 import { activePhaseIndex, phaseRow, trackFields } from '../ui/curriculum-ui.js';
@@ -14,7 +14,7 @@ import { toast } from '../ui/toast.js';
 
 const HOURS_OPTIONS = [4, 6, 8, 10, 12];
 const CURRICULUM_SUBJECT = CURRICULUM_SUBJECTS[0];
-const KIND_ICONS = { topic: '📘', review: '🔁', ielts: '🇬🇧', exam: '📝' };
+const KIND_ICONS = { topic: '📘', review: '🔁', english: '🇬🇧', python: '🐍', exam: '📝' };
 
 const PHASES = [
   { key: 'base', name: 'Фундамент', range: '> 40 недель', tip: 'Проходи темы по порядку: теория + практика, без спешки. Главное — регулярность.' },
@@ -98,9 +98,12 @@ function sessionsByDay(state) {
   return map;
 }
 
-function ieltsWorkOn(state, key) {
-  const entries = [...Object.values(state.writing || {}), ...Object.values(state.speaking || {})];
-  return entries.some((e) => e.updatedAt && toDayKey(new Date(e.updatedAt)) === key);
+/** Сделан ли пункт английского в этот день. Серии Extra сайт не видит — они отмечаются на странице «Английский». */
+function englishDone(state, list, key, part) {
+  if (part === 'words') return list.some((s) => s.kind === 'vocab');
+  if (part === 'sentences') return (Number(state.english?.sentences?.[key]) || 0) > 0;
+  if (part === 'grammar') return list.some((s) => s.subject === 'english' && s.kind !== 'vocab');
+  return false;
 }
 
 function itemDone(state, byDay, key, item) {
@@ -108,7 +111,8 @@ function itemDone(state, byDay, key, item) {
   if (item.kind === 'topic') return list.some((s) => s.topicId === item.topicId);
   if (item.kind === 'review') return list.some((s) => s.kind === 'review');
   if (item.kind === 'exam') return list.some((s) => s.kind === 'exam') || (state.exams || []).some((e) => toDayKey(new Date(e.at)) === key);
-  if (item.kind === 'ielts') return list.some((s) => s.kind === 'vocab' || s.subject === 'ielts') || ieltsWorkOn(state, key);
+  if (item.kind === 'english') return englishDone(state, list, key, item.part);
+  if (item.kind === 'python') return pythonSolvedOn(state, key) > 0;
   return false;
 }
 

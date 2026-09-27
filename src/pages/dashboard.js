@@ -171,7 +171,7 @@ function quickActions(state) {
     { icon: 'repeat', title: 'Повторить ошибки', sub: due ? `${due} в очереди` : 'очередь пуста', href: '#/practice?mode=review' },
     { icon: 'target', title: 'Слабые темы', sub: '10 вопросов', href: '#/practice?mode=weak&n=10' },
     { icon: 'exam', title: 'Мини-пробник', sub: '45 минут', href: '#/exam?mode=mini' },
-    { icon: 'cards', title: 'Слова IELTS', sub: 'карточки', href: '#/ielts/vocab' },
+    { icon: 'cards', title: 'Английские слова', sub: '15 в день', href: '#/english/words' },
   ];
   return h(
     'section',

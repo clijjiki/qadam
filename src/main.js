@@ -79,6 +79,8 @@ async function showPage(info) {
     document.title = entry.title ? `${entry.title} — ${APP_NAME}` : APP_NAME;
     mountMath(layout.content);
     window.scrollTo({ top: 0 });
+    // Хук страницы после вставки в DOM и сброса прокрутки (например, прокрутить к нужному блоку).
+    if (module.afterMount) module.afterMount(view, pageContext(info));
   } catch (error) {
     console.error(`Не удалось отрисовать ${info.path}:`, error);
     if (token === renderToken) layout.setContent(errorView(error));

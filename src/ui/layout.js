@@ -12,10 +12,11 @@ const NAV = [
   { key: 'ubt', href: '#/ubt', icon: 'cap', label: 'Предметы' },
   { key: 'school', href: '#/curriculum', icon: 'book', label: 'По классам' },
   { key: 'review', href: '#/practice?mode=review', icon: 'repeat', label: 'Повторение' },
+  { key: 'python', href: '#/python', icon: 'code', label: 'Тренажёр Python' },
   { key: 'exam', href: '#/exam', icon: 'exam', label: 'Пробники' },
-  { section: 'IELTS' },
-  { key: 'ielts', href: '#/ielts', icon: 'globe', label: 'Навыки' },
-  { key: 'vocab', href: '#/ielts/vocab', icon: 'cards', label: 'Словарь' },
+  { section: 'Английский' },
+  { key: 'english', href: '#/english', icon: 'globe', label: 'Мой путь' },
+  { key: 'engwords', href: '#/english/words', icon: 'cards', label: 'Слова' },
   { section: 'Прогресс' },
   { key: 'plan', href: '#/plan', icon: 'calendar', label: 'План' },
   { key: 'stats', href: '#/stats', icon: 'chart', label: 'Статистика' },
@@ -26,16 +27,16 @@ const TABS = [
   { key: 'home', href: '#/', icon: 'home', label: 'Сегодня' },
   { key: 'ubt', href: '#/ubt', icon: 'cap', label: 'ЕНТ' },
   { key: 'review', href: '#/practice?mode=review', icon: 'repeat', label: 'Повтор' },
-  { key: 'ielts', href: '#/ielts', icon: 'globe', label: 'IELTS' },
+  { key: 'english', href: '#/english', icon: 'globe', label: 'Англ.' },
   { key: 'more', href: '#/more', icon: 'more', label: 'Ещё' },
 ];
 
 export const COPYRIGHT = '© 2026 Nurbol · Qadam. Все права защищены.';
 
-const MORE_KEYS =new Set(['more', 'plan', 'stats', 'settings', 'exam', 'vocab', 'school']);
+const MORE_KEYS =new Set(['more', 'plan', 'stats', 'settings', 'exam', 'vocab', 'school', 'python']);
 
 function brand() {
-  return h('a', { class: 'brand', href: '#/' }, h('div', { class: 'brand__logo' }, 'Q'), h('div', {}, h('div', { class: 'brand__name' }, 'Qadam'), h('div', { class: 'brand__sub' }, 'ЕНТ · IELTS')));
+  return h('a', { class: 'brand', href: '#/' }, h('div', { class: 'brand__logo' }, 'Q'), h('div', {}, h('div', { class: 'brand__name' }, 'Qadam'), h('div', { class: 'brand__sub' }, 'ЕНТ · English')));
 }
 
 function navLink(item) {

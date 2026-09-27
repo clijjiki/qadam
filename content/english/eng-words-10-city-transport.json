@@ -1,0 +1,446 @@
+{
+  "id": "eng-words-10-city-transport",
+  "subject": "english",
+  "title": "Город и транспорт",
+  "summary": "20 слов, чтобы говорить о городе, транспорте и дороге: улица, автобус, вокзал, налево, рядом.",
+  "theory": [
+    "## Как учить эти 20 слов\nНе учи список сверху вниз за один вечер. Работай по шагам:\n1. **15 новых слов в день** — не больше. Оставшиеся 5 возьми завтра вместе с повторением.\n2. **Говори вслух.** Прочитай слово, транскрипцию и пример три раза.\n3. **Напиши 5 своих предложений** о своём городе: *I live near the park. I go to school by bus.*\n4. **Встречай слова снова** — в карточках и в разделе Extra English. Слово выучено, когда ты сам говоришь его в речи.",
+    "## Совет к набору: как ехать и куда идти\nТранспорт — с маленьким словом **by**, без артикля: *by bus, by car, by train, by taxi*. Но пешком — **on foot**: *I go to school on foot* = *I walk to school*.\n\nДорогу объясняют тремя фразами:\n- **turn left** — поверни налево;\n- **turn right** — поверни направо;\n- **go straight on** — иди прямо.\n\n:::tip Рядом и далеко\n**near** — рядом: *near the station*. **far from** — далеко от: *far from the city*. Вопрос: *Is it far?* — Это далеко?\n:::"
+  ],
+  "words": [
+    {
+      "id": "w10-city",
+      "word": "city",
+      "pos": "n",
+      "ipa": "/ˈsɪti/",
+      "ru": "город (большой)",
+      "def": "a big town where many people live",
+      "example": "Almaty is a big and beautiful city.",
+      "collocations": [
+        "city centre",
+        "big city",
+        "live in a city"
+      ]
+    },
+    {
+      "id": "w10-street",
+      "word": "street",
+      "pos": "n",
+      "ipa": "/striːt/",
+      "ru": "улица",
+      "def": "a road in a town with houses and shops on it",
+      "example": "My friend lives on this street.",
+      "collocations": [
+        "on the street",
+        "main street"
+      ]
+    },
+    {
+      "id": "w10-road",
+      "word": "road",
+      "pos": "n",
+      "ipa": "/rəʊd/",
+      "ru": "дорога",
+      "def": "a long hard way for cars and buses between places",
+      "example": "Be careful when you cross the road.",
+      "collocations": [
+        "cross the road",
+        "on the road",
+        "a busy road"
+      ]
+    },
+    {
+      "id": "w10-shop",
+      "word": "shop",
+      "pos": "n",
+      "ipa": "/ʃɒp/",
+      "ru": "магазин",
+      "def": "a place where you buy things",
+      "example": "There is a small shop next to my house.",
+      "collocations": [
+        "go to the shop",
+        "a clothes shop",
+        "shopping centre"
+      ]
+    },
+    {
+      "id": "w10-bank",
+      "word": "bank",
+      "pos": "n",
+      "ipa": "/bæŋk/",
+      "ru": "банк",
+      "def": "a place that keeps money for people",
+      "example": "I need to go to the bank today.",
+      "collocations": [
+        "go to the bank",
+        "bank card"
+      ]
+    },
+    {
+      "id": "w10-park",
+      "word": "park",
+      "pos": "n",
+      "ipa": "/pɑːk/",
+      "ru": "парк",
+      "def": "a big green place in a town where people walk and play",
+      "example": "We play football in the park on Sundays.",
+      "collocations": [
+        "in the park",
+        "car park"
+      ]
+    },
+    {
+      "id": "w10-building",
+      "word": "building",
+      "pos": "n",
+      "ipa": "/ˈbɪldɪŋ/",
+      "ru": "здание",
+      "def": "a house, school, shop or office with walls and a roof",
+      "example": "Our school is a tall white building.",
+      "collocations": [
+        "tall building",
+        "old building"
+      ]
+    },
+    {
+      "id": "w10-bus",
+      "word": "bus",
+      "pos": "n",
+      "ipa": "/bʌs/",
+      "ru": "автобус",
+      "def": "a big car that takes many people along a road",
+      "example": "I go to school by bus.",
+      "collocations": [
+        "by bus",
+        "bus stop",
+        "take the bus"
+      ]
+    },
+    {
+      "id": "w10-car",
+      "word": "car",
+      "pos": "n",
+      "ipa": "/kɑː/",
+      "ru": "машина, автомобиль",
+      "def": "a thing with four wheels that you drive on the road",
+      "example": "My dad's car is black.",
+      "collocations": [
+        "by car",
+        "drive a car",
+        "park the car"
+      ]
+    },
+    {
+      "id": "w10-taxi",
+      "word": "taxi",
+      "pos": "n",
+      "ipa": "/ˈtæksi/",
+      "ru": "такси",
+      "def": "a car with a driver that you pay to take you somewhere",
+      "example": "It is late. Let's take a taxi.",
+      "collocations": [
+        "take a taxi",
+        "call a taxi",
+        "by taxi"
+      ]
+    },
+    {
+      "id": "w10-train",
+      "word": "train",
+      "pos": "n",
+      "ipa": "/treɪn/",
+      "ru": "поезд",
+      "def": "a long, fast thing that goes on metal lines and takes people from city to city",
+      "example": "We went to Astana by train.",
+      "collocations": [
+        "by train",
+        "take the train",
+        "train ticket"
+      ]
+    },
+    {
+      "id": "w10-station",
+      "word": "station",
+      "pos": "n",
+      "ipa": "/ˈsteɪʃn/",
+      "ru": "вокзал, станция",
+      "def": "a place where trains or buses stop and people get on and off",
+      "example": "The train leaves the station at nine.",
+      "collocations": [
+        "train station",
+        "bus station",
+        "metro station"
+      ]
+    },
+    {
+      "id": "w10-airport",
+      "word": "airport",
+      "pos": "n",
+      "ipa": "/ˈeəpɔːt/",
+      "ru": "аэропорт",
+      "def": "a place where planes come and go",
+      "example": "We went to the airport to meet my aunt.",
+      "collocations": [
+        "at the airport",
+        "go to the airport"
+      ]
+    },
+    {
+      "id": "w10-ticket",
+      "word": "ticket",
+      "pos": "n",
+      "ipa": "/ˈtɪkɪt/",
+      "ru": "билет",
+      "def": "a small paper that shows you paid for a bus, train or film",
+      "example": "I have two tickets for the film.",
+      "collocations": [
+        "bus ticket",
+        "buy a ticket",
+        "cinema ticket"
+      ]
+    },
+    {
+      "id": "w10-left",
+      "word": "left",
+      "pos": "adv",
+      "ipa": "/left/",
+      "ru": "налево; левый",
+      "def": "on the side of your body where your heart is",
+      "example": "Turn left at the bank.",
+      "collocations": [
+        "turn left",
+        "on the left"
+      ]
+    },
+    {
+      "id": "w10-right",
+      "word": "right",
+      "pos": "adv",
+      "ipa": "/raɪt/",
+      "ru": "направо; правый",
+      "def": "on the side that is not left",
+      "example": "The school is on the right.",
+      "collocations": [
+        "turn right",
+        "on the right",
+        "right hand"
+      ]
+    },
+    {
+      "id": "w10-near",
+      "word": "near",
+      "pos": "prep",
+      "ipa": "/nɪə/",
+      "ru": "рядом, близко (от)",
+      "def": "not far from",
+      "example": "I live near the park.",
+      "collocations": [
+        "near here",
+        "near the station"
+      ]
+    },
+    {
+      "id": "w10-far",
+      "word": "far",
+      "pos": "adv",
+      "ipa": "/fɑː/",
+      "ru": "далеко",
+      "def": "a long way from here or from a place",
+      "example": "Is the airport far from the city?",
+      "collocations": [
+        "far from",
+        "not far",
+        "how far"
+      ]
+    },
+    {
+      "id": "w10-drive",
+      "word": "drive",
+      "pos": "v",
+      "ipa": "/draɪv/",
+      "ru": "водить (машину), ехать на машине",
+      "def": "to make a car or bus go",
+      "example": "My brother drives to work every day.",
+      "collocations": [
+        "drive a car",
+        "drive to work"
+      ]
+    },
+    {
+      "id": "w10-walk",
+      "word": "walk",
+      "pos": "v",
+      "ipa": "/wɔːk/",
+      "ru": "идти пешком, гулять",
+      "def": "to move on your feet",
+      "example": "I walk to school every morning.",
+      "collocations": [
+        "walk to school",
+        "go for a walk",
+        "walk the dog"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «улица»?",
+      "options": [
+        "road",
+        "city",
+        "shop",
+        "street"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Street — улица в городе, с домами и магазинами. Road — дорога (в том числе между городами)."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «вокзал, станция»?",
+      "options": [
+        "airport",
+        "building",
+        "station",
+        "ticket"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Station — вокзал или станция: *train station, bus station*. Airport — аэропорт."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «налево»?",
+      "options": [
+        "left",
+        "far",
+        "right",
+        "near"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Left — налево, right — направо. *Turn left* — поверни налево."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «билет»?",
+      "options": [
+        "train",
+        "bank",
+        "taxi",
+        "ticket"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Ticket — билет: *buy a ticket, bus ticket*."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 2,
+      "text": "I go to school ___ bus.",
+      "options": [
+        "by",
+        "with",
+        "in",
+        "on"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Транспорт — со словом by без артикля: *by bus, by car, by train*. Исключение — пешком: *on foot*."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «далеко»?",
+      "options": [
+        "near",
+        "far",
+        "left",
+        "right"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Far — далеко: *far from the city*. Near — наоборот, рядом."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "I don't have a car, so I ___ to school.",
+      "options": [
+        "walk",
+        "drive",
+        "wait",
+        "open"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Нет машины — значит, иду пешком: walk. Drive — водить машину, здесь не подходит по смыслу."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «аэропорт»?",
+      "options": [
+        "airport",
+        "park",
+        "station",
+        "street"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Airport — аэропорт, место, где взлетают и садятся самолёты."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «водить машину»?",
+      "options": [
+        "carry",
+        "walk",
+        "turn",
+        "drive"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Drive — водить, ехать на машине: *drive a car*. Walk — идти пешком."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Excuse me, is there a bank ___ here?",
+      "options": [
+        "by",
+        "left",
+        "far",
+        "near"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Near here — здесь рядом, поблизости. *Is there a bank near here?* — Здесь рядом есть банк?"
+    }
+  ]
+}

@@ -1,0 +1,1011 @@
+{
+  "version": 1,
+  "units": [
+    {
+      "id": "u-print",
+      "title": "Первая программа: print",
+      "topicId": "inf-python-basics",
+      "intro": "print выводит текст и числа на экран. Текст пишется в кавычках, числа — без.",
+      "tasks": [
+        {
+          "id": "p01",
+          "title": "Привет, Qadam!",
+          "level": 1,
+          "text": "Выведи на экран фразу `Привет, Qadam!` (ровно так, с запятой и восклицательным знаком).",
+          "starter": "# Напиши print(...) ниже\n",
+          "solution": "print(\"Привет, Qadam!\")\n",
+          "hint": "Текст для вывода берётся в кавычки: print(\"текст\").",
+          "tests": [
+            {
+              "input": "",
+              "output": "Привет, Qadam!"
+            }
+          ]
+        },
+        {
+          "id": "p02",
+          "title": "Три строки",
+          "level": 1,
+          "text": "Выведи три слова, каждое на своей строке:\n\n```\nPython\nэто\nпросто\n```",
+          "starter": "# Каждый print выводит отдельную строку\n",
+          "solution": "print(\"Python\")\nprint(\"это\")\nprint(\"просто\")\n",
+          "hint": "Нужно три вызова print — по одному на строку.",
+          "tests": [
+            {
+              "input": "",
+              "output": "Python\nэто\nпросто"
+            }
+          ]
+        },
+        {
+          "id": "p03",
+          "title": "Дата через точку",
+          "level": 1,
+          "text": "Выведи дату `27.09.2026`, передав в **один** print три части: `\"27\"`, `\"09\"`, `\"2026\"` и параметр `sep`.",
+          "starter": "print(\"27\", \"09\", \"2026\")  # добавь sep\n",
+          "solution": "print(\"27\", \"09\", \"2026\", sep=\".\")\n",
+          "hint": "sep задаёт, что ставить между частями вместо пробела: print(a, b, sep=\".\").",
+          "tests": [
+            {
+              "input": "",
+              "output": "27.09.2026"
+            }
+          ]
+        },
+        {
+          "id": "p04",
+          "title": "Одна строка из двух print",
+          "level": 2,
+          "text": "Выведи `Qadam — шаг вперёд` двумя вызовами print: первый выводит `Qadam`, второй — ` — шаг вперёд`. Результат должен быть на **одной** строке.",
+          "starter": "print(\"Qadam\")\nprint(\" — шаг вперёд\")\n",
+          "solution": "print(\"Qadam\", end=\"\")\nprint(\" — шаг вперёд\")\n",
+          "hint": "По умолчанию print в конце переводит строку. Параметр end=\"\" это отключает.",
+          "tests": [
+            {
+              "input": "",
+              "output": "Qadam — шаг вперёд"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-vars",
+      "title": "Переменные и арифметика",
+      "topicId": "inf-python-basics",
+      "intro": "Переменная — это имя для значения. Операторы: + - * /, // (целая часть), % (остаток), ** (степень).",
+      "tasks": [
+        {
+          "id": "v01",
+          "title": "Сумма, разность, произведение",
+          "level": 1,
+          "text": "Даны `a = 17` и `b = 5`. Выведи на отдельных строках `a + b`, `a - b` и `a * b`.",
+          "starter": "a = 17\nb = 5\n# выведи три результата\n",
+          "solution": "a = 17\nb = 5\nprint(a + b)\nprint(a - b)\nprint(a * b)\n",
+          "hint": "print(a + b) выведет результат сложения, а не текст «a + b».",
+          "tests": [
+            {
+              "input": "",
+              "output": "22\n12\n85"
+            }
+          ]
+        },
+        {
+          "id": "v02",
+          "title": "Целая часть и остаток",
+          "level": 1,
+          "text": "Даны `a = 17` и `b = 5`. Выведи в **одну строку через пробел** целую часть от деления и остаток: `3 2`.",
+          "starter": "a = 17\nb = 5\n",
+          "solution": "a = 17\nb = 5\nprint(a // b, a % b)\n",
+          "hint": "// — целая часть деления, % — остаток. print(x, y) ставит между ними пробел.",
+          "tests": [
+            {
+              "input": "",
+              "output": "3 2"
+            }
+          ]
+        },
+        {
+          "id": "v03",
+          "title": "Часы, минуты, секунды",
+          "level": 2,
+          "text": "В переменной `t = 3725` записано число секунд. Выведи через пробел, сколько это полных часов, минут и секунд: `1 2 5`.",
+          "starter": "t = 3725\n",
+          "solution": "t = 3725\nprint(t // 3600, t % 3600 // 60, t % 60)\n",
+          "hint": "Часы: t // 3600. Минуты — из остатка после часов: t % 3600 // 60. Секунды: t % 60.",
+          "tests": [
+            {
+              "input": "",
+              "output": "1 2 5"
+            }
+          ]
+        },
+        {
+          "id": "v04",
+          "title": "Степени",
+          "level": 1,
+          "text": "Выведи на отдельных строках $2^{10}$ и $7^2$, используя оператор `**`.",
+          "starter": "# 2 в степени 10 и 7 в квадрате\n",
+          "solution": "print(2 ** 10)\nprint(7 ** 2)\n",
+          "hint": "Степень в Python — два знака умножения: 2 ** 10.",
+          "tests": [
+            {
+              "input": "",
+              "output": "1024\n49"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-input",
+      "title": "Ввод: input и int",
+      "topicId": "inf-python-basics",
+      "intro": "input() читает строку, которую ввёл пользователь. Это всегда строка — для вычислений оберни в int(...).",
+      "tasks": [
+        {
+          "id": "i01",
+          "title": "Приветствие",
+          "level": 1,
+          "text": "Программа получает имя. Выведи `Привет, <имя>!`",
+          "starter": "name = input()\n",
+          "solution": "name = input()\nprint(\"Привет, \" + name + \"!\")\n",
+          "hint": "Склей строки плюсом: \"Привет, \" + name + \"!\". Или print(f\"Привет, {name}!\").",
+          "tests": [
+            {
+              "input": "Нурбол\n",
+              "output": "Привет, Нурбол!"
+            },
+            {
+              "input": "Айдана\n",
+              "output": "Привет, Айдана!"
+            }
+          ]
+        },
+        {
+          "id": "i02",
+          "title": "Сумма двух чисел",
+          "level": 1,
+          "text": "Даны два целых числа, каждое на своей строке. Выведи их сумму.",
+          "starter": "a = input()\nb = input()\nprint(a + b)  # здесь ошибка — найди её\n",
+          "solution": "a = int(input())\nb = int(input())\nprint(a + b)\n",
+          "hint": "input() возвращает строку, и \"3\" + \"4\" = \"34\". Оберни ввод в int(input()).",
+          "tests": [
+            {
+              "input": "3\n4\n",
+              "output": "7"
+            },
+            {
+              "input": "-10\n25\n",
+              "output": "15"
+            },
+            {
+              "input": "0\n0\n",
+              "output": "0"
+            },
+            {
+              "input": "1000000\n1\n",
+              "output": "1000001"
+            }
+          ]
+        },
+        {
+          "id": "i03",
+          "title": "Следующее и предыдущее",
+          "level": 1,
+          "text": "Дано целое число `n`. Выведи на отдельных строках следующее за ним число и предыдущее.",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\nprint(n + 1)\nprint(n - 1)\n",
+          "hint": "Следующее — n + 1, предыдущее — n - 1.",
+          "tests": [
+            {
+              "input": "10\n",
+              "output": "11\n9"
+            },
+            {
+              "input": "0\n",
+              "output": "1\n-1"
+            },
+            {
+              "input": "-5\n",
+              "output": "-4\n-6"
+            }
+          ]
+        },
+        {
+          "id": "i04",
+          "title": "Последняя цифра",
+          "level": 1,
+          "text": "Дано натуральное число. Выведи его последнюю цифру.",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\nprint(n % 10)\n",
+          "hint": "Остаток от деления на 10 — это последняя цифра: 2026 % 10 = 6.",
+          "tests": [
+            {
+              "input": "2026\n",
+              "output": "6"
+            },
+            {
+              "input": "7\n",
+              "output": "7"
+            },
+            {
+              "input": "130\n",
+              "output": "0"
+            }
+          ]
+        },
+        {
+          "id": "i05",
+          "title": "Часы и минуты",
+          "level": 2,
+          "text": "С начала суток прошло `n` минут. Выведи через пробел, сколько это полных часов и минут.",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\nprint(n // 60, n % 60)\n",
+          "hint": "Часы — n // 60, оставшиеся минуты — n % 60.",
+          "tests": [
+            {
+              "input": "150\n",
+              "output": "2 30"
+            },
+            {
+              "input": "59\n",
+              "output": "0 59"
+            },
+            {
+              "input": "60\n",
+              "output": "1 0"
+            },
+            {
+              "input": "1439\n",
+              "output": "23 59"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-if",
+      "title": "Условия: if, elif, else",
+      "topicId": "inf-python-branching-loops",
+      "intro": "if проверяет условие. После условия — двоеточие, код внутри — с отступом 4 пробела.",
+      "tasks": [
+        {
+          "id": "c01",
+          "title": "Чётное или нечётное",
+          "level": 1,
+          "text": "Дано целое число. Выведи `чётное` или `нечётное`.",
+          "starter": "n = int(input())\nif ...:\n    print(\"чётное\")\n",
+          "solution": "n = int(input())\nif n % 2 == 0:\n    print(\"чётное\")\nelse:\n    print(\"нечётное\")\n",
+          "hint": "Число чётное, если n % 2 == 0. Для второго случая нужен else.",
+          "tests": [
+            {
+              "input": "4\n",
+              "output": "чётное"
+            },
+            {
+              "input": "7\n",
+              "output": "нечётное"
+            },
+            {
+              "input": "0\n",
+              "output": "чётное"
+            },
+            {
+              "input": "-3\n",
+              "output": "нечётное"
+            }
+          ]
+        },
+        {
+          "id": "c02",
+          "title": "Большее из двух",
+          "level": 1,
+          "text": "Даны два целых числа на отдельных строках. Выведи большее из них (если равны — любое).",
+          "starter": "a = int(input())\nb = int(input())\n",
+          "solution": "a = int(input())\nb = int(input())\nif a > b:\n    print(a)\nelse:\n    print(b)\n",
+          "hint": "Сравни if a > b: ... else: ...",
+          "tests": [
+            {
+              "input": "3\n8\n",
+              "output": "8"
+            },
+            {
+              "input": "10\n-2\n",
+              "output": "10"
+            },
+            {
+              "input": "5\n5\n",
+              "output": "5"
+            }
+          ]
+        },
+        {
+          "id": "c03",
+          "title": "Знак числа",
+          "level": 1,
+          "text": "Дано целое число. Выведи `положительное`, `отрицательное` или `ноль`.",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\nif n > 0:\n    print(\"положительное\")\nelif n < 0:\n    print(\"отрицательное\")\nelse:\n    print(\"ноль\")\n",
+          "hint": "Три случая: if, elif, else.",
+          "tests": [
+            {
+              "input": "5\n",
+              "output": "положительное"
+            },
+            {
+              "input": "-12\n",
+              "output": "отрицательное"
+            },
+            {
+              "input": "0\n",
+              "output": "ноль"
+            }
+          ]
+        },
+        {
+          "id": "c04",
+          "title": "Високосный год",
+          "level": 2,
+          "text": "Год високосный, если он делится на 4, но не на 100, **или** делится на 400. Дан год — выведи `YES` или `NO`.",
+          "starter": "year = int(input())\n",
+          "solution": "year = int(input())\nif (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:\n    print(\"YES\")\nelse:\n    print(\"NO\")\n",
+          "hint": "Собери условие из and и or: (делится на 4 and не делится на 100) or делится на 400.",
+          "tests": [
+            {
+              "input": "2024\n",
+              "output": "YES"
+            },
+            {
+              "input": "2026\n",
+              "output": "NO"
+            },
+            {
+              "input": "1900\n",
+              "output": "NO"
+            },
+            {
+              "input": "2000\n",
+              "output": "YES"
+            }
+          ]
+        },
+        {
+          "id": "c05",
+          "title": "Существует ли треугольник",
+          "level": 2,
+          "text": "Даны три натуральных числа — длины отрезков, каждое на своей строке. Можно ли из них сложить треугольник? Выведи `YES` или `NO`.\n\nТреугольник существует, если каждая сторона меньше суммы двух других.",
+          "starter": "a = int(input())\nb = int(input())\nc = int(input())\n",
+          "solution": "a = int(input())\nb = int(input())\nc = int(input())\nif a < b + c and b < a + c and c < a + b:\n    print(\"YES\")\nelse:\n    print(\"NO\")\n",
+          "hint": "Нужно три проверки, соединённые and.",
+          "tests": [
+            {
+              "input": "3\n4\n5\n",
+              "output": "YES"
+            },
+            {
+              "input": "1\n2\n3\n",
+              "output": "NO"
+            },
+            {
+              "input": "10\n1\n1\n",
+              "output": "NO"
+            },
+            {
+              "input": "7\n7\n7\n",
+              "output": "YES"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-for",
+      "title": "Цикл for и range",
+      "topicId": "inf-python-branching-loops",
+      "intro": "for i in range(a, b) повторяет код для i = a, a+1, …, b-1. Правая граница не входит!",
+      "tasks": [
+        {
+          "id": "f01",
+          "title": "От 1 до n",
+          "level": 1,
+          "text": "Дано натуральное `n`. Выведи числа от 1 до `n`, каждое на своей строке.",
+          "starter": "n = int(input())\nfor i in range(...):\n    print(i)\n",
+          "solution": "n = int(input())\nfor i in range(1, n + 1):\n    print(i)\n",
+          "hint": "range(1, n + 1) — правая граница не входит, поэтому + 1.",
+          "tests": [
+            {
+              "input": "5\n",
+              "output": "1\n2\n3\n4\n5"
+            },
+            {
+              "input": "1\n",
+              "output": "1"
+            }
+          ]
+        },
+        {
+          "id": "f02",
+          "title": "Сумма от 1 до n",
+          "level": 1,
+          "text": "Дано натуральное `n`. Выведи сумму $1 + 2 + … + n$.",
+          "starter": "n = int(input())\ns = 0\n# добавляй i к s в цикле\nprint(s)\n",
+          "solution": "n = int(input())\ns = 0\nfor i in range(1, n + 1):\n    s += i\nprint(s)\n",
+          "hint": "Заведи s = 0 до цикла, в цикле s += i, после цикла print(s).",
+          "tests": [
+            {
+              "input": "5\n",
+              "output": "15"
+            },
+            {
+              "input": "1\n",
+              "output": "1"
+            },
+            {
+              "input": "100\n",
+              "output": "5050"
+            }
+          ]
+        },
+        {
+          "id": "f03",
+          "title": "Таблица умножения",
+          "level": 1,
+          "text": "Дано число `n`. Выведи его таблицу умножения от 1 до 10 в формате `n x i = результат` (буква x латинская).\n\nДля `n = 3` первая строка: `3 x 1 = 3`.",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\nfor i in range(1, 11):\n    print(n, 'x', i, '=', n * i)\n",
+          "hint": "print(n, \"x\", i, \"=\", n * i) — print сам поставит пробелы.",
+          "tests": [
+            {
+              "input": "3\n",
+              "output": "3 x 1 = 3\n3 x 2 = 6\n3 x 3 = 9\n3 x 4 = 12\n3 x 5 = 15\n3 x 6 = 18\n3 x 7 = 21\n3 x 8 = 24\n3 x 9 = 27\n3 x 10 = 30"
+            },
+            {
+              "input": "7\n",
+              "output": "7 x 1 = 7\n7 x 2 = 14\n7 x 3 = 21\n7 x 4 = 28\n7 x 5 = 35\n7 x 6 = 42\n7 x 7 = 49\n7 x 8 = 56\n7 x 9 = 63\n7 x 10 = 70"
+            }
+          ]
+        },
+        {
+          "id": "f04",
+          "title": "Факториал",
+          "level": 2,
+          "text": "Дано `n` (0 ≤ n ≤ 20). Выведи $n! = 1 \\cdot 2 \\cdot … \\cdot n$. По определению $0! = 1$.",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\np = 1\nfor i in range(2, n + 1):\n    p *= i\nprint(p)\n",
+          "hint": "Для произведения начальное значение 1, а не 0.",
+          "tests": [
+            {
+              "input": "5\n",
+              "output": "120"
+            },
+            {
+              "input": "0\n",
+              "output": "1"
+            },
+            {
+              "input": "1\n",
+              "output": "1"
+            },
+            {
+              "input": "20\n",
+              "output": "2432902008176640000"
+            }
+          ]
+        },
+        {
+          "id": "f05",
+          "title": "Сумма n чисел",
+          "level": 2,
+          "text": "Сначала дано `n`, затем `n` целых чисел, каждое на своей строке. Выведи их сумму.",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\ns = 0\nfor _ in range(n):\n    s += int(input())\nprint(s)\n",
+          "hint": "Внутри цикла вызывай int(input()) — он прочитает следующее число.",
+          "tests": [
+            {
+              "input": "3\n1\n2\n3\n",
+              "output": "6"
+            },
+            {
+              "input": "1\n-5\n",
+              "output": "-5"
+            },
+            {
+              "input": "4\n10\n-10\n7\n0\n",
+              "output": "7"
+            }
+          ]
+        },
+        {
+          "id": "f06",
+          "title": "Сколько чётных",
+          "level": 2,
+          "text": "Сначала дано `n`, затем `n` целых чисел. Выведи, сколько среди них чётных.",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\nk = 0\nfor _ in range(n):\n    if int(input()) % 2 == 0:\n        k += 1\nprint(k)\n",
+          "hint": "Счётчик k = 0; если число чётное — k += 1.",
+          "tests": [
+            {
+              "input": "5\n1\n2\n3\n4\n6\n",
+              "output": "3"
+            },
+            {
+              "input": "2\n1\n3\n",
+              "output": "0"
+            },
+            {
+              "input": "3\n0\n-2\n8\n",
+              "output": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-while",
+      "title": "Цикл while",
+      "topicId": "inf-python-branching-loops",
+      "intro": "while повторяет код, пока условие истинно. Не забудь менять переменную, иначе цикл станет бесконечным.",
+      "tasks": [
+        {
+          "id": "w01",
+          "title": "Сумма цифр",
+          "level": 2,
+          "text": "Дано натуральное число. Выведи сумму его цифр. Решай через `while`, `% 10` и `// 10` — это классика ЕНТ.",
+          "starter": "n = int(input())\ns = 0\nwhile n > 0:\n    # добавь последнюю цифру и отбрось её\n    pass\nprint(s)\n",
+          "solution": "n = int(input())\ns = 0\nwhile n > 0:\n    s += n % 10\n    n //= 10\nprint(s)\n",
+          "hint": "n % 10 — последняя цифра, n //= 10 — отбросить её.",
+          "tests": [
+            {
+              "input": "2026\n",
+              "output": "10"
+            },
+            {
+              "input": "7\n",
+              "output": "7"
+            },
+            {
+              "input": "99999\n",
+              "output": "45"
+            },
+            {
+              "input": "1000\n",
+              "output": "1"
+            }
+          ]
+        },
+        {
+          "id": "w02",
+          "title": "Количество цифр",
+          "level": 2,
+          "text": "Дано натуральное число. Выведи, сколько в нём цифр (не используя len).",
+          "starter": "n = int(input())\n",
+          "solution": "n = int(input())\nk = 0\nwhile n > 0:\n    k += 1\n    n //= 10\nprint(k)\n",
+          "hint": "Отбрасывай по цифре (n //= 10) и считай шаги, пока n не станет 0.",
+          "tests": [
+            {
+              "input": "2026\n",
+              "output": "4"
+            },
+            {
+              "input": "5\n",
+              "output": "1"
+            },
+            {
+              "input": "1000000\n",
+              "output": "7"
+            }
+          ]
+        },
+        {
+          "id": "w03",
+          "title": "Степени двойки",
+          "level": 2,
+          "text": "Дано натуральное `n`. Выведи все степени двойки, не превосходящие `n`, каждую на своей строке: 1, 2, 4, 8, …",
+          "starter": "n = int(input())\np = 1\n",
+          "solution": "n = int(input())\np = 1\nwhile p <= n:\n    print(p)\n    p *= 2\n",
+          "hint": "Начни с p = 1 и удваивай, пока p <= n.",
+          "tests": [
+            {
+              "input": "10\n",
+              "output": "1\n2\n4\n8"
+            },
+            {
+              "input": "1\n",
+              "output": "1"
+            },
+            {
+              "input": "64\n",
+              "output": "1\n2\n4\n8\n16\n32\n64"
+            }
+          ]
+        },
+        {
+          "id": "w04",
+          "title": "Сумма до нуля",
+          "level": 2,
+          "text": "Вводятся целые числа по одному на строке. Последнее число — `0`, это признак конца. Выведи сумму всех чисел.",
+          "starter": "s = 0\nx = int(input())\n",
+          "solution": "s = 0\nx = int(input())\nwhile x != 0:\n    s += x\n    x = int(input())\nprint(s)\n",
+          "hint": "Прочитай первое число до цикла, а следующее — в конце тела цикла.",
+          "tests": [
+            {
+              "input": "3\n5\n-2\n0\n",
+              "output": "6"
+            },
+            {
+              "input": "0\n",
+              "output": "0"
+            },
+            {
+              "input": "100\n0\n",
+              "output": "100"
+            }
+          ]
+        },
+        {
+          "id": "w05",
+          "title": "В двоичную систему",
+          "level": 3,
+          "text": "Дано натуральное число. Переведи его в двоичную систему **без** функции bin(): дели на 2 и собирай остатки.",
+          "starter": "n = int(input())\nres = \"\"\n",
+          "solution": "n = int(input())\nres = \"\"\nwhile n > 0:\n    res = str(n % 2) + res\n    n //= 2\nprint(res)\n",
+          "hint": "Остаток n % 2 дописывай в НАЧАЛО строки: res = str(n % 2) + res. Потом n //= 2.",
+          "tests": [
+            {
+              "input": "13\n",
+              "output": "1101"
+            },
+            {
+              "input": "1\n",
+              "output": "1"
+            },
+            {
+              "input": "8\n",
+              "output": "1000"
+            },
+            {
+              "input": "255\n",
+              "output": "11111111"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-str",
+      "title": "Строки",
+      "topicId": "inf-python-lists-strings",
+      "intro": "Строка — последовательность символов. len(s) — длина, s[0] — первый символ, s[::-1] — строка наоборот.",
+      "tasks": [
+        {
+          "id": "s01",
+          "title": "Длина строки",
+          "level": 1,
+          "text": "Дана строка. Выведи её длину.",
+          "starter": "s = input()\n",
+          "solution": "s = input()\nprint(len(s))\n",
+          "hint": "len(s) — количество символов, пробелы тоже считаются.",
+          "tests": [
+            {
+              "input": "Qadam\n",
+              "output": "5"
+            },
+            {
+              "input": "информатика\n",
+              "output": "11"
+            },
+            {
+              "input": "a b c\n",
+              "output": "5"
+            }
+          ]
+        },
+        {
+          "id": "s02",
+          "title": "Наоборот",
+          "level": 1,
+          "text": "Дана строка. Выведи её задом наперёд.",
+          "starter": "s = input()\n",
+          "solution": "s = input()\nprint(s[::-1])\n",
+          "hint": "Срез с шагом -1: s[::-1].",
+          "tests": [
+            {
+              "input": "Python\n",
+              "output": "nohtyP"
+            },
+            {
+              "input": "казак\n",
+              "output": "казак"
+            },
+            {
+              "input": "12345\n",
+              "output": "54321"
+            }
+          ]
+        },
+        {
+          "id": "s03",
+          "title": "Сколько раз буква",
+          "level": 1,
+          "text": "В первой строке дан текст, во второй — одна буква. Выведи, сколько раз буква встречается в тексте.",
+          "starter": "text = input()\nch = input()\n",
+          "solution": "text = input()\nch = input()\nprint(text.count(ch))\n",
+          "hint": "Метод text.count(ch) считает вхождения. Можно и циклом for по символам.",
+          "tests": [
+            {
+              "input": "информатика\nи\n",
+              "output": "2"
+            },
+            {
+              "input": "banana\na\n",
+              "output": "3"
+            },
+            {
+              "input": "hello\nz\n",
+              "output": "0"
+            }
+          ]
+        },
+        {
+          "id": "s04",
+          "title": "Палиндром",
+          "level": 2,
+          "text": "Дано слово. Если оно читается одинаково слева направо и справа налево, выведи `YES`, иначе `NO`.",
+          "starter": "s = input()\n",
+          "solution": "s = input()\nprint(\"YES\" if s == s[::-1] else \"NO\")\n",
+          "hint": "Сравни s с s[::-1].",
+          "tests": [
+            {
+              "input": "казак\n",
+              "output": "YES"
+            },
+            {
+              "input": "Python\n",
+              "output": "NO"
+            },
+            {
+              "input": "a\n",
+              "output": "YES"
+            },
+            {
+              "input": "abba\n",
+              "output": "YES"
+            }
+          ]
+        },
+        {
+          "id": "s05",
+          "title": "Первое и последнее слово",
+          "level": 2,
+          "text": "Дана строка из нескольких слов через пробел. Выведи первое и последнее слово через пробел.",
+          "starter": "words = input().split()\n",
+          "solution": "words = input().split()\nprint(words[0], words[-1])\n",
+          "hint": "split() делит строку на список слов; последний элемент — words[-1].",
+          "tests": [
+            {
+              "input": "я учу Python каждый день\n",
+              "output": "я день"
+            },
+            {
+              "input": "один\n",
+              "output": "один один"
+            },
+            {
+              "input": "ЕНТ через два года\n",
+              "output": "ЕНТ года"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-list",
+      "title": "Списки",
+      "topicId": "inf-python-lists-strings",
+      "intro": "Список хранит много значений: a = [3, 1, 2]. Числа из одной строки: a = list(map(int, input().split())).",
+      "tasks": [
+        {
+          "id": "l01",
+          "title": "Максимум",
+          "level": 1,
+          "text": "В строке через пробел даны целые числа. Выведи наибольшее.",
+          "starter": "a = list(map(int, input().split()))\n",
+          "solution": "a = list(map(int, input().split()))\nprint(max(a))\n",
+          "hint": "Есть готовая функция max(a). Попробуй и через цикл.",
+          "tests": [
+            {
+              "input": "3 9 2 7\n",
+              "output": "9"
+            },
+            {
+              "input": "-5 -1 -8\n",
+              "output": "-1"
+            },
+            {
+              "input": "42\n",
+              "output": "42"
+            }
+          ]
+        },
+        {
+          "id": "l02",
+          "title": "Больше среднего",
+          "level": 2,
+          "text": "В строке даны целые числа. Выведи, сколько из них строго больше среднего арифметического.",
+          "starter": "a = list(map(int, input().split()))\n",
+          "solution": "a = list(map(int, input().split()))\navg = sum(a) / len(a)\nprint(sum(1 for x in a if x > avg))\n",
+          "hint": "Среднее = sum(a) / len(a). Потом цикл со счётчиком.",
+          "tests": [
+            {
+              "input": "1 2 3 4 5\n",
+              "output": "2"
+            },
+            {
+              "input": "5 5 5\n",
+              "output": "0"
+            },
+            {
+              "input": "10 0 0 0\n",
+              "output": "1"
+            }
+          ]
+        },
+        {
+          "id": "l03",
+          "title": "Список наоборот",
+          "level": 1,
+          "text": "В строке даны числа. Выведи их в обратном порядке через пробел.",
+          "starter": "a = input().split()\n",
+          "solution": "a = input().split()\nprint(*a[::-1])\n",
+          "hint": "print(*a) выводит элементы списка через пробел. Разворот — a[::-1].",
+          "tests": [
+            {
+              "input": "1 2 3 4\n",
+              "output": "4 3 2 1"
+            },
+            {
+              "input": "7\n",
+              "output": "7"
+            },
+            {
+              "input": "10 20\n",
+              "output": "20 10"
+            }
+          ]
+        },
+        {
+          "id": "l04",
+          "title": "Без повторов",
+          "level": 2,
+          "text": "В строке даны числа. Выведи их без повторов, сохранив порядок первых появлений.",
+          "starter": "a = input().split()\nres = []\n",
+          "solution": "a = input().split()\nres = []\nfor x in a:\n    if x not in res:\n        res.append(x)\nprint(*res)\n",
+          "hint": "Иди по списку и добавляй x в res, только если x not in res.",
+          "tests": [
+            {
+              "input": "1 2 1 3 2 4\n",
+              "output": "1 2 3 4"
+            },
+            {
+              "input": "5 5 5\n",
+              "output": "5"
+            },
+            {
+              "input": "9 8 7\n",
+              "output": "9 8 7"
+            }
+          ]
+        },
+        {
+          "id": "l05",
+          "title": "Сортировка",
+          "level": 1,
+          "text": "В строке даны целые числа. Выведи их по возрастанию через пробел.",
+          "starter": "a = list(map(int, input().split()))\n",
+          "solution": "a = list(map(int, input().split()))\na.sort()\nprint(*a)\n",
+          "hint": "a.sort() сортирует список на месте. Важно: числа, а не строки, иначе \"10\" < \"9\".",
+          "tests": [
+            {
+              "input": "3 1 2\n",
+              "output": "1 2 3"
+            },
+            {
+              "input": "10 -1 0 5\n",
+              "output": "-1 0 5 10"
+            },
+            {
+              "input": "4\n",
+              "output": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u-func",
+      "title": "Функции",
+      "topicId": "inf-python-functions-recursion",
+      "intro": "def имя(параметры): — объявление функции. return возвращает результат.",
+      "tasks": [
+        {
+          "id": "d01",
+          "title": "Функция квадрат",
+          "level": 1,
+          "text": "Напиши функцию `square(x)`, которая возвращает квадрат числа. Прочитай `n` и выведи `square(n)`.",
+          "starter": "def square(x):\n    # верни x в квадрате\n    pass\n\nn = int(input())\nprint(square(n))\n",
+          "solution": "def square(x):\n    return x * x\n\nn = int(input())\nprint(square(n))\n",
+          "hint": "Внутри функции: return x * x.",
+          "tests": [
+            {
+              "input": "5\n",
+              "output": "25"
+            },
+            {
+              "input": "-3\n",
+              "output": "9"
+            },
+            {
+              "input": "0\n",
+              "output": "0"
+            }
+          ]
+        },
+        {
+          "id": "d02",
+          "title": "Простое число",
+          "level": 2,
+          "text": "Напиши функцию `is_prime(n)`, которая возвращает True, если `n` простое. Прочитай число и выведи `YES` или `NO`.",
+          "starter": "def is_prime(n):\n    pass\n\nn = int(input())\n",
+          "solution": "def is_prime(n):\n    if n < 2:\n        return False\n    d = 2\n    while d * d <= n:\n        if n % d == 0:\n            return False\n        d += 1\n    return True\n\nn = int(input())\nprint(\"YES\" if is_prime(n) else \"NO\")\n",
+          "hint": "Проверяй делители d от 2, пока d * d <= n. 0 и 1 — не простые.",
+          "tests": [
+            {
+              "input": "7\n",
+              "output": "YES"
+            },
+            {
+              "input": "1\n",
+              "output": "NO"
+            },
+            {
+              "input": "12\n",
+              "output": "NO"
+            },
+            {
+              "input": "97\n",
+              "output": "YES"
+            },
+            {
+              "input": "2\n",
+              "output": "YES"
+            }
+          ]
+        },
+        {
+          "id": "d03",
+          "title": "НОД",
+          "level": 3,
+          "text": "Напиши функцию `gcd(a, b)` по алгоритму Евклида и выведи НОД двух чисел (каждое на своей строке).",
+          "starter": "def gcd(a, b):\n    pass\n\na = int(input())\nb = int(input())\n",
+          "solution": "def gcd(a, b):\n    while b:\n        a, b = b, a % b\n    return a\n\na = int(input())\nb = int(input())\nprint(gcd(a, b))\n",
+          "hint": "Пока b не 0: a, b = b, a % b. Ответ — a.",
+          "tests": [
+            {
+              "input": "12\n18\n",
+              "output": "6"
+            },
+            {
+              "input": "7\n13\n",
+              "output": "1"
+            },
+            {
+              "input": "100\n25\n",
+              "output": "25"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

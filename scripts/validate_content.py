@@ -15,6 +15,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST = os.path.join(ROOT, "content", "manifest.json")
 TYPES = {"single", "multi", "match", "text"}
 UBT = {"history", "mathlit", "reading", "math", "informatics"}
+# Языковые предметы: single с 2–8 вариантами и вопросы с вводом ответа (text).
+LANGUAGE = {"ielts", "english"}
 
 # минимальные требования к числу вопросов по типам: (single, multi, match, contexts)
 MINIMUMS = {
@@ -96,9 +98,9 @@ def check_question(q, i, rep, topic, subject):
             return qtype
     if qtype == "single":
         expected = 4
-        if subject == "ielts":
+        if subject in LANGUAGE:
             if not (2 <= len(options) <= 8):
-                rep.error(f"{where}: для IELTS single допустимо 2–8 вариантов")
+                rep.error(f"{where}: для английского и IELTS single допустимо 2–8 вариантов")
         elif len(options) != expected:
             rep.error(f"{where}: single в ЕНТ — ровно 4 варианта (A–D), сейчас {len(options)}")
         if len(answer) != 1:
@@ -218,7 +220,7 @@ def check_topic(path, meta, manifest_ids):
         diffs = [q.get("difficulty", 1) for q in questions if isinstance(q, dict)]
         if diffs and diffs.count(3) == 0:
             rep.warn("нет вопросов сложности 3 (уровень C — 20 % теста)")
-    if kind == "lesson" and subject == "ielts" and skill in ("reading", "listening", "grammar") and len(questions) < 10:
+    if kind == "lesson" and subject in LANGUAGE and skill in ("reading", "listening", "grammar") and len(questions) < 10:
         rep.error(f"мало вопросов: {len(questions)} (нужно ≥ 10)")
     if skill == "reading":
         passage = data.get("passage", "")

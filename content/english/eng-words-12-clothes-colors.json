@@ -1,0 +1,436 @@
+{
+  "id": "eng-words-12-clothes-colors",
+  "subject": "english",
+  "title": "Одежда и цвета",
+  "summary": "20 слов об одежде и цветах: рубашка, джинсы, куртка, носить, красный, чёрный, белый.",
+  "theory": [
+    "## Как учить эти 20 слов\nНе учи список сверху вниз за один вечер. Работай по шагам:\n1. **15 новых слов в день** — не больше. Оставшиеся 5 возьми завтра вместе с повторением.\n2. **Говори вслух.** Посмотри на свою одежду и назови её: *black jeans, a white T-shirt*.\n3. **Напиши 5 своих предложений**: *Today I wear blue jeans and a grey jacket.*\n4. **Встречай слова снова** — в карточках и в разделе Extra English. Слово выучено, когда ты сам говоришь его в речи.",
+    "## Совет к набору: пара брюк и цвет перед словом\nСлова из двух частей — **trousers, jeans, shoes** — всегда во множественном числе. Одна вещь — это **a pair of**: *a pair of jeans* (одни джинсы), *two pairs of shoes*.\n\nЦвет стоит **перед** предметом: *a red dress*, а не «a dress red» — так неправильно.\n\n:::tip Wear или put on?\n**wear** — быть одетым, носить: *I wear a uniform at school.* **put on** — надеть (действие): *Put on your coat!*\n\nВопрос о цвете: *What colour is your bag?* — *It's black.*\n:::"
+  ],
+  "words": [
+    {
+      "id": "w12-clothes",
+      "word": "clothes",
+      "pos": "n",
+      "ipa": "/kləʊðz/",
+      "ru": "одежда",
+      "def": "things like shirts, dresses and trousers that you wear",
+      "example": "I need new clothes for school.",
+      "collocations": [
+        "buy clothes",
+        "put on clothes",
+        "clothes shop"
+      ]
+    },
+    {
+      "id": "w12-shirt",
+      "word": "shirt",
+      "pos": "n",
+      "ipa": "/ʃɜːt/",
+      "ru": "рубашка",
+      "def": "a thing you wear on the top part of your body, often with buttons",
+      "example": "He wears a white shirt to school.",
+      "collocations": [
+        "white shirt",
+        "school shirt"
+      ]
+    },
+    {
+      "id": "w12-t-shirt",
+      "word": "T-shirt",
+      "pos": "n",
+      "ipa": "/ˈtiː ʃɜːt/",
+      "ru": "футболка",
+      "def": "a simple shirt with short arms and no buttons",
+      "example": "I like this black T-shirt.",
+      "collocations": [
+        "white T-shirt",
+        "a T-shirt and jeans"
+      ]
+    },
+    {
+      "id": "w12-trousers",
+      "word": "trousers",
+      "pos": "n",
+      "ipa": "/ˈtraʊzəz/",
+      "ru": "брюки",
+      "def": "clothes that cover both of your legs",
+      "example": "These trousers are too long for me.",
+      "collocations": [
+        "a pair of trousers",
+        "black trousers"
+      ]
+    },
+    {
+      "id": "w12-jeans",
+      "word": "jeans",
+      "pos": "n",
+      "ipa": "/dʒiːnz/",
+      "ru": "джинсы",
+      "def": "strong blue or black trousers that many people wear every day",
+      "example": "I wear jeans every weekend.",
+      "collocations": [
+        "blue jeans",
+        "a pair of jeans"
+      ]
+    },
+    {
+      "id": "w12-dress",
+      "word": "dress",
+      "pos": "n",
+      "ipa": "/dres/",
+      "ru": "платье",
+      "def": "one piece of clothes for a girl or woman, from the top of the body to the legs",
+      "example": "My sister has a beautiful red dress.",
+      "collocations": [
+        "long dress",
+        "wear a dress"
+      ]
+    },
+    {
+      "id": "w12-shoes",
+      "word": "shoes",
+      "pos": "n",
+      "ipa": "/ʃuːz/",
+      "ru": "туфли, обувь",
+      "def": "things you wear on your feet",
+      "example": "Take off your shoes in the house.",
+      "collocations": [
+        "a pair of shoes",
+        "sports shoes",
+        "put on your shoes"
+      ]
+    },
+    {
+      "id": "w12-jacket",
+      "word": "jacket",
+      "pos": "n",
+      "ipa": "/ˈdʒækɪt/",
+      "ru": "куртка; пиджак",
+      "def": "a short coat",
+      "example": "Take your jacket. It is cold outside.",
+      "collocations": [
+        "warm jacket",
+        "put on a jacket"
+      ]
+    },
+    {
+      "id": "w12-coat",
+      "word": "coat",
+      "pos": "n",
+      "ipa": "/kəʊt/",
+      "ru": "пальто",
+      "def": "a long warm thing you wear over your clothes in winter",
+      "example": "In winter I wear a warm coat.",
+      "collocations": [
+        "winter coat",
+        "take off your coat"
+      ]
+    },
+    {
+      "id": "w12-hat",
+      "word": "hat",
+      "pos": "n",
+      "ipa": "/hæt/",
+      "ru": "шапка, шляпа",
+      "def": "a thing you wear on your head",
+      "example": "Put on your hat. It is snowing.",
+      "collocations": [
+        "wear a hat",
+        "winter hat"
+      ]
+    },
+    {
+      "id": "w12-wear",
+      "word": "wear",
+      "pos": "v",
+      "ipa": "/weə/",
+      "ru": "носить (одежду), быть одетым",
+      "def": "to have clothes on your body",
+      "example": "I usually wear jeans and a T-shirt.",
+      "collocations": [
+        "wear a uniform",
+        "wear glasses"
+      ]
+    },
+    {
+      "id": "w12-colour",
+      "word": "colour",
+      "pos": "n",
+      "ipa": "/ˈkʌlə/",
+      "ru": "цвет",
+      "def": "red, blue and green are colours",
+      "example": "What colour is your bag?",
+      "collocations": [
+        "favourite colour",
+        "what colour"
+      ]
+    },
+    {
+      "id": "w12-red",
+      "word": "red",
+      "pos": "adj",
+      "ipa": "/red/",
+      "ru": "красный",
+      "def": "the colour of a tomato",
+      "example": "I have a red bag.",
+      "collocations": [
+        "red dress",
+        "red car"
+      ]
+    },
+    {
+      "id": "w12-blue",
+      "word": "blue",
+      "pos": "adj",
+      "ipa": "/bluː/",
+      "ru": "синий, голубой",
+      "def": "the colour of the sky on a sunny day",
+      "example": "The flag of Kazakhstan is blue and yellow.",
+      "collocations": [
+        "light blue",
+        "dark blue"
+      ]
+    },
+    {
+      "id": "w12-green",
+      "word": "green",
+      "pos": "adj",
+      "ipa": "/ɡriːn/",
+      "ru": "зелёный",
+      "def": "the colour of grass and leaves",
+      "example": "The light is green, so we can go.",
+      "collocations": [
+        "dark green",
+        "green light"
+      ]
+    },
+    {
+      "id": "w12-yellow",
+      "word": "yellow",
+      "pos": "adj",
+      "ipa": "/ˈjeləʊ/",
+      "ru": "жёлтый",
+      "def": "the colour of the sun or a banana",
+      "example": "She has a yellow umbrella.",
+      "collocations": [
+        "bright yellow",
+        "yellow flowers"
+      ]
+    },
+    {
+      "id": "w12-black",
+      "word": "black",
+      "pos": "adj",
+      "ipa": "/blæk/",
+      "ru": "чёрный",
+      "def": "the colour of the sky at night",
+      "example": "My new shoes are black.",
+      "collocations": [
+        "black and white",
+        "black hair"
+      ]
+    },
+    {
+      "id": "w12-white",
+      "word": "white",
+      "pos": "adj",
+      "ipa": "/waɪt/",
+      "ru": "белый",
+      "def": "the colour of snow or milk",
+      "example": "In winter everything is white.",
+      "collocations": [
+        "white shirt",
+        "white snow"
+      ]
+    },
+    {
+      "id": "w12-brown",
+      "word": "brown",
+      "pos": "adj",
+      "ipa": "/braʊn/",
+      "ru": "коричневый; карий",
+      "def": "the colour of chocolate or coffee",
+      "example": "He has brown eyes.",
+      "collocations": [
+        "brown eyes",
+        "dark brown"
+      ]
+    },
+    {
+      "id": "w12-grey",
+      "word": "grey",
+      "pos": "adj",
+      "ipa": "/ɡreɪ/",
+      "ru": "серый",
+      "def": "the colour between black and white",
+      "example": "The sky is grey today.",
+      "collocations": [
+        "grey sky",
+        "grey hair"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «одежда»?",
+      "options": [
+        "dress",
+        "shoes",
+        "clothes",
+        "colour"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Clothes — одежда вообще. Colour — цвет, shoes — обувь, dress — платье."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски «куртка»?",
+      "options": [
+        "hat",
+        "coat",
+        "shirt",
+        "jacket"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Jacket — короткая куртка. Coat — длинное тёплое пальто."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски «носить (одежду)»: «Я ношу джинсы»?",
+      "options": [
+        "carry",
+        "bring",
+        "wear",
+        "put"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Одежду носят — wear: *I wear jeans*. Carry — носить в руках (сумку), put — класть, bring — приносить."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «зелёный»?",
+      "options": [
+        "yellow",
+        "grey",
+        "brown",
+        "green"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Green — зелёный, как трава. Grey — серый, yellow — жёлтый, brown — коричневый."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «чёрный»?",
+      "options": [
+        "black",
+        "blue",
+        "white",
+        "brown"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Black — чёрный, white — белый. *Black and white* — чёрно-белый."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 2,
+      "text": "I need a new ___ of jeans.",
+      "options": [
+        "colour",
+        "hat",
+        "pair",
+        "shirt"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Jeans, trousers, shoes считают парами: *a pair of jeans* — одни джинсы."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "What ___ is your new phone? — It's white.",
+      "options": [
+        "pair",
+        "colour",
+        "wear",
+        "clothes"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "What colour is…? — Какого цвета…? Ответ — цвет: *It's white*."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «брюки»?",
+      "options": [
+        "trousers",
+        "shoes",
+        "T-shirt",
+        "dress"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Trousers — брюки (всегда во множественном числе). T-shirt — футболка."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Snow is ___.",
+      "options": [
+        "black",
+        "green",
+        "red",
+        "white"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Снег белый — white."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «шапка, шляпа»?",
+      "options": [
+        "dress",
+        "hat",
+        "jeans",
+        "coat"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Hat — любой головной убор: и шапка, и шляпа. *Put on your hat!* — Надень шапку!"
+    }
+  ]
+}

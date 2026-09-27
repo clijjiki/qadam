@@ -1,0 +1,410 @@
+{
+  "id": "eng-grammar-future-simple",
+  "subject": "english",
+  "title": "Future Simple: что я сделаю",
+  "summary": "will + глагол, won't, решения в момент речи и обещания, tomorrow/next week.",
+  "theory": [
+    "## Формула: will + глагол\nFuture Simple — «простое будущее». Формула очень простая: **will + глагол в начальной форме**. Для всех одинаково — никаких -s и окончаний.\n\n| Кто | Форма | Коротко | Пример | Перевод |\n|---|---|---|---|---|\n| I | will help | I'll help | I'll help you. | Я тебе помогу. |\n| you | will come | you'll come | You'll come tomorrow. | Ты придёшь завтра. |\n| he / she / it | will call | he'll call | She'll call you. | Она тебе позвонит. |\n| we / they | will go | we'll go | We'll go home. | Мы пойдём домой. |\n\n:::tip Как запомнить\nwill — как кнопка «будущее». Нажал will — дальше глагол **без изменений**.\n:::",
+    "## Отрицание: won't\nДля «не» ставим **not после will**: will not = **won't**.\n\n- I won't tell anyone. — Я никому не скажу.\n- It won't take long. — Это не займёт много времени.\n- They won't come today. — Они сегодня не придут.\n\n:::warn Типичная ошибка\n«I will to go» — неверно: после will **нет to**. Правильно: **I will go.** — Я пойду. И «She will goes» — тоже ошибка: **She will go.**\n:::",
+    "## Вопросы: Will you…?\nВопрос: **Will + кто + глагол**. Ответ короткий: Yes, I will. / No, I won't.\n\n| Вопрос | Ответ | Перевод |\n|---|---|---|\n| Will you help me? | Yes, I will. | Ты мне поможешь? — Да. |\n| Will it rain tomorrow? | No, it won't. | Завтра будет дождь? — Нет. |\n| What will you do? | I'll read. | Что ты будешь делать? — Буду читать. |\n\n:::warn Типичная ошибка\nВ коротком ответе «да» не сокращаем: не «Yes, I'll», а **Yes, I will.**\n:::",
+    "## Когда говорим will\n| Ситуация | Пример | Перевод |\n|---|---|---|\n| решение прямо сейчас | It's cold. I'll close the window. | Холодно. Я закрою окно. |\n| обещание | I'll call you tonight. | Я позвоню тебе вечером. |\n| прогноз, мнение | I think it will rain. | Думаю, будет дождь. |\n| просьба | Will you open the door, please? | Откроешь дверь, пожалуйста? |\n\nСлова-подсказки: **tomorrow** (завтра), **next week** (на следующей неделе), **soon** (скоро), **in two days** (через два дня), **I think** (я думаю), **probably** (наверное).\n\n:::example Пример\n- My brother will finish school next year. — Мой брат окончит школу в следующем году.\n:::",
+    "## А что такое going to?\nЕсть ещё один способ говорить о будущем — **going to**: I'm going to visit my grandma. — Я собираюсь навестить бабушку. Его используют для **заранее готовых планов**.\n\nМы изучим going to позже. Сейчас главное правило простое: хочешь сказать о будущем — бери **will**, и тебя поймут.\n\n:::tip Совет\n«Будущее решение в эту секунду» → всегда will: The phone is ringing. I'll answer it. — Телефон звонит. Я отвечу.\n:::",
+    "## Как тренировать\n1. Напиши **5 своих предложений** о завтрашнем дне и лете с новыми словами (*Tomorrow I will read a book.*).\n2. Дай 2 обещания другу: *I'll help you. I won't be late.*\n3. Сделай вопросы с Will you…? и **скажи всё вслух**.\n4. Посмотри серию **Extra English** и найди фразы с will или 'll."
+  ],
+  "cards": [
+    {
+      "front": "Формула Future Simple",
+      "back": "will + глагол в начальной форме: I will help."
+    },
+    {
+      "front": "I will = ?",
+      "back": "I'll"
+    },
+    {
+      "front": "will not = ?",
+      "back": "won't"
+    },
+    {
+      "front": "Вопрос в Future Simple",
+      "back": "Will + кто + глагол: Will you help me?"
+    },
+    {
+      "front": "Will you come? — Да.",
+      "back": "Yes, I will. (не «Yes, I'll»)"
+    },
+    {
+      "front": "Когда используем will?",
+      "back": "решение сейчас, обещание, прогноз, просьба"
+    },
+    {
+      "front": "tomorrow / next week / soon",
+      "back": "завтра / на следующей неделе / скоро → will"
+    },
+    {
+      "front": "I will to go — где ошибка?",
+      "back": "после will нет to: I will go."
+    },
+    {
+      "front": "going to",
+      "back": "планы, решённые заранее; изучим позже"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильное слово: I ___ help you tomorrow.",
+      "options": [
+        "will",
+        "am",
+        "did",
+        "do"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Tomorrow → будущее → **will**: I will help you tomorrow. — Я помогу тебе завтра."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: She will ___ you later.",
+      "options": [
+        "call",
+        "calls",
+        "called",
+        "to call"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "После **will** глагол в начальной форме, без -s и без to: She will call you later. — Она позвонит тебе позже.",
+      "why": {
+        "1": "С will -s не нужна даже после she."
+      }
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Какая короткая форма у **I will**?",
+      "options": [
+        "I'll",
+        "Ill",
+        "I'w",
+        "I'l"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "will сокращается до **'ll**: I will → I'll. I'll be there. — Я буду там.",
+      "why": {
+        "1": "Без апострофа ill — это слово «больной»."
+      }
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Что означает **won't**?",
+      "options": [
+        "will not",
+        "want not",
+        "was not",
+        "do not"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**won't = will not**: I won't go. — Я не пойду.",
+      "why": {
+        "1": "won't похоже на want, но это сокращение от will not."
+      }
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Какое слово показывает будущее время?",
+      "options": [
+        "tomorrow",
+        "yesterday",
+        "usually",
+        "ago"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**tomorrow** — завтра, это будущее. Yesterday и ago — прошлое, usually — настоящее (обычно)."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильный вариант: We ___ in Almaty next summer.",
+      "options": [
+        "will be",
+        "will are",
+        "are will",
+        "will is"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "После will глагол в начальной форме, а начальная форма am/is/are — **be**: We will be in Almaty next summer. — Следующим летом мы будем в Алматы.",
+      "why": {
+        "1": "После will не ставят am/is/are — только be."
+      }
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильный вопрос (Ты придёшь на мою вечеринку?).",
+      "options": [
+        "Will you come to my party?",
+        "Do you will come to my party?",
+        "Will you to come to my party?",
+        "Will come you to my party?"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Вопрос: **Will + кто + глагол**: Will you come to my party? — Ты придёшь на мою вечеринку?"
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Will he pass the exam? — No, he ___.",
+      "options": [
+        "won't",
+        "doesn't",
+        "didn't",
+        "isn't"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Вопрос с will → в ответе тоже will: No, he **won't**. — Нет, он не сдаст."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Телефон звонит, и ты решаешь ответить прямо сейчас. Что ты скажешь?",
+      "options": [
+        "I'll answer it.",
+        "I answered it.",
+        "I will answering it.",
+        "I will to answer it."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Решение в момент речи → **will**: I'll answer it. — Я отвечу. После will — начальная форма, без -ing и без to."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Ты обещаешь маме вернуться к девяти. Выберите правильную фразу.",
+      "options": [
+        "I'll be home at nine, I promise.",
+        "I was home at nine, I promise.",
+        "I will am home at nine, I promise.",
+        "I will to be home at nine, I promise."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Обещание → **will**, после will — **be**: I'll be home at nine, I promise. — Я буду дома в девять, обещаю."
+    },
+    {
+      "id": "q11",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Найдите предложение **с ошибкой**.",
+      "options": [
+        "I will to go to the cinema.",
+        "She'll help us.",
+        "Will it be cold?",
+        "They won't come."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "После will **не ставим to**: правильно I will go to the cinema. — Я пойду в кино. Остальные верны: Она нам поможет. Будет холодно? Они не придут."
+    },
+    {
+      "id": "q12",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Выберите правильный вариант: I think it ___ tomorrow.",
+      "options": [
+        "will rain",
+        "rains",
+        "rained",
+        "will rains"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "I think + tomorrow — прогноз на будущее → **will rain**: I think it will rain tomorrow. — Думаю, завтра будет дождь.",
+      "why": {
+        "3": "После will -s не добавляется, даже с it."
+      }
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильное слово: What ___ you do after school tomorrow?",
+      "options": [
+        "will",
+        "does",
+        "did",
+        "are"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Tomorrow → будущее: What **will** you do after school tomorrow? — Что ты будешь делать завтра после школы?"
+    },
+    {
+      "id": "q14",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 2,
+      "text": "Впишите глагол в Future Simple: I ___ (help) you with your homework.",
+      "answer": [
+        "will help"
+      ],
+      "accept": [
+        "will help",
+        "'ll help"
+      ],
+      "explanation": "**will + help**: I will help you with your homework. — Я помогу тебе с домашним заданием."
+    },
+    {
+      "id": "q15",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 2,
+      "text": "Впишите глагол в Future Simple: She ___ (be) fifteen next year.",
+      "answer": [
+        "will be"
+      ],
+      "accept": [
+        "will be",
+        "'ll be"
+      ],
+      "explanation": "Будущее от to be — **will be**: She will be fifteen next year. — В следующем году ей будет пятнадцать."
+    },
+    {
+      "id": "q16",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 2,
+      "text": "Впишите глагол в Future Simple: We ___ (see) you tomorrow.",
+      "answer": [
+        "will see"
+      ],
+      "accept": [
+        "will see",
+        "'ll see"
+      ],
+      "explanation": "Tomorrow → **will see**: We will see you tomorrow. — Увидимся завтра."
+    },
+    {
+      "id": "q17",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите одно слово: ___ you open the window, please? — Yes, I will.",
+      "answer": [
+        "Will"
+      ],
+      "accept": [
+        "Will"
+      ],
+      "explanation": "Ответ «Yes, I will» подсказывает, что вопрос тоже с will: **Will** you open the window, please? — Откроешь окно, пожалуйста? — Да."
+    },
+    {
+      "id": "q18",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Впишите отрицание в Future Simple: I ___ (not / tell) anyone, I promise.",
+      "answer": [
+        "won't tell"
+      ],
+      "accept": [
+        "won't tell",
+        "will not tell"
+      ],
+      "explanation": "Отрицание: **won't / will not + tell**. I won't tell anyone, I promise. — Я никому не скажу, обещаю."
+    },
+    {
+      "id": "q19",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите одно слово: Will they win? — Yes, they ___.",
+      "answer": [
+        "will"
+      ],
+      "accept": [
+        "will"
+      ],
+      "explanation": "Вопрос с will → короткий ответ с **will**: Yes, they will. — Да, выиграют."
+    },
+    {
+      "id": "q20",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 2,
+      "text": "Впишите глагол в Future Simple: My brother ___ (finish) school in two years.",
+      "answer": [
+        "will finish"
+      ],
+      "accept": [
+        "will finish",
+        "'ll finish"
+      ],
+      "explanation": "In two years (через два года) → будущее: My brother will finish school in two years. — Мой брат окончит школу через два года."
+    },
+    {
+      "id": "q21",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 2,
+      "text": "Впишите глагол в Future Simple: It's late. I think I ___ (go) to bed.",
+      "answer": [
+        "will go"
+      ],
+      "accept": [
+        "will go",
+        "'ll go"
+      ],
+      "explanation": "Решение прямо сейчас → **will go** (без to): It's late. I think I will go to bed. — Уже поздно. Думаю, я пойду спать."
+    },
+    {
+      "id": "q22",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 3,
+      "text": "Впишите отрицание в Future Simple: Don't worry, the test ___ (not / be) difficult.",
+      "answer": [
+        "won't be"
+      ],
+      "accept": [
+        "won't be",
+        "will not be"
+      ],
+      "explanation": "Отрицание от to be в будущем: **won't be / will not be**. Don't worry, the test won't be difficult. — Не волнуйся, тест не будет трудным."
+    }
+  ]
+}

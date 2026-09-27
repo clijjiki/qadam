@@ -8,10 +8,10 @@ import { COPYRIGHT } from '../ui/layout.js';
 const LINKS = [
   ['📅', 'План подготовки', '#/plan'],
   ['🏫', 'Программа по классам', '#/curriculum'],
+  ['🐍', 'Тренажёр Python', '#/python'],
   ['📝', 'Пробники ЕНТ', '#/exam'],
-  ['🃏', 'Словарь IELTS', '#/ielts/vocab'],
-  ['✍️', 'IELTS Writing', '#/ielts/writing'],
-  ['🎤', 'IELTS Speaking', '#/ielts/speaking'],
+  ['🃏', 'Английские слова', '#/english/words'],
+  ['✍️', 'Предложения дня', '#/english/sentences'],
   ['📊', 'Статистика', '#/stats'],
   ['⚙️', 'Настройки', '#/settings'],
 ];

@@ -1,0 +1,448 @@
+{
+  "id": "eng-words-08-function-words",
+  "subject": "english",
+  "title": "Маленькие слова: местоимения и предлоги",
+  "summary": "20 коротких слов, которые встречаются в каждом предложении: I, you, this, that, in, on, at, with, because…",
+  "theory": [
+    "## Как учить эти слова\nЭти слова короткие, но именно они — самые частые в английском: из них состоит почти половина любого текста. Их не переводят по одному — их учат **внутри фраз**.\n\n1. **15 новых слов в день** — не больше. Остальное время — повторение по карточкам.\n2. **Говори вслух** целые кусочки: *at home, in the morning, with my friends*.\n3. **Пиши свои предложения**: 5 фраз о себе (*I live with my parents. We go to school at eight.*).\n4. **Встречай слова в жизни**: смотри Extra English и замечай, как часто звучат *I, you, this, in, at*.",
+    "## Совет: время с in, on, at\n\n| Слово | Когда | Пример |\n|---|---|---|\n| at | точное время | at 7 o'clock, at night |\n| on | день, дата | on Monday, on 5 May |\n| in | месяц, год, часть дня | in May, in 2026, in the morning |\n\n**I** всегда пишется с большой буквы. После *I, you, we, they* глагол без *-s*: *I like*, а после *he, she, it* — с *-s*: *she likes*. Частые слова-наречия: *often* — часто, *always* — всегда, *never* — никогда; они стоят перед глаголом: *I often read*."
+  ],
+  "words": [
+    {
+      "id": "w08-i",
+      "word": "I",
+      "pos": "pron",
+      "ipa": "/aɪ/",
+      "ru": "я",
+      "def": "the word you use about yourself",
+      "example": "I am from Kazakhstan.",
+      "collocations": [
+        "I am",
+        "I think",
+        "I don't know"
+      ]
+    },
+    {
+      "id": "w08-you",
+      "word": "you",
+      "pos": "pron",
+      "ipa": "/juː/",
+      "ru": "ты; вы",
+      "def": "the person or people you speak to",
+      "example": "Do you speak English?",
+      "collocations": [
+        "thank you",
+        "you know",
+        "and you?"
+      ]
+    },
+    {
+      "id": "w08-he",
+      "word": "he",
+      "pos": "pron",
+      "ipa": "/hiː/",
+      "ru": "он",
+      "def": "a word for a man or a boy",
+      "example": "This is my brother. He is fourteen.",
+      "collocations": [
+        "he is",
+        "he has"
+      ]
+    },
+    {
+      "id": "w08-she",
+      "word": "she",
+      "pos": "pron",
+      "ipa": "/ʃiː/",
+      "ru": "она",
+      "def": "a word for a woman or a girl",
+      "example": "Dana is my friend. She lives next door.",
+      "collocations": [
+        "she is",
+        "she has"
+      ]
+    },
+    {
+      "id": "w08-it",
+      "word": "it",
+      "pos": "pron",
+      "ipa": "/ɪt/",
+      "ru": "он, она, оно (о вещах); это",
+      "def": "a word for a thing or an animal; also for time and weather",
+      "example": "Where is my phone? — It is on the table.",
+      "collocations": [
+        "it is",
+        "it's time",
+        "I like it"
+      ]
+    },
+    {
+      "id": "w08-we",
+      "word": "we",
+      "pos": "pron",
+      "ipa": "/wiː/",
+      "ru": "мы",
+      "def": "I and other people together",
+      "example": "We are in the tenth grade.",
+      "collocations": [
+        "we are",
+        "we have"
+      ]
+    },
+    {
+      "id": "w08-they",
+      "word": "they",
+      "pos": "pron",
+      "ipa": "/ðeɪ/",
+      "ru": "они",
+      "def": "a word for two or more people or things",
+      "example": "My parents are at work. They come home at six.",
+      "collocations": [
+        "they are",
+        "they have"
+      ]
+    },
+    {
+      "id": "w08-this",
+      "word": "this",
+      "pos": "pron",
+      "ipa": "/ðɪs/",
+      "ru": "этот, эта, это",
+      "def": "the person or thing near you",
+      "example": "This is my friend Arman.",
+      "collocations": [
+        "this is",
+        "this week",
+        "this morning"
+      ]
+    },
+    {
+      "id": "w08-that",
+      "word": "that",
+      "pos": "pron",
+      "ipa": "/ðæt/",
+      "ru": "тот, та, то; что (союз)",
+      "def": "the person or thing that is not near you",
+      "example": "Who is that man?",
+      "collocations": [
+        "that is",
+        "that's right",
+        "after that"
+      ]
+    },
+    {
+      "id": "w08-in",
+      "word": "in",
+      "pos": "prep",
+      "ipa": "/ɪn/",
+      "ru": "в, внутри",
+      "def": "inside something",
+      "example": "My keys are in my bag.",
+      "collocations": [
+        "in the room",
+        "in the morning",
+        "in Kazakhstan"
+      ]
+    },
+    {
+      "id": "w08-on",
+      "word": "on",
+      "pos": "prep",
+      "ipa": "/ɒn/",
+      "ru": "на (поверхности); в (день)",
+      "def": "on the top of something and touching it",
+      "example": "Your book is on the table.",
+      "collocations": [
+        "on the table",
+        "on Monday",
+        "on TV"
+      ]
+    },
+    {
+      "id": "w08-at",
+      "word": "at",
+      "pos": "prep",
+      "ipa": "/æt/",
+      "ru": "в, у, на (место); в (время)",
+      "def": "a word for a place or an exact time",
+      "example": "I get up at seven.",
+      "collocations": [
+        "at home",
+        "at school",
+        "at 7 o'clock"
+      ]
+    },
+    {
+      "id": "w08-with",
+      "word": "with",
+      "pos": "prep",
+      "ipa": "/wɪð/",
+      "ru": "с, вместе с",
+      "def": "together with someone or something",
+      "example": "I live with my parents.",
+      "collocations": [
+        "with my friends",
+        "tea with milk",
+        "with me"
+      ]
+    },
+    {
+      "id": "w08-for",
+      "word": "for",
+      "pos": "prep",
+      "ipa": "/fɔː/",
+      "ru": "для; в течение",
+      "def": "a word that shows who gets something; also how long",
+      "example": "This present is for you.",
+      "collocations": [
+        "for you",
+        "for breakfast",
+        "for two hours"
+      ]
+    },
+    {
+      "id": "w08-from",
+      "word": "from",
+      "pos": "prep",
+      "ipa": "/frɒm/",
+      "ru": "из, от, с",
+      "def": "a word that shows where something starts",
+      "example": "I am from Shymkent.",
+      "collocations": [
+        "from school",
+        "from Monday to Friday",
+        "a message from"
+      ]
+    },
+    {
+      "id": "w08-to",
+      "word": "to",
+      "pos": "prep",
+      "ipa": "/tuː/",
+      "ru": "в, к, на (куда); до",
+      "def": "a word that shows where someone or something goes",
+      "example": "We go to school by bus.",
+      "collocations": [
+        "go to",
+        "talk to",
+        "from … to …"
+      ]
+    },
+    {
+      "id": "w08-and",
+      "word": "and",
+      "pos": "conj",
+      "ipa": "/ænd/",
+      "ru": "и, а",
+      "def": "a word that joins two words or ideas",
+      "example": "I have a brother and a sister.",
+      "collocations": [
+        "and then",
+        "you and me",
+        "and so on"
+      ]
+    },
+    {
+      "id": "w08-but",
+      "word": "but",
+      "pos": "conj",
+      "ipa": "/bʌt/",
+      "ru": "но",
+      "def": "a word before a different or opposite idea",
+      "example": "I like English, but it is hard for me.",
+      "collocations": [
+        "but then",
+        "yes, but…"
+      ]
+    },
+    {
+      "id": "w08-because",
+      "word": "because",
+      "pos": "conj",
+      "ipa": "/bɪˈkɒz/",
+      "ru": "потому что",
+      "def": "a word that tells why",
+      "example": "I like this teacher because her lessons are interesting.",
+      "collocations": [
+        "because of",
+        "just because"
+      ]
+    },
+    {
+      "id": "w08-very",
+      "word": "very",
+      "pos": "adv",
+      "ipa": "/ˈveri/",
+      "ru": "очень",
+      "def": "a word that makes another word stronger: very big is more than big",
+      "example": "This film is very long.",
+      "collocations": [
+        "very good",
+        "very much",
+        "not very"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „мы“?",
+      "options": [
+        "you",
+        "they",
+        "we",
+        "he"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "We — мы. They — они, you — ты / вы, he — он."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „она“?",
+      "options": [
+        "it",
+        "she",
+        "he",
+        "they"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "She — она (о женщине или девочке). He — он, it — о вещах и животных."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „потому что“?",
+      "options": [
+        "but",
+        "for",
+        "because",
+        "and"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Because — потому что: объясняет причину. But — но, and — и."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „с, вместе с“?",
+      "options": [
+        "to",
+        "from",
+        "with",
+        "for"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "With — с: *I live with my parents*, *tea with milk*."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: I get up ___ 7 o'clock.",
+      "options": [
+        "at",
+        "in",
+        "on",
+        "to"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "С точным временем — *at*: *at 7 o'clock*."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: My birthday is ___ May.",
+      "options": [
+        "on",
+        "in",
+        "at",
+        "to"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "С месяцами и годами — *in*: *in May, in 2026*. С днями — on: *on Monday*."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: I like tea, ___ I don't like coffee.",
+      "options": [
+        "because",
+        "from",
+        "and",
+        "but"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Две части противоположны (нравится — не нравится), поэтому нужно *but* — но."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски „очень“ (очень большой)?",
+      "options": [
+        "much",
+        "very",
+        "often",
+        "many"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Перед прилагательным «очень» — *very*: *very big*. Much и many — «много», often — «часто»."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: My keys are ___ my bag.",
+      "options": [
+        "with",
+        "for",
+        "from",
+        "in"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Ключи внутри сумки — значит *in*: *in my bag*."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „из, от“ (I am ___ Almaty)?",
+      "options": [
+        "from",
+        "at",
+        "for",
+        "to"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "From — из, от: *I am from Almaty* — я из Алматы. To — наоборот, «куда»."
+    }
+  ]
+}

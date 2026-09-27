@@ -1,6 +1,6 @@
 // План подготовки: выбор следующей темы, ежедневные миссии, недельный план, обратный отсчёт.
 
-import { allTopics, ieltsSubject, langOf, subject, topicTitle, topicWeight, topicsOf, ubtSubjects } from './content.js';
+import { allTopics, langOf, subject, topicTitle, topicWeight, topicsOf, ubtSubjects } from './content.js';
 import { normalizeGrade, sortByCurriculum, usesCurriculum } from './curriculum.js';
 import { MASTERED_THRESHOLD, masteryOf } from './mastery.js';
 import { dueIds } from './srs.js';
@@ -52,13 +52,24 @@ export function nextTopics(state, count = 3, { exclude = [], nowTs = Date.now() 
   return interleave(queues, count);
 }
 
-export function nextIeltsLesson(state, nowTs = Date.now()) {
-  const ielts = ieltsSubject();
-  if (!ielts) return null;
-  const lessons = topicsOf(ielts.id, { kind: 'lesson' });
-  const unfinished = lessons.filter((t) => masteryOf(state, t.id, nowTs) < MASTERED_THRESHOLD);
-  return unfinished[0] || lessons[0] || null;
+/** Следующий урок грамматики английского (первый неосвоенный по порядку). */
+export function nextEnglishLesson(state, nowTs = Date.now()) {
+  const lessons = topicsOf('english', { kind: 'lesson' });
+  return lessons.find((t) => masteryOf(state, t.id, nowTs) < MASTERED_THRESHOLD) || null;
 }
+
+/** Сколько слов английских наборов пора повторить. */
+function englishDue(state, nowTs) {
+  const sets = new Set(topicsOf('english', { kind: 'vocab' }).map((t) => t.id));
+  return dueIds(state.vocab, nowTs).filter((key) => sets.has(key.split(':')[0])).length;
+}
+
+/** Сколько задач тренажёра Python решено в этот день. */
+export function pythonSolvedOn(state, dayKey) {
+  return Object.values(state.python || {}).filter((p) => p.solvedAt && toDayKey(new Date(p.solvedAt)) === dayKey).length;
+}
+
+const PYTHON_TASKS_PER_DAY = 2;
 
 function sessionsToday(state, today) {
   return (state.sessions || []).filter((s) => toDayKey(new Date(s.at)) === today);
@@ -83,7 +94,7 @@ export function dailyMissions(state, nowTs = Date.now()) {
   }
   const studiedToday = new Set(todays.map((s) => s.topicId).filter(Boolean));
   const [topic] = nextTopics(state, 1, { exclude: [...studiedToday], nowTs });
-  const topicDone = todays.some((s) => (s.kind === 'practice' || s.kind === 'topic') && s.topicId && allTopics().find((t) => t.id === s.topicId)?.subject !== 'ielts');
+  const topicDone = todays.some((s) => (s.kind === 'practice' || s.kind === 'topic') && s.topicId && !['ielts', 'english'].includes(allTopics().find((t) => t.id === s.topicId)?.subject));
   if (topic) {
     const subj = subject(topic.subject);
     missions.push({
@@ -98,31 +109,39 @@ export function dailyMissions(state, nowTs = Date.now()) {
     });
   }
   const dayNumber = Math.floor(fromDayKey(today).getTime() / 86400000);
-  const vocabDay = dayNumber % 2 === 0;
-  const dueVocab = dueIds(state.vocab, nowTs).length;
-  if (vocabDay || dueVocab > 0) {
+  // Английский — каждый день коротко: слова (новые или повторение) и предложения из них.
+  const dueVocab = englishDue(state, nowTs);
+  missions.push({
+    id: 'vocab',
+    icon: '🃏',
+    title: dueVocab ? `Английские слова: ${dueVocab} к повторению` : 'Английский: 15 новых слов',
+    sub: 'Карточки, потом 5 предложений из новых слов',
+    href: dueVocab ? '#/english/words?mode=review' : '#/english/words',
+    minutes: 15,
+    done: todays.some((s) => s.kind === 'vocab'),
+  });
+  // Через день — либо урок грамматики английского, либо задачи в тренажёре Python.
+  const lesson = nextEnglishLesson(state, nowTs);
+  if (dayNumber % 2 === 0 && lesson) {
     missions.push({
-      id: 'vocab',
-      icon: '🃏',
-      title: dueVocab ? `IELTS-слова: ${dueVocab} к повторению` : 'IELTS-слова: 10 новых',
-      sub: 'Карточки с интервальным повторением',
-      href: '#/ielts/vocab',
-      minutes: 8,
-      done: todays.some((s) => s.kind === 'vocab'),
+      id: 'english',
+      icon: '🇬🇧',
+      title: `Английский: ${topicTitle(lesson, langOf(state))}`,
+      sub: 'Короткая теория и практика',
+      href: `#/topic/${lesson.id}`,
+      minutes: 15,
+      done: todays.some((s) => s.topicId === lesson.id),
     });
   } else {
-    const lesson = nextIeltsLesson(state, nowTs);
-    if (lesson) {
-      missions.push({
-        id: 'ielts',
-        icon: '🇬🇧',
-        title: `IELTS: ${lesson.title}`,
-        sub: 'Урок и практика по навыку',
-        href: `#/topic/${lesson.id}`,
-        minutes: 15,
-        done: todays.some((s) => s.topicId === lesson.id),
-      });
-    }
+    missions.push({
+      id: 'python',
+      icon: '🐍',
+      title: `Python: ${PYTHON_TASKS_PER_DAY} задачи в тренажёре`,
+      sub: 'Пиши код сам — сайт проверит',
+      href: '#/python',
+      minutes: 15,
+      done: pythonSolvedOn(state, today) >= PYTHON_TASKS_PER_DAY,
+    });
   }
   const weekday = fromDayKey(today).getDay();
   if (weekday === 6) {
@@ -141,15 +160,23 @@ export function dailyMissions(state, nowTs = Date.now()) {
   return missions;
 }
 
+// english — что по английскому в этот день; python — задачи тренажёра в дни информатики.
 const WEEK_TEMPLATE = [
-  { day: 1, focus: ['math'], ielts: 'vocab' },
-  { day: 2, focus: ['informatics'], ielts: 'lesson' },
-  { day: 3, focus: ['history'], ielts: 'vocab' },
-  { day: 4, focus: ['math'], ielts: 'lesson' },
-  { day: 5, focus: ['informatics'], ielts: 'vocab' },
-  { day: 6, focus: ['mathlit', 'reading'], ielts: 'writing', exam: true },
-  { day: 0, focus: [], ielts: 'speaking', rest: true },
+  { day: 1, focus: ['math'], english: 'words' },
+  { day: 2, focus: ['informatics'], english: 'grammar', python: true },
+  { day: 3, focus: ['history'], english: 'words' },
+  { day: 4, focus: ['math'], english: 'sentences' },
+  { day: 5, focus: ['informatics'], english: 'grammar', python: true },
+  { day: 6, focus: ['mathlit', 'reading'], english: 'words', exam: true },
+  { day: 0, focus: [], english: 'extra', rest: true },
 ];
+
+const ENGLISH_ITEMS = {
+  words: { title: 'Английский: 15 слов (15 мин)', href: '#/english/words' },
+  grammar: { title: 'Английский: урок грамматики', href: '#/english?focus=grammar' },
+  sentences: { title: 'Английский: слова + 5 предложений', href: '#/english/sentences' },
+  extra: { title: 'Extra English: 1–2 серии для отдыха', href: '#/english' },
+};
 
 /** В школьном треке два дня математики в неделю — как в школе: один на алгебру, другой на геометрию. */
 export function pickForWeek(pool, usedLines) {
@@ -178,9 +205,8 @@ export function weeklyPlan(state, { weekStart = weekStartKey(), nowTs = Date.now
       }
     }
     if (!template.rest) items.push({ kind: 'review', title: 'Повторение ошибок (10 мин)', href: '#/practice?mode=review' });
-    const ieltsLabel = { vocab: 'IELTS: слова (8 мин)', lesson: 'IELTS: урок', writing: 'IELTS: Writing (25 мин)', speaking: 'IELTS: Speaking-карточки' }[template.ielts];
-    const ieltsHref = { vocab: '#/ielts/vocab', lesson: '#/ielts', writing: '#/ielts/writing', speaking: '#/ielts/speaking' }[template.ielts];
-    items.push({ kind: 'ielts', title: ieltsLabel, href: ieltsHref });
+    if (template.python) items.push({ kind: 'python', title: `Python: ${PYTHON_TASKS_PER_DAY} задачи тренажёра`, href: '#/python' });
+    items.push({ kind: 'english', part: template.english, ...ENGLISH_ITEMS[template.english] });
     if (template.exam) items.push({ kind: 'exam', title: 'Мини-пробник ЕНТ', href: '#/exam?mode=mini' });
     days.push({ key, isToday: key === today, isPast: key < today, rest: !!template.rest, minutes: template.rest ? Math.round(minutesPerDay / 2) : minutesPerDay, items });
   }

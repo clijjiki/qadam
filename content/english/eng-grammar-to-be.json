@@ -1,0 +1,432 @@
+{
+  "id": "eng-grammar-to-be",
+  "subject": "english",
+  "title": "Глагол to be: am, is, are",
+  "summary": "Я есть, ты есть: am/is/are, отрицание not, вопросы Are you…?, краткие формы I'm, it's.",
+  "theory": [
+    "## Зачем нужен to be\nПо-русски мы говорим «Я ученик» или «Она дома» — без глагола. В английском так **нельзя**: в каждом предложении нужен глагол. Если действия нет, ставим глагол **to be** («быть, являться, находиться»).\n\nУ него три формы в настоящем времени: **am, is, are**. Форма зависит от того, **кто** говорит или о ком речь.\n\n| Кто | Форма | Пример | Перевод |\n|---|---|---|---|\n| I (я) | am | I am a student. | Я ученик. |\n| you (ты, вы) | are | You are my friend. | Ты мой друг. |\n| he (он) | is | He is tall. | Он высокий. |\n| she (она) | is | She is at home. | Она дома. |\n| it (оно, это) | is | It is cold. | Холодно. |\n| we (мы) | are | We are from Kazakhstan. | Мы из Казахстана. |\n| they (они) | are | They are fifteen. | Им пятнадцать. |\n\n:::tip Как запомнить\n**I → am.** Один человек или предмет (he, she, it, my mum, the cat) → **is**. Много (we, you, they, my friends) → **are**.\n:::",
+    "## Короткие формы\nВ разговоре am/is/are «прилипают» к слову перед ними через апостроф. Смысл тот же, просто короче.\n\n| Полная форма | Короткая |\n|---|---|\n| I am | I'm |\n| you are | you're |\n| he is / she is / it is | he's / she's / it's |\n| we are / they are | we're / they're |\n\n:::example Примеры\n- I'm hungry. — Я голоден.\n- It's my phone. — Это мой телефон.\n- They're in the park. — Они в парке.\n:::",
+    "## Отрицание: not\nЧтобы сказать «не», ставим **not сразу после am/is/are**.\n\n| Полная форма | Короткая | Пример | Перевод |\n|---|---|---|---|\n| I am not | I'm not | I'm not tired. | Я не устал. |\n| he is not | he isn't | He isn't at school. | Его нет в школе. |\n| you are not | you aren't | You aren't late. | Ты не опоздал. |\n\n:::warn Типичная ошибка\n«I not student» — неверно: пропущен глагол. Правильно: **I am not a student.** — Я не ученик. И формы «amn't» не существует: только **I'm not**.\n:::",
+    "## Вопросы: Are you…? Is it…?\nЧтобы задать вопрос, **ставим am/is/are на первое место**, перед тем, о ком спрашиваем.\n\n| Утверждение | Вопрос | Перевод вопроса |\n|---|---|---|\n| You are ready. | Are you ready? | Ты готов? |\n| It is your bag. | Is it your bag? | Это твоя сумка? |\n| She is from Almaty. | Is she from Almaty? | Она из Алматы? |\n| They are at home. | Are they at home? | Они дома? |\n\n:::example С вопросительным словом\nВопросительное слово стоит ещё раньше: **Where are you?** — Где ты? **How old is he?** — Сколько ему лет?\n:::",
+    "## Короткие ответы: Yes, I am\nНа вопрос с to be отвечают коротко: **Yes/No + местоимение + am/is/are**.\n\n- Are you a student? — **Yes, I am.** (Ты ученик? — Да.)\n- Is your mum a doctor? — **No, she isn't.** (Твоя мама врач? — Нет.)\n- Are they your friends? — **Yes, they are.** (Это твои друзья? — Да.)\n\n:::warn Типичная ошибка\nВ ответе «да» **нельзя сокращать**: «Yes, I'm» и «Yes, he's» — ошибка. Правильно: **Yes, I am. Yes, he is.** А в ответе «нет» сокращать можно: **No, he isn't.**\n:::\n\nОбрати внимание: о маме отвечаем через **she**, о брате — через **he**, о вещи — через **it**.",
+    "## Как тренировать\n1. Напиши **5 своих предложений** с am/is/are и новыми словами: о себе, семье, друге, комнате, городе. Например: *My room is small.* — Моя комната маленькая.\n2. Сделай из каждого **отрицание** и **вопрос** (*My room isn't small. Is my room small?*).\n3. **Скажи всё вслух**, лучше дважды. Язык учат ртом, а не только глазами.\n4. Посмотри одну серию **Extra English** (учебный сериал для начинающих) с субтитрами и выпиши 5 фраз с am/is/are.\n\n:::tip Совет\n10 минут каждый день лучше, чем 2 часа раз в неделю.\n:::"
+  ],
+  "cards": [
+    {
+      "front": "I ___ (to be)",
+      "back": "I am — I'm"
+    },
+    {
+      "front": "he / she / it ___ (to be)",
+      "back": "is — he's, she's, it's"
+    },
+    {
+      "front": "you / we / they ___ (to be)",
+      "back": "are — you're, we're, they're"
+    },
+    {
+      "front": "Как сказать «не» с to be?",
+      "back": "not после am/is/are: I'm not, he isn't, they aren't"
+    },
+    {
+      "front": "isn't =",
+      "back": "is not"
+    },
+    {
+      "front": "aren't =",
+      "back": "are not"
+    },
+    {
+      "front": "Как построить вопрос с to be?",
+      "back": "am/is/are на первое место: Are you ready? Is it cold?"
+    },
+    {
+      "front": "Are you a student? — Да.",
+      "back": "Yes, I am. (не «Yes, I'm»)"
+    },
+    {
+      "front": "Is he your brother? — Нет.",
+      "back": "No, he isn't."
+    },
+    {
+      "front": "My friends and I = ?",
+      "back": "we → are: My friends and I are in class 10."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: I ___ a student.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "С **I** всегда **am**: I am a student. — Я ученик."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: She ___ my sister.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "**She** — один человек → **is**: She is my sister. — Она моя сестра."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: They ___ at school.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "**They** — много людей → **are**: They are at school. — Они в школе."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: My cat ___ black.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "My cat — одно животное, то есть **it** → **is**: My cat is black. — Мой кот чёрный.",
+      "why": {
+        "2": "are — для you, we, they и множественного числа, а кот один."
+      }
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Какая короткая форма у **you are**?",
+      "options": [
+        "you're",
+        "your",
+        "you'm",
+        "yo're"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "you are → **you're**: апостроф заменяет букву a. Your — другое слово, «твой»: your bag — твоя сумка.",
+      "why": {
+        "1": "your — это «твой, ваш», а не you are."
+      }
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: We ___ from Kazakhstan.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "**We** → **are**: We are from Kazakhstan. — Мы из Казахстана."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: ___ it your phone?",
+      "options": [
+        "Is",
+        "Are",
+        "Am",
+        "Do"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "В вопросе to be стоит первым. **It** → **is**: Is it your phone? — Это твой телефон?",
+      "why": {
+        "3": "do не используется с to be: в вопросе просто переносим is вперёд."
+      }
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильное отрицание (Он не устал).",
+      "options": [
+        "He isn't tired.",
+        "He not tired.",
+        "He don't tired.",
+        "He aren't tired."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Not ставим после is: He is not → **He isn't tired.** — Он не устал. Без is (He not tired) в предложении нет глагола.",
+      "why": {
+        "1": "Пропущен глагол is — в английском так нельзя."
+      }
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильный вопрос (Ты голоден?).",
+      "options": [
+        "Are you hungry?",
+        "You hungry are?",
+        "Is you hungry?",
+        "Do you are hungry?"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Вопрос с to be: **are** переносим на первое место, с you — именно are: Are you hungry? — Ты голоден?"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Are your parents at home? — No, ___.",
+      "options": [
+        "they aren't",
+        "they isn't",
+        "we aren't",
+        "they not"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Parents (родители) — это **they**, с they → are, отрицание **aren't**: No, they aren't. — Нет, их нет дома.",
+      "why": {
+        "2": "Спрашивают о родителях, значит, отвечаем через they, а не we."
+      }
+    },
+    {
+      "id": "q11",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильную форму: Where ___ you from?",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "do"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Вопросительное слово Where, затем to be, затем you. С **you** → **are**: Where are you from? — Откуда ты?"
+    },
+    {
+      "id": "q12",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Is your brother a doctor? — Yes, ___.",
+      "options": [
+        "he is",
+        "he's",
+        "it is",
+        "I am"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "О брате говорим **he**, форма **is**. В коротком ответе «да» сокращать нельзя: **Yes, he is.** — Да, он врач.",
+      "why": {
+        "1": "«Yes, he's» — ошибка: в утвердительном коротком ответе сокращение не используется."
+      }
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Найдите предложение **с ошибкой**.",
+      "options": [
+        "She are my friend.",
+        "I'm fifteen.",
+        "It's cold today.",
+        "We aren't late."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "She — один человек → is: правильно **She is my friend.** — Она мой друг. Остальные верны: Мне пятнадцать. Сегодня холодно. Мы не опоздали."
+    },
+    {
+      "id": "q14",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Выберите правильную форму: My friends and I ___ in the same class.",
+      "options": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "My friends and I = **we** (мои друзья и я = мы) → **are**: My friends and I are in the same class. — Мы с друзьями в одном классе.",
+      "why": {
+        "1": "am только с одним I, а здесь несколько человек — это we."
+      }
+    },
+    {
+      "id": "q15",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите форму to be: I ___ happy today.",
+      "answer": [
+        "am"
+      ],
+      "accept": [
+        "am"
+      ],
+      "explanation": "С **I** → **am**: I am happy today. — Я сегодня счастлив."
+    },
+    {
+      "id": "q16",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите форму to be: He ___ at home.",
+      "answer": [
+        "is"
+      ],
+      "accept": [
+        "is"
+      ],
+      "explanation": "**He** → **is**: He is at home. — Он дома."
+    },
+    {
+      "id": "q17",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите форму to be: You ___ my best friend.",
+      "answer": [
+        "are"
+      ],
+      "accept": [
+        "are"
+      ],
+      "explanation": "**You** → **are**: You are my best friend. — Ты мой лучший друг."
+    },
+    {
+      "id": "q18",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 2,
+      "text": "Впишите to be **с отрицанием**: She ___ a teacher.",
+      "answer": [
+        "is not"
+      ],
+      "accept": [
+        "is not",
+        "isn't"
+      ],
+      "explanation": "She → is, затем not: **is not / isn't**. She isn't a teacher. — Она не учитель."
+    },
+    {
+      "id": "q19",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 2,
+      "text": "Впишите to be **с отрицанием**: They ___ at school today.",
+      "answer": [
+        "are not"
+      ],
+      "accept": [
+        "are not",
+        "aren't"
+      ],
+      "explanation": "They → are, затем not: **are not / aren't**. They aren't at school today. — Их сегодня нет в школе."
+    },
+    {
+      "id": "q20",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите форму to be: ___ you from Almaty?",
+      "answer": [
+        "Are"
+      ],
+      "accept": [
+        "Are"
+      ],
+      "explanation": "В вопросе to be стоит первым; с you → **Are**: Are you from Almaty? — Ты из Алматы?"
+    },
+    {
+      "id": "q21",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 2,
+      "text": "Впишите to be **с отрицанием**: I ___ tired.",
+      "answer": [
+        "am not"
+      ],
+      "accept": [
+        "am not"
+      ],
+      "explanation": "С I только **am not** (формы «amn't» нет). I am not tired = I'm not tired. — Я не устал."
+    },
+    {
+      "id": "q22",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 1,
+      "text": "Впишите одно слово: Is Aigerim your sister? — Yes, she ___.",
+      "answer": [
+        "is"
+      ],
+      "accept": [
+        "is"
+      ],
+      "explanation": "Aigerim — она, **she**, форма **is**. Короткий ответ без сокращения: Yes, she is. — Да."
+    },
+    {
+      "id": "q23",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 2,
+      "text": "Впишите короткий ответ «нет»: Am I late? — No, you ___.",
+      "answer": [
+        "aren't"
+      ],
+      "accept": [
+        "aren't",
+        "are not"
+      ],
+      "explanation": "Спрашивают «Am I…?», отвечаем про собеседника: **you → are**, отрицание **aren't**. No, you aren't. — Нет, ты не опоздал."
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "id": "eng-words-05-home",
+  "subject": "english",
+  "title": "Дом и вещи",
+  "summary": "20 слов о доме и вещах вокруг: house, room, door, bed, table, phone, key…",
+  "theory": [
+    "## Как учить эти слова\nДом — лучшее место для тренировки: все эти вещи у тебя перед глазами.\n\n1. **15 новых слов в день** — не больше. Остальное время — повторение по карточкам.\n2. **Говори вслух**: слово, транскрипция и пример — по 3 раза.\n3. **Пиши свои предложения**: 5 фраз о своей квартире (*My room is small. There is a bed and a table.*).\n4. **Приклей стикеры**: напиши *door, window, table* на бумажках и приклей на вещи. И лови эти слова в Extra English — там почти всё происходит в квартире.",
+    "## Совет: house или home? И фраза there is\n**House** — это здание, дом как строение: *a big house*. **Home** — это «мой дом», место, где я живу: *at home* (дома), *go home* (идти домой — без *to*!). Квартира по-английски — *flat*.\n\nЧтобы сказать, что где-то что-то есть, используй *there is* / *there are*:\n\n- *There is a bed in my room.* — В моей комнате есть кровать.\n- *There are two chairs in the kitchen.* — На кухне два стула."
+  ],
+  "words": [
+    {
+      "id": "w05-house",
+      "word": "house",
+      "pos": "n",
+      "ipa": "/haʊs/",
+      "ru": "дом (здание)",
+      "def": "a building where a family lives",
+      "example": "We live in a big house with a garden.",
+      "collocations": [
+        "a big house",
+        "my house",
+        "a new house"
+      ]
+    },
+    {
+      "id": "w05-home",
+      "word": "home",
+      "pos": "n",
+      "ipa": "/həʊm/",
+      "ru": "дом (родной); домой",
+      "def": "the place where you live",
+      "example": "I go home after school at two.",
+      "collocations": [
+        "at home",
+        "go home",
+        "come home"
+      ]
+    },
+    {
+      "id": "w05-room",
+      "word": "room",
+      "pos": "n",
+      "ipa": "/ruːm/",
+      "ru": "комната",
+      "def": "one part of a house or flat, with walls and a door",
+      "example": "My room is small, but I like it.",
+      "collocations": [
+        "my room",
+        "living room",
+        "clean the room"
+      ]
+    },
+    {
+      "id": "w05-kitchen",
+      "word": "kitchen",
+      "pos": "n",
+      "ipa": "/ˈkɪtʃɪn/",
+      "ru": "кухня",
+      "def": "the room where you cook food",
+      "example": "My mother is in the kitchen.",
+      "collocations": [
+        "in the kitchen",
+        "kitchen table"
+      ]
+    },
+    {
+      "id": "w05-bathroom",
+      "word": "bathroom",
+      "pos": "n",
+      "ipa": "/ˈbɑːθruːm/",
+      "ru": "ванная (комната)",
+      "def": "a room with a bath or a shower, and often a toilet",
+      "example": "Our bathroom is next to the kitchen.",
+      "collocations": [
+        "in the bathroom",
+        "bathroom door"
+      ]
+    },
+    {
+      "id": "w05-bedroom",
+      "word": "bedroom",
+      "pos": "n",
+      "ipa": "/ˈbedruːm/",
+      "ru": "спальня",
+      "def": "a room for sleeping",
+      "example": "I share a bedroom with my brother.",
+      "collocations": [
+        "my bedroom",
+        "a two-bedroom flat"
+      ]
+    },
+    {
+      "id": "w05-door",
+      "word": "door",
+      "pos": "n",
+      "ipa": "/dɔː/",
+      "ru": "дверь",
+      "def": "the thing you open to go into a room or a house",
+      "example": "Close the door, please.",
+      "collocations": [
+        "open the door",
+        "close the door",
+        "front door"
+      ]
+    },
+    {
+      "id": "w05-window",
+      "word": "window",
+      "pos": "n",
+      "ipa": "/ˈwɪndəʊ/",
+      "ru": "окно",
+      "def": "a glass part of a wall; you can see outside through it",
+      "example": "My desk is next to the window.",
+      "collocations": [
+        "open the window",
+        "look out of the window"
+      ]
+    },
+    {
+      "id": "w05-bed",
+      "word": "bed",
+      "pos": "n",
+      "ipa": "/bed/",
+      "ru": "кровать",
+      "def": "the thing you sleep on",
+      "example": "I go to bed at eleven.",
+      "collocations": [
+        "go to bed",
+        "in bed",
+        "make the bed"
+      ]
+    },
+    {
+      "id": "w05-table",
+      "word": "table",
+      "pos": "n",
+      "ipa": "/ˈteɪbl/",
+      "ru": "стол",
+      "def": "a flat thing on legs; we eat or work at it",
+      "example": "Dinner is on the table!",
+      "collocations": [
+        "at the table",
+        "on the table",
+        "kitchen table"
+      ]
+    },
+    {
+      "id": "w05-chair",
+      "word": "chair",
+      "pos": "n",
+      "ipa": "/tʃeə/",
+      "ru": "стул",
+      "def": "a thing with legs and a back that one person sits on",
+      "example": "There are four chairs in our kitchen.",
+      "collocations": [
+        "sit on a chair",
+        "an old chair"
+      ]
+    },
+    {
+      "id": "w05-floor",
+      "word": "floor",
+      "pos": "n",
+      "ipa": "/flɔː/",
+      "ru": "пол; этаж",
+      "def": "the part of a room you walk on; also one level of a building",
+      "example": "We live on the fifth floor.",
+      "collocations": [
+        "on the floor",
+        "first floor",
+        "fifth floor"
+      ]
+    },
+    {
+      "id": "w05-wall",
+      "word": "wall",
+      "pos": "n",
+      "ipa": "/wɔːl/",
+      "ru": "стена",
+      "def": "one side of a room or a building",
+      "example": "There is a big map on the wall.",
+      "collocations": [
+        "on the wall",
+        "wall clock"
+      ]
+    },
+    {
+      "id": "w05-thing",
+      "word": "thing",
+      "pos": "n",
+      "ipa": "/θɪŋ/",
+      "ru": "вещь, штука; дело",
+      "def": "an object; also any fact or idea",
+      "example": "Put your things in your bag.",
+      "collocations": [
+        "my things",
+        "the same thing",
+        "a good thing"
+      ]
+    },
+    {
+      "id": "w05-phone",
+      "word": "phone",
+      "pos": "n",
+      "ipa": "/fəʊn/",
+      "ru": "телефон",
+      "def": "a thing you use to call or text people",
+      "example": "My phone is on the table.",
+      "collocations": [
+        "mobile phone",
+        "on the phone",
+        "phone number"
+      ]
+    },
+    {
+      "id": "w05-computer",
+      "word": "computer",
+      "pos": "n",
+      "ipa": "/kəmˈpjuːtə/",
+      "ru": "компьютер",
+      "def": "a machine for writing, games and the internet",
+      "example": "I do my homework on the computer.",
+      "collocations": [
+        "on the computer",
+        "computer game",
+        "use a computer"
+      ]
+    },
+    {
+      "id": "w05-tv",
+      "word": "TV",
+      "pos": "n",
+      "ipa": "/ˌtiː ˈviː/",
+      "ru": "телевизор; телевидение",
+      "def": "a thing with a screen where you watch films and news",
+      "example": "My grandfather watches TV every evening.",
+      "collocations": [
+        "watch TV",
+        "on TV",
+        "turn on the TV"
+      ]
+    },
+    {
+      "id": "w05-key",
+      "word": "key",
+      "pos": "n",
+      "ipa": "/kiː/",
+      "ru": "ключ",
+      "def": "a small metal thing that opens a door",
+      "example": "Here is the key to our flat.",
+      "collocations": [
+        "house key",
+        "car key",
+        "lose your key"
+      ]
+    },
+    {
+      "id": "w05-picture",
+      "word": "picture",
+      "pos": "n",
+      "ipa": "/ˈpɪktʃə/",
+      "ru": "картина; фото; рисунок",
+      "def": "a drawing, a painting or a photo",
+      "example": "There are family pictures on the wall.",
+      "collocations": [
+        "take a picture",
+        "draw a picture",
+        "in the picture"
+      ]
+    },
+    {
+      "id": "w05-live",
+      "word": "live",
+      "pos": "v",
+      "ipa": "/lɪv/",
+      "ru": "жить",
+      "def": "to have your home in a place",
+      "example": "I live in a flat in Astana.",
+      "collocations": [
+        "live in",
+        "live with my parents",
+        "live alone"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „кухня“?",
+      "options": [
+        "room",
+        "bedroom",
+        "kitchen",
+        "bathroom"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Kitchen — кухня. Bathroom — ванная, bedroom — спальня, room — комната."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „окно“?",
+      "options": [
+        "window",
+        "door",
+        "floor",
+        "wall"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Window — окно. Door — дверь, wall — стена, floor — пол."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „ключ“?",
+      "options": [
+        "bag",
+        "bed",
+        "key",
+        "phone"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Key — ключ. Читается /kiː/, как русское «ки»."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „стул“?",
+      "options": [
+        "table",
+        "chair",
+        "bed",
+        "sofa"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Chair — стул. Table — стол, bed — кровать, sofa — диван."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: I go ___ after school.",
+      "options": [
+        "room",
+        "home",
+        "kitchen",
+        "house"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*Go home* — идти домой. Это готовая фраза без *to*. House — здание, так не говорят."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: I sleep in my ___.",
+      "options": [
+        "window",
+        "kitchen",
+        "bedroom",
+        "bathroom"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Bedroom — спальня, комната для сна (bed — кровать + room — комната)."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „стена“?",
+      "options": [
+        "door",
+        "window",
+        "wall",
+        "floor"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Wall — стена (*a picture on the wall*). Floor — пол или этаж."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: We live on the fifth ___.",
+      "options": [
+        "room",
+        "floor",
+        "wall",
+        "house"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Floor значит не только «пол», но и «этаж»: *on the fifth floor* — на пятом этаже."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски „жить“?",
+      "options": [
+        "leave",
+        "live",
+        "look",
+        "like"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Live /lɪv/ — жить (*I live in Astana*). Не путай с leave /liːv/ — уходить, и like — нравиться."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „вещи“ (мои вещи)?",
+      "options": [
+        "keys",
+        "homes",
+        "pictures",
+        "things"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Thing — вещь, things — вещи: *Put your things in your bag*."
+    }
+  ]
+}

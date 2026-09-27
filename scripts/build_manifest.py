@@ -20,6 +20,7 @@ SUBJECTS = [
     {"id": "informatics", "name": "Информатика", "short": "Информатика", "kind": "ubt", "color": "#7c3aed", "icon": "💻",
      "exam": {"maxPoints": 50, "single": 25, "context": 5, "multi": 5, "match": 5, "optionsSingle": 4, "optionsMulti": 6, "durationMinutes": 240, "threshold": 5}},
     {"id": "ielts", "name": "IELTS Academic", "short": "IELTS", "kind": "ielts", "color": "#059669", "icon": "🇬🇧"},
+    {"id": "english", "name": "Английский", "short": "Английский", "kind": "english", "color": "#059669", "icon": "🇬🇧"},
 ]
 
 # (id, title, weight, summary)
@@ -234,6 +235,34 @@ IELTS_SPEAKING = [
 ]
 
 
+# Английский с нуля (этап A0–A2): грамматика по порядку и 1500 частых слов наборами по 20.
+ENGLISH_GRAMMAR = [
+    ("eng-grammar-to-be", "Глагол to be: am, is, are", 1, "Я есть, ты есть: am/is/are, отрицание not, вопросы Are you…?, краткие формы I'm, it's."),
+    ("eng-grammar-present-simple", "Present Simple: что я делаю обычно", 1, "I work / he works, do/does в вопросах и отрицаниях, always/usually/every day."),
+    ("eng-grammar-past-simple", "Past Simple: что я сделал", 1, "Правильные глаголы -ed, 30 частых неправильных (went, saw, did), did в вопросах, yesterday/ago."),
+    ("eng-grammar-future-simple", "Future Simple: что я сделаю", 1, "will + глагол, won't, решения в момент речи и обещания, tomorrow/next week."),
+    ("eng-grammar-simple-mix", "Три времени Simple вместе", 1, "Как выбрать Present, Past или Future по слову-маркеру; вопросы и отрицания во всех трёх."),
+]
+
+ENGLISH_VOCAB = [
+    ("eng-words-01-core-verbs", "Самые нужные глаголы", 1, "be, have, do, go, get, make, know, want, like, need…"),
+    ("eng-words-02-people-family", "Люди и семья", 1, "mother, brother, friend, child, name, boy, girl…"),
+    ("eng-words-03-numbers-time", "Числа, дни и время", 1, "day, week, today, morning, Monday, hour, first…"),
+    ("eng-words-04-food", "Еда и напитки", 1, "bread, water, tea, meat, apple, eat, drink, breakfast…"),
+    ("eng-words-05-home", "Дом и вещи", 1, "house, room, door, bed, table, phone, key…"),
+    ("eng-words-06-school", "Школа и учёба", 1, "school, lesson, teacher, book, learn, test, homework…"),
+    ("eng-words-07-adjectives", "Частые прилагательные", 1, "good, bad, big, small, new, old, easy, hard…"),
+    ("eng-words-08-function-words", "Маленькие слова: местоимения и предлоги", 1, "I, you, this, that, in, on, at, with, because…"),
+    ("eng-words-09-action-verbs", "Глаголы действия", 1, "open, close, buy, send, help, start, stop, wait…"),
+    ("eng-words-10-city-transport", "Город и транспорт", 1, "city, street, shop, bus, car, left, right, near…"),
+    ("eng-words-11-body-health", "Тело и здоровье", 1, "head, hand, eye, doctor, sick, pain, sleep…"),
+    ("eng-words-12-clothes-colors", "Одежда и цвета", 1, "shirt, shoes, jacket, red, black, white, wear…"),
+    ("eng-words-13-work-jobs", "Работа и профессии", 1, "job, work, money, boss, office, engineer, earn…"),
+    ("eng-words-14-nature-weather", "Природа и погода", 1, "sun, rain, snow, tree, river, hot, cold, weather…"),
+    ("eng-words-15-feelings", "Чувства и характер", 1, "happy, sad, angry, tired, kind, funny, love, afraid…"),
+]
+
+
 # Что нужно странице «По классам» о теме без контента: без path/weight/minutes, чтобы манифест не разбухал.
 PLANNED_FIELDS = ("id", "subject", "title", "summary", "kind", "order", "grade", "line", "quarter", "seq")
 
@@ -263,6 +292,8 @@ def build():
     add("ielts", IELTS_LISTENING, skill="listening", minutes=20)
     add("ielts", IELTS_WRITING, kind="writing", skill="writing", minutes=45)
     add("ielts", IELTS_SPEAKING, kind="speaking", skill="speaking", minutes=15)
+    add("english", ENGLISH_GRAMMAR, skill="grammar", minutes=20)
+    add("english", ENGLISH_VOCAB, kind="vocab", skill="vocab", minutes=10)
     for i, topic in enumerate([t for t in topics if t["subject"] == "ielts"], start=1):
         topic["order"] = i
     return {"version": "2026-09-10", "app": "qadam", "subjects": SUBJECTS, "topics": topics}

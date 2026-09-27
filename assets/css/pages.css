@@ -146,3 +146,15 @@
 .writing-layout { grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr); }
 @media (max-width: 720px) { .writing-layout { grid-template-columns: 1fr; } }
 .sample summary { cursor: pointer; }
+
+/* Тренажёр Python */
+.code-editor { width: 100%; min-height: 220px; resize: vertical; font-family: var(--font-mono); font-size: .92rem; line-height: 1.55; tab-size: 4; white-space: pre; overflow-x: auto; padding: 12px 14px; color: var(--text); background: var(--bg-sunken); border: 1px solid var(--line); border-radius: var(--radius-sm); }
+.code-editor:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+.code-stdin { font-family: var(--font-mono); margin-top: 10px; }
+.code-out { margin: 0; white-space: pre-wrap; word-break: break-word; max-height: 320px; overflow-y: auto; }
+.code-out--error { color: var(--danger); border-color: var(--danger); }
+.test-row { padding: 10px 12px; border-radius: var(--radius-sm); border: 1px solid var(--line); font-size: .92rem; }
+.test-row--ok { color: var(--success); background: var(--success-soft); border-color: transparent; }
+.test-row--fail { border-color: var(--danger); }
+.test-row__details { gap: 10px; }
+@media (max-width: 720px) { .test-row__details { grid-template-columns: 1fr; } }

@@ -1,0 +1,448 @@
+{
+  "id": "eng-words-04-food",
+  "subject": "english",
+  "title": "Еда и напитки",
+  "summary": "20 слов о еде: bread, water, tea, meat, apple, eat, drink, breakfast…",
+  "theory": [
+    "## Как учить эти слова\nЕда — самая «живая» тема: ты видишь эти вещи каждый день, поэтому слова запоминаются быстро.\n\n1. **15 новых слов в день** — не больше. Остальное время — повторение по карточкам.\n2. **Говори вслух**: слово, транскрипция и пример — по 3 раза.\n3. **Пиши свои предложения**: 5 фраз о том, что ты ешь (*I have tea and bread for breakfast.*).\n4. **Называй вещи по-английски**: за столом мысленно называй всё, что видишь. И лови эти слова в Extra English.",
+    "## Совет: a / an и слова без a\nПеред тем, что можно посчитать, ставим *a*, а перед гласным звуком — *an*: **an** apple, **an** egg, **a** banana.\n\nНо некоторые слова не считаются поштучно: *water, milk, tea, coffee, bread, rice, sugar, meat*. С ними **нет** *a*, и нет *-s*. Говорим так: *some water*, *a glass of milk*, *a cup of tea*, *a piece of bread*.\n\nЕщё: с завтраком, обедом и ужином нужен глагол *have* и нет *the*: **have breakfast**, **have lunch**, **have dinner**."
+  ],
+  "words": [
+    {
+      "id": "w04-food",
+      "word": "food",
+      "pos": "n",
+      "ipa": "/fuːd/",
+      "ru": "еда, пища",
+      "def": "things that people and animals eat",
+      "example": "I like Kazakh food.",
+      "collocations": [
+        "fast food",
+        "good food",
+        "healthy food"
+      ]
+    },
+    {
+      "id": "w04-water",
+      "word": "water",
+      "pos": "n",
+      "ipa": "/ˈwɔːtə/",
+      "ru": "вода",
+      "def": "the clear drink with no taste that we need to live",
+      "example": "Can I have a glass of water, please?",
+      "collocations": [
+        "a glass of water",
+        "hot water",
+        "drink water"
+      ]
+    },
+    {
+      "id": "w04-tea",
+      "word": "tea",
+      "pos": "n",
+      "ipa": "/tiː/",
+      "ru": "чай",
+      "def": "a hot drink made with dry leaves and water",
+      "example": "In Kazakhstan people drink tea with milk.",
+      "collocations": [
+        "a cup of tea",
+        "black tea",
+        "tea with milk"
+      ]
+    },
+    {
+      "id": "w04-coffee",
+      "word": "coffee",
+      "pos": "n",
+      "ipa": "/ˈkɒfi/",
+      "ru": "кофе",
+      "def": "a hot brown drink; many people drink it in the morning",
+      "example": "My father drinks coffee every morning.",
+      "collocations": [
+        "a cup of coffee",
+        "black coffee",
+        "make coffee"
+      ]
+    },
+    {
+      "id": "w04-milk",
+      "word": "milk",
+      "pos": "n",
+      "ipa": "/mɪlk/",
+      "ru": "молоко",
+      "def": "the white drink that comes from cows",
+      "example": "I have milk and bread for breakfast.",
+      "collocations": [
+        "a glass of milk",
+        "milk and sugar"
+      ]
+    },
+    {
+      "id": "w04-bread",
+      "word": "bread",
+      "pos": "n",
+      "ipa": "/bred/",
+      "ru": "хлеб",
+      "def": "a common food; we buy it in a shop and make sandwiches with it",
+      "example": "Please buy some bread on the way home.",
+      "collocations": [
+        "white bread",
+        "a piece of bread",
+        "bread and butter"
+      ]
+    },
+    {
+      "id": "w04-meat",
+      "word": "meat",
+      "pos": "n",
+      "ipa": "/miːt/",
+      "ru": "мясо",
+      "def": "food from animals, like beef or chicken",
+      "example": "We often eat meat for dinner.",
+      "collocations": [
+        "red meat",
+        "cook meat",
+        "a piece of meat"
+      ]
+    },
+    {
+      "id": "w04-chicken",
+      "word": "chicken",
+      "pos": "n",
+      "ipa": "/ˈtʃɪkɪn/",
+      "ru": "курица; курятина",
+      "def": "a bird that people keep for eggs and meat; also its meat",
+      "example": "I want chicken and rice, please.",
+      "collocations": [
+        "chicken soup",
+        "fried chicken",
+        "chicken and rice"
+      ]
+    },
+    {
+      "id": "w04-fish",
+      "word": "fish",
+      "pos": "n",
+      "ipa": "/fɪʃ/",
+      "ru": "рыба",
+      "def": "an animal that lives in water; also its meat as food",
+      "example": "My mum cooks fish on Fridays.",
+      "collocations": [
+        "fish and chips",
+        "fresh fish"
+      ]
+    },
+    {
+      "id": "w04-egg",
+      "word": "egg",
+      "pos": "n",
+      "ipa": "/eɡ/",
+      "ru": "яйцо",
+      "def": "a round white thing from a chicken; we cook and eat it",
+      "example": "I eat two eggs for breakfast.",
+      "collocations": [
+        "boiled egg",
+        "fried eggs"
+      ]
+    },
+    {
+      "id": "w04-apple",
+      "word": "apple",
+      "pos": "n",
+      "ipa": "/ˈæpl/",
+      "ru": "яблоко",
+      "def": "a round red or green fruit that grows on a tree",
+      "example": "Almaty has very good apples.",
+      "collocations": [
+        "an apple a day",
+        "green apple",
+        "apple juice"
+      ]
+    },
+    {
+      "id": "w04-fruit",
+      "word": "fruit",
+      "pos": "n",
+      "ipa": "/fruːt/",
+      "ru": "фрукт, фрукты",
+      "def": "sweet food from a plant or tree, like an apple or a banana",
+      "example": "I eat fruit every day.",
+      "collocations": [
+        "fresh fruit",
+        "a piece of fruit",
+        "fruit juice"
+      ]
+    },
+    {
+      "id": "w04-vegetable",
+      "word": "vegetable",
+      "pos": "n",
+      "ipa": "/ˈvedʒtəbl/",
+      "ru": "овощ",
+      "def": "a plant we eat, like a potato, a carrot or a tomato",
+      "example": "My grandmother grows vegetables in her garden.",
+      "collocations": [
+        "fresh vegetables",
+        "vegetable soup"
+      ]
+    },
+    {
+      "id": "w04-rice",
+      "word": "rice",
+      "pos": "n",
+      "ipa": "/raɪs/",
+      "ru": "рис",
+      "def": "small white grains that we cook and eat, for example in plov",
+      "example": "We cook plov with rice, meat and carrots.",
+      "collocations": [
+        "a bowl of rice",
+        "boiled rice"
+      ]
+    },
+    {
+      "id": "w04-sugar",
+      "word": "sugar",
+      "pos": "n",
+      "ipa": "/ˈʃʊɡə/",
+      "ru": "сахар",
+      "def": "a sweet white thing we put in tea or coffee",
+      "example": "I don't put sugar in my tea.",
+      "collocations": [
+        "no sugar",
+        "sugar in tea"
+      ]
+    },
+    {
+      "id": "w04-breakfast",
+      "word": "breakfast",
+      "pos": "n",
+      "ipa": "/ˈbrekfəst/",
+      "ru": "завтрак",
+      "def": "the first meal of the day, in the morning",
+      "example": "I have breakfast at seven.",
+      "collocations": [
+        "have breakfast",
+        "for breakfast",
+        "a big breakfast"
+      ]
+    },
+    {
+      "id": "w04-lunch",
+      "word": "lunch",
+      "pos": "n",
+      "ipa": "/lʌntʃ/",
+      "ru": "обед",
+      "def": "the meal we eat in the middle of the day",
+      "example": "We have lunch at school at one o'clock.",
+      "collocations": [
+        "have lunch",
+        "lunch break",
+        "school lunch"
+      ]
+    },
+    {
+      "id": "w04-dinner",
+      "word": "dinner",
+      "pos": "n",
+      "ipa": "/ˈdɪnə/",
+      "ru": "ужин",
+      "def": "the main meal of the day, in the evening",
+      "example": "My family has dinner together at eight.",
+      "collocations": [
+        "have dinner",
+        "cook dinner",
+        "for dinner"
+      ]
+    },
+    {
+      "id": "w04-eat",
+      "word": "eat",
+      "pos": "v",
+      "ipa": "/iːt/",
+      "ru": "есть, кушать (прош. ate)",
+      "def": "to put food in your mouth and have it",
+      "example": "I usually eat at home.",
+      "collocations": [
+        "eat breakfast",
+        "eat out",
+        "something to eat"
+      ]
+    },
+    {
+      "id": "w04-drink",
+      "word": "drink",
+      "pos": "v",
+      "ipa": "/drɪŋk/",
+      "ru": "пить (прош. drank); напиток",
+      "def": "to take water, tea, milk or juice into your mouth",
+      "example": "I drink a lot of water in summer.",
+      "collocations": [
+        "drink tea",
+        "drink water",
+        "something to drink"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „хлеб“?",
+      "options": [
+        "meat",
+        "bread",
+        "rice",
+        "milk"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Bread — хлеб. Meat — мясо, rice — рис, milk — молоко."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „завтрак“?",
+      "options": [
+        "breakfast",
+        "food",
+        "lunch",
+        "dinner"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Breakfast — завтрак, lunch — обед, dinner — ужин, food — еда вообще."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „овощи“?",
+      "options": [
+        "meat",
+        "food",
+        "fruit",
+        "vegetables"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Vegetable — овощ, vegetables — овощи (картошка, морковь). Fruit — фрукты."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „яйцо“?",
+      "options": [
+        "fish",
+        "apple",
+        "egg",
+        "sugar"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Egg — яйцо. Apple — яблоко, fish — рыба, sugar — сахар."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: I have ___ at 7 in the morning.",
+      "options": [
+        "lunch",
+        "dinner",
+        "breakfast",
+        "night"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "В 7 утра едят завтрак — *have breakfast*. Dinner — вечером, lunch — днём."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: Can I have a glass of ___, please?",
+      "options": [
+        "rice",
+        "water",
+        "bread",
+        "egg"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*A glass of water* — стакан воды. В стакане бывает только напиток."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „курица“?",
+      "options": [
+        "chicken",
+        "egg",
+        "meat",
+        "fish"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Chicken — курица и куриное мясо. Fish — рыба, meat — мясо вообще, egg — яйцо."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: I want ___ apple.",
+      "options": [
+        "many",
+        "an",
+        "much",
+        "a"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Apple начинается с гласного звука, поэтому **an** apple. *A* ставим перед согласным: *a banana*."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „пить“?",
+      "options": [
+        "cook",
+        "eat",
+        "make",
+        "drink"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Drink — пить (*drink tea*). Eat — есть, cook — готовить, make — делать."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: My mum puts ___ in her tea, so it is sweet.",
+      "options": [
+        "rice",
+        "meat",
+        "fish",
+        "sugar"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Sugar — сахар, он делает чай сладким (sweet)."
+    }
+  ]
+}

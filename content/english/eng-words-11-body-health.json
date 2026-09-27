@@ -1,0 +1,438 @@
+{
+  "id": "eng-words-11-body-health",
+  "subject": "english",
+  "title": "Тело и здоровье",
+  "summary": "20 слов о частях тела и здоровье: голова, рука, глаз, врач, лекарство, боль, сон.",
+  "theory": [
+    "## Как учить эти 20 слов\nНе учи список сверху вниз за один вечер. Работай по шагам:\n1. **15 новых слов в день** — не больше. Оставшиеся 5 возьми завтра вместе с повторением.\n2. **Говори вслух и показывай.** Говоришь *head* — дотронься до головы. Тело помогает памяти.\n3. **Напиши 5 своих предложений**: *I have brown eyes. I sleep eight hours.*\n4. **Встречай слова снова** — в карточках и в разделе Extra English. Слово выучено, когда ты сам говоришь его в речи.",
+    "## Совет к набору: рука и нога — это по два слова\nВ русском «рука» и «нога» — одно слово, в английском — два:\n\n| Русский | Английский |\n|---|---|\n| рука (от плеча) | **arm** |\n| кисть руки | **hand** |\n| нога (от бедра) | **leg** |\n| ступня | **foot** |\n\nДва слова с необычным множественным числом: **tooth → teeth**, **foot → feet**.\n\n:::tip Как сказать, что болит\n*My head hurts.* — У меня болит голова. *I have a pain in my back.* — У меня боль в спине. *I feel sick.* — Мне плохо.\n:::"
+  ],
+  "words": [
+    {
+      "id": "w11-body",
+      "word": "body",
+      "pos": "n",
+      "ipa": "/ˈbɒdi/",
+      "ru": "тело",
+      "def": "all of a person or animal: the head, arms, legs and the rest",
+      "example": "Sport is good for your body.",
+      "collocations": [
+        "human body",
+        "body and mind"
+      ]
+    },
+    {
+      "id": "w11-head",
+      "word": "head",
+      "pos": "n",
+      "ipa": "/hed/",
+      "ru": "голова",
+      "def": "the top part of your body, with your eyes, ears and mouth",
+      "example": "I hit my head on the door.",
+      "collocations": [
+        "on your head",
+        "shake your head"
+      ]
+    },
+    {
+      "id": "w11-face",
+      "word": "face",
+      "pos": "n",
+      "ipa": "/feɪs/",
+      "ru": "лицо",
+      "def": "the front of your head",
+      "example": "I wash my face every morning.",
+      "collocations": [
+        "wash your face",
+        "a happy face"
+      ]
+    },
+    {
+      "id": "w11-eye",
+      "word": "eye",
+      "pos": "n",
+      "ipa": "/aɪ/",
+      "ru": "глаз",
+      "def": "you see with your eyes",
+      "example": "She has big brown eyes.",
+      "collocations": [
+        "brown eyes",
+        "close your eyes",
+        "open your eyes"
+      ]
+    },
+    {
+      "id": "w11-ear",
+      "word": "ear",
+      "pos": "n",
+      "ipa": "/ɪə/",
+      "ru": "ухо",
+      "def": "you hear with your ears",
+      "example": "My left ear hurts.",
+      "collocations": [
+        "left ear",
+        "big ears"
+      ]
+    },
+    {
+      "id": "w11-mouth",
+      "word": "mouth",
+      "pos": "n",
+      "ipa": "/maʊθ/",
+      "ru": "рот",
+      "def": "you eat and speak with it",
+      "example": "The doctor said: open your mouth, please.",
+      "collocations": [
+        "open your mouth",
+        "close your mouth"
+      ]
+    },
+    {
+      "id": "w11-tooth",
+      "word": "tooth",
+      "pos": "n",
+      "ipa": "/tuːθ/",
+      "ru": "зуб (мн. ч. teeth)",
+      "def": "one of the hard white things in your mouth",
+      "example": "I brush my teeth two times a day.",
+      "collocations": [
+        "brush your teeth",
+        "a bad tooth"
+      ]
+    },
+    {
+      "id": "w11-hair",
+      "word": "hair",
+      "pos": "n",
+      "ipa": "/heə/",
+      "ru": "волосы",
+      "def": "the thing that grows on your head",
+      "example": "My sister has long black hair.",
+      "collocations": [
+        "long hair",
+        "short hair",
+        "wash your hair"
+      ]
+    },
+    {
+      "id": "w11-hand",
+      "word": "hand",
+      "pos": "n",
+      "ipa": "/hænd/",
+      "ru": "рука (кисть)",
+      "def": "the part at the end of your arm, with five fingers",
+      "example": "Wash your hands before dinner.",
+      "collocations": [
+        "wash your hands",
+        "right hand",
+        "hold hands"
+      ]
+    },
+    {
+      "id": "w11-arm",
+      "word": "arm",
+      "pos": "n",
+      "ipa": "/ɑːm/",
+      "ru": "рука (от плеча до кисти)",
+      "def": "the long part of your body between your shoulder and your hand",
+      "example": "I broke my arm last year.",
+      "collocations": [
+        "left arm",
+        "break your arm"
+      ]
+    },
+    {
+      "id": "w11-leg",
+      "word": "leg",
+      "pos": "n",
+      "ipa": "/leɡ/",
+      "ru": "нога (от бедра до ступни)",
+      "def": "one of the two long parts of your body that you walk on",
+      "example": "My legs are tired after football.",
+      "collocations": [
+        "long legs",
+        "left leg"
+      ]
+    },
+    {
+      "id": "w11-foot",
+      "word": "foot",
+      "pos": "n",
+      "ipa": "/fʊt/",
+      "ru": "ступня (мн. ч. feet)",
+      "def": "the part at the end of your leg that you stand on",
+      "example": "I go to school on foot.",
+      "collocations": [
+        "on foot",
+        "left foot"
+      ]
+    },
+    {
+      "id": "w11-doctor",
+      "word": "doctor",
+      "pos": "n",
+      "ipa": "/ˈdɒktə/",
+      "ru": "врач, доктор",
+      "def": "a person who helps sick people",
+      "example": "I feel bad. I need to see a doctor.",
+      "collocations": [
+        "see a doctor",
+        "go to the doctor"
+      ]
+    },
+    {
+      "id": "w11-hospital",
+      "word": "hospital",
+      "pos": "n",
+      "ipa": "/ˈhɒspɪtl/",
+      "ru": "больница",
+      "def": "a big building where doctors help sick people",
+      "example": "My grandmother was in hospital last week.",
+      "collocations": [
+        "in hospital",
+        "go to hospital"
+      ]
+    },
+    {
+      "id": "w11-medicine",
+      "word": "medicine",
+      "pos": "n",
+      "ipa": "/ˈmedsn/",
+      "ru": "лекарство",
+      "def": "something you take when you are sick to feel better",
+      "example": "Take this medicine three times a day.",
+      "collocations": [
+        "take medicine",
+        "cough medicine"
+      ]
+    },
+    {
+      "id": "w11-sick",
+      "word": "sick",
+      "pos": "adj",
+      "ipa": "/sɪk/",
+      "ru": "больной; плохо (тошнит)",
+      "def": "not well; ill",
+      "example": "I was sick yesterday, so I stayed at home.",
+      "collocations": [
+        "feel sick",
+        "get sick"
+      ]
+    },
+    {
+      "id": "w11-pain",
+      "word": "pain",
+      "pos": "n",
+      "ipa": "/peɪn/",
+      "ru": "боль",
+      "def": "the bad feeling when a part of your body hurts",
+      "example": "I have a pain in my back.",
+      "collocations": [
+        "back pain",
+        "in pain",
+        "feel pain"
+      ]
+    },
+    {
+      "id": "w11-hurt",
+      "word": "hurt",
+      "pos": "v",
+      "ipa": "/hɜːt/",
+      "ru": "болеть; причинять боль",
+      "def": "to feel pain; to give pain to someone",
+      "example": "My leg hurts after the game.",
+      "collocations": [
+        "it hurts",
+        "hurt your leg"
+      ]
+    },
+    {
+      "id": "w11-sleep",
+      "word": "sleep",
+      "pos": "v",
+      "ipa": "/sliːp/",
+      "ru": "спать; сон",
+      "def": "to close your eyes and rest, usually at night",
+      "example": "I sleep eight hours every night.",
+      "collocations": [
+        "go to sleep",
+        "sleep well"
+      ]
+    },
+    {
+      "id": "w11-healthy",
+      "word": "healthy",
+      "pos": "adj",
+      "ipa": "/ˈhelθi/",
+      "ru": "здоровый; полезный",
+      "def": "well and strong; good for your body",
+      "example": "Fruit and vegetables are healthy food.",
+      "collocations": [
+        "healthy food",
+        "stay healthy"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «голова»?",
+      "options": [
+        "hand",
+        "head",
+        "face",
+        "hair"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Head — голова. Hand — кисть руки, hair — волосы, face — лицо."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски «кисть руки» (часть с пятью пальцами)?",
+      "options": [
+        "hand",
+        "foot",
+        "arm",
+        "leg"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Hand — кисть руки, arm — вся рука от плеча. Leg — нога, foot — ступня."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «зуб»?",
+      "options": [
+        "eye",
+        "mouth",
+        "ear",
+        "tooth"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Tooth — зуб, во множественном числе teeth: *brush your teeth*."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «врач»?",
+      "options": [
+        "body",
+        "doctor",
+        "medicine",
+        "hospital"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Doctor — врач. Hospital — больница, medicine — лекарство."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «лекарство»?",
+      "options": [
+        "hospital",
+        "pain",
+        "sleep",
+        "medicine"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Medicine — лекарство: *take medicine* — принимать лекарство."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "I have a ___ in my back. I need to see a doctor.",
+      "options": [
+        "hand",
+        "sleep",
+        "face",
+        "pain"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "A pain in my back — боль в спине. Поэтому нужен врач."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "I am very tired. I want to ___.",
+      "options": [
+        "sleep",
+        "hurt",
+        "sick",
+        "pain"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Устал — хочу спать: *I want to sleep*. Pain — существительное, sick — прилагательное, после want to они не ставятся."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски «здоровый; полезный»?",
+      "options": [
+        "tired",
+        "happy",
+        "sick",
+        "healthy"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Healthy — здоровый, полезный: *healthy food*. Sick — наоборот, больной."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски «ступня»?",
+      "options": [
+        "foot",
+        "hand",
+        "leg",
+        "arm"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Foot — ступня (мн. ч. feet), leg — вся нога. Пешком — *on foot*."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Ouch! My arm ___!",
+      "options": [
+        "sick",
+        "pains",
+        "hurts",
+        "sleeps"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "«Болит» по-английски — hurts: *My arm hurts*. Pain — это существительное «боль», глаголом в такой фразе не бывает."
+    }
+  ]
+}

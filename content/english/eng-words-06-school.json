@@ -1,0 +1,450 @@
+{
+  "id": "eng-words-06-school",
+  "subject": "english",
+  "title": "Школа и учёба",
+  "summary": "20 слов о школе и учёбе: school, lesson, teacher, book, learn, test, homework…",
+  "theory": [
+    "## Как учить эти слова\nЭто слова твоего обычного дня: уроки, учителя, тесты и домашка. Их легко тренировать прямо в школе.\n\n1. **15 новых слов в день** — не больше. Остальное время — повторение по карточкам.\n2. **Говори вслух**: слово, транскрипция и пример — по 3 раза.\n3. **Пиши свои предложения**: 5 фраз о своей школе (*My favourite subject is history. We have a test tomorrow.*).\n4. **Встречай слова в жизни**: в Extra English и на уроках английского — обращай внимание, когда звучат эти слова.",
+    "## Совет: learn, study и полезные фразы для урока\n**Learn** — выучить, узнать что-то новое: *learn new words*. **Study** — учиться, заниматься предметом: *study at university*, *study for a test*. А *teach* — учить кого-то (это делает teacher).\n\nФразы, которые спасут на уроке:\n\n- *Sorry, I don't understand.* — Извините, я не понимаю.\n- *Can you say it again, please?* — Повторите, пожалуйста.\n- *How do you say … in English?* — Как по-английски …?"
+  ],
+  "words": [
+    {
+      "id": "w06-school",
+      "word": "school",
+      "pos": "n",
+      "ipa": "/skuːl/",
+      "ru": "школа",
+      "def": "a place where children go to learn",
+      "example": "My school is ten minutes from my house.",
+      "collocations": [
+        "go to school",
+        "at school",
+        "after school"
+      ]
+    },
+    {
+      "id": "w06-class",
+      "word": "class",
+      "pos": "n",
+      "ipa": "/klɑːs/",
+      "ru": "класс; занятие",
+      "def": "a group of students who learn together; also a lesson",
+      "example": "There are twenty-five students in our class.",
+      "collocations": [
+        "in class",
+        "our class",
+        "English class"
+      ]
+    },
+    {
+      "id": "w06-lesson",
+      "word": "lesson",
+      "pos": "n",
+      "ipa": "/ˈlesn/",
+      "ru": "урок",
+      "def": "a time when a teacher teaches a subject",
+      "example": "Our first lesson is maths.",
+      "collocations": [
+        "an English lesson",
+        "have a lesson",
+        "after the lesson"
+      ]
+    },
+    {
+      "id": "w06-teacher",
+      "word": "teacher",
+      "pos": "n",
+      "ipa": "/ˈtiːtʃə/",
+      "ru": "учитель, учительница",
+      "def": "a person whose job is to teach",
+      "example": "Our English teacher is from Almaty.",
+      "collocations": [
+        "English teacher",
+        "class teacher"
+      ]
+    },
+    {
+      "id": "w06-student",
+      "word": "student",
+      "pos": "n",
+      "ipa": "/ˈstjuːdnt/",
+      "ru": "ученик, студент",
+      "def": "a person who studies at a school or university",
+      "example": "I am a student in the tenth grade.",
+      "collocations": [
+        "a good student",
+        "a new student"
+      ]
+    },
+    {
+      "id": "w06-book",
+      "word": "book",
+      "pos": "n",
+      "ipa": "/bʊk/",
+      "ru": "книга; учебник",
+      "def": "many pages with words inside a cover; you read it",
+      "example": "I read an English book every month.",
+      "collocations": [
+        "read a book",
+        "an English book",
+        "open your books"
+      ]
+    },
+    {
+      "id": "w06-pen",
+      "word": "pen",
+      "pos": "n",
+      "ipa": "/pen/",
+      "ru": "ручка",
+      "def": "a thing you write with, using ink",
+      "example": "Can I use your pen, please?",
+      "collocations": [
+        "a blue pen",
+        "pen and paper"
+      ]
+    },
+    {
+      "id": "w06-page",
+      "word": "page",
+      "pos": "n",
+      "ipa": "/peɪdʒ/",
+      "ru": "страница",
+      "def": "one side of a piece of paper in a book",
+      "example": "Open your books at page ten.",
+      "collocations": [
+        "page ten",
+        "on page",
+        "the next page"
+      ]
+    },
+    {
+      "id": "w06-word",
+      "word": "word",
+      "pos": "n",
+      "ipa": "/wɜːd/",
+      "ru": "слово",
+      "def": "a group of letters that means something",
+      "example": "I learn fifteen new English words every day.",
+      "collocations": [
+        "new words",
+        "in other words",
+        "a word in English"
+      ]
+    },
+    {
+      "id": "w06-question",
+      "word": "question",
+      "pos": "n",
+      "ipa": "/ˈkwestʃən/",
+      "ru": "вопрос",
+      "def": "what you ask when you want to know something",
+      "example": "Can I ask a question?",
+      "collocations": [
+        "ask a question",
+        "answer a question",
+        "good question"
+      ]
+    },
+    {
+      "id": "w06-answer",
+      "word": "answer",
+      "pos": "n",
+      "ipa": "/ˈɑːnsə/",
+      "ru": "ответ; отвечать",
+      "def": "what you say or write when someone asks you something",
+      "example": "I know the answer to this question.",
+      "collocations": [
+        "the right answer",
+        "the answer to",
+        "answer the phone"
+      ]
+    },
+    {
+      "id": "w06-homework",
+      "word": "homework",
+      "pos": "n",
+      "ipa": "/ˈhəʊmwɜːk/",
+      "ru": "домашнее задание",
+      "def": "school work that you do at home",
+      "example": "I did my homework yesterday evening.",
+      "collocations": [
+        "do homework",
+        "a lot of homework",
+        "maths homework"
+      ]
+    },
+    {
+      "id": "w06-test",
+      "word": "test",
+      "pos": "n",
+      "ipa": "/test/",
+      "ru": "тест, контрольная",
+      "def": "some questions that check what you know",
+      "example": "We have a maths test tomorrow.",
+      "collocations": [
+        "pass a test",
+        "a maths test",
+        "test results"
+      ]
+    },
+    {
+      "id": "w06-exam",
+      "word": "exam",
+      "pos": "n",
+      "ipa": "/ɪɡˈzæm/",
+      "ru": "экзамен",
+      "def": "a big, important test",
+      "example": "I will have a big exam next year.",
+      "collocations": [
+        "take an exam",
+        "pass an exam",
+        "final exam"
+      ]
+    },
+    {
+      "id": "w06-subject",
+      "word": "subject",
+      "pos": "n",
+      "ipa": "/ˈsʌbdʒɪkt/",
+      "ru": "предмет (школьный); тема",
+      "def": "something you study at school, like maths or history",
+      "example": "My favourite subject is history.",
+      "collocations": [
+        "favourite subject",
+        "school subject"
+      ]
+    },
+    {
+      "id": "w06-language",
+      "word": "language",
+      "pos": "n",
+      "ipa": "/ˈlæŋɡwɪdʒ/",
+      "ru": "язык",
+      "def": "the words people use to speak and write, like English or Kazakh",
+      "example": "I speak Kazakh, Russian and a little English.",
+      "collocations": [
+        "foreign language",
+        "learn a language",
+        "first language"
+      ]
+    },
+    {
+      "id": "w06-learn",
+      "word": "learn",
+      "pos": "v",
+      "ipa": "/lɜːn/",
+      "ru": "учить, выучить; узнавать",
+      "def": "to find out new things or how to do something",
+      "example": "I learn English on my phone every day.",
+      "collocations": [
+        "learn English",
+        "learn new words",
+        "learn to swim"
+      ]
+    },
+    {
+      "id": "w06-study",
+      "word": "study",
+      "pos": "v",
+      "ipa": "/ˈstʌdi/",
+      "ru": "учиться, изучать, заниматься",
+      "def": "to spend time reading and learning about a subject",
+      "example": "My brother studies at university in Almaty.",
+      "collocations": [
+        "study hard",
+        "study for a test",
+        "study English"
+      ]
+    },
+    {
+      "id": "w06-read",
+      "word": "read",
+      "pos": "v",
+      "ipa": "/riːd/",
+      "ru": "читать (прош. read /red/)",
+      "def": "to look at words and understand them",
+      "example": "I read before bed every night.",
+      "collocations": [
+        "read a book",
+        "read aloud",
+        "read the text"
+      ]
+    },
+    {
+      "id": "w06-write",
+      "word": "write",
+      "pos": "v",
+      "ipa": "/raɪt/",
+      "ru": "писать (прош. wrote)",
+      "def": "to put words on paper or on a screen",
+      "example": "Write your name at the top of the page.",
+      "collocations": [
+        "write a letter",
+        "write down",
+        "write an essay"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „учитель“?",
+      "options": [
+        "class",
+        "school",
+        "student",
+        "teacher"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Teacher — учитель (teach — учить + -er — тот, кто делает). Student — ученик."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „домашнее задание“?",
+      "options": [
+        "lesson",
+        "housework",
+        "test",
+        "homework"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Homework — домашнее задание. Housework — работа по дому (уборка, стирка)."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „вопрос“?",
+      "options": [
+        "question",
+        "answer",
+        "page",
+        "word"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Question — вопрос, answer — ответ: *ask a question* — задать вопрос."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Как по-английски „школьный предмет“?",
+      "options": [
+        "lesson",
+        "subject",
+        "object",
+        "exam"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Subject — школьный предмет (*My favourite subject is history*). Object — вещь, объект."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: Open your books at ___ 25.",
+      "options": [
+        "class",
+        "page",
+        "word",
+        "book"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*Open your books at page 25* — откройте книги на странице 25. Частая фраза учителя."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: We have a maths ___ tomorrow. I need to study!",
+      "options": [
+        "page",
+        "test",
+        "subject",
+        "teacher"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*A maths test* — контрольная по математике. К ней нужно готовиться (study)."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „читать“?",
+      "options": [
+        "read",
+        "write",
+        "learn",
+        "study"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Read — читать, write — писать, learn — учить, study — учиться."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „язык“ (казахский, английский)?",
+      "options": [
+        "word",
+        "language",
+        "English",
+        "subject"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Language — язык: *I speak three languages*. English — это название одного языка."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: My brother ___ at university.",
+      "options": [
+        "opens",
+        "writes",
+        "answers",
+        "studies"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "*Study at university* — учиться в университете. После he / she к глаголу добавляем -s: study → studies."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „урок“?",
+      "options": [
+        "exam",
+        "homework",
+        "test",
+        "lesson"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Lesson — урок. Exam — экзамен, homework — домашнее задание, test — контрольная."
+    }
+  ]
+}

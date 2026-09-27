@@ -1,0 +1,452 @@
+{
+  "id": "eng-words-07-adjectives",
+  "subject": "english",
+  "title": "Частые прилагательные",
+  "summary": "20 самых частых прилагательных: good, bad, big, small, new, old, easy, hard…",
+  "theory": [
+    "## Как учить эти слова\nПрилагательные описывают всё вокруг: людей, вещи, дни. Многие из них идут парами-противоположностями — учи их парой, так в два раза проще.\n\n1. **15 новых слов в день** — не больше. Остальное время — повторение по карточкам.\n2. **Говори вслух**: слово, транскрипция и пример — по 3 раза.\n3. **Пиши свои предложения**: 5 фраз-описаний (*My room is small. English is important.*).\n4. **Встречай слова в жизни**: в Extra English герои постоянно говорят *great!*, *good*, *beautiful* — лови их на слух.",
+    "## Совет: пары и сравнение\nУчи противоположности вместе: *good — bad, big — small, new — old, old — young, easy — hard, long — short, same — different*.\n\nПрилагательное стоит **перед** словом и не меняется: *a big house — big houses*.\n\nЧтобы сравнить, добавь *-er* и *the …-est*: big → bigger → the biggest, small → smaller → the smallest. Для длинных слов — *more*: *more interesting*. Особые формы: good → better → the best, bad → worse → the worst."
+  ],
+  "words": [
+    {
+      "id": "w07-good",
+      "word": "good",
+      "pos": "adj",
+      "ipa": "/ɡʊd/",
+      "ru": "хороший",
+      "def": "not bad; the way you want something to be",
+      "example": "This is a good film.",
+      "collocations": [
+        "good idea",
+        "good friend",
+        "good at"
+      ]
+    },
+    {
+      "id": "w07-bad",
+      "word": "bad",
+      "pos": "adj",
+      "ipa": "/bæd/",
+      "ru": "плохой",
+      "def": "not good",
+      "example": "I had a bad day at school.",
+      "collocations": [
+        "bad news",
+        "bad weather",
+        "not bad"
+      ]
+    },
+    {
+      "id": "w07-big",
+      "word": "big",
+      "pos": "adj",
+      "ipa": "/bɪɡ/",
+      "ru": "большой",
+      "def": "large; not small",
+      "example": "Almaty is a big city.",
+      "collocations": [
+        "big city",
+        "big family",
+        "big problem"
+      ]
+    },
+    {
+      "id": "w07-small",
+      "word": "small",
+      "pos": "adj",
+      "ipa": "/smɔːl/",
+      "ru": "маленький",
+      "def": "not big; little",
+      "example": "We have a small flat.",
+      "collocations": [
+        "small room",
+        "small town"
+      ]
+    },
+    {
+      "id": "w07-new",
+      "word": "new",
+      "pos": "adj",
+      "ipa": "/njuː/",
+      "ru": "новый",
+      "def": "just made or just bought; not old",
+      "example": "I got a new phone for my birthday.",
+      "collocations": [
+        "new phone",
+        "new friend",
+        "new school"
+      ]
+    },
+    {
+      "id": "w07-old",
+      "word": "old",
+      "pos": "adj",
+      "ipa": "/əʊld/",
+      "ru": "старый; пожилой",
+      "def": "not new; or not young, with many years",
+      "example": "My grandfather is old, but he walks every day.",
+      "collocations": [
+        "old friend",
+        "old house",
+        "how old"
+      ]
+    },
+    {
+      "id": "w07-young",
+      "word": "young",
+      "pos": "adj",
+      "ipa": "/jʌŋ/",
+      "ru": "молодой",
+      "def": "not old; with only a few years",
+      "example": "Our new teacher is very young.",
+      "collocations": [
+        "young people",
+        "young man"
+      ]
+    },
+    {
+      "id": "w07-easy",
+      "word": "easy",
+      "pos": "adj",
+      "ipa": "/ˈiːzi/",
+      "ru": "лёгкий, простой",
+      "def": "not difficult; you can do it with no problems",
+      "example": "The test was very easy.",
+      "collocations": [
+        "easy question",
+        "easy to do",
+        "take it easy"
+      ]
+    },
+    {
+      "id": "w07-hard",
+      "word": "hard",
+      "pos": "adj",
+      "ipa": "/hɑːd/",
+      "ru": "трудный; твёрдый",
+      "def": "difficult; not easy",
+      "example": "Maths is hard for me.",
+      "collocations": [
+        "hard work",
+        "hard question",
+        "work hard"
+      ]
+    },
+    {
+      "id": "w07-long",
+      "word": "long",
+      "pos": "adj",
+      "ipa": "/lɒŋ/",
+      "ru": "длинный; долгий",
+      "def": "big from one end to the other; or taking a lot of time",
+      "example": "It was a long day.",
+      "collocations": [
+        "a long time",
+        "long hair",
+        "a long way"
+      ]
+    },
+    {
+      "id": "w07-short",
+      "word": "short",
+      "pos": "adj",
+      "ipa": "/ʃɔːt/",
+      "ru": "короткий; невысокий",
+      "def": "not long; also not tall",
+      "example": "The lesson is short today — only thirty minutes.",
+      "collocations": [
+        "short story",
+        "short time",
+        "short hair"
+      ]
+    },
+    {
+      "id": "w07-great",
+      "word": "great",
+      "pos": "adj",
+      "ipa": "/ɡreɪt/",
+      "ru": "отличный; великий",
+      "def": "very good; also very big or important",
+      "example": "We had a great time at the party.",
+      "collocations": [
+        "great idea",
+        "a great time",
+        "Great!"
+      ]
+    },
+    {
+      "id": "w07-important",
+      "word": "important",
+      "pos": "adj",
+      "ipa": "/ɪmˈpɔːtnt/",
+      "ru": "важный",
+      "def": "that matters a lot",
+      "example": "English is very important for my future.",
+      "collocations": [
+        "very important",
+        "important for",
+        "important thing"
+      ]
+    },
+    {
+      "id": "w07-different",
+      "word": "different",
+      "pos": "adj",
+      "ipa": "/ˈdɪfrənt/",
+      "ru": "разный; другой, непохожий",
+      "def": "not the same",
+      "example": "My brother and I are very different.",
+      "collocations": [
+        "different from",
+        "different people",
+        "a different way"
+      ]
+    },
+    {
+      "id": "w07-same",
+      "word": "same",
+      "pos": "adj",
+      "ipa": "/seɪm/",
+      "ru": "тот же самый, одинаковый",
+      "def": "not different; exactly like another one",
+      "example": "We are in the same class.",
+      "collocations": [
+        "the same",
+        "at the same time",
+        "the same age"
+      ]
+    },
+    {
+      "id": "w07-beautiful",
+      "word": "beautiful",
+      "pos": "adj",
+      "ipa": "/ˈbjuːtɪfl/",
+      "ru": "красивый",
+      "def": "very nice to look at or to listen to",
+      "example": "Burabay is a beautiful place.",
+      "collocations": [
+        "beautiful place",
+        "beautiful city",
+        "beautiful song"
+      ]
+    },
+    {
+      "id": "w07-interesting",
+      "word": "interesting",
+      "pos": "adj",
+      "ipa": "/ˈɪntrəstɪŋ/",
+      "ru": "интересный",
+      "def": "that makes you want to know more",
+      "example": "This book is very interesting.",
+      "collocations": [
+        "interesting book",
+        "interesting idea",
+        "very interesting"
+      ]
+    },
+    {
+      "id": "w07-free",
+      "word": "free",
+      "pos": "adj",
+      "ipa": "/friː/",
+      "ru": "свободный; бесплатный",
+      "def": "not busy; or that you do not pay for",
+      "example": "Are you free on Saturday?",
+      "collocations": [
+        "free time",
+        "for free",
+        "a free day"
+      ]
+    },
+    {
+      "id": "w07-ready",
+      "word": "ready",
+      "pos": "adj",
+      "ipa": "/ˈredi/",
+      "ru": "готовый",
+      "def": "able to start now; finished and waiting",
+      "example": "Are you ready? Let's go!",
+      "collocations": [
+        "ready for",
+        "get ready",
+        "dinner is ready"
+      ]
+    },
+    {
+      "id": "w07-wrong",
+      "word": "wrong",
+      "pos": "adj",
+      "ipa": "/rɒŋ/",
+      "ru": "неправильный, ошибочный",
+      "def": "not correct",
+      "example": "Sorry, that is the wrong answer.",
+      "collocations": [
+        "wrong answer",
+        "something is wrong",
+        "go wrong"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „новый“?",
+      "options": [
+        "old",
+        "same",
+        "young",
+        "new"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "New — новый. Old — старый, young — молодой, same — тот же."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „лёгкий, простой“?",
+      "options": [
+        "hard",
+        "easy",
+        "short",
+        "free"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Easy — лёгкий, простой (*an easy test*). Hard — наоборот, трудный."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „важный“?",
+      "options": [
+        "interesting",
+        "important",
+        "different",
+        "beautiful"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Important — важный. Interesting — интересный, different — разный, beautiful — красивый."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „молодой“?",
+      "options": [
+        "small",
+        "young",
+        "new",
+        "old"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Young — молодой (о людях). New — новый (о вещах)."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите слово, подходящее в предложение: Almaty is a ___ city — two million people live there.",
+      "options": [
+        "easy",
+        "short",
+        "big",
+        "small"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Два миллиона жителей — это большой город: *a big city*."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: Sorry, this is the ___ answer. Try again.",
+      "options": [
+        "wrong",
+        "free",
+        "ready",
+        "same"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "*The wrong answer* — неправильный ответ. Раз нужно пробовать снова, ответ был неверный."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „тот же самый, одинаковый“?",
+      "options": [
+        "great",
+        "different",
+        "same",
+        "long"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Same — тот же самый (*the same class*), different — наоборот, разный."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Как по-английски „красивый“?",
+      "options": [
+        "important",
+        "interesting",
+        "beautiful",
+        "great"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Beautiful — красивый. Great — отличный, interesting — интересный."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите слово, подходящее в предложение: I have no lessons today — I'm ___!",
+      "options": [
+        "free",
+        "hard",
+        "long",
+        "ready"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Free — свободный, не занятой. *I'm free* — я свободен."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Какое слово противоположно слову old, если речь о человеке?",
+      "options": [
+        "young",
+        "big",
+        "new",
+        "short"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "О человеке: old — young (старый — молодой). О вещах: old — new (старый — новый)."
+    }
+  ]
+}

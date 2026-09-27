@@ -11,11 +11,24 @@ import { translationNote } from '../ui/lang-switch.js';
 
 const SKILL_LABEL = { reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', grammar: 'Grammar', vocab: 'Vocabulary' };
 
+/** Адрес карточек для набора слов: у английского свой словарь, у IELTS — свой. */
+const vocabHref = (meta) => `${meta.subject === 'english' ? '#/english/words' : '#/ielts/vocab'}?mode=learn&set=${meta.id}`;
+
+/** Раздел, к которому относится тема, — для «хлебных крошек». */
+function sectionOf(subj, meta) {
+  if (subj?.kind === 'english') {
+    const own = meta.kind === 'vocab' ? { label: 'Слова', href: '#/english/words' } : { label: 'Грамматика', href: '#/english?focus=grammar' };
+    return { root: { label: 'Английский', href: '#/english' }, own };
+  }
+  if (subj?.kind === 'ielts') return { root: { label: 'IELTS', href: '#/ielts' }, own: { label: subj.name, href: '#/ielts' } };
+  return { root: { label: 'ЕНТ', href: '#/ubt' }, own: { label: subj?.name || meta.subject, href: `#/subject/${meta.subject}` } };
+}
+
 function practiceLinks(meta, topic) {
   const count = topic.questions.length;
   const hard = topic.questions.filter((q) => q.type === 'multi' || q.difficulty >= 3).length;
   const links = [];
-  if (meta.kind === 'vocab') links.push(h('a', { class: 'btn btn--primary btn--lg', href: `#/ielts/vocab?set=${meta.id}` }, `🃏 Учить слова (${topic.words.length})`));
+  if (meta.kind === 'vocab') links.push(h('a', { class: 'btn btn--primary btn--lg', href: vocabHref(meta) }, `🃏 Учить слова (${topic.words.length})`));
   else if (meta.kind === 'writing') links.push(h('a', { class: 'btn btn--primary btn--lg', href: `#/ielts/writing?topic=${meta.id}` }, '✍️ Открыть задания'));
   else if (meta.kind === 'speaking') links.push(h('a', { class: 'btn btn--primary btn--lg', href: `#/ielts/speaking?topic=${meta.id}` }, '🎤 Открыть карточки'));
   else if (count) {
@@ -32,13 +45,14 @@ function statsCard(state, meta) {
   const mastery = masteryOf(state, meta.id);
   const level = masteryLevel(mastery);
   const weight = topicWeight(meta);
+  const subj = subject(meta.subject);
   const rows = [
     ['Статус', level.label],
     ['Попыток', String(stats?.attempts || 0)],
     ['Точность', stats?.answered ? `${Math.round((stats.correct / stats.answered) * 100)}%` : '—'],
     ['Лучший результат', stats?.best ? `${Math.round(stats.best * 100)}%` : '—'],
     ['Последний раз', stats?.lastAt ? formatDate(stats.lastAt) : '—'],
-    [meta.subject === 'ielts' ? 'Вес' : 'На ЕНТ', meta.subject === 'ielts' ? String(weight) : `≈ ${pluralize(weight, ['вопрос', 'вопроса', 'вопросов'])}`],
+    [subj?.kind === 'ubt' ? 'На ЕНТ' : 'Вес', subj?.kind === 'ubt' ? `≈ ${pluralize(weight, ['вопрос', 'вопроса', 'вопросов'])}` : String(weight)],
   ];
   return h(
     'div',
@@ -68,7 +82,7 @@ function wordsView(topic, meta) {
     'div',
     { class: 'card' },
     h('table', { class: 'topic-table' }, h('tbody', {}, topic.words.slice(0, 60).map((w) => h('tr', {}, h('td', {}, h('b', {}, w.word), w.pos ? h('span', { class: 'muted small' }, ` ${w.pos}`) : null), h('td', {}, w.ru || ''), h('td', { class: 'muted small' }, w.def || ''))))),
-    h('a', { class: 'btn btn--primary', href: `#/ielts/vocab?set=${meta.id}`, style: { marginTop: '12px' } }, 'Учить карточками'),
+    h('a', { class: 'btn btn--primary', href: vocabHref(meta), style: { marginTop: '12px' } }, 'Учить карточками'),
   );
 }
 
@@ -110,7 +124,7 @@ export async function render({ params, state }) {
     pageHead({
       title: topic.title || meta.title,
       sub: topic.summary || '',
-      crumbs: [{ label: subj?.kind === 'ielts' ? 'IELTS' : 'ЕНТ', href: subj?.kind === 'ielts' ? '#/ielts' : '#/ubt' }, { label: subj?.name || meta.subject, href: subj?.kind === 'ielts' ? '#/ielts' : `#/subject/${meta.subject}` }],
+      crumbs: [sectionOf(subj, meta).root, sectionOf(subj, meta).own],
     }),
     translationNote(topic),
     h('div', { class: 'row' }, skill, meta.minutes ? h('span', { class: 'badge' }, `≈ ${meta.minutes} мин`) : null, ...practiceLinks(meta, topic)),

@@ -1,0 +1,410 @@
+{
+  "id": "eng-grammar-present-simple",
+  "subject": "english",
+  "title": "Present Simple: что я делаю обычно",
+  "summary": "I work / he works, do/does в вопросах и отрицаниях, always/usually/every day.",
+  "theory": [
+    "## Когда нужен Present Simple\nPresent Simple — «простое настоящее». Им говорят о том, что происходит **обычно, регулярно, всегда**: привычки, расписание, факты.\n\n:::example Примеры\n- I go to school every day. — Я хожу в школу каждый день.\n- My dad works in a bank. — Мой папа работает в банке.\n- Water boils at 100 degrees. — Вода кипит при 100 градусах.\n:::\n\nЭто **не** про то, что происходит прямо сейчас, в эту секунду. Для «сейчас» есть другое время, его изучим позже.",
+    "## Форма: I work / he works\nБерём глагол в начальной форме (work, play, live). Меняется он только в одном случае: после **he, she, it** добавляем **-s**.\n\n| Кто | Глагол | Пример | Перевод |\n|---|---|---|---|\n| I, you, we, they | work | We work hard. | Мы много работаем. |\n| he, she, it | work**s** | She works hard. | Она много работает. |\n\n:::tip Как запомнить\nОдин человек или предмет, но **не я и не ты** (he, she, it, my mum, Aidos, the dog) → глагол с **-s**.\n:::",
+    "## Правила: -s или -es\n| Глагол кончается на | Что делаем | Примеры |\n|---|---|---|\n| большинство глаголов | + s | work → works, play → plays |\n| -s, -ss, -sh, -ch, -x, -o | + es | watch → watches, wash → washes, fix → fixes, go → goes, do → does |\n| согласная + y | y → ies | study → studies, fly → flies |\n| гласная + y | + s | play → plays, buy → buys |\n| have | особая форма | have → **has** |\n\n:::example Примеры\n- He watches TV. — Он смотрит телевизор.\n- She studies English. — Она изучает английский.\n- My brother has a car. — У моего брата есть машина.\n:::",
+    "## Отрицание: don't / doesn't\nЧтобы сказать «не», нужен помощник **do**: **don't** (do not) или **doesn't** (does not) перед глаголом.\n\n| Кто | Отрицание | Пример | Перевод |\n|---|---|---|---|\n| I, you, we, they | don't + глагол | I don't like milk. | Я не люблю молоко. |\n| he, she, it | doesn't + глагол | She doesn't like milk. | Она не любит молоко. |\n\n:::warn Типичная ошибка\nПосле doesn't глагол **без -s**: -s уже «ушла» в does. Неверно: «She doesn't likes». Правильно: **She doesn't like milk.**\n:::",
+    "## Вопросы: Do / Does\nВопрос начинается с **Do** (I, you, we, they) или **Does** (he, she, it). Потом подлежащее и глагол **без -s**.\n\n| Вопросительное слово | Do / Does | Кто | Глагол | Остальное |\n|---|---|---|---|---|\n| — | Do | you | speak | English? |\n| — | Does | he | play | football? |\n| Where | do | you | live? | — |\n| What | does | she | do? | — |\n\n- Do you speak English? — Yes, I do. (Ты говоришь по-английски? — Да.)\n- Does he play football? — No, he doesn't. (Он играет в футбол? — Нет.)\n- Where do you live? — Где ты живёшь?\n\n:::warn Типичная ошибка\n«You like tea?» — в письменном английском так нельзя, в вопросе нужен do: **Do you like tea?** — Ты любишь чай?\n:::",
+    "## Маркеры и порядок слов\nСлова-подсказки Present Simple: **always** (всегда), **usually** (обычно), **often** (часто), **sometimes** (иногда), **never** (никогда), **every day** (каждый день), **on Mondays** (по понедельникам).\n\n- always, usually, often, never ставим **перед глаголом**: I usually get up at 7. — Я обычно встаю в 7.\n- every day, on Mondays — **в конце**: She reads every day. — Она читает каждый день.\n- с am/is/are — **после** них: He is always late. — Он всегда опаздывает.\n\n:::warn Типичная ошибка\n«He go to school» — забыли -s. Правильно: **He goes to school.** — Он ходит в школу.\n:::",
+    "## Как тренировать\n1. Напиши **5 своих предложений** о своём обычном дне с новыми глаголами (*I get up at 7. My mum cooks breakfast.*).\n2. Перепиши их про друга (he/she) — добавь -s. Потом сделай отрицание и вопрос с do/does.\n3. **Прочитай всё вслух** два раза.\n4. Посмотри серию **Extra English** и найди 5 фраз с do, does или глаголом на -s."
+  ],
+  "cards": [
+    {
+      "front": "Когда используем Present Simple?",
+      "back": "Привычки, регулярные действия, факты: I go to school every day."
+    },
+    {
+      "front": "I / you / we / they + глагол",
+      "back": "без изменений: I work, they play"
+    },
+    {
+      "front": "he / she / it + глагол",
+      "back": "+ s: he works, she plays"
+    },
+    {
+      "front": "go, do, watch, wash + he",
+      "back": "+ es: goes, does, watches, washes"
+    },
+    {
+      "front": "study, fly + he",
+      "back": "y → ies: studies, flies"
+    },
+    {
+      "front": "have + he / she / it",
+      "back": "has"
+    },
+    {
+      "front": "Отрицание с he / she / it",
+      "back": "doesn't + глагол без -s: She doesn't like milk."
+    },
+    {
+      "front": "Вопрос с I / you / we / they",
+      "back": "Do + кто + глагол: Do you speak English?"
+    },
+    {
+      "front": "Вопрос с he / she / it",
+      "back": "Does + кто + глагол без -s: Does he play football?"
+    },
+    {
+      "front": "Где стоит usually?",
+      "back": "перед глаголом: I usually get up at 7; после am/is/are: He is usually late."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: She ___ in a bank.",
+      "options": [
+        "works",
+        "work",
+        "working",
+        "is work"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**She** → глагол с **-s**: She works in a bank. — Она работает в банке.",
+      "why": {
+        "1": "Без -s глагол бывает только с I, you, we, they."
+      }
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: I ___ tea every morning.",
+      "options": [
+        "drink",
+        "drinks",
+        "drinking",
+        "am drink"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "С **I** глагол не меняется: I drink tea every morning. — Я пью чай каждое утро."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: They ___ football on Sundays.",
+      "options": [
+        "play",
+        "plays",
+        "playes",
+        "playing"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**They** → глагол без -s: They play football on Sundays. — Они играют в футбол по воскресеньям."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Какая форма глагола **watch** нужна после he?",
+      "options": [
+        "watches",
+        "watchs",
+        "watching",
+        "watchies"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Глагол кончается на **-ch** → добавляем **-es**: he watches. — Он смотрит."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Какая форма глагола **study** нужна после she?",
+      "options": [
+        "studies",
+        "studys",
+        "studyes",
+        "studing"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Перед y согласная d → **y меняем на ies**: she studies. — Она учится."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Выберите правильную форму: My brother ___ in Astana.",
+      "options": [
+        "lives",
+        "live",
+        "living",
+        "is live"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "My brother — это **he** → **lives**: My brother lives in Astana. — Мой брат живёт в Астане."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильное слово: ___ you like pizza?",
+      "options": [
+        "Do",
+        "Does",
+        "Are",
+        "Is"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Вопрос с обычным глаголом like; с **you** → **Do**: Do you like pizza? — Ты любишь пиццу?",
+      "why": {
+        "2": "are — для to be (Are you hungry?), а like — обычный глагол, ему нужен do."
+      }
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильное слово: ___ your mother work at school?",
+      "options": [
+        "Does",
+        "Do",
+        "Is",
+        "Are"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Your mother — это **she** → **Does**: Does your mother work at school? — Твоя мама работает в школе?"
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильное отрицание (Он не играет в шахматы).",
+      "options": [
+        "He doesn't play chess.",
+        "He don't play chess.",
+        "He doesn't plays chess.",
+        "He not plays chess."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "He → **doesn't**, и после него глагол **без -s**: He doesn't play chess. — Он не играет в шахматы.",
+      "why": {
+        "2": "Двойная ошибка: -s уже есть в does, второй раз её не ставят."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите предложение с правильным порядком слов (Она всегда пьёт кофе).",
+      "options": [
+        "She always drinks coffee.",
+        "She drinks always coffee.",
+        "She always drink coffee.",
+        "Always drinks she coffee."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**always** стоит перед глаголом, а глагол после she — с -s: She always drinks coffee. — Она всегда пьёт кофе."
+    },
+    {
+      "id": "q11",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Выберите правильную форму: Does he ___ English?",
+      "options": [
+        "speak",
+        "speaks",
+        "speaking",
+        "spoke"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "После **does** глагол в начальной форме, без -s: Does he speak English? — Он говорит по-английски?",
+      "why": {
+        "1": "-s уже в does, у глагола её быть не должно."
+      }
+    },
+    {
+      "id": "q12",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Найдите предложение **с ошибкой**.",
+      "options": [
+        "She have two cats.",
+        "My friends live in Shymkent.",
+        "He goes to the gym on Mondays.",
+        "We don't eat meat."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "С she вместо have нужно **has**: She has two cats. — У неё две кошки. Остальные верны: Мои друзья живут в Шымкенте. Он ходит в спортзал по понедельникам. Мы не едим мясо."
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Выберите правильное слово: What ___ your father do?",
+      "options": [
+        "does",
+        "do",
+        "is",
+        "are"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Your father — **he** → **does**; последнее do — это глагол «делать»: What does your father do? — Кем работает твой папа?",
+      "why": {
+        "1": "do было бы верно с you или they: What do you do?"
+      }
+    },
+    {
+      "id": "q14",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите глагол в Present Simple: He ___ (go) to school by bus.",
+      "answer": [
+        "goes"
+      ],
+      "accept": [
+        "goes"
+      ],
+      "explanation": "He → нужна -s; go кончается на **-o** → **goes**. He goes to school by bus. — Он ездит в школу на автобусе."
+    },
+    {
+      "id": "q15",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите глагол в Present Simple: We ___ (watch) TV in the evening.",
+      "answer": [
+        "watch"
+      ],
+      "accept": [
+        "watch"
+      ],
+      "explanation": "**We** → глагол без изменений: We watch TV in the evening. — Мы смотрим телевизор вечером."
+    },
+    {
+      "id": "q16",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите глагол в Present Simple: My sister ___ (have) a new phone.",
+      "answer": [
+        "has"
+      ],
+      "accept": [
+        "has"
+      ],
+      "explanation": "My sister — she, а have с he/she/it → **has**: My sister has a new phone. — У моей сестры новый телефон."
+    },
+    {
+      "id": "q17",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Впишите отрицание в Present Simple: I ___ (not / like) cold weather.",
+      "answer": [
+        "don't like"
+      ],
+      "accept": [
+        "don't like",
+        "do not like"
+      ],
+      "explanation": "С **I** → **don't** + глагол: I don't like cold weather. — Я не люблю холодную погоду."
+    },
+    {
+      "id": "q18",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Впишите отрицание в Present Simple: She ___ (not / eat) fish.",
+      "answer": [
+        "doesn't eat"
+      ],
+      "accept": [
+        "doesn't eat",
+        "does not eat"
+      ],
+      "explanation": "С **she** → **doesn't** + глагол без -s: She doesn't eat fish. — Она не ест рыбу."
+    },
+    {
+      "id": "q19",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите одно слово: ___ they live near here? — Yes, they do.",
+      "answer": [
+        "Do"
+      ],
+      "accept": [
+        "Do"
+      ],
+      "explanation": "Вопрос с обычным глаголом, **they** → **Do**: Do they live near here? — Они живут рядом? — Да."
+    },
+    {
+      "id": "q20",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Впишите глагол в Present Simple: My dad ___ (fix) cars.",
+      "answer": [
+        "fixes"
+      ],
+      "accept": [
+        "fixes"
+      ],
+      "explanation": "My dad — he; fix кончается на **-x** → **-es**: My dad fixes cars. — Мой папа чинит машины."
+    },
+    {
+      "id": "q21",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 1,
+      "text": "Впишите одно слово: ___ Aliya speak Kazakh? — Yes, she does.",
+      "answer": [
+        "Does"
+      ],
+      "accept": [
+        "Does"
+      ],
+      "explanation": "Aliya — она, **she** → **Does**: Does Aliya speak Kazakh? — Алия говорит по-казахски? — Да."
+    },
+    {
+      "id": "q22",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 1,
+      "text": "Впишите глагол в Present Simple: The baby ___ (cry) at night.",
+      "answer": [
+        "cries"
+      ],
+      "accept": [
+        "cries"
+      ],
+      "explanation": "The baby — it; перед y согласная r → **y → ies**: The baby cries at night. — Малыш плачет по ночам."
+    }
+  ]
+}
