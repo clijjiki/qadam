@@ -8,6 +8,8 @@ import { langSwitch } from './lang-switch.js';
 
 const NAV = [
   { key: 'home', href: '#/', icon: 'home', label: 'Сегодня' },
+  { key: 'lesson', href: '#/lesson', icon: 'play', label: 'Урок дня' },
+  { key: 'weekly', href: '#/weekly', icon: 'exam', label: 'Недельный тест' },
   { section: 'ЕНТ' },
   { key: 'ubt', href: '#/ubt', icon: 'cap', label: 'Предметы' },
   { key: 'school', href: '#/curriculum', icon: 'book', label: 'По классам' },
@@ -33,7 +35,7 @@ const TABS = [
 
 export const COPYRIGHT = '© 2026 Nurbol · Qadam. Все права защищены.';
 
-const MORE_KEYS =new Set(['more', 'plan', 'stats', 'settings', 'exam', 'vocab', 'school', 'python']);
+const MORE_KEYS = new Set(['more', 'weekly', 'plan', 'stats', 'settings', 'exam', 'vocab', 'school', 'python']);
 
 function brand() {
   return h('a', { class: 'brand', href: '#/' }, h('div', { class: 'brand__logo' }, 'Q'), h('div', {}, h('div', { class: 'brand__name' }, 'Qadam'), h('div', { class: 'brand__sub' }, 'ЕНТ · English')));

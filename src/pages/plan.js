@@ -7,14 +7,14 @@ import { getState } from '../core/store.js';
 import { setProfile } from '../core/actions.js';
 import { masteryOf } from '../core/mastery.js';
 import { countdown, nextTopics, pythonSolvedOn, weeklyPlan } from '../core/plan.js';
-import { formatDate, toDayKey, weekdayShort } from '../core/time.js';
+import { formatDate, toDayKey, weekStartKey, weekdayShort } from '../core/time.js';
 import { emptyState, masteryRow, pageHead, subjectBadge, subjectColor } from '../ui/components.js';
 import { activePhaseIndex, phaseRow, trackFields } from '../ui/curriculum-ui.js';
 import { toast } from '../ui/toast.js';
 
 const HOURS_OPTIONS = [4, 6, 8, 10, 12];
 const CURRICULUM_SUBJECT = CURRICULUM_SUBJECTS[0];
-const KIND_ICONS = { topic: '📘', review: '🔁', english: '🇬🇧', python: '🐍', exam: '📝' };
+const KIND_ICONS = { topic: '📘', review: '🔁', english: '🇬🇧', python: '🐍', exam: '📝', weekly: '🧪' };
 
 const PHASES = [
   { key: 'base', name: 'Фундамент', range: '> 40 недель', tip: 'Проходи темы по порядку: теория + практика, без спешки. Главное — регулярность.' },
@@ -113,6 +113,7 @@ function itemDone(state, byDay, key, item) {
   if (item.kind === 'exam') return list.some((s) => s.kind === 'exam') || (state.exams || []).some((e) => toDayKey(new Date(e.at)) === key);
   if (item.kind === 'english') return englishDone(state, list, key, item.part);
   if (item.kind === 'python') return pythonSolvedOn(state, key) > 0;
+  if (item.kind === 'weekly') return !!state.weekly?.[weekStartKey(key)];
   return false;
 }
 

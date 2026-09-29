@@ -65,6 +65,6 @@ export function subjectIcon(subjectId, options) {
 
 /** Иконка типа миссии. */
 export function missionIcon(kind, options) {
-  const map = { topic: 'book', review: 'repeat', vocab: 'cards', ielts: 'globe', english: 'globe', python: 'code', exam: 'exam', weak: 'target' };
+  const map = { lesson: 'play', weekly: 'exam', topic: 'book', review: 'repeat', vocab: 'cards', ielts: 'globe', english: 'globe', python: 'code', exam: 'exam', weak: 'target' };
   return icon(map[kind] || 'spark', options);
 }

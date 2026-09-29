@@ -6,6 +6,8 @@ import { pageHead, progressBar } from '../ui/components.js';
 import { COPYRIGHT } from '../ui/layout.js';
 
 const LINKS = [
+  ['▶️', 'Урок дня', '#/lesson'],
+  ['🧪', 'Недельный тест', '#/weekly'],
   ['📅', 'План подготовки', '#/plan'],
   ['🏫', 'Программа по классам', '#/curriculum'],
   ['🐍', 'Тренажёр Python', '#/python'],

@@ -1,0 +1,67 @@
+/* Урок дня, недельный тест и главная миссия на дашборде. */
+
+/* ---------- главная миссия ---------- */
+.mission--main {
+  background: linear-gradient(135deg, color-mix(in srgb, var(--primary) 14%, var(--bg-elev)), var(--bg-elev) 70%);
+  border-color: color-mix(in srgb, var(--primary) 45%, transparent);
+  min-height: 68px;
+}
+.mission--main .mission__ico { background: var(--primary); color: #fff; }
+.mission--main .mission__title { font-size: 1.02rem; }
+
+/* ---------- заметки с тоном ---------- */
+.note--success { background: var(--success-soft); color: var(--success); border-color: color-mix(in srgb, var(--success) 25%, transparent); }
+
+/* ---------- шаги урока ---------- */
+.lesson-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.lesson-step {
+  display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px;
+  border: 1px solid var(--line); background: var(--bg-elev);
+}
+.lesson-step__num {
+  display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; flex-shrink: 0;
+  font: 700 .9rem var(--font-head); background: var(--bg-sunken); color: var(--text-2);
+}
+.lesson-step__main { display: grid; gap: 2px; flex: 1; min-width: 0; }
+.lesson-step__title { font-weight: 650; }
+.lesson-step__sub { font-size: .82rem; color: var(--text-3); overflow-wrap: anywhere; }
+.lesson-step--next { border-color: var(--subj, var(--primary)); box-shadow: 0 0 0 3px color-mix(in srgb, var(--subj, var(--primary)) 14%, transparent); }
+.lesson-step--next .lesson-step__num { background: var(--subj, var(--primary)); color: #fff; }
+.lesson-step--done { background: var(--bg-sunken); }
+.lesson-step--done .lesson-step__num { background: var(--success-soft); color: var(--success); }
+.lesson-step--done .lesson-step__title { color: var(--text-2); }
+
+/* ---------- заголовок шага ---------- */
+.lesson-head { display: flex; align-items: flex-start; gap: 12px; }
+.lesson-head__ico {
+  display: grid; place-items: center; width: 42px; height: 42px; border-radius: 12px; flex-shrink: 0;
+  background: color-mix(in srgb, var(--subj, var(--primary)) 16%, transparent); color: var(--subj, var(--primary));
+}
+.lesson-head__main { flex: 1; min-width: 0; display: grid; gap: 2px; }
+.lesson-head__meta { display: flex; align-items: center; gap: 10px; font-size: .8rem; color: var(--text-3); }
+.lesson-head__title { margin: 0; font-size: 1.3rem; }
+.lesson-head .muted.small { overflow-wrap: anywhere; }
+.lesson-dots { display: inline-flex; gap: 4px; }
+.lesson-dot { width: 18px; height: 5px; border-radius: 3px; background: var(--bg-sunken); border: 1px solid var(--line); }
+.lesson-dot.is-done { background: var(--success); border-color: var(--success); }
+.lesson-dot.is-active { background: var(--subj, var(--primary)); border-color: var(--subj, var(--primary)); }
+
+/* ---------- недельный тест ---------- */
+.weekly-topics { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.weekly-topics li { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.verdicts { display: grid; gap: 6px; }
+.verdict {
+  display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px;
+  border: 1px solid var(--line); background: var(--bg-elev); color: inherit;
+}
+.verdict:hover { text-decoration: none; border-color: var(--line-2); }
+.verdict__main { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 0; flex-wrap: wrap; }
+.verdict__title { font-weight: 600; overflow-wrap: anywhere; }
+.verdict__score { font-variant-numeric: tabular-nums; color: var(--text-2); font-weight: 600; white-space: nowrap; }
+.verdict--forgot { border-color: color-mix(in srgb, var(--danger) 35%, transparent); }
+.verdict--shaky { border-color: color-mix(in srgb, var(--warn) 35%, transparent); }
+
+@media (max-width: 520px) {
+  .lesson-head { flex-wrap: wrap; }
+  .verdict { flex-wrap: wrap; }
+}

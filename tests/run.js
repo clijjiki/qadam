@@ -15,6 +15,7 @@ import { ENGLISH_STAGES, activeStageId, recentWordKeys, stageProgress, totalSent
 import { compareOutput, evaluateRuns, explainError, findTask, nextTaskId, normalizeOutput, taskProgress, withPyAttempt } from '../src/core/pytrainer.js';
 import { curriculumKey, gradeProgram, gradeSequence, gradesLabel, normalizeGrade, normalizeTrack, schoolQuarter, sortByCurriculum, trackPhases, usesCurriculum } from '../src/core/curriculum.js';
 import { interleave, pickForWeek } from '../src/core/plan.js';
+import { breakdownByTopic, chooseNewTopic, forgottenTopicIds, lessonProgress, lessonSteps, orderForLesson, pickNewTopicQuestions, pickReviewQuestions, pickWeeklyQuestions, pruneLessons, reviewWeight, studiedTopics, topicVerdict, topicsStudiedInWeek, weeklyQuota, weeklyTestFor } from '../src/core/lesson.js';
 
 const results = [];
 
@@ -557,6 +558,133 @@ test('english: активный этап — первый незавершённ
   equal(activeStageId({}, { wordsLearned: 0, grammarDone: 0 }), 'a0-b1');
   const eng = { counters: { extra: 30, sentences: 0 }, sentences: { d: 300 } };
   equal(activeStageId(eng, { wordsLearned: 1500, grammarDone: 5 }), 'b1-b2');
+});
+
+// ---------- урок дня и недельный тест ----------
+const qs = (topic, n, extra = {}) => Array.from({ length: n }, (_, i) => ({ id: `${topic}:q${i + 1}`, topicId: topic, difficulty: (i % 3) + 1, ...extra }));
+const at = (key, hour = 12) => fromDayKey(key).getTime() + hour * 3600 * 1000;
+test('lesson: шаги — математика (повторение, новая), потом информатика', () => {
+  deepEqual(lessonSteps(['math', 'informatics']).map((s) => s.id), ['math:review', 'math:new', 'informatics:review', 'informatics:new']);
+});
+test('lesson: прогресс и следующий шаг', () => {
+  const steps = lessonSteps(['math', 'informatics']);
+  const none = lessonProgress(null, steps);
+  equal(none.done, 0);
+  equal(none.next.id, 'math:review');
+  const half = lessonProgress({ steps: { 'math:review': { status: 'skipped' }, 'math:new': { status: 'done' } } }, steps);
+  equal(half.done, 2);
+  equal(half.next.id, 'informatics:review');
+  equal(half.finished, false);
+  const all = lessonProgress({ steps: Object.fromEntries(steps.map((s) => [s.id, { status: 'done' }])) }, steps);
+  equal(all.finished, true);
+  equal(all.next, null);
+});
+test('lesson: информатика идёт по порядку, математика — по школьной программе', () => {
+  const inf = [{ id: 'b', order: 3 }, { id: 'a', order: 1 }];
+  deepEqual(orderForLesson(inf, { track: 'school' }, 'informatics').map((t) => t.id), ['a', 'b']);
+  deepEqual(orderForLesson(CUR, { track: 'school', grade: 10 }, 'math').map((t) => t.id).slice(0, 3), ['a10', 'g10', 'a10q3']);
+});
+test('lesson: новая тема — первая нерешённая', () => {
+  const queue = [{ id: 'a' }, { id: 'b' }, { id: 'c' }];
+  const state = { topics: { a: { answered: 10, correct: 9, best: 0.9, recent: [0.9], lastAt: Date.now() } } };
+  equal(chooseNewTopic(queue, state).id, 'b');
+});
+test('lesson: все начаты — доучиваем самую слабую, всё освоено — null', () => {
+  const now = Date.now();
+  const strong = { answered: 20, correct: 20, best: 1, recent: [1, 1, 1], lastAt: now };
+  const weak = { answered: 10, correct: 3, best: 0.3, recent: [0.3], lastAt: now };
+  const mid = { answered: 10, correct: 6, best: 0.6, recent: [0.6], lastAt: now };
+  const queue = [{ id: 'a' }, { id: 'b' }, { id: 'c' }];
+  equal(chooseNewTopic(queue, { topics: { a: strong, b: mid, c: weak } }, now).id, 'c');
+  equal(chooseNewTopic(queue, { topics: { a: strong, b: strong, c: strong } }, now), null);
+});
+test('lesson: повторяем только решавшиеся темы, кроме исключённых', () => {
+  const topics = [{ id: 'a' }, { id: 'b' }, { id: 'c' }];
+  const state = { topics: { a: { answered: 5 }, b: { answered: 0 }, c: { answered: 3 } } };
+  deepEqual(studiedTopics(topics, state).map((t) => t.id), ['a', 'c']);
+  deepEqual(studiedTopics(topics, state, ['c']).map((t) => t.id), ['a']);
+});
+test('lesson: слабая, давняя и забытая тема весит больше', () => {
+  const now = Date.now();
+  ok(reviewWeight({ mastery: 0.3, lastAt: now }, now) > reviewWeight({ mastery: 0.9, lastAt: now }, now));
+  ok(reviewWeight({ mastery: 0.5, lastAt: now - 20 * DAY_MS }, now) > reviewWeight({ mastery: 0.5, lastAt: now }, now));
+  ok(reviewWeight({ mastery: 0.5, lastAt: now, forgotten: true }, now) > reviewWeight({ mastery: 0.5, lastAt: now }, now));
+});
+test('lesson: повторение — 10 задач без повторов, ошибки идут первыми', () => {
+  const pools = [{ questions: qs('a', 8), weight: 1 }, { questions: qs('b', 8), weight: 1 }];
+  const due = new Set(['a:q1', 'b:q2']);
+  const picked = pickReviewQuestions(pools, { due, count: 10, rng: createRng(3) });
+  equal(picked.length, 10);
+  equal(new Set(picked.map((q) => q.id)).size, 10);
+  ok(picked.some((q) => q.id === 'a:q1') && picked.some((q) => q.id === 'b:q2'), 'вопросы с ошибками должны попасть в повторение');
+});
+test('lesson: повторение чередует темы и пропускает вопросы с контекстом', () => {
+  const pools = [{ questions: qs('a', 20), weight: 1 }, { questions: qs('b', 20), weight: 1 }, { questions: qs('c', 5, { context: 'ctx' }), weight: 5 }];
+  const picked = pickReviewQuestions(pools, { count: 10, rng: createRng(11) });
+  ok(picked.every((q) => !q.context));
+  ok(picked.filter((q) => q.topicId === 'a').length >= 2 && picked.filter((q) => q.topicId === 'b').length >= 2, 'обе темы должны попасть в повторение');
+});
+test('lesson: мало задач — берём сколько есть', () => equal(pickReviewQuestions([{ questions: qs('a', 3), weight: 1 }], { count: 10 }).length, 3));
+test('lesson: задачи новой темы — от простых к сложным', () => {
+  const picked = pickNewTopicQuestions(qs('a', 12), { count: 10, rng: createRng(5) });
+  equal(picked.length, 10);
+  const levels = picked.map((q) => q.difficulty);
+  deepEqual(levels, [...levels].sort((x, y) => x - y));
+});
+test('lesson: старые записи уроков удаляются', () => {
+  deepEqual(Object.keys(pruneLessons({ '2026-06-01': {}, '2026-09-20': {}, '2026-09-29': {} }, '2026-09-29', 60)), ['2026-09-20', '2026-09-29']);
+});
+test('weekly: темы недели — только практика тем в границах недели', () => {
+  const sessions = [
+    { at: at('2026-09-27'), kind: 'practice', topicId: 'old' },
+    { at: at('2026-09-28'), kind: 'practice', topicId: 'a' },
+    { at: at('2026-09-29'), kind: 'lesson', topicId: null },
+    { at: at('2026-09-30'), kind: 'practice', topicId: 'b' },
+    { at: at('2026-10-01'), kind: 'practice', topicId: 'a' },
+    { at: at('2026-10-04', 23), kind: 'practice', topicId: 'c' },
+    { at: at('2026-10-05'), kind: 'practice', topicId: 'next' },
+  ];
+  deepEqual(topicsStudiedInWeek(sessions, '2026-09-28'), ['a', 'b', 'c']);
+  deepEqual(topicsStudiedInWeek(sessions, '2026-09-28', (id) => id !== 'b'), ['a', 'c']);
+});
+test('weekly: квота задач на тему', () => {
+  equal(weeklyQuota(0), 0);
+  equal(weeklyQuota(1), 10);
+  equal(weeklyQuota(4), 5);
+  equal(weeklyQuota(10), 3);
+});
+test('weekly: задачи из каждой темы поровну', () => {
+  const picked = pickWeeklyQuestions([{ questions: qs('a', 10) }, { questions: qs('b', 10) }, { questions: qs('c', 10) }, { questions: qs('d', 10) }], { rng: createRng(9) });
+  equal(picked.length, 20);
+  ['a', 'b', 'c', 'd'].forEach((id) => equal(picked.filter((q) => q.topicId === id).length, 5, id));
+});
+test('weekly: итог по темам и вердикты', () => {
+  const r = (topicId, isCorrect) => ({ question: { topicId }, score: { isCorrect } });
+  deepEqual(breakdownByTopic([r('a', true), r('a', false), r('b', true)]), { a: { correct: 1, total: 2 }, b: { correct: 1, total: 1 } });
+  equal(topicVerdict({ correct: 4, total: 5 }).key, 'remember');
+  equal(topicVerdict({ correct: 3, total: 5 }).key, 'shaky');
+  equal(topicVerdict({ correct: 1, total: 5 }).key, 'forgot');
+  equal(topicVerdict({}).key, 'forgot');
+});
+test('weekly: забытые темы берутся из последнего теста', () => {
+  const weekly = { '2026-09-21': { topics: { x: { correct: 0, total: 3 } } }, '2026-09-28': { topics: { a: { correct: 5, total: 5 }, b: { correct: 1, total: 5 }, c: { correct: 3, total: 5 } } } };
+  deepEqual(forgottenTopicIds(weekly).sort(), ['b', 'c']);
+  deepEqual(forgottenTopicIds({}), []);
+});
+test('weekly: тест в выходные за эту неделю, в пн–вт — за пропущенную прошлую', () => {
+  const topicsFor = (week) => (week === '2026-09-21' || week === '2026-09-28' ? ['a'] : []);
+  deepEqual(weeklyTestFor({}, '2026-10-03', topicsFor), { week: '2026-09-28', done: false });
+  deepEqual(weeklyTestFor({ '2026-09-28': {} }, '2026-10-04', topicsFor), { week: '2026-09-28', done: true });
+  deepEqual(weeklyTestFor({}, '2026-09-29', topicsFor), { week: '2026-09-21', done: false });
+  equal(weeklyTestFor({ '2026-09-21': {} }, '2026-09-29', topicsFor), null);
+  equal(weeklyTestFor({}, '2026-10-01', topicsFor), null);
+  equal(weeklyTestFor({}, '2026-10-10', () => []), null);
+});
+test('store: уроки и недельные тесты переживают миграцию', () => {
+  const next = migrate({ lessons: { '2026-09-29': { steps: {} } }, weekly: { '2026-09-28': { correct: 1 } } });
+  deepEqual(next.lessons['2026-09-29'], { steps: {} });
+  equal(next.weekly['2026-09-28'].correct, 1);
+  deepEqual(createDefaultState().lessons, {});
 });
 
 // ---------- вывод ----------

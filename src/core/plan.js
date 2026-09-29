@@ -1,9 +1,11 @@
 // План подготовки: выбор следующей темы, ежедневные миссии, недельный план, обратный отсчёт.
 
-import { allTopics, langOf, subject, topicTitle, topicWeight, topicsOf, ubtSubjects } from './content.js';
+import { langOf, subject, topicTitle, topicWeight, topicsOf, ubtSubjects } from './content.js';
 import { normalizeGrade, sortByCurriculum, usesCurriculum } from './curriculum.js';
 import { MASTERED_THRESHOLD, masteryOf } from './mastery.js';
 import { dueIds } from './srs.js';
+import { plural } from './dom.js';
+import { lessonProgress, weekTopicIds, weeklyQuota, weeklyTestToday } from './lesson.js';
 import { addDaysKey, daysSince, daysUntil, fromDayKey, todayKey, toDayKey, weekStartKey } from './time.js';
 
 const PROFILE_FACTOR = { math: 1.4, informatics: 1.4, history: 1.1, mathlit: 0.9, reading: 0.9 };
@@ -75,11 +77,52 @@ function sessionsToday(state, today) {
   return (state.sessions || []).filter((s) => toDayKey(new Date(s.at)) === today);
 }
 
+const LESSON_STEP_MINUTES = 15;
+
+/** Урок дня: математика → информатика, по каждому предмету повторение и новая тема. */
+function lessonMission(state, today) {
+  const progress = lessonProgress(state.lessons?.[today]);
+  const next = progress.next;
+  const nextName = next ? `${subject(next.subject)?.short || next.subject}: ${next.kind === 'review' ? 'повторение' : 'новая тема'}` : '';
+  let sub = 'Математика → информатика: сначала повторение, потом новая тема';
+  if (progress.finished) sub = 'Повторение и новые темы — всё закрыто';
+  else if (progress.done) sub = `Шаг ${progress.done + 1} из ${progress.total} · ${nextName}`;
+  return {
+    id: 'lesson',
+    icon: '▶️',
+    title: progress.finished ? 'Урок дня пройден' : progress.done ? 'Урок дня: продолжить' : 'Урок дня',
+    sub,
+    href: '#/lesson',
+    minutes: LESSON_STEP_MINUTES * (progress.finished ? progress.total : progress.total - progress.done),
+    done: progress.finished,
+    main: true,
+  };
+}
+
+/** Недельный тест: в выходные — за эту неделю, в понедельник и вторник — за прошлую, если пропущен. */
+function weeklyMission(state, today) {
+  const test = weeklyTestToday(state, today);
+  if (!test) return null;
+  const count = weekTopicIds(state, test.week).length;
+  const past = test.week !== weekStartKey(today);
+  return {
+    id: 'weekly',
+    icon: '🧪',
+    title: test.done ? 'Недельный тест сдан' : `Недельный тест: ${count} ${plural(count, ['тема', 'темы', 'тем'])}`,
+    sub: past ? 'За прошлую неделю — проверь, что не забыл' : 'Проверь, что не забыл пройденное за неделю',
+    href: `#/weekly?week=${test.week}`,
+    minutes: Math.min(30, count * weeklyQuota(count)),
+    done: test.done,
+  };
+}
+
 /** Ежедневные миссии на сегодня. */
 export function dailyMissions(state, nowTs = Date.now()) {
   const today = todayKey(new Date(nowTs));
   const todays = sessionsToday(state, today);
-  const missions = [];
+  const missions = [lessonMission(state, today)];
+  const weekly = weeklyMission(state, today);
+  if (weekly) missions.push(weekly);
   const due = dueIds(state.questions, nowTs);
   if (due.length) {
     missions.push({
@@ -90,22 +133,6 @@ export function dailyMissions(state, nowTs = Date.now()) {
       href: '#/practice?mode=review',
       minutes: Math.min(15, due.length * 1.2),
       done: todays.some((s) => s.kind === 'review'),
-    });
-  }
-  const studiedToday = new Set(todays.map((s) => s.topicId).filter(Boolean));
-  const [topic] = nextTopics(state, 1, { exclude: [...studiedToday], nowTs });
-  const topicDone = todays.some((s) => (s.kind === 'practice' || s.kind === 'topic') && s.topicId && !['ielts', 'english'].includes(allTopics().find((t) => t.id === s.topicId)?.subject));
-  if (topic) {
-    const subj = subject(topic.subject);
-    missions.push({
-      id: 'topic',
-      icon: '📘',
-      title: topicDone ? 'Тема дня пройдена' : `Тема: ${topicTitle(topic, langOf(state))}`,
-      sub: `${subj?.name || topic.subject} · теория + практика`,
-      href: `#/topic/${topic.id}`,
-      minutes: 20,
-      done: topicDone,
-      topicId: topic.id,
     });
   }
   const dayNumber = Math.floor(fromDayKey(today).getTime() / 86400000);
@@ -168,7 +195,7 @@ const WEEK_TEMPLATE = [
   { day: 4, focus: ['math'], english: 'sentences' },
   { day: 5, focus: ['informatics'], english: 'grammar', python: true },
   { day: 6, focus: ['mathlit', 'reading'], english: 'words', exam: true },
-  { day: 0, focus: [], english: 'extra', rest: true },
+  { day: 0, focus: [], english: 'extra', rest: true, weekly: true },
 ];
 
 const ENGLISH_ITEMS = {
@@ -208,6 +235,7 @@ export function weeklyPlan(state, { weekStart = weekStartKey(), nowTs = Date.now
     if (template.python) items.push({ kind: 'python', title: `Python: ${PYTHON_TASKS_PER_DAY} задачи тренажёра`, href: '#/python' });
     items.push({ kind: 'english', part: template.english, ...ENGLISH_ITEMS[template.english] });
     if (template.exam) items.push({ kind: 'exam', title: 'Мини-пробник ЕНТ', href: '#/exam?mode=mini' });
+    if (template.weekly) items.push({ kind: 'weekly', title: 'Недельный тест по темам недели', href: `#/weekly?week=${weekStart}` });
     days.push({ key, isToday: key === today, isPast: key < today, rest: !!template.rest, minutes: template.rest ? Math.round(minutesPerDay / 2) : minutesPerDay, items });
   }
   return days;

@@ -8,6 +8,7 @@ import { newlyEarned } from './badges.js';
 import { todayKey, weekStartKey } from './time.js';
 import { withPyAttempt } from './pytrainer.js';
 import { withCheck, withCounter, withSentences } from './english.js';
+import { pruneLessons } from './lesson.js';
 
 export const XP = {
   correct: 2,
@@ -271,6 +272,30 @@ export function recordSentences(count) {
     const next = { ...state, english: withSentences(state.english, todayKey(new Date(nowTs)), count) };
     return bumpDaily(next, { xp: count * XP.sentence, minutes: count * 2, sessions: 1 }, nowTs);
   });
+}
+
+/** Начало урока дня: фиксируем новые темы, чтобы они не менялись до конца дня. Повторный вызов ничего не меняет. */
+export function startLesson(dayKey, newTopics) {
+  update((state) => {
+    if (state.lessons?.[dayKey]) return state;
+    const record = { startedAt: Date.now(), newTopics, steps: {} };
+    return { ...state, lessons: pruneLessons({ ...state.lessons, [dayKey]: record }, dayKey) };
+  });
+}
+
+/** Шаг урока закрыт. result: { status: 'done' | 'skipped', correct?, total?, topicId? }. */
+export function completeLessonStep(dayKey, stepId, result) {
+  update((state) => {
+    const prev = state.lessons?.[dayKey] || { startedAt: Date.now(), newTopics: {}, steps: {} };
+    const record = { ...prev, steps: { ...prev.steps, [stepId]: { ...result, at: Date.now() } } };
+    return { ...state, lessons: { ...state.lessons, [dayKey]: record } };
+  });
+}
+
+/** Итог недельного теста (последняя попытка за неделю). topics: { [topicId]: { correct, total } }. */
+export function recordWeeklyTest(weekKey, { topics, summary, seconds = 0 }) {
+  const entry = { at: Date.now(), correct: summary.correct, total: summary.total, points: summary.points, maxPoints: summary.maxPoints, seconds: Math.round(seconds), topics };
+  update((state) => ({ ...state, weekly: { ...state.weekly, [weekKey]: entry } }));
 }
 
 export function setProfile(patch) {

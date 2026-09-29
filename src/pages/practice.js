@@ -1,7 +1,7 @@
 // Практика: тема / сложные / все вопросы, повторение ошибок (SRS), микс по предмету, слабые темы.
 // После завершения — итоги, разбор и «исправить ошибки».
 
-import { formatDuration, h, pluralize } from '../core/dom.js';
+import { h, pluralize } from '../core/dom.js';
 import { langOf, loadTopic, loadTopics, subject, topicMeta, topicsOf } from '../core/content.js';
 import { getState } from '../core/store.js';
 import { recordPractice } from '../core/actions.js';
@@ -9,10 +9,10 @@ import { badgeById } from '../core/badges.js';
 import { masteryOf } from '../core/mastery.js';
 import { nextTopics } from '../core/plan.js';
 import { shuffle } from '../core/random.js';
-import { gradeLabel } from '../core/scoring.js';
 import { dueIds } from '../core/srs.js';
 import { renderMarkdown } from '../core/markdown.js';
-import { createPractice, renderExplanation, renderQuestionCard } from '../ui/quiz.js';
+import { createPractice } from '../ui/quiz.js';
+import { answerReview, scoreHero } from '../ui/quiz-review.js';
 import { createPlayer } from '../ui/player.js';
 import { confirmDialog } from '../ui/modal.js';
 import { toast, toastBadges } from '../ui/toast.js';
@@ -93,41 +93,12 @@ function passagePane(topic) {
   return h('div', { class: 'card split__passage prose' }, h('h3', {}, topic.title), h('div', { html: renderMarkdown(topic.passage) }));
 }
 
-function wrongList(results, topicsById) {
-  return h(
-    'div',
-    { class: 'result-list' },
-    results.map((r, i) => {
-      const card = renderQuestionCard({ question: r.question, topic: topicsById[r.question.topicId], order: r.order, selected: Array.isArray(r.selected) ? r.selected : [], value: typeof r.selected === 'string' ? r.selected : '', revealed: true, score: r.score, showMeta: false, showContext: false });
-      card.append(renderExplanation({ question: r.question, score: r.score, order: r.order }));
-      return h('details', { class: `result-item ${r.score.isCorrect ? 'ok' : 'bad'}` }, h('summary', {}, `${i + 1}. ${r.score.isCorrect ? '✓' : r.score.isPartial ? '½' : '✗'} ${plainText(r.question.text)}`), card);
-    }),
-  );
-}
-
-function plainText(markdown) {
-  const text = String(markdown || '').replace(/\$[^$]*\$/g, '[формула]').replace(/[*_`#>]/g, '').replace(/\s+/g, ' ').trim();
-  return text.length > 90 ? `${text.slice(0, 90)}…` : text;
-}
-
 function resultHero(session, outcome, recorded) {
-  const { summary, seconds } = outcome;
-  const grade = gradeLabel(summary.ratio);
   const mastery = session.topicId ? masteryOf(getState(), session.topicId) : null;
-  return h(
-    'div',
-    { class: 'card result-hero stack' },
-    h('div', { class: 'big' }, `${summary.points}`, h('small', {}, ` / ${summary.maxPoints}`)),
-    h('div', { class: `badge badge--${grade.tone}` }, grade.label),
-    h(
-      'div',
-      { class: 'row', style: { justifyContent: 'center', gap: '22px' } },
-      h('div', { class: 'stat' }, h('div', { class: 'stat__val' }, `${Math.round(summary.accuracy * 100)}%`), h('div', { class: 'stat__label' }, 'точность')),
-      h('div', { class: 'stat' }, h('div', { class: 'stat__val' }, formatDuration(seconds)), h('div', { class: 'stat__label' }, 'время')),
-      recorded ? h('div', { class: 'stat' }, h('div', { class: 'stat__val' }, `+${recorded.xp}`), h('div', { class: 'stat__label' }, 'XP')) : null,
-      mastery !== null ? h('div', { class: 'stat' }, ring({ value: mastery, size: 56, stroke: 6, color: subjectColor(session.subject) }), h('div', { class: 'stat__label' }, 'мастерство')) : null,
-    ),
-  );
+  return scoreHero(outcome, [
+    recorded ? h('div', { class: 'stat' }, h('div', { class: 'stat__val' }, `+${recorded.xp}`), h('div', { class: 'stat__label' }, 'XP')) : null,
+    mastery !== null ? h('div', { class: 'stat' }, ring({ value: mastery, size: 56, stroke: 6, color: subjectColor(session.subject) }), h('div', { class: 'stat__label' }, 'мастерство')) : null,
+  ]);
 }
 
 function showResults(root, session, outcome, ctx) {
@@ -143,7 +114,7 @@ function showResults(root, session, outcome, ctx) {
     h('a', { class: 'btn btn--lg', href: '#/' }, 'На главную'),
   );
   const transcript = session.layout === 'listening' && session.topic?.transcript ? h('details', { class: 'card' }, h('summary', {}, 'Транскрипт'), h('div', { class: 'prose', style: { marginTop: '10px' }, html: renderMarkdown(session.topic.transcript) })) : null;
-  root.replaceChildren(header(session), resultHero(session, outcome, recorded), actions, transcript, h('h3', {}, 'Разбор'), wrongList(outcome.results, session.topicsById));
+  root.replaceChildren(header(session), resultHero(session, outcome, recorded), actions, transcript, h('h3', {}, 'Разбор'), answerReview(outcome.results, session.topicsById));
   window.scrollTo({ top: 0 });
 }
 

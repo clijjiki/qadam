@@ -3,6 +3,8 @@
 
 export const ROUTES = [
   { pattern: '/', nav: 'home', title: 'Сегодня', load: () => import('./dashboard.js') },
+  { pattern: '/lesson', nav: 'lesson', title: 'Урок дня', focus: true, load: () => import('./lesson.js') },
+  { pattern: '/weekly', nav: 'weekly', title: 'Недельный тест', focus: true, load: () => import('./weekly.js') },
   { pattern: '/onboarding', nav: 'home', title: 'Начало', focus: true, public: true, load: () => import('./onboarding.js') },
   { pattern: '/ubt', nav: 'ubt', title: 'ЕНТ', load: () => import('./ubt.js') },
   { pattern: '/subject/:subjectId', nav: 'ubt', title: 'Предмет', load: () => import('./subject.js') },

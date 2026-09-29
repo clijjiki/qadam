@@ -78,7 +78,7 @@ function heroCard(state, readiness, ielts, cd) {
 function missionRow(mission) {
   const node = h(
     'a',
-    { class: mission.done ? 'mission mission--done' : 'mission', href: mission.href },
+    { class: ['mission', mission.done ? 'mission--done' : '', mission.main && !mission.done ? 'mission--main' : ''].filter(Boolean).join(' '), href: mission.href },
     h('span', { class: 'mission__ico' }, mission.done ? icon('check', { size: 18 }) : missionIcon(mission.id, { size: 18 })),
     h('span', { class: 'mission__main' }, h('span', { class: 'mission__title' }, mission.title), h('span', { class: 'mission__sub' }, mission.sub)),
     h('span', { class: 'mission__time' }, `${Math.round(mission.minutes)} мин`),
