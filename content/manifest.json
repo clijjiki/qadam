@@ -225,6 +225,17 @@
       "summary": "Бит и байт, единицы, формула N = 2^i, объём текста, скорость передачи, время передачи."
     },
     {
+      "id": "inf-encoding",
+      "subject": "informatics",
+      "title": "Кодирование текста, графики и звука",
+      "kind": "lesson",
+      "order": 2,
+      "path": "content/informatics/inf-encoding.json",
+      "weight": 1,
+      "minutes": 25,
+      "summary": "ASCII и Unicode, растровая графика (глубина цвета, объём изображения), дискретизация звука, RGB."
+    },
+    {
       "id": "inf-number-systems",
       "subject": "informatics",
       "title": "Системы счисления",
@@ -238,6 +249,39 @@
       "summaryKk": "Сандарды екілік, сегіздік, ондық және он алтылық санау жүйелерінің арасында аудару."
     },
     {
+      "id": "inf-binary-arithmetic",
+      "subject": "informatics",
+      "title": "Арифметика в двоичной, восьмеричной и шестнадцатеричной системах",
+      "kind": "lesson",
+      "order": 4,
+      "path": "content/informatics/inf-binary-arithmetic.json",
+      "weight": 1,
+      "minutes": 25,
+      "summary": "Сложение, вычитание, умножение в позиционных системах, сравнение чисел."
+    },
+    {
+      "id": "inf-logic-basics",
+      "subject": "informatics",
+      "title": "Логические операции и таблицы истинности",
+      "kind": "lesson",
+      "order": 5,
+      "path": "content/informatics/inf-logic-basics.json",
+      "weight": 2,
+      "minutes": 25,
+      "summary": "НЕ, И, ИЛИ, импликация, эквивалентность, приоритет операций, законы логики, упрощение выражений."
+    },
+    {
+      "id": "inf-logic-circuits",
+      "subject": "informatics",
+      "title": "Логические элементы и схемы",
+      "kind": "lesson",
+      "order": 6,
+      "path": "content/informatics/inf-logic-circuits.json",
+      "weight": 1,
+      "minutes": 25,
+      "summary": "Инвертор, конъюнктор, дизъюнктор, сумматор, чтение и построение схем (схемы описываются текстом/формулой)."
+    },
+    {
       "id": "inf-computer-devices",
       "subject": "informatics",
       "title": "Устройства компьютера",
@@ -247,6 +291,39 @@
       "weight": 2,
       "minutes": 25,
       "summary": "Процессор, регистры, память ОЗУ/ПЗУ, шина, тактовая частота, устройства ввода-вывода, характеристики."
+    },
+    {
+      "id": "inf-software-os",
+      "subject": "informatics",
+      "title": "Программное обеспечение и ОС",
+      "kind": "lesson",
+      "order": 8,
+      "path": "content/informatics/inf-software-os.json",
+      "weight": 2,
+      "minutes": 25,
+      "summary": "Виды ПО, операционные системы, файловая система и пути, утилиты, драйверы, конфигурация компьютера."
+    },
+    {
+      "id": "inf-networks",
+      "subject": "informatics",
+      "title": "Компьютерные сети",
+      "kind": "lesson",
+      "order": 9,
+      "path": "content/informatics/inf-networks.json",
+      "weight": 2,
+      "minutes": 25,
+      "summary": "Топологии, коммутатор/маршрутизатор/концентратор, IP-адрес и маска, протоколы TCP/IP, HTTP, DNS, пропускная способность."
+    },
+    {
+      "id": "inf-security",
+      "subject": "informatics",
+      "title": "Информационная безопасность",
+      "kind": "lesson",
+      "order": 10,
+      "path": "content/informatics/inf-security.json",
+      "weight": 2,
+      "minutes": 25,
+      "summary": "Вирусы и антивирусы, идентификация и аутентификация, криптография, ЭЦП, кибербуллинг, сетевой этикет, авторское право."
     },
     {
       "id": "inf-python-basics",
@@ -269,6 +346,39 @@
       "weight": 2,
       "minutes": 25,
       "summary": "if/elif/else, for/range, while, break/continue, трассировка программ, подсчёт итераций."
+    },
+    {
+      "id": "inf-python-lists-strings",
+      "subject": "informatics",
+      "title": "Python: списки и строки",
+      "kind": "lesson",
+      "order": 13,
+      "path": "content/informatics/inf-python-lists-strings.json",
+      "weight": 2,
+      "minutes": 25,
+      "summary": "Индексы и срезы, методы списков и строк, двумерные списки, генераторы, сортировка."
+    },
+    {
+      "id": "inf-python-functions-recursion",
+      "subject": "informatics",
+      "title": "Python: функции и рекурсия",
+      "kind": "lesson",
+      "order": 14,
+      "path": "content/informatics/inf-python-functions-recursion.json",
+      "weight": 2,
+      "minutes": 25,
+      "summary": "Определение функций, параметры, return, области видимости, рекурсия, трассировка рекурсивных вызовов."
+    },
+    {
+      "id": "inf-algorithms-sorting-search",
+      "subject": "informatics",
+      "title": "Сортировка и поиск",
+      "kind": "lesson",
+      "order": 16,
+      "path": "content/informatics/inf-algorithms-sorting-search.json",
+      "weight": 1,
+      "minutes": 25,
+      "summary": "Пузырьковая, выбором, вставками, бинарный поиск, число сравнений, сложность O-нотация."
     },
     {
       "id": "ielts-vocab-education",
@@ -1209,92 +1319,12 @@
       "order": 37
     },
     {
-      "id": "inf-encoding",
-      "subject": "informatics",
-      "title": "Кодирование текста, графики и звука",
-      "summary": "ASCII и Unicode, растровая графика (глубина цвета, объём изображения), дискретизация звука, RGB.",
-      "kind": "lesson",
-      "order": 2
-    },
-    {
-      "id": "inf-binary-arithmetic",
-      "subject": "informatics",
-      "title": "Арифметика в двоичной, восьмеричной и шестнадцатеричной системах",
-      "summary": "Сложение, вычитание, умножение в позиционных системах, сравнение чисел.",
-      "kind": "lesson",
-      "order": 4
-    },
-    {
-      "id": "inf-logic-basics",
-      "subject": "informatics",
-      "title": "Логические операции и таблицы истинности",
-      "summary": "НЕ, И, ИЛИ, импликация, эквивалентность, приоритет операций, законы логики, упрощение выражений.",
-      "kind": "lesson",
-      "order": 5
-    },
-    {
-      "id": "inf-logic-circuits",
-      "subject": "informatics",
-      "title": "Логические элементы и схемы",
-      "summary": "Инвертор, конъюнктор, дизъюнктор, сумматор, чтение и построение схем (схемы описываются текстом/формулой).",
-      "kind": "lesson",
-      "order": 6
-    },
-    {
-      "id": "inf-software-os",
-      "subject": "informatics",
-      "title": "Программное обеспечение и ОС",
-      "summary": "Виды ПО, операционные системы, файловая система и пути, утилиты, драйверы, конфигурация компьютера.",
-      "kind": "lesson",
-      "order": 8
-    },
-    {
-      "id": "inf-networks",
-      "subject": "informatics",
-      "title": "Компьютерные сети",
-      "summary": "Топологии, коммутатор/маршрутизатор/концентратор, IP-адрес и маска, протоколы TCP/IP, HTTP, DNS, пропускная способность.",
-      "kind": "lesson",
-      "order": 9
-    },
-    {
-      "id": "inf-security",
-      "subject": "informatics",
-      "title": "Информационная безопасность",
-      "summary": "Вирусы и антивирусы, идентификация и аутентификация, криптография, ЭЦП, кибербуллинг, сетевой этикет, авторское право.",
-      "kind": "lesson",
-      "order": 10
-    },
-    {
-      "id": "inf-python-lists-strings",
-      "subject": "informatics",
-      "title": "Python: списки и строки",
-      "summary": "Индексы и срезы, методы списков и строк, двумерные списки, генераторы, сортировка.",
-      "kind": "lesson",
-      "order": 13
-    },
-    {
-      "id": "inf-python-functions-recursion",
-      "subject": "informatics",
-      "title": "Python: функции и рекурсия",
-      "summary": "Определение функций, параметры, return, области видимости, рекурсия, трассировка рекурсивных вызовов.",
-      "kind": "lesson",
-      "order": 14
-    },
-    {
       "id": "inf-python-files",
       "subject": "informatics",
       "title": "Python: работа с файлами",
       "summary": "open и режимы, чтение и запись, обработка данных из файла, with, кодировки.",
       "kind": "lesson",
       "order": 15
-    },
-    {
-      "id": "inf-algorithms-sorting-search",
-      "subject": "informatics",
-      "title": "Сортировка и поиск",
-      "summary": "Пузырьковая, выбором, вставками, бинарный поиск, число сравнений, сложность O-нотация.",
-      "kind": "lesson",
-      "order": 16
     },
     {
       "id": "inf-graphs",
