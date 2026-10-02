@@ -1,0 +1,446 @@
+{
+  "id": "eng-words-10-city-transport",
+  "subject": "english",
+  "title": "Қала және көлік",
+  "summary": "Қала, көлік және жол туралы айтуға арналған 20 сөз: көше, автобус, вокзал, солға, жақын.",
+  "theory": [
+    "## Бұл 20 сөзді қалай жаттау керек\nТізімді бір кеште басынан аяғына дейін жаттама. Қадамдап жұмыс істе:\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған 5 сөзді ертең қайталаумен бірге ал.\n2. **Дауыстап айт.** Сөзді, транскрипциясын және мысалды үш рет оқы.\n3. **Өз қалаң туралы 5 сөйлем жаз**: *I live near the park. I go to school by bus.*\n4. **Сөздерді қайта кездестір** — карточкаларда және Extra English бөлімінде. Сөзді өзің сөйлегенде қолдана алсаң ғана ол жатталды деп есептеледі.",
+    "## Жинаққа кеңес: қалай жүру және қайда бару\nКөлік түрі кішкентай **by** сөзімен, артикльсіз айтылады: *by bus, by car, by train, by taxi*. Ал жаяу — **on foot**: *I go to school on foot* = *I walk to school*.\n\nЖолды үш тіркеспен түсіндіреді:\n- **turn left** — солға бұрыл;\n- **turn right** — оңға бұрыл;\n- **go straight on** — тура жүр.\n\n:::tip Жақын және алыс\n**near** — жақын, жанында: *near the station*. **far from** — ...-дан алыс: *far from the city*. Сұрақ: *Is it far?* — Ол алыс па?\n:::"
+  ],
+  "words": [
+    {
+      "id": "w10-city",
+      "word": "city",
+      "pos": "n",
+      "ipa": "/ˈsɪti/",
+      "ru": "қала (үлкен)",
+      "def": "a big town where many people live",
+      "example": "Almaty is a big and beautiful city.",
+      "collocations": [
+        "city centre",
+        "big city",
+        "live in a city"
+      ]
+    },
+    {
+      "id": "w10-street",
+      "word": "street",
+      "pos": "n",
+      "ipa": "/striːt/",
+      "ru": "көше",
+      "def": "a road in a town with houses and shops on it",
+      "example": "My friend lives on this street.",
+      "collocations": [
+        "on the street",
+        "main street"
+      ]
+    },
+    {
+      "id": "w10-road",
+      "word": "road",
+      "pos": "n",
+      "ipa": "/rəʊd/",
+      "ru": "жол",
+      "def": "a long hard way for cars and buses between places",
+      "example": "Be careful when you cross the road.",
+      "collocations": [
+        "cross the road",
+        "on the road",
+        "a busy road"
+      ]
+    },
+    {
+      "id": "w10-shop",
+      "word": "shop",
+      "pos": "n",
+      "ipa": "/ʃɒp/",
+      "ru": "дүкен",
+      "def": "a place where you buy things",
+      "example": "There is a small shop next to my house.",
+      "collocations": [
+        "go to the shop",
+        "a clothes shop",
+        "shopping centre"
+      ]
+    },
+    {
+      "id": "w10-bank",
+      "word": "bank",
+      "pos": "n",
+      "ipa": "/bæŋk/",
+      "ru": "банк",
+      "def": "a place that keeps money for people",
+      "example": "I need to go to the bank today.",
+      "collocations": [
+        "go to the bank",
+        "bank card"
+      ]
+    },
+    {
+      "id": "w10-park",
+      "word": "park",
+      "pos": "n",
+      "ipa": "/pɑːk/",
+      "ru": "саябақ",
+      "def": "a big green place in a town where people walk and play",
+      "example": "We play football in the park on Sundays.",
+      "collocations": [
+        "in the park",
+        "car park"
+      ]
+    },
+    {
+      "id": "w10-building",
+      "word": "building",
+      "pos": "n",
+      "ipa": "/ˈbɪldɪŋ/",
+      "ru": "ғимарат",
+      "def": "a house, school, shop or office with walls and a roof",
+      "example": "Our school is a tall white building.",
+      "collocations": [
+        "tall building",
+        "old building"
+      ]
+    },
+    {
+      "id": "w10-bus",
+      "word": "bus",
+      "pos": "n",
+      "ipa": "/bʌs/",
+      "ru": "автобус",
+      "def": "a big car that takes many people along a road",
+      "example": "I go to school by bus.",
+      "collocations": [
+        "by bus",
+        "bus stop",
+        "take the bus"
+      ]
+    },
+    {
+      "id": "w10-car",
+      "word": "car",
+      "pos": "n",
+      "ipa": "/kɑː/",
+      "ru": "машина, автокөлік",
+      "def": "a thing with four wheels that you drive on the road",
+      "example": "My dad's car is black.",
+      "collocations": [
+        "by car",
+        "drive a car",
+        "park the car"
+      ]
+    },
+    {
+      "id": "w10-taxi",
+      "word": "taxi",
+      "pos": "n",
+      "ipa": "/ˈtæksi/",
+      "ru": "такси",
+      "def": "a car with a driver that you pay to take you somewhere",
+      "example": "It is late. Let's take a taxi.",
+      "collocations": [
+        "take a taxi",
+        "call a taxi",
+        "by taxi"
+      ]
+    },
+    {
+      "id": "w10-train",
+      "word": "train",
+      "pos": "n",
+      "ipa": "/treɪn/",
+      "ru": "пойыз",
+      "def": "a long, fast thing that goes on metal lines and takes people from city to city",
+      "example": "We went to Astana by train.",
+      "collocations": [
+        "by train",
+        "take the train",
+        "train ticket"
+      ]
+    },
+    {
+      "id": "w10-station",
+      "word": "station",
+      "pos": "n",
+      "ipa": "/ˈsteɪʃn/",
+      "ru": "вокзал, бекет (станция)",
+      "def": "a place where trains or buses stop and people get on and off",
+      "example": "The train leaves the station at nine.",
+      "collocations": [
+        "train station",
+        "bus station",
+        "metro station"
+      ]
+    },
+    {
+      "id": "w10-airport",
+      "word": "airport",
+      "pos": "n",
+      "ipa": "/ˈeəpɔːt/",
+      "ru": "әуежай",
+      "def": "a place where planes come and go",
+      "example": "We went to the airport to meet my aunt.",
+      "collocations": [
+        "at the airport",
+        "go to the airport"
+      ]
+    },
+    {
+      "id": "w10-ticket",
+      "word": "ticket",
+      "pos": "n",
+      "ipa": "/ˈtɪkɪt/",
+      "ru": "билет",
+      "def": "a small paper that shows you paid for a bus, train or film",
+      "example": "I have two tickets for the film.",
+      "collocations": [
+        "bus ticket",
+        "buy a ticket",
+        "cinema ticket"
+      ]
+    },
+    {
+      "id": "w10-left",
+      "word": "left",
+      "pos": "adv",
+      "ipa": "/left/",
+      "ru": "солға; сол жақ",
+      "def": "on the side of your body where your heart is",
+      "example": "Turn left at the bank.",
+      "collocations": [
+        "turn left",
+        "on the left"
+      ]
+    },
+    {
+      "id": "w10-right",
+      "word": "right",
+      "pos": "adv",
+      "ipa": "/raɪt/",
+      "ru": "оңға; оң жақ",
+      "def": "on the side that is not left",
+      "example": "The school is on the right.",
+      "collocations": [
+        "turn right",
+        "on the right",
+        "right hand"
+      ]
+    },
+    {
+      "id": "w10-near",
+      "word": "near",
+      "pos": "prep",
+      "ipa": "/nɪə/",
+      "ru": "жанында, жақын",
+      "def": "not far from",
+      "example": "I live near the park.",
+      "collocations": [
+        "near here",
+        "near the station"
+      ]
+    },
+    {
+      "id": "w10-far",
+      "word": "far",
+      "pos": "adv",
+      "ipa": "/fɑː/",
+      "ru": "алыс",
+      "def": "a long way from here or from a place",
+      "example": "Is the airport far from the city?",
+      "collocations": [
+        "far from",
+        "not far",
+        "how far"
+      ]
+    },
+    {
+      "id": "w10-drive",
+      "word": "drive",
+      "pos": "v",
+      "ipa": "/draɪv/",
+      "ru": "көлік жүргізу, көлікпен жүру",
+      "def": "to make a car or bus go",
+      "example": "My brother drives to work every day.",
+      "collocations": [
+        "drive a car",
+        "drive to work"
+      ]
+    },
+    {
+      "id": "w10-walk",
+      "word": "walk",
+      "pos": "v",
+      "ipa": "/wɔːk/",
+      "ru": "жаяу жүру, серуендеу",
+      "def": "to move on your feet",
+      "example": "I walk to school every morning.",
+      "collocations": [
+        "walk to school",
+        "go for a walk",
+        "walk the dog"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Көше» ағылшынша қалай болады?",
+      "options": [
+        "road",
+        "city",
+        "shop",
+        "street"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Street — қаладағы үйлері мен дүкендері бар көше. Road — жол (соның ішінде қалалар арасындағы жол)."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Вокзал, бекет» ағылшынша қалай болады?",
+      "options": [
+        "airport",
+        "building",
+        "station",
+        "ticket"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Station — вокзал немесе бекет: *train station, bus station*. Airport — әуежай."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Солға» ағылшынша қалай болады?",
+      "options": [
+        "left",
+        "far",
+        "right",
+        "near"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Left — солға, right — оңға. *Turn left* — солға бұрыл."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Билет» ағылшынша қалай болады?",
+      "options": [
+        "train",
+        "bank",
+        "taxi",
+        "ticket"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Ticket — билет: *buy a ticket, bus ticket*."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 2,
+      "text": "I go to school ___ bus.",
+      "options": [
+        "by",
+        "with",
+        "in",
+        "on"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Көлік түрі by сөзімен, артикльсіз айтылады: *by bus, by car, by train*. Ерекше жағдай — жаяу: *on foot*."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Алыс» ағылшынша қалай болады?",
+      "options": [
+        "near",
+        "far",
+        "left",
+        "right"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Far — алыс: *far from the city*. Near — керісінше, жақын."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "I don't have a car, so I ___ to school.",
+      "options": [
+        "walk",
+        "drive",
+        "wait",
+        "open"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Машина жоқ — демек, жаяу барамын: walk. Drive — көлік жүргізу, бұл жерде мағынасы жағынан сәйкес келмейді."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Әуежай» ағылшынша қалай болады?",
+      "options": [
+        "airport",
+        "park",
+        "station",
+        "street"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Airport — әуежай, ұшақтар ұшып, қонатын орын."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Көлік жүргізу» ағылшынша қалай болады?",
+      "options": [
+        "carry",
+        "walk",
+        "turn",
+        "drive"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Drive — көлік жүргізу, көлікпен жүру: *drive a car*. Walk — жаяу жүру."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Excuse me, is there a bank ___ here?",
+      "options": [
+        "by",
+        "left",
+        "far",
+        "near"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Near here — осы маңда, жақын жерде. *Is there a bank near here?* — Осы маңда банк бар ма?"
+    }
+  ]
+}

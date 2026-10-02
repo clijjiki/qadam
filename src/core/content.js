@@ -1,6 +1,7 @@
 // Загрузка контента: манифест (список предметов и тем) + JSON темы по требованию.
 // Язык контента: 'ru' (основной) и 'kk' (перевод в content/kk/...). Если перевода нет —
 // возвращаем русскую версию с пометкой translated: false, чтобы страница могла предупредить.
+// Язык выбирается по предметам: общий (settings.contentLang) и свой у предмета (settings.subjectLang).
 
 export const CONTENT_LANGS = [
   { id: 'ru', name: 'Русский', short: 'RU' },
@@ -112,9 +113,62 @@ export function langShort(lang) {
   return found ? found.short : 'RU';
 }
 
-/** Язык контента, выбранный пользователем в настройках. */
-export function langOf(state) {
-  return normalizeLang(state?.settings?.contentLang);
+/** Оставляет в карте «предмет → язык» только известные языки. */
+export function normalizeSubjectLangs(map) {
+  if (!map || typeof map !== 'object' || Array.isArray(map)) return {};
+  return Object.fromEntries(Object.entries(map).filter(([, lang]) => isContentLang(lang)));
+}
+
+/**
+ * Язык материалов. С subjectId — язык этого предмета: свой выбор предмета
+ * (settings.subjectLang) важнее общего. Без subjectId — общий язык (он же язык пробников).
+ */
+export function langOf(state, subjectId) {
+  const own = subjectId ? state?.settings?.subjectLang?.[subjectId] : null;
+  return normalizeLang(isContentLang(own) ? own : state?.settings?.contentLang);
+}
+
+/** Настройки с новым языком предмета. Пустой или неизвестный язык возвращает предмет к общему. */
+export function withSubjectLang(settings, subjectId, lang) {
+  const { [subjectId]: removed, ...rest } = normalizeSubjectLangs(settings?.subjectLang);
+  return { ...settings, subjectLang: isContentLang(lang) ? { ...rest, [subjectId]: lang } : rest };
+}
+
+/** Предметы, которые идут не на общем языке (например, математика на казахском при общем русском). */
+export function ownLangSubjects(state) {
+  const general = langOf(state);
+  return Object.entries(normalizeSubjectLangs(state?.settings?.subjectLang))
+    .filter(([, lang]) => lang !== general)
+    .map(([subjectId]) => subjectId);
+}
+
+/** Отпечаток всех языковых настроек: изменился — материалы на странице нужно перезагрузить. */
+export function langSignature(state) {
+  const own = normalizeSubjectLangs(state?.settings?.subjectLang);
+  const pairs = Object.keys(own).sort().map((id) => `${id}=${own[id]}`);
+  return [langOf(state), ...pairs].join('|');
+}
+
+const ownLangAllowed = (subjectId) => (subjectId && subjectId !== 'ielts' ? subjectId : null);
+
+const SUBJECT_BY_PATH = [
+  [/^\/curriculum/, 'math'],
+  [/^\/english/, 'english'],
+];
+
+/**
+ * Предмет, к которому относится открытая страница (тема, практика, страница предмета),
+ * или null для общих страниц. По нему переключатель в шапке понимает, чей язык менять.
+ */
+export function routeSubject(route, { topicSubject = (id) => topicMeta(id)?.subject || null, known = (id) => !!subject(id) } = {}) {
+  if (!route) return null;
+  const { path = '', params = {}, query = {} } = route;
+  // У IELTS своего языка нет (материал английский, раздел скрыт) — он идёт на общем.
+  if (params.topicId) return ownLangAllowed(topicSubject(params.topicId));
+  const candidate = params.subjectId || (path.startsWith('/practice') ? query.subject : null);
+  if (candidate) return known(candidate) ? ownLangAllowed(candidate) : null;
+  const byPath = SUBJECT_BY_PATH.find(([pattern]) => pattern.test(path));
+  return byPath ? byPath[1] : null;
 }
 
 /**
@@ -138,6 +192,16 @@ export function topicTitle(meta, lang) {
 export function topicSummary(meta, lang) {
   if (!meta) return '';
   return localizedField(meta, 'summary', lang) || '';
+}
+
+/** Заголовок темы на языке её предмета — для списков, где темы разных предметов идут вперемешку. */
+export function localTitle(state, meta) {
+  return topicTitle(meta, langOf(state, meta?.subject));
+}
+
+/** Краткое описание темы на языке её предмета. */
+export function localSummary(state, meta) {
+  return topicSummary(meta, langOf(state, meta?.subject));
 }
 
 /** Путь к файлу темы на нужном языке: content/kk/<subject>/<id>.json для казахского. */
@@ -189,6 +253,16 @@ export async function loadTopic(id, requested = DEFAULT_LANG) {
 
 export async function loadTopics(ids, lang = DEFAULT_LANG) {
   return Promise.all(ids.map((id) => loadTopic(id, lang)));
+}
+
+/** Тема на языке своего предмета (по настройкам пользователя). */
+export function loadLocalTopic(state, id) {
+  return loadTopic(id, langOf(state, topicMeta(id)?.subject));
+}
+
+/** Несколько тем, каждая на языке своего предмета: в миксе математика может быть казахской, история — русской. */
+export async function loadLocalTopics(state, ids) {
+  return Promise.all(ids.map((id) => loadLocalTopic(state, id)));
 }
 
 /** Приводит тему к единому виду: массивы гарантированы, вопросы получают глобальный id topicId:qid. */

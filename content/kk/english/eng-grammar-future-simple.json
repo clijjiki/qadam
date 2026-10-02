@@ -1,0 +1,410 @@
+{
+  "id": "eng-grammar-future-simple",
+  "subject": "english",
+  "title": "Future Simple: не істеймін (келешекте)",
+  "summary": "will + етістік, won't, сөйлеп тұрған сәттегі шешім мен уәде, tomorrow/next week.",
+  "theory": [
+    "## Формула: will + етістік\nFuture Simple — «жай келер шақ». Формуласы өте қарапайым: **will + бастапқы түрдегі етістік**. Бәріне бірдей — ешқандай -s те, жалғау да жоқ.\n\n| Кім | Түрі | Қысқаша | Мысал | Аудармасы |\n|---|---|---|---|---|\n| I | will help | I'll help | I'll help you. | Мен саған көмектесемін. |\n| you | will come | you'll come | You'll come tomorrow. | Сен ертең келесің. |\n| he / she / it | will call | he'll call | She'll call you. | Ол саған қоңырау шалады. |\n| we / they | will go | we'll go | We'll go home. | Біз үйге барамыз. |\n\n:::tip Қалай есте сақтауға болады\nwill — «келер шақ» батырмасы сияқты. will-ді бастың — одан әрі етістік **өзгеріссіз**.\n:::",
+    "## Болымсыз түрі: won't\nБолымсыз сөйлемде **will-ден кейін not** қоямыз: will not = **won't**.\n\n- I won't tell anyone. — Мен ешкімге айтпаймын.\n- It won't take long. — Бұл көп уақыт алмайды.\n- They won't come today. — Олар бүгін келмейді.\n\n:::warn Жиі кездесетін қате\n«I will to go» — қате: will-ден кейін **to жоқ**. Дұрысы: **I will go.** — Мен барамын. «She will goes» те қате: **She will go.**\n:::",
+    "## Сұрақтар: Will you…?\nСұрақ: **Will + кім + етістік**. Жауап қысқа: Yes, I will. / No, I won't.\n\n| Сұрақ | Жауап | Аудармасы |\n|---|---|---|\n| Will you help me? | Yes, I will. | Сен маған көмектесесің бе? — Иә. |\n| Will it rain tomorrow? | No, it won't. | Ертең жаңбыр жауа ма? — Жоқ. |\n| What will you do? | I'll read. | Сен не істейсің? — Кітап оқимын. |\n\n:::warn Жиі кездесетін қате\n«Иә» деген қысқа жауапта қысқартпаймыз: «Yes, I'll» емес, **Yes, I will.**\n:::",
+    "## will-ді қашан айтамыз\n| Жағдай | Мысал | Аудармасы |\n|---|---|---|\n| дәл қазір қабылданған шешім | It's cold. I'll close the window. | Суық. Мен терезені жабайын. |\n| уәде | I'll call you tonight. | Мен саған кешке қоңырау шаламын. |\n| болжам, пікір | I think it will rain. | Жаңбыр жауады деп ойлаймын. |\n| өтініш | Will you open the door, please? | Есікті ашып жібересің бе? |\n\nБелгі сөздер: **tomorrow** (ертең), **next week** (келесі аптада), **soon** (жақында, көп ұзамай), **in two days** (екі күннен кейін), **I think** (менің ойымша), **probably** (сірә).\n\n:::example Мысал\n- My brother will finish school next year. — Ағам келесі жылы мектеп бітіреді.\n:::",
+    "## Ал going to деген не?\nКелер шақ туралы айтудың тағы бір тәсілі бар — **going to**: I'm going to visit my grandma. — Мен әжеме бармақпын. Оны **алдын ала дайын жоспарлар** үшін қолданады.\n\ngoing to-ны кейінірек өтеміз. Қазір басты ереже қарапайым: келер шақ туралы айтқың келсе — **will**-ді ал, сені түсінеді.\n\n:::tip Кеңес\n«Дәл осы секундта қабылданған шешім» → әрқашан will: The phone is ringing. I'll answer it. — Телефон шырылдап тұр. Мен жауап берейін.\n:::",
+    "## Қалай жаттығу керек\n1. Жаңа сөздермен ертеңгі күн мен жаз туралы **өзіңнің 5 сөйлеміңді** жаз (*Tomorrow I will read a book.*).\n2. Досыңа 2 уәде бер: *I'll help you. I won't be late.*\n3. Will you…? арқылы сұрақтар жасап, **бәрін дауыстап айт**.\n4. **Extra English** сериалының бір бөлімін қарап, will немесе 'll бар тіркестерді тап."
+  ],
+  "cards": [
+    {
+      "front": "Future Simple формуласы",
+      "back": "will + бастапқы түрдегі етістік: I will help."
+    },
+    {
+      "front": "I will = ?",
+      "back": "I'll"
+    },
+    {
+      "front": "will not = ?",
+      "back": "won't"
+    },
+    {
+      "front": "Future Simple-дегі сұрақ",
+      "back": "Will + кім + етістік: Will you help me?"
+    },
+    {
+      "front": "Will you come? — Иә.",
+      "back": "Yes, I will. («Yes, I'll» емес)"
+    },
+    {
+      "front": "will-ді қашан қолданамыз?",
+      "back": "дәл қазіргі шешім, уәде, болжам, өтініш"
+    },
+    {
+      "front": "tomorrow / next week / soon",
+      "back": "ертең / келесі аптада / жақында → will"
+    },
+    {
+      "front": "I will to go — қате қайда?",
+      "back": "will-ден кейін to жоқ: I will go."
+    },
+    {
+      "front": "going to",
+      "back": "алдын ала шешілген жоспарлар; кейінірек өтеміз"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс сөзді таңдаңыз: I ___ help you tomorrow.",
+      "options": [
+        "will",
+        "am",
+        "did",
+        "do"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Tomorrow → келер шақ → **will**: I will help you tomorrow. — Мен саған ертең көмектесемін."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: She will ___ you later.",
+      "options": [
+        "call",
+        "calls",
+        "called",
+        "to call"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**will**-ден кейін етістік бастапқы түрде, -s-сіз және to-сыз тұрады: She will call you later. — Ол саған кейінірек қоңырау шалады.",
+      "why": {
+        "1": "will-мен -s тіпті she-ден кейін де керек емес."
+      }
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "**I will** тіркесінің қысқа түрі қандай?",
+      "options": [
+        "I'll",
+        "Ill",
+        "I'w",
+        "I'l"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "will **'ll** болып қысқарады: I will → I'll. I'll be there. — Мен сонда боламын.",
+      "why": {
+        "1": "Апострофсыз ill — «ауру» деген сөз."
+      }
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "**won't** нені білдіреді?",
+      "options": [
+        "will not",
+        "want not",
+        "was not",
+        "do not"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**won't = will not**: I won't go. — Мен бармаймын.",
+      "why": {
+        "1": "won't want сөзіне ұқсайды, бірақ бұл — will not-тың қысқарған түрі."
+      }
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Қай сөз келер шақты көрсетеді?",
+      "options": [
+        "tomorrow",
+        "yesterday",
+        "usually",
+        "ago"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**tomorrow** — ертең, бұл келер шақ. Yesterday мен ago — өткен шақ, usually — осы шақ (әдетте)."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс нұсқаны таңдаңыз: We ___ in Almaty next summer.",
+      "options": [
+        "will be",
+        "will are",
+        "are will",
+        "will is"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "will-ден кейін етістік бастапқы түрде тұрады, ал am/is/are-дің бастапқы түрі — **be**: We will be in Almaty next summer. — Келесі жазда біз Алматыда боламыз.",
+      "why": {
+        "1": "will-ден кейін am/is/are қойылмайды — тек be."
+      }
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сұрақты таңдаңыз (Сен менің кешіме келесің бе?).",
+      "options": [
+        "Will you come to my party?",
+        "Do you will come to my party?",
+        "Will you to come to my party?",
+        "Will come you to my party?"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Сұрақ: **Will + кім + етістік**: Will you come to my party? — Сен менің кешіме келесің бе?"
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Will he pass the exam? — No, he ___.",
+      "options": [
+        "won't",
+        "doesn't",
+        "didn't",
+        "isn't"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Сұрақ will-мен → жауапта да will: No, he **won't**. — Жоқ, ол тапсыра алмайды."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Телефон шырылдап тұр, сен дәл қазір жауап беруді ұйғардың. Не дейсің?",
+      "options": [
+        "I'll answer it.",
+        "I answered it.",
+        "I will answering it.",
+        "I will to answer it."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Сөйлеп тұрған сәттегі шешім → **will**: I'll answer it. — Мен жауап берейін. will-ден кейін — бастапқы түрі, -ing-сіз және to-сыз."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Сен анаңа тоғызға қарай қайтып келемін деп уәде бересің. Дұрыс сөйлемді таңдаңыз.",
+      "options": [
+        "I'll be home at nine, I promise.",
+        "I was home at nine, I promise.",
+        "I will am home at nine, I promise.",
+        "I will to be home at nine, I promise."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Уәде → **will**, will-ден кейін — **be**: I'll be home at nine, I promise. — Мен тоғызда үйде боламын, уәде беремін."
+    },
+    {
+      "id": "q11",
+      "type": "single",
+      "difficulty": 3,
+      "text": "**Қатесі бар** сөйлемді табыңыз.",
+      "options": [
+        "I will to go to the cinema.",
+        "She'll help us.",
+        "Will it be cold?",
+        "They won't come."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "will-ден кейін **to қоймаймыз**: дұрысы I will go to the cinema. — Мен киноға барамын. Қалғандары дұрыс: Ол бізге көмектеседі. Суық бола ма? Олар келмейді."
+    },
+    {
+      "id": "q12",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Дұрыс нұсқаны таңдаңыз: I think it ___ tomorrow.",
+      "options": [
+        "will rain",
+        "rains",
+        "rained",
+        "will rains"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "I think + tomorrow — келешекке болжам → **will rain**: I think it will rain tomorrow. — Ертең жаңбыр жауады деп ойлаймын.",
+      "why": {
+        "3": "will-ден кейін -s қосылмайды, тіпті it-пен де."
+      }
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сөзді таңдаңыз: What ___ you do after school tomorrow?",
+      "options": [
+        "will",
+        "does",
+        "did",
+        "are"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Tomorrow → келер шақ: What **will** you do after school tomorrow? — Ертең сабақтан кейін сен не істейсің?"
+    },
+    {
+      "id": "q14",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 2,
+      "text": "Етістікті Future Simple түрінде жазыңыз: I ___ (help) you with your homework.",
+      "answer": [
+        "will help"
+      ],
+      "accept": [
+        "will help",
+        "'ll help"
+      ],
+      "explanation": "**will + help**: I will help you with your homework. — Мен саған үй тапсырмасына көмектесемін."
+    },
+    {
+      "id": "q15",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 2,
+      "text": "Етістікті Future Simple түрінде жазыңыз: She ___ (be) fifteen next year.",
+      "answer": [
+        "will be"
+      ],
+      "accept": [
+        "will be",
+        "'ll be"
+      ],
+      "explanation": "To be-нің келер шағы — **will be**: She will be fifteen next year. — Келесі жылы ол он беске толады."
+    },
+    {
+      "id": "q16",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 2,
+      "text": "Етістікті Future Simple түрінде жазыңыз: We ___ (see) you tomorrow.",
+      "answer": [
+        "will see"
+      ],
+      "accept": [
+        "will see",
+        "'ll see"
+      ],
+      "explanation": "Tomorrow → **will see**: We will see you tomorrow. — Ертең кездесеміз."
+    },
+    {
+      "id": "q17",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Бір сөз жазыңыз: ___ you open the window, please? — Yes, I will.",
+      "answer": [
+        "Will"
+      ],
+      "accept": [
+        "Will"
+      ],
+      "explanation": "«Yes, I will» деген жауап сұрақтың да will-мен екенін көрсетеді: **Will** you open the window, please? — Терезені ашып жібересің бе? — Иә."
+    },
+    {
+      "id": "q18",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Future Simple-дің болымсыз түрін жазыңыз: I ___ (not / tell) anyone, I promise.",
+      "answer": [
+        "won't tell"
+      ],
+      "accept": [
+        "won't tell",
+        "will not tell"
+      ],
+      "explanation": "Болымсыз түрі: **won't / will not + tell**. I won't tell anyone, I promise. — Мен ешкімге айтпаймын, уәде беремін."
+    },
+    {
+      "id": "q19",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Бір сөз жазыңыз: Will they win? — Yes, they ___.",
+      "answer": [
+        "will"
+      ],
+      "accept": [
+        "will"
+      ],
+      "explanation": "Сұрақ will-мен → қысқа жауап та **will**-мен: Yes, they will. — Иә, жеңеді."
+    },
+    {
+      "id": "q20",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 2,
+      "text": "Етістікті Future Simple түрінде жазыңыз: My brother ___ (finish) school in two years.",
+      "answer": [
+        "will finish"
+      ],
+      "accept": [
+        "will finish",
+        "'ll finish"
+      ],
+      "explanation": "In two years (екі жылдан кейін) → келер шақ: My brother will finish school in two years. — Ағам екі жылдан кейін мектеп бітіреді."
+    },
+    {
+      "id": "q21",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 2,
+      "text": "Етістікті Future Simple түрінде жазыңыз: It's late. I think I ___ (go) to bed.",
+      "answer": [
+        "will go"
+      ],
+      "accept": [
+        "will go",
+        "'ll go"
+      ],
+      "explanation": "Дәл қазір қабылданған шешім → **will go** (to-сыз): It's late. I think I will go to bed. — Кеш болып кетті. Мен ұйықтауға жатайын деп тұрмын."
+    },
+    {
+      "id": "q22",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 3,
+      "text": "Future Simple-дің болымсыз түрін жазыңыз: Don't worry, the test ___ (not / be) difficult.",
+      "answer": [
+        "won't be"
+      ],
+      "accept": [
+        "won't be",
+        "will not be"
+      ],
+      "explanation": "To be-нің келер шақтағы болымсыз түрі: **won't be / will not be**. Don't worry, the test won't be difficult. — Уайымдама, тест қиын болмайды."
+    }
+  ]
+}

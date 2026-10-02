@@ -1,7 +1,7 @@
 // Предложения дня: 5 последних выученных слов → 5 своих предложений. Так слова переходят из «узнаю» в «использую».
 
 import { h, replaceChildren } from '../../core/dom.js';
-import { langOf, loadTopics } from '../../core/content.js';
+import { loadLocalTopics } from '../../core/content.js';
 import { getState } from '../../core/store.js';
 import { recentWordKeys } from '../../core/english.js';
 import { recordSentences } from '../../core/actions.js';
@@ -14,7 +14,7 @@ const MIN_WORDS_IN_SENTENCE = 3;
 async function wordsForToday(state, sets) {
   const keys = recentWordKeys(state.vocab, sets, SENTENCES_PER_DAY);
   const setIds = [...new Set(keys.map((k) => k.split(':')[0]))];
-  const topics = await loadTopics(setIds, langOf(state));
+  const topics = await loadLocalTopics(state, setIds);
   const byKey = new Map(topics.flatMap((topic) => topic.words.map((w) => [`${topic.id}:${w.id}`, w])));
   return keys.map((key) => byKey.get(key)).filter(Boolean);
 }

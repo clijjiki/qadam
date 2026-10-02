@@ -1,0 +1,438 @@
+{
+  "id": "eng-words-11-body-health",
+  "subject": "english",
+  "title": "Дене және денсаулық",
+  "summary": "Дене мүшелері мен денсаулық туралы 20 сөз: бас, қол, көз, дәрігер, дәрі, ауырсыну, ұйқы.",
+  "theory": [
+    "## Бұл 20 сөзді қалай жаттау керек\nТізімді бір кеште басынан аяғына дейін жаттама. Қадамдап жұмыс істе:\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған 5 сөзді ертең қайталаумен бірге ал.\n2. **Дауыстап айт және көрсет.** *Head* деп айтқанда басыңды ұста. Дене қимылы есте сақтауға көмектеседі.\n3. **Өзің 5 сөйлем жаз**: *I have brown eyes. I sleep eight hours.*\n4. **Сөздерді қайта кездестір** — карточкаларда және Extra English бөлімінде. Сөзді өзің сөйлегенде қолдана алсаң ғана ол жатталды деп есептеледі.",
+    "## Жинаққа кеңес: қол мен аяқ — екі-екі сөзден\nҚазақ тілінде «қол» да, «аяқ» та — бір сөз, ал ағылшын тілінде әрқайсысына екі сөз бар:\n\n| Қазақша | Ағылшынша |\n|---|---|\n| қол (иықтан білезікке дейін) | **arm** |\n| қол басы (білезіктен саусаққа дейін) | **hand** |\n| аяқ (жамбастан тобыққа дейін) | **leg** |\n| табан, аяқ басы | **foot** |\n\nКөпше түрі ерекше жасалатын екі сөз: **tooth → teeth**, **foot → feet**.\n\n:::tip Бір жерің ауырғанын қалай айтуға болады\n*My head hurts.* — Менің басым ауырып тұр. *I have a pain in my back.* — Менің арқам ауырады. *I feel sick.* — Мен өзімді нашар сезініп тұрмын.\n:::"
+  ],
+  "words": [
+    {
+      "id": "w11-body",
+      "word": "body",
+      "pos": "n",
+      "ipa": "/ˈbɒdi/",
+      "ru": "дене",
+      "def": "all of a person or animal: the head, arms, legs and the rest",
+      "example": "Sport is good for your body.",
+      "collocations": [
+        "human body",
+        "body and mind"
+      ]
+    },
+    {
+      "id": "w11-head",
+      "word": "head",
+      "pos": "n",
+      "ipa": "/hed/",
+      "ru": "бас",
+      "def": "the top part of your body, with your eyes, ears and mouth",
+      "example": "I hit my head on the door.",
+      "collocations": [
+        "on your head",
+        "shake your head"
+      ]
+    },
+    {
+      "id": "w11-face",
+      "word": "face",
+      "pos": "n",
+      "ipa": "/feɪs/",
+      "ru": "бет, жүз",
+      "def": "the front of your head",
+      "example": "I wash my face every morning.",
+      "collocations": [
+        "wash your face",
+        "a happy face"
+      ]
+    },
+    {
+      "id": "w11-eye",
+      "word": "eye",
+      "pos": "n",
+      "ipa": "/aɪ/",
+      "ru": "көз",
+      "def": "you see with your eyes",
+      "example": "She has big brown eyes.",
+      "collocations": [
+        "brown eyes",
+        "close your eyes",
+        "open your eyes"
+      ]
+    },
+    {
+      "id": "w11-ear",
+      "word": "ear",
+      "pos": "n",
+      "ipa": "/ɪə/",
+      "ru": "құлақ",
+      "def": "you hear with your ears",
+      "example": "My left ear hurts.",
+      "collocations": [
+        "left ear",
+        "big ears"
+      ]
+    },
+    {
+      "id": "w11-mouth",
+      "word": "mouth",
+      "pos": "n",
+      "ipa": "/maʊθ/",
+      "ru": "ауыз",
+      "def": "you eat and speak with it",
+      "example": "The doctor said: open your mouth, please.",
+      "collocations": [
+        "open your mouth",
+        "close your mouth"
+      ]
+    },
+    {
+      "id": "w11-tooth",
+      "word": "tooth",
+      "pos": "n",
+      "ipa": "/tuːθ/",
+      "ru": "тіс (көпше түрі teeth)",
+      "def": "one of the hard white things in your mouth",
+      "example": "I brush my teeth two times a day.",
+      "collocations": [
+        "brush your teeth",
+        "a bad tooth"
+      ]
+    },
+    {
+      "id": "w11-hair",
+      "word": "hair",
+      "pos": "n",
+      "ipa": "/heə/",
+      "ru": "шаш",
+      "def": "the thing that grows on your head",
+      "example": "My sister has long black hair.",
+      "collocations": [
+        "long hair",
+        "short hair",
+        "wash your hair"
+      ]
+    },
+    {
+      "id": "w11-hand",
+      "word": "hand",
+      "pos": "n",
+      "ipa": "/hænd/",
+      "ru": "қол (қол басы)",
+      "def": "the part at the end of your arm, with five fingers",
+      "example": "Wash your hands before dinner.",
+      "collocations": [
+        "wash your hands",
+        "right hand",
+        "hold hands"
+      ]
+    },
+    {
+      "id": "w11-arm",
+      "word": "arm",
+      "pos": "n",
+      "ipa": "/ɑːm/",
+      "ru": "қол (иықтан білезікке дейін)",
+      "def": "the long part of your body between your shoulder and your hand",
+      "example": "I broke my arm last year.",
+      "collocations": [
+        "left arm",
+        "break your arm"
+      ]
+    },
+    {
+      "id": "w11-leg",
+      "word": "leg",
+      "pos": "n",
+      "ipa": "/leɡ/",
+      "ru": "аяқ (жамбастан тобыққа дейін)",
+      "def": "one of the two long parts of your body that you walk on",
+      "example": "My legs are tired after football.",
+      "collocations": [
+        "long legs",
+        "left leg"
+      ]
+    },
+    {
+      "id": "w11-foot",
+      "word": "foot",
+      "pos": "n",
+      "ipa": "/fʊt/",
+      "ru": "табан, аяқ басы (көпше түрі feet)",
+      "def": "the part at the end of your leg that you stand on",
+      "example": "I go to school on foot.",
+      "collocations": [
+        "on foot",
+        "left foot"
+      ]
+    },
+    {
+      "id": "w11-doctor",
+      "word": "doctor",
+      "pos": "n",
+      "ipa": "/ˈdɒktə/",
+      "ru": "дәрігер",
+      "def": "a person who helps sick people",
+      "example": "I feel bad. I need to see a doctor.",
+      "collocations": [
+        "see a doctor",
+        "go to the doctor"
+      ]
+    },
+    {
+      "id": "w11-hospital",
+      "word": "hospital",
+      "pos": "n",
+      "ipa": "/ˈhɒspɪtl/",
+      "ru": "аурухана",
+      "def": "a big building where doctors help sick people",
+      "example": "My grandmother was in hospital last week.",
+      "collocations": [
+        "in hospital",
+        "go to hospital"
+      ]
+    },
+    {
+      "id": "w11-medicine",
+      "word": "medicine",
+      "pos": "n",
+      "ipa": "/ˈmedsn/",
+      "ru": "дәрі",
+      "def": "something you take when you are sick to feel better",
+      "example": "Take this medicine three times a day.",
+      "collocations": [
+        "take medicine",
+        "cough medicine"
+      ]
+    },
+    {
+      "id": "w11-sick",
+      "word": "sick",
+      "pos": "adj",
+      "ipa": "/sɪk/",
+      "ru": "ауру, науқас; жүрегі айну",
+      "def": "not well; ill",
+      "example": "I was sick yesterday, so I stayed at home.",
+      "collocations": [
+        "feel sick",
+        "get sick"
+      ]
+    },
+    {
+      "id": "w11-pain",
+      "word": "pain",
+      "pos": "n",
+      "ipa": "/peɪn/",
+      "ru": "ауырсыну",
+      "def": "the bad feeling when a part of your body hurts",
+      "example": "I have a pain in my back.",
+      "collocations": [
+        "back pain",
+        "in pain",
+        "feel pain"
+      ]
+    },
+    {
+      "id": "w11-hurt",
+      "word": "hurt",
+      "pos": "v",
+      "ipa": "/hɜːt/",
+      "ru": "ауыру; ауырту",
+      "def": "to feel pain; to give pain to someone",
+      "example": "My leg hurts after the game.",
+      "collocations": [
+        "it hurts",
+        "hurt your leg"
+      ]
+    },
+    {
+      "id": "w11-sleep",
+      "word": "sleep",
+      "pos": "v",
+      "ipa": "/sliːp/",
+      "ru": "ұйықтау; ұйқы",
+      "def": "to close your eyes and rest, usually at night",
+      "example": "I sleep eight hours every night.",
+      "collocations": [
+        "go to sleep",
+        "sleep well"
+      ]
+    },
+    {
+      "id": "w11-healthy",
+      "word": "healthy",
+      "pos": "adj",
+      "ipa": "/ˈhelθi/",
+      "ru": "дені сау; пайдалы",
+      "def": "well and strong; good for your body",
+      "example": "Fruit and vegetables are healthy food.",
+      "collocations": [
+        "healthy food",
+        "stay healthy"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Бас» ағылшынша қалай болады?",
+      "options": [
+        "hand",
+        "head",
+        "face",
+        "hair"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Head — бас. Hand — қол басы, hair — шаш, face — бет."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 2,
+      "text": "«Қол басы» (бес саусағы бар бөлігі) ағылшынша қалай болады?",
+      "options": [
+        "hand",
+        "foot",
+        "arm",
+        "leg"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Hand — қол басы, arm — иықтан басталатын тұтас қол. Leg — аяқ, foot — табан."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Тіс» ағылшынша қалай болады?",
+      "options": [
+        "eye",
+        "mouth",
+        "ear",
+        "tooth"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Tooth — тіс, көпше түрі teeth: *brush your teeth*."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Дәрігер» ағылшынша қалай болады?",
+      "options": [
+        "body",
+        "doctor",
+        "medicine",
+        "hospital"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Doctor — дәрігер. Hospital — аурухана, medicine — дәрі."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Дәрі» ағылшынша қалай болады?",
+      "options": [
+        "hospital",
+        "pain",
+        "sleep",
+        "medicine"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Medicine — дәрі: *take medicine* — дәрі ішу."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "I have a ___ in my back. I need to see a doctor.",
+      "options": [
+        "hand",
+        "sleep",
+        "face",
+        "pain"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "A pain in my back — арқадағы ауырсыну. Сондықтан дәрігер керек."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "I am very tired. I want to ___.",
+      "options": [
+        "sleep",
+        "hurt",
+        "sick",
+        "pain"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Шаршадым — ұйықтағым келеді: *I want to sleep*. Pain — зат есім, sick — сын есім, олар want to сөзінен кейін қойылмайды."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Дені сау; пайдалы» ағылшынша қалай болады?",
+      "options": [
+        "tired",
+        "happy",
+        "sick",
+        "healthy"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Healthy — дені сау, пайдалы: *healthy food*. Sick — керісінше, ауру."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "«Табан, аяқ басы» ағылшынша қалай болады?",
+      "options": [
+        "foot",
+        "hand",
+        "leg",
+        "arm"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Foot — табан, аяқ басы (көпше түрі feet), leg — тұтас аяқ. Жаяу — *on foot*."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Ouch! My arm ___!",
+      "options": [
+        "sick",
+        "pains",
+        "hurts",
+        "sleeps"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "«Ауырып тұр» ағылшынша — hurts: *My arm hurts*. Pain — «ауырсыну» деген зат есім, мұндай сөйлемде етістік бола алмайды."
+    }
+  ]
+}

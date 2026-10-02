@@ -164,7 +164,9 @@
       "grade": 10,
       "line": "algebra",
       "quarter": 1,
-      "seq": 1
+      "seq": 1,
+      "titleKk": "Функциялар және графиктер",
+      "summaryKk": "Анықталу облысы мен мәндер жиыны, жұптық, монотондылық, квадраттық функция, модулі бар графиктер, графиктерді түрлендіру."
     },
     {
       "id": "math-derivative",
@@ -196,7 +198,9 @@
       "grade": 10,
       "line": "algebra",
       "quarter": 1,
-      "seq": 2
+      "seq": 2,
+      "titleKk": "Кері тригонометриялық функциялар",
+      "summaryKk": "arcsin, arccos, arctg, arcctg: анықтамалары, мәндер жиыны, қасиеттері, мәндерді есептеу және өрнектерді ықшамдау."
     },
     {
       "id": "math-stereometry-axioms-parallel",
@@ -211,7 +215,9 @@
       "grade": 10,
       "line": "geometry",
       "quarter": 1,
-      "seq": 1
+      "seq": 1,
+      "titleKk": "Стереометрия аксиомалары. Түзулер мен жазықтықтардың параллельдігі",
+      "summaryKk": "Аксиомалар мен салдарлар, түзулердің өзара орналасуы, түзу мен жазықтықтың параллельдігі, параллель жазықтықтар, айқас түзулер."
     },
     {
       "id": "inf-information-measurement",
@@ -222,7 +228,9 @@
       "path": "content/informatics/inf-information-measurement.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Бит и байт, единицы, формула N = 2^i, объём текста, скорость передачи, время передачи."
+      "summary": "Бит и байт, единицы, формула N = 2^i, объём текста, скорость передачи, время передачи.",
+      "titleKk": "Ақпарат және оны өлшеу",
+      "summaryKk": "Бит пен байт, өлшем бірліктері, N = 2^i формуласы, мәтін көлемі I = K·i, деректерді беру жылдамдығы мен уақыты."
     },
     {
       "id": "inf-encoding",
@@ -233,7 +241,9 @@
       "path": "content/informatics/inf-encoding.json",
       "weight": 1,
       "minutes": 25,
-      "summary": "ASCII и Unicode, растровая графика (глубина цвета, объём изображения), дискретизация звука, RGB."
+      "summary": "ASCII и Unicode, растровая графика (глубина цвета, объём изображения), дискретизация звука, RGB.",
+      "titleKk": "Мәтінді, графиканы және дыбысты кодтау",
+      "summaryKk": "ASCII мен Unicode, символдардың кодтары, растрлық графика және RGB моделі, дыбысты дискреттеу және файл көлемін есептеу."
     },
     {
       "id": "inf-number-systems",
@@ -257,7 +267,9 @@
       "path": "content/informatics/inf-binary-arithmetic.json",
       "weight": 1,
       "minutes": 25,
-      "summary": "Сложение, вычитание, умножение в позиционных системах, сравнение чисел."
+      "summary": "Сложение, вычитание, умножение в позиционных системах, сравнение чисел.",
+      "titleKk": "Екілік, сегіздік және он алтылық жүйелердегі арифметика",
+      "summaryKk": "Негізі 2, 8 және 16 болатын жүйелерде бағанмен қосу, азайту және көбейту, тасымал мен қарызға алу, әртүрлі жүйедегі сандарды салыстыру және Python-да тексеру."
     },
     {
       "id": "inf-logic-basics",
@@ -268,7 +280,9 @@
       "path": "content/informatics/inf-logic-basics.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "НЕ, И, ИЛИ, импликация, эквивалентность, приоритет операций, законы логики, упрощение выражений."
+      "summary": "НЕ, И, ИЛИ, импликация, эквивалентность, приоритет операций, законы логики, упрощение выражений.",
+      "titleKk": "Логикалық амалдар және ақиқат кестелері",
+      "summaryKk": "ЕМЕС, ЖӘНЕ, НЕМЕСЕ, импликация және эквиваленттік, ақиқат кестелері, амалдардың орындалу реті, логика заңдары және өрнектерді ықшамдау."
     },
     {
       "id": "inf-logic-circuits",
@@ -279,7 +293,9 @@
       "path": "content/informatics/inf-logic-circuits.json",
       "weight": 1,
       "minutes": 25,
-      "summary": "Инвертор, конъюнктор, дизъюнктор, сумматор, чтение и построение схем (схемы описываются текстом/формулой)."
+      "summary": "Инвертор, конъюнктор, дизъюнктор, сумматор, чтение и построение схем (схемы описываются текстом/формулой).",
+      "titleKk": "Логикалық элементтер мен схемалар",
+      "summaryKk": "Инвертор, конъюнктор және дизъюнктор, схеманы оқу және оны формула бойынша құру, схеманың ақиқат кестесі, жартылай сумматор мен толық сумматор."
     },
     {
       "id": "inf-computer-devices",
@@ -290,7 +306,9 @@
       "path": "content/informatics/inf-computer-devices.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Процессор, регистры, память ОЗУ/ПЗУ, шина, тактовая частота, устройства ввода-вывода, характеристики."
+      "summary": "Процессор, регистры, память ОЗУ/ПЗУ, шина, тактовая частота, устройства ввода-вывода, характеристики.",
+      "titleKk": "Компьютердің құрылғылары",
+      "summaryKk": "Процессор (АЛҚ, БҚ, регистрлер, кэш), ЖЖҚ/ТЖҚ жады мен сыртқы жад, шиналар және адрестелетін жад, тактілік жиілік, енгізу-шығару құрылғылары."
     },
     {
       "id": "inf-software-os",
@@ -301,7 +319,9 @@
       "path": "content/informatics/inf-software-os.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Виды ПО, операционные системы, файловая система и пути, утилиты, драйверы, конфигурация компьютера."
+      "summary": "Виды ПО, операционные системы, файловая система и пути, утилиты, драйверы, конфигурация компьютера.",
+      "titleKk": "Бағдарламалық жасақтама және ОЖ",
+      "summaryKk": "БЖ түрлері, операциялық жүйенің қызметтері мен жүктелуі, файлдар мен кеңейтілімдер, жолдар мен маскалар, утилиталар, драйверлер және компьютердің конфигурациясы."
     },
     {
       "id": "inf-networks",
@@ -312,7 +332,9 @@
       "path": "content/informatics/inf-networks.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Топологии, коммутатор/маршрутизатор/концентратор, IP-адрес и маска, протоколы TCP/IP, HTTP, DNS, пропускная способность."
+      "summary": "Топологии, коммутатор/маршрутизатор/концентратор, IP-адрес и маска, протоколы TCP/IP, HTTP, DNS, пропускная способность.",
+      "titleKk": "Компьютерлік желілер",
+      "summaryKk": "Желі түрлері мен топологиялар, концентратор, коммутатор және маршрутизатор, IP-адрес пен маска, TCP/IP, HTTP және DNS хаттамалары, арнаның өткізу қабілеті."
     },
     {
       "id": "inf-security",
@@ -323,7 +345,9 @@
       "path": "content/informatics/inf-security.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Вирусы и антивирусы, идентификация и аутентификация, криптография, ЭЦП, кибербуллинг, сетевой этикет, авторское право."
+      "summary": "Вирусы и антивирусы, идентификация и аутентификация, криптография, ЭЦП, кибербуллинг, сетевой этикет, авторское право.",
+      "titleKk": "Ақпараттық қауіпсіздік",
+      "summaryKk": "Зиянды бағдарламалар мен антивирустар, сәйкестендіру және аутентификация, Цезарь шифры және кілттер, ЭЦҚ, фишинг, желілік этикет, кибербуллинг және авторлық құқық."
     },
     {
       "id": "inf-python-basics",
@@ -334,7 +358,9 @@
       "path": "content/informatics/inf-python-basics.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Типы данных, операторы / // % **, input/print, sep/end, преобразование типов, приоритет."
+      "summary": "Типы данных, операторы / // % **, input/print, sep/end, преобразование типов, приоритет.",
+      "titleKk": "Python: айнымалылар, типтер, операторлар",
+      "summaryKk": "Айнымалылар, int/float/str/bool типтері, input және print (sep, end), типтерді түрлендіру, / // % ** операторлары және олардың орындалу реті."
     },
     {
       "id": "inf-python-branching-loops",
@@ -345,7 +371,9 @@
       "path": "content/informatics/inf-python-branching-loops.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "if/elif/else, for/range, while, break/continue, трассировка программ, подсчёт итераций."
+      "summary": "if/elif/else, for/range, while, break/continue, трассировка программ, подсчёт итераций.",
+      "titleKk": "Python: шарттар мен циклдер",
+      "summaryKk": "Салыстыру және and/or/not, if/elif/else, for және range, while, break/continue, программаны трассировкалау және қайталану санын есептеу."
     },
     {
       "id": "inf-python-lists-strings",
@@ -356,7 +384,9 @@
       "path": "content/informatics/inf-python-lists-strings.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Индексы и срезы, методы списков и строк, двумерные списки, генераторы, сортировка."
+      "summary": "Индексы и срезы, методы списков и строк, двумерные списки, генераторы, сортировка.",
+      "titleKk": "Python: тізімдер мен жолдар",
+      "summaryKk": "Индекстер мен қималар, тізім және жол әдістері, тізім генераторлары, екі өлшемді тізімдер және сұрыптау (sorted, sort, көпіршікті сұрыптау)."
     },
     {
       "id": "inf-python-functions-recursion",
@@ -367,7 +397,9 @@
       "path": "content/informatics/inf-python-functions-recursion.json",
       "weight": 2,
       "minutes": 25,
-      "summary": "Определение функций, параметры, return, области видимости, рекурсия, трассировка рекурсивных вызовов."
+      "summary": "Определение функций, параметры, return, области видимости, рекурсия, трассировка рекурсивных вызовов.",
+      "titleKk": "Python: функциялар және рекурсия",
+      "summaryKk": "Өз функцияларыңды қалай жазуға болады: def, параметрлер мен әдепкі мәндер, return және None, жергілікті және ауқымды айнымалылар, рекурсия және рекурсиялық шақыруларды трассалау."
     },
     {
       "id": "inf-algorithms-sorting-search",
@@ -378,7 +410,9 @@
       "path": "content/informatics/inf-algorithms-sorting-search.json",
       "weight": 1,
       "minutes": 25,
-      "summary": "Пузырьковая, выбором, вставками, бинарный поиск, число сравнений, сложность O-нотация."
+      "summary": "Пузырьковая, выбором, вставками, бинарный поиск, число сравнений, сложность O-нотация.",
+      "titleKk": "Сұрыптау және іздеу",
+      "summaryKk": "Көпіршікті сұрыптау, таңдау және кірістіру арқылы сұрыптау, сызықтық және екілік іздеу, салыстырулар саны және O-нотациядағы күрделілік."
     },
     {
       "id": "ielts-vocab-education",
@@ -438,7 +472,9 @@
       "weight": 1,
       "minutes": 20,
       "summary": "Я есть, ты есть: am/is/are, отрицание not, вопросы Are you…?, краткие формы I'm, it's.",
-      "skill": "grammar"
+      "skill": "grammar",
+      "titleKk": "To be етістігі: am, is, are",
+      "summaryKk": "Мен …мін, сен …сің: am/is/are, not болымсыздығы, Are you…? сұрақтары, I'm, it's қысқа түрлері."
     },
     {
       "id": "eng-grammar-present-simple",
@@ -450,7 +486,9 @@
       "weight": 1,
       "minutes": 20,
       "summary": "I work / he works, do/does в вопросах и отрицаниях, always/usually/every day.",
-      "skill": "grammar"
+      "skill": "grammar",
+      "titleKk": "Present Simple: әдетте не істеймін",
+      "summaryKk": "I work / he works, сұрақ пен болымсыз түрдегі do/does, always/usually/every day."
     },
     {
       "id": "eng-grammar-past-simple",
@@ -462,7 +500,9 @@
       "weight": 1,
       "minutes": 20,
       "summary": "Правильные глаголы -ed, 30 частых неправильных (went, saw, did), did в вопросах, yesterday/ago.",
-      "skill": "grammar"
+      "skill": "grammar",
+      "titleKk": "Past Simple: не істедім",
+      "summaryKk": "-ed жалғанатын дұрыс етістіктер, жиі кездесетін 30 бұрыс етістік (went, saw, did), сұрақтағы did, yesterday/ago."
     },
     {
       "id": "eng-grammar-future-simple",
@@ -474,7 +514,9 @@
       "weight": 1,
       "minutes": 20,
       "summary": "will + глагол, won't, решения в момент речи и обещания, tomorrow/next week.",
-      "skill": "grammar"
+      "skill": "grammar",
+      "titleKk": "Future Simple: не істеймін (келешекте)",
+      "summaryKk": "will + етістік, won't, сөйлеп тұрған сәттегі шешім мен уәде, tomorrow/next week."
     },
     {
       "id": "eng-grammar-simple-mix",
@@ -486,7 +528,9 @@
       "weight": 1,
       "minutes": 20,
       "summary": "Как выбрать Present, Past или Future по слову-маркеру; вопросы и отрицания во всех трёх.",
-      "skill": "grammar"
+      "skill": "grammar",
+      "titleKk": "Simple тобының үш шағы бірге",
+      "summaryKk": "Маркер сөз бойынша Present, Past немесе Future шағын қалай таңдау керек; үш шақтағы сұрақтар мен болымсыз түрлер."
     },
     {
       "id": "eng-words-01-core-verbs",
@@ -498,7 +542,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "be, have, do, go, get, make, know, want, like, need…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Ең қажетті етістіктер",
+      "summaryKk": "Бірде-бір сөйлем оларсыз құралмайтын 20 етістік: be, have, do, go, get, make, know, want, like, need…"
     },
     {
       "id": "eng-words-02-people-family",
@@ -510,7 +556,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "mother, brother, friend, child, name, boy, girl…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Адамдар және отбасы",
+      "summaryKk": "Өзің және отбасың туралы айтып беруге арналған 20 сөз: mother, brother, friend, child, name, boy, girl…"
     },
     {
       "id": "eng-words-03-numbers-time",
@@ -522,7 +570,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "day, week, today, morning, Monday, hour, first…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Сандар, күндер және уақыт",
+      "summaryKk": "Уақыт туралы 20 сөз: day, week, today, morning, Monday, hour, first… және барлық апта күндері."
     },
     {
       "id": "eng-words-04-food",
@@ -534,7 +584,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "bread, water, tea, meat, apple, eat, drink, breakfast…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Тамақ пен сусындар",
+      "summaryKk": "Тамақ туралы 20 сөз: bread, water, tea, meat, apple, eat, drink, breakfast…"
     },
     {
       "id": "eng-words-05-home",
@@ -546,7 +598,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "house, room, door, bed, table, phone, key…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Үй және заттар",
+      "summaryKk": "Үй мен айналадағы заттар туралы 20 сөз: house, room, door, bed, table, phone, key…"
     },
     {
       "id": "eng-words-06-school",
@@ -558,7 +612,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "school, lesson, teacher, book, learn, test, homework…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Мектеп және оқу",
+      "summaryKk": "Мектеп пен оқу туралы 20 сөз: school, lesson, teacher, book, learn, test, homework…"
     },
     {
       "id": "eng-words-07-adjectives",
@@ -570,7 +626,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "good, bad, big, small, new, old, easy, hard…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Жиі қолданылатын сын есімдер",
+      "summaryKk": "Ең жиі қолданылатын 20 сын есім: good, bad, big, small, new, old, easy, hard…"
     },
     {
       "id": "eng-words-08-function-words",
@@ -582,7 +640,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "I, you, this, that, in, on, at, with, because…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Шағын сөздер: есімдіктер мен предлогтар",
+      "summaryKk": "Әр сөйлемде кездесетін 20 қысқа сөз: I, you, this, that, in, on, at, with, because…"
     },
     {
       "id": "eng-words-09-action-verbs",
@@ -594,7 +654,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "open, close, buy, send, help, start, stop, wait…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Іс-әрекет етістіктері",
+      "summaryKk": "Жиі қолданылатын 20 іс-әрекет етістігі: ашу, сатып алу, жіберу, көмектесу, күту, жеңу және басқалары."
     },
     {
       "id": "eng-words-10-city-transport",
@@ -606,7 +668,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "city, street, shop, bus, car, left, right, near…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Қала және көлік",
+      "summaryKk": "Қала, көлік және жол туралы айтуға арналған 20 сөз: көше, автобус, вокзал, солға, жақын."
     },
     {
       "id": "eng-words-11-body-health",
@@ -618,7 +682,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "head, hand, eye, doctor, sick, pain, sleep…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Дене және денсаулық",
+      "summaryKk": "Дене мүшелері мен денсаулық туралы 20 сөз: бас, қол, көз, дәрігер, дәрі, ауырсыну, ұйқы."
     },
     {
       "id": "eng-words-12-clothes-colors",
@@ -630,7 +696,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "shirt, shoes, jacket, red, black, white, wear…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Киім және түстер",
+      "summaryKk": "Киім мен түстер туралы 20 сөз: жейде, джинсы, күрте, кию, қызыл, қара, ақ."
     },
     {
       "id": "eng-words-13-work-jobs",
@@ -642,7 +710,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "job, work, money, boss, office, engineer, earn…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Жұмыс және мамандықтар",
+      "summaryKk": "Жұмыс пен мамандықтар туралы 20 сөз: жұмыс, ақша, бастық, кеңсе, инженер, ақша табу."
     },
     {
       "id": "eng-words-14-nature-weather",
@@ -654,7 +724,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "sun, rain, snow, tree, river, hot, cold, weather…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Табиғат және ауа райы",
+      "summaryKk": "Табиғат пен ауа райы туралы 20 сөз: күн, жаңбыр, қар, жел, ыстық, суық, ағаш, өзен, тау."
     },
     {
       "id": "eng-words-15-feelings",
@@ -666,7 +738,9 @@
       "weight": 1,
       "minutes": 10,
       "summary": "happy, sad, angry, tired, kind, funny, love, afraid…",
-      "skill": "vocab"
+      "skill": "vocab",
+      "titleKk": "Сезімдер мен мінез",
+      "summaryKk": "Сезімдер мен мінез туралы 20 сөз: бақытты, көңілсіз, ашулы, шаршаған, мейірімді, күлкілі, жақсы көру."
     }
   ],
   "planned": [

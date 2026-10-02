@@ -1,0 +1,448 @@
+{
+  "id": "eng-words-04-food",
+  "subject": "english",
+  "title": "Тамақ пен сусындар",
+  "summary": "Тамақ туралы 20 сөз: bread, water, tea, meat, apple, eat, drink, breakfast…",
+  "theory": [
+    "## Бұл сөздерді қалай жаттау керек\nТамақ — ең «тірі» тақырып: бұл заттарды күн сайын көресің, сондықтан сөздер тез жатталады.\n\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған уақытта карточкалар арқылы қайтала.\n2. **Дауыстап айт**: сөзді, транскрипциясын және мысалын — 3 реттен.\n3. **Өз сөйлемдеріңді жаз**: не жейтінің туралы 5 сөйлем (*I have tea and bread for breakfast.*).\n4. **Заттарды ағылшынша ата**: дастарқан басында көргеніңнің бәрін іштей ағылшынша атап шық. Осы сөздерді Extra English-тен де естіп қалуға тырыс.",
+    "## Кеңес: a / an және a қойылмайтын сөздер\nСанауға болатын заттың алдына *a*, ал дауысты дыбыстың алдына *an* қоямыз: **an** apple, **an** egg, **a** banana.\n\nБірақ кейбір сөздер даналап саналмайды: *water, milk, tea, coffee, bread, rice, sugar, meat*. Оларға *a* **қойылмайды**, *-s* те қосылмайды. Былай айтамыз: *some water*, *a glass of milk*, *a cup of tea*, *a piece of bread*.\n\nТағы: таңғы, түскі және кешкі ас туралы айтқанда *have* етістігі керек, ал *the* қойылмайды: **have breakfast**, **have lunch**, **have dinner**."
+  ],
+  "words": [
+    {
+      "id": "w04-food",
+      "word": "food",
+      "pos": "n",
+      "ipa": "/fuːd/",
+      "ru": "тамақ, ас",
+      "def": "things that people and animals eat",
+      "example": "I like Kazakh food.",
+      "collocations": [
+        "fast food",
+        "good food",
+        "healthy food"
+      ]
+    },
+    {
+      "id": "w04-water",
+      "word": "water",
+      "pos": "n",
+      "ipa": "/ˈwɔːtə/",
+      "ru": "су",
+      "def": "the clear drink with no taste that we need to live",
+      "example": "Can I have a glass of water, please?",
+      "collocations": [
+        "a glass of water",
+        "hot water",
+        "drink water"
+      ]
+    },
+    {
+      "id": "w04-tea",
+      "word": "tea",
+      "pos": "n",
+      "ipa": "/tiː/",
+      "ru": "шай",
+      "def": "a hot drink made with dry leaves and water",
+      "example": "In Kazakhstan people drink tea with milk.",
+      "collocations": [
+        "a cup of tea",
+        "black tea",
+        "tea with milk"
+      ]
+    },
+    {
+      "id": "w04-coffee",
+      "word": "coffee",
+      "pos": "n",
+      "ipa": "/ˈkɒfi/",
+      "ru": "кофе",
+      "def": "a hot brown drink; many people drink it in the morning",
+      "example": "My father drinks coffee every morning.",
+      "collocations": [
+        "a cup of coffee",
+        "black coffee",
+        "make coffee"
+      ]
+    },
+    {
+      "id": "w04-milk",
+      "word": "milk",
+      "pos": "n",
+      "ipa": "/mɪlk/",
+      "ru": "сүт",
+      "def": "the white drink that comes from cows",
+      "example": "I have milk and bread for breakfast.",
+      "collocations": [
+        "a glass of milk",
+        "milk and sugar"
+      ]
+    },
+    {
+      "id": "w04-bread",
+      "word": "bread",
+      "pos": "n",
+      "ipa": "/bred/",
+      "ru": "нан",
+      "def": "a common food; we buy it in a shop and make sandwiches with it",
+      "example": "Please buy some bread on the way home.",
+      "collocations": [
+        "white bread",
+        "a piece of bread",
+        "bread and butter"
+      ]
+    },
+    {
+      "id": "w04-meat",
+      "word": "meat",
+      "pos": "n",
+      "ipa": "/miːt/",
+      "ru": "ет",
+      "def": "food from animals, like beef or chicken",
+      "example": "We often eat meat for dinner.",
+      "collocations": [
+        "red meat",
+        "cook meat",
+        "a piece of meat"
+      ]
+    },
+    {
+      "id": "w04-chicken",
+      "word": "chicken",
+      "pos": "n",
+      "ipa": "/ˈtʃɪkɪn/",
+      "ru": "тауық; тауық еті",
+      "def": "a bird that people keep for eggs and meat; also its meat",
+      "example": "I want chicken and rice, please.",
+      "collocations": [
+        "chicken soup",
+        "fried chicken",
+        "chicken and rice"
+      ]
+    },
+    {
+      "id": "w04-fish",
+      "word": "fish",
+      "pos": "n",
+      "ipa": "/fɪʃ/",
+      "ru": "балық",
+      "def": "an animal that lives in water; also its meat as food",
+      "example": "My mum cooks fish on Fridays.",
+      "collocations": [
+        "fish and chips",
+        "fresh fish"
+      ]
+    },
+    {
+      "id": "w04-egg",
+      "word": "egg",
+      "pos": "n",
+      "ipa": "/eɡ/",
+      "ru": "жұмыртқа",
+      "def": "a round white thing from a chicken; we cook and eat it",
+      "example": "I eat two eggs for breakfast.",
+      "collocations": [
+        "boiled egg",
+        "fried eggs"
+      ]
+    },
+    {
+      "id": "w04-apple",
+      "word": "apple",
+      "pos": "n",
+      "ipa": "/ˈæpl/",
+      "ru": "алма",
+      "def": "a round red or green fruit that grows on a tree",
+      "example": "Almaty has very good apples.",
+      "collocations": [
+        "an apple a day",
+        "green apple",
+        "apple juice"
+      ]
+    },
+    {
+      "id": "w04-fruit",
+      "word": "fruit",
+      "pos": "n",
+      "ipa": "/fruːt/",
+      "ru": "жеміс, жемістер",
+      "def": "sweet food from a plant or tree, like an apple or a banana",
+      "example": "I eat fruit every day.",
+      "collocations": [
+        "fresh fruit",
+        "a piece of fruit",
+        "fruit juice"
+      ]
+    },
+    {
+      "id": "w04-vegetable",
+      "word": "vegetable",
+      "pos": "n",
+      "ipa": "/ˈvedʒtəbl/",
+      "ru": "көкөніс",
+      "def": "a plant we eat, like a potato, a carrot or a tomato",
+      "example": "My grandmother grows vegetables in her garden.",
+      "collocations": [
+        "fresh vegetables",
+        "vegetable soup"
+      ]
+    },
+    {
+      "id": "w04-rice",
+      "word": "rice",
+      "pos": "n",
+      "ipa": "/raɪs/",
+      "ru": "күріш",
+      "def": "small white grains that we cook and eat, for example in plov",
+      "example": "We cook plov with rice, meat and carrots.",
+      "collocations": [
+        "a bowl of rice",
+        "boiled rice"
+      ]
+    },
+    {
+      "id": "w04-sugar",
+      "word": "sugar",
+      "pos": "n",
+      "ipa": "/ˈʃʊɡə/",
+      "ru": "қант",
+      "def": "a sweet white thing we put in tea or coffee",
+      "example": "I don't put sugar in my tea.",
+      "collocations": [
+        "no sugar",
+        "sugar in tea"
+      ]
+    },
+    {
+      "id": "w04-breakfast",
+      "word": "breakfast",
+      "pos": "n",
+      "ipa": "/ˈbrekfəst/",
+      "ru": "таңғы ас",
+      "def": "the first meal of the day, in the morning",
+      "example": "I have breakfast at seven.",
+      "collocations": [
+        "have breakfast",
+        "for breakfast",
+        "a big breakfast"
+      ]
+    },
+    {
+      "id": "w04-lunch",
+      "word": "lunch",
+      "pos": "n",
+      "ipa": "/lʌntʃ/",
+      "ru": "түскі ас",
+      "def": "the meal we eat in the middle of the day",
+      "example": "We have lunch at school at one o'clock.",
+      "collocations": [
+        "have lunch",
+        "lunch break",
+        "school lunch"
+      ]
+    },
+    {
+      "id": "w04-dinner",
+      "word": "dinner",
+      "pos": "n",
+      "ipa": "/ˈdɪnə/",
+      "ru": "кешкі ас",
+      "def": "the main meal of the day, in the evening",
+      "example": "My family has dinner together at eight.",
+      "collocations": [
+        "have dinner",
+        "cook dinner",
+        "for dinner"
+      ]
+    },
+    {
+      "id": "w04-eat",
+      "word": "eat",
+      "pos": "v",
+      "ipa": "/iːt/",
+      "ru": "жеу, тамақтану (өткен шағы — ate)",
+      "def": "to put food in your mouth and have it",
+      "example": "I usually eat at home.",
+      "collocations": [
+        "eat breakfast",
+        "eat out",
+        "something to eat"
+      ]
+    },
+    {
+      "id": "w04-drink",
+      "word": "drink",
+      "pos": "v",
+      "ipa": "/drɪŋk/",
+      "ru": "ішу (өткен шағы — drank); сусын",
+      "def": "to take water, tea, milk or juice into your mouth",
+      "example": "I drink a lot of water in summer.",
+      "collocations": [
+        "drink tea",
+        "drink water",
+        "something to drink"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Нан“ ағылшынша қалай болады?",
+      "options": [
+        "meat",
+        "bread",
+        "rice",
+        "milk"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Bread — нан. Meat — ет, rice — күріш, milk — сүт."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Таңғы ас“ ағылшынша қалай болады?",
+      "options": [
+        "breakfast",
+        "food",
+        "lunch",
+        "dinner"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Breakfast — таңғы ас, lunch — түскі ас, dinner — кешкі ас, food — жалпы тамақ."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Көкөністер“ ағылшынша қалай болады?",
+      "options": [
+        "meat",
+        "food",
+        "fruit",
+        "vegetables"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Vegetable — көкөніс, vegetables — көкөністер (картоп, сәбіз). Fruit — жемістер."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Жұмыртқа“ ағылшынша қалай болады?",
+      "options": [
+        "fish",
+        "apple",
+        "egg",
+        "sugar"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Egg — жұмыртқа. Apple — алма, fish — балық, sugar — қант."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: I have ___ at 7 in the morning.",
+      "options": [
+        "lunch",
+        "dinner",
+        "breakfast",
+        "night"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Таңғы сағат 7-де таңғы ас ішеді — *have breakfast*. Dinner — кешке, lunch — түсте."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: Can I have a glass of ___, please?",
+      "options": [
+        "rice",
+        "water",
+        "bread",
+        "egg"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*A glass of water* — бір стақан су. Стақанда тек сусын болады."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Тауық“ ағылшынша қалай болады?",
+      "options": [
+        "chicken",
+        "egg",
+        "meat",
+        "fish"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Chicken — тауық және тауық еті. Fish — балық, meat — жалпы ет, egg — жұмыртқа."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: I want ___ apple.",
+      "options": [
+        "many",
+        "an",
+        "much",
+        "a"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Apple дауысты дыбыстан басталады, сондықтан **an** apple. *A* дауыссыз дыбыстың алдына қойылады: *a banana*."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Ішу“ ағылшынша қалай болады?",
+      "options": [
+        "cook",
+        "eat",
+        "make",
+        "drink"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Drink — ішу (*drink tea*). Eat — жеу, cook — тамақ пісіру, make — жасау."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: My mum puts ___ in her tea, so it is sweet.",
+      "options": [
+        "rice",
+        "meat",
+        "fish",
+        "sugar"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Sugar — қант, ол шайды тәтті (sweet) етеді."
+    }
+  ]
+}

@@ -7,7 +7,7 @@ import { renderMarkdown } from '../core/markdown.js';
 import { recordTheory } from '../core/actions.js';
 import { formatDate } from '../core/time.js';
 import { emptyState, pageHead, ring, subjectColor } from '../ui/components.js';
-import { translationNote } from '../ui/lang-switch.js';
+import { langSwitch, translationNote } from '../ui/lang-switch.js';
 
 const SKILL_LABEL = { reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking', grammar: 'Grammar', vocab: 'Vocabulary' };
 
@@ -103,7 +103,7 @@ function tabs(topic, meta, active, setActive) {
 export async function render({ params, state }) {
   const meta = topicMeta(params.topicId);
   if (!meta) return emptyState({ icon: '🧭', title: 'Тема не найдена', action: { label: 'К предметам', href: '#/ubt' } });
-  const lang = langOf(state);
+  const lang = langOf(state, meta.subject);
   const topic = await loadTopic(meta.id, lang);
   const subj = subject(meta.subject);
   if (topic.theory.length) recordTheory(meta.id);
@@ -127,6 +127,7 @@ export async function render({ params, state }) {
       crumbs: [sectionOf(subj, meta).root, sectionOf(subj, meta).own],
     }),
     translationNote(topic),
+    subj?.kind === 'ielts' ? null : langSwitch({ withIcon: true, label: `Язык уроков: ${subj?.short || subj?.name || meta.subject}`, subject: meta.subject }),
     h('div', { class: 'row' }, skill, meta.minutes ? h('span', { class: 'badge' }, `≈ ${meta.minutes} мин`) : null, ...practiceLinks(meta, topic)),
     h('div', { class: 'grid', style: { gridTemplateColumns: 'minmax(0, 2fr) minmax(240px, 1fr)' } }, h('div', { class: 'stack' }, tabBar, body), statsCard(state, meta)),
     h('div', { class: 'row row--between' }, prev ? h('a', { class: 'btn', href: `#/topic/${prev.id}` }, `← ${topicTitle(prev, lang)}`) : h('span'), next ? h('a', { class: 'btn', href: `#/topic/${next.id}` }, `${topicTitle(next, lang)} →`) : h('span')),

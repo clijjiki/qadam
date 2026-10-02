@@ -1,0 +1,432 @@
+{
+  "id": "eng-grammar-to-be",
+  "subject": "english",
+  "title": "To be етістігі: am, is, are",
+  "summary": "Мен …мін, сен …сің: am/is/are, not болымсыздығы, Are you…? сұрақтары, I'm, it's қысқа түрлері.",
+  "theory": [
+    "## To be не үшін керек\nҚазақша «Мен оқушымын» немесе «Ол үйде» дейміз: бөлек етістік жоқ, оның қызметін жіктік жалғауы (-мын, -сың) атқарады, ал 3-жақта жалғау да болмайды. Ағылшын тілінде бұлай **болмайды**: әр сөйлемде етістік болуы керек. Іс-әрекет болмаса, **to be** («болу, бір нәрсе болып табылу, бір жерде болу») етістігін қоямыз.\n\nОның осы шақта үш түрі бар: **am, is, are**. Қай түрін алу **кім** сөйлеп тұрғанына немесе кім туралы айтылып тұрғанына байланысты — қазақ тіліндегі жіктік жалғауы сияқты.\n\n| Кім | Түрі | Мысал | Аудармасы |\n|---|---|---|---|\n| I (мен) | am | I am a student. | Мен оқушымын. |\n| you (сен, сіз, сендер) | are | You are my friend. | Сен менің досымсың. |\n| he (ол — ер адам) | is | He is tall. | Ол ұзын бойлы. |\n| she (ол — әйел адам) | is | She is at home. | Ол үйде. |\n| it (ол, бұл — зат, жануар) | is | It is cold. | Суық. |\n| we (біз) | are | We are from Kazakhstan. | Біз Қазақстаннанбыз. |\n| they (олар) | are | They are fifteen. | Олар он бесте. |\n\n:::tip Қалай есте сақтауға болады\n**I → am.** Бір адам немесе бір зат (he, she, it, my mum, the cat) → **is**. Көп (we, you, they, my friends) → **are**.\n:::",
+    "## Қысқа түрлері\nАуызекі сөйлеуде am/is/are алдындағы сөзге апостроф арқылы «жабысып» кетеді. Мағынасы сол, тек қысқарақ.\n\n| Толық түрі | Қысқа түрі |\n|---|---|\n| I am | I'm |\n| you are | you're |\n| he is / she is / it is | he's / she's / it's |\n| we are / they are | we're / they're |\n\n:::example Мысалдар\n- I'm hungry. — Менің қарным ашты.\n- It's my phone. — Бұл менің телефоным.\n- They're in the park. — Олар саябақта.\n:::",
+    "## Болымсыз түрі: not\n«Емес» деп айту үшін **not сөзін am/is/are-ден кейін бірден** қоямыз.\n\n| Толық түрі | Қысқа түрі | Мысал | Аудармасы |\n|---|---|---|---|\n| I am not | I'm not | I'm not tired. | Мен шаршаған жоқпын. |\n| he is not | he isn't | He isn't at school. | Ол мектепте емес. |\n| you are not | you aren't | You aren't late. | Сен кешіккен жоқсың. |\n\n:::warn Жиі кездесетін қате\n«I not student» — қате: етістік түсіп қалған. Дұрысы: **I am not a student.** — Мен оқушы емеспін. «amn't» деген түр де жоқ: тек **I'm not**.\n:::",
+    "## Сұрақтар: Are you…? Is it…?\nСұрақ қою үшін **am/is/are-ді бірінші орынға**, кім туралы сұрап тұрсақ, соның алдына қоямыз.\n\n| Хабарлы сөйлем | Сұрақ | Сұрақтың аудармасы |\n|---|---|---|\n| You are ready. | Are you ready? | Сен дайынсың ба? |\n| It is your bag. | Is it your bag? | Бұл сенің сөмкең бе? |\n| She is from Almaty. | Is she from Almaty? | Ол Алматыдан ба? |\n| They are at home. | Are they at home? | Олар үйде ме? |\n\n:::example Сұрау сөзімен\nСұрау сөзі одан да бұрын тұрады: **Where are you?** — Сен қайдасың? **How old is he?** — Ол неше жаста?\n:::",
+    "## Қысқа жауаптар: Yes, I am\nTo be бар сұраққа қысқа жауап береді: **Yes/No + есімдік + am/is/are**.\n\n- Are you a student? — **Yes, I am.** (Сен оқушысың ба? — Иә.)\n- Is your mum a doctor? — **No, she isn't.** (Анаң дәрігер ме? — Жоқ.)\n- Are they your friends? — **Yes, they are.** (Олар сенің достарың ба? — Иә.)\n\n:::warn Жиі кездесетін қате\n«Иә» деген жауапта **қысқартуға болмайды**: «Yes, I'm» және «Yes, he's» — қате. Дұрысы: **Yes, I am. Yes, he is.** Ал «жоқ» деген жауапта қысқартуға болады: **No, he isn't.**\n:::\n\nНазар аудар: қазақша бәріне «ол» дейміз, ал ағылшынша ана туралы **she**, аға туралы **he**, зат туралы **it** деп жауап береміз.",
+    "## Қалай жаттығу керек\n1. am/is/are және жаңа сөздермен **өзіңнің 5 сөйлеміңді** жаз: өзің, отбасың, досың, бөлмең, қалаң туралы. Мысалы: *My room is small.* — Менің бөлмем кішкентай.\n2. Әрқайсысынан **болымсыз сөйлем** мен **сұрақ** жаса (*My room isn't small. Is my room small?*).\n3. **Бәрін дауыстап айт**, дұрысы — екі рет. Тілді тек көзбен емес, ауызбен үйренеді.\n4. **Extra English** сериалының (жаңадан бастаушыларға арналған оқу сериалы) бір бөлімін субтитрмен қарап, am/is/are бар 5 тіркесті жазып ал.\n\n:::tip Кеңес\nКүн сайын 10 минут аптасына бір рет 2 сағаттан жақсы.\n:::"
+  ],
+  "cards": [
+    {
+      "front": "I ___ (to be)",
+      "back": "I am — I'm"
+    },
+    {
+      "front": "he / she / it ___ (to be)",
+      "back": "is — he's, she's, it's"
+    },
+    {
+      "front": "you / we / they ___ (to be)",
+      "back": "are — you're, we're, they're"
+    },
+    {
+      "front": "To be-мен «емес» деп қалай айтамыз?",
+      "back": "am/is/are-ден кейін not: I'm not, he isn't, they aren't"
+    },
+    {
+      "front": "isn't =",
+      "back": "is not"
+    },
+    {
+      "front": "aren't =",
+      "back": "are not"
+    },
+    {
+      "front": "To be-мен сұрақ қалай жасалады?",
+      "back": "am/is/are бірінші орынға: Are you ready? Is it cold?"
+    },
+    {
+      "front": "Are you a student? — Иә.",
+      "back": "Yes, I am. («Yes, I'm» емес)"
+    },
+    {
+      "front": "Is he your brother? — Жоқ.",
+      "back": "No, he isn't."
+    },
+    {
+      "front": "My friends and I = ?",
+      "back": "we → are: My friends and I are in class 10."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: I ___ a student.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**I**-мен әрқашан **am**: I am a student. — Мен оқушымын."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: She ___ my sister.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "**She** — бір адам → **is**: She is my sister. — Ол менің әпкем."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: They ___ at school.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "**They** — көп адам → **are**: They are at school. — Олар мектепте."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: My cat ___ black.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "My cat — бір жануар, яғни **it** → **is**: My cat is black. — Менің мысығым қара.",
+      "why": {
+        "2": "are — you, we, they және көпше түр үшін, ал мысық біреу."
+      }
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "**you are** тіркесінің қысқа түрі қандай?",
+      "options": [
+        "you're",
+        "your",
+        "you'm",
+        "yo're"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "you are → **you're**: апостроф a әрпін алмастырады. Your — басқа сөз, «сенің»: your bag — сенің сөмкең.",
+      "why": {
+        "1": "your — «сенің, сіздің» деген сөз, you are емес."
+      }
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: We ___ from Kazakhstan.",
+      "options": [
+        "am",
+        "is",
+        "are",
+        "be"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "**We** → **are**: We are from Kazakhstan. — Біз Қазақстаннанбыз."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: ___ it your phone?",
+      "options": [
+        "Is",
+        "Are",
+        "Am",
+        "Do"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Сұрақта to be бірінші тұрады. **It** → **is**: Is it your phone? — Бұл сенің телефоның ба?",
+      "why": {
+        "3": "do to be-мен қолданылмайды: сұрақта is-ті жай ғана алға шығарамыз."
+      }
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс болымсыз сөйлемді таңдаңыз (Ол шаршаған жоқ).",
+      "options": [
+        "He isn't tired.",
+        "He not tired.",
+        "He don't tired.",
+        "He aren't tired."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Not сөзін is-тен кейін қоямыз: He is not → **He isn't tired.** — Ол шаршаған жоқ. is болмаса (He not tired), сөйлемде етістік жоқ.",
+      "why": {
+        "1": "is етістігі түсіп қалған — ағылшын тілінде бұлай болмайды."
+      }
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сұрақты таңдаңыз (Сенің қарның ашты ма?).",
+      "options": [
+        "Are you hungry?",
+        "You hungry are?",
+        "Is you hungry?",
+        "Do you are hungry?"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "To be бар сұрақ: **are**-ді бірінші орынға шығарамыз, you-мен дәл осы are керек: Are you hungry? — Сенің қарның ашты ма?"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Are your parents at home? — No, ___.",
+      "options": [
+        "they aren't",
+        "they isn't",
+        "we aren't",
+        "they not"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Parents (ата-ана) — бұл **they**, they-мен → are, болымсыз түрі **aren't**: No, they aren't. — Жоқ, олар үйде емес.",
+      "why": {
+        "2": "Ата-ана туралы сұрап тұр, сондықтан we емес, they арқылы жауап береміз."
+      }
+    },
+    {
+      "id": "q11",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс түрін таңдаңыз: Where ___ you from?",
+      "options": [
+        "are",
+        "is",
+        "am",
+        "do"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Алдымен Where сұрау сөзі, одан кейін to be, одан кейін you. **You**-мен → **are**: Where are you from? — Сен қайдансың?"
+    },
+    {
+      "id": "q12",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Is your brother a doctor? — Yes, ___.",
+      "options": [
+        "he is",
+        "he's",
+        "it is",
+        "I am"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Аға туралы **he** дейміз, түрі — **is**. «Иә» деген қысқа жауапта қысқартуға болмайды: **Yes, he is.** — Иә, ол дәрігер.",
+      "why": {
+        "1": "«Yes, he's» — қате: болымды қысқа жауапта қысқарту қолданылмайды."
+      }
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "difficulty": 3,
+      "text": "**Қатесі бар** сөйлемді табыңыз.",
+      "options": [
+        "She are my friend.",
+        "I'm fifteen.",
+        "It's cold today.",
+        "We aren't late."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "She — бір адам → is: дұрысы **She is my friend.** — Ол менің досым. Қалғандары дұрыс: Мен он бестемін. Бүгін суық. Біз кешіккен жоқпыз."
+    },
+    {
+      "id": "q14",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Дұрыс түрін таңдаңыз: My friends and I ___ in the same class.",
+      "options": [
+        "are",
+        "am",
+        "is",
+        "be"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "My friends and I = **we** (достарым және мен = біз) → **are**: My friends and I are in the same class. — Достарыммен бір сыныптамыз.",
+      "why": {
+        "1": "am тек жалғыз I-мен тұрады, ал мұнда бірнеше адам — бұл we."
+      }
+    },
+    {
+      "id": "q15",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "To be етістігінің түрін жазыңыз: I ___ happy today.",
+      "answer": [
+        "am"
+      ],
+      "accept": [
+        "am"
+      ],
+      "explanation": "**I**-мен → **am**: I am happy today. — Мен бүгін бақыттымын."
+    },
+    {
+      "id": "q16",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "To be етістігінің түрін жазыңыз: He ___ at home.",
+      "answer": [
+        "is"
+      ],
+      "accept": [
+        "is"
+      ],
+      "explanation": "**He** → **is**: He is at home. — Ол үйде."
+    },
+    {
+      "id": "q17",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "To be етістігінің түрін жазыңыз: You ___ my best friend.",
+      "answer": [
+        "are"
+      ],
+      "accept": [
+        "are"
+      ],
+      "explanation": "**You** → **are**: You are my best friend. — Сен менің ең жақын досымсың."
+    },
+    {
+      "id": "q18",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 2,
+      "text": "To be етістігін **болымсыз түрде** жазыңыз: She ___ a teacher.",
+      "answer": [
+        "is not"
+      ],
+      "accept": [
+        "is not",
+        "isn't"
+      ],
+      "explanation": "She → is, одан кейін not: **is not / isn't**. She isn't a teacher. — Ол мұғалім емес."
+    },
+    {
+      "id": "q19",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 2,
+      "text": "To be етістігін **болымсыз түрде** жазыңыз: They ___ at school today.",
+      "answer": [
+        "are not"
+      ],
+      "accept": [
+        "are not",
+        "aren't"
+      ],
+      "explanation": "They → are, одан кейін not: **are not / aren't**. They aren't at school today. — Олар бүгін мектепте емес."
+    },
+    {
+      "id": "q20",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "To be етістігінің түрін жазыңыз: ___ you from Almaty?",
+      "answer": [
+        "Are"
+      ],
+      "accept": [
+        "Are"
+      ],
+      "explanation": "Сұрақта to be бірінші тұрады; you-мен → **Are**: Are you from Almaty? — Сен Алматыдансың ба?"
+    },
+    {
+      "id": "q21",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 2,
+      "text": "To be етістігін **болымсыз түрде** жазыңыз: I ___ tired.",
+      "answer": [
+        "am not"
+      ],
+      "accept": [
+        "am not"
+      ],
+      "explanation": "I-мен тек **am not** («amn't» деген түр жоқ). I am not tired = I'm not tired. — Мен шаршаған жоқпын."
+    },
+    {
+      "id": "q22",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 1,
+      "text": "Бір сөз жазыңыз: Is Aigerim your sister? — Yes, she ___.",
+      "answer": [
+        "is"
+      ],
+      "accept": [
+        "is"
+      ],
+      "explanation": "Aigerim — қыз бала, яғни **she**, түрі — **is**. Қысқа жауап қысқартусыз: Yes, she is. — Иә."
+    },
+    {
+      "id": "q23",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 2,
+      "text": "«Жоқ» деген қысқа жауапты жазыңыз: Am I late? — No, you ___.",
+      "answer": [
+        "aren't"
+      ],
+      "accept": [
+        "aren't",
+        "are not"
+      ],
+      "explanation": "«Am I…?» деп сұрап тұр, жауапты әңгімелесуші туралы айтамыз: **you → are**, болымсыз түрі **aren't**. No, you aren't. — Жоқ, сен кешіккен жоқсың."
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "id": "eng-words-02-people-family",
+  "subject": "english",
+  "title": "Адамдар және отбасы",
+  "summary": "Өзің және отбасың туралы айтып беруге арналған 20 сөз: mother, brother, friend, child, name, boy, girl…",
+  "theory": [
+    "## Бұл сөздерді қалай жаттау керек\nАғылшынша кез келген алғашқы әңгімеде сенен отбасың туралы сұрайды. Осы 20 сөз кімнің кім екенін айтып беруге мүмкіндік береді.\n\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған уақытта карточкалар арқылы қайтала.\n2. **Дауыстап айт**: сөзді, транскрипциясын және мысалын — 3 реттен.\n3. **Өз сөйлемдеріңді жаз**: отбасың туралы 5 сөйлем (*My mother is Aigul. I have one brother.*).\n4. **Сөздерді өмірде кездестір**: Extra English-те кейіпкерлер отбасы мен достары туралы үнемі айтады — осы сөздерді естіп қалуға тырыс.",
+    "## Кеңес: ерекше көпше түр\nӘдетте *-s* қосамыз: brother → brothers, sister → sisters. Бірақ адамдар туралы ең жиі қолданылатын сөздердің көпше түрі ерекше:\n\n| Біреу | Көп |\n|---|---|\n| child | children |\n| man | men |\n| woman | women |\n| person | people |\n\n«Кімнің» екенін айту үшін *'s* қос: *my mother's name* — анамның есімі. Бонус: aunt — тәте (апай), uncle — көке (аға), grandfather — ата."
+  ],
+  "words": [
+    {
+      "id": "w02-family",
+      "word": "family",
+      "pos": "n",
+      "ipa": "/ˈfæməli/",
+      "ru": "отбасы",
+      "def": "a mother, a father and their children",
+      "example": "My family is very big.",
+      "collocations": [
+        "big family",
+        "family photo",
+        "my family"
+      ]
+    },
+    {
+      "id": "w02-mother",
+      "word": "mother",
+      "pos": "n",
+      "ipa": "/ˈmʌðə/",
+      "ru": "ана, шеше",
+      "def": "a woman who has a child",
+      "example": "My mother gets up at six every day.",
+      "collocations": [
+        "my mother",
+        "mother and father",
+        "Mother's Day"
+      ]
+    },
+    {
+      "id": "w02-father",
+      "word": "father",
+      "pos": "n",
+      "ipa": "/ˈfɑːðə/",
+      "ru": "әке",
+      "def": "a man who has a child",
+      "example": "My father likes football.",
+      "collocations": [
+        "my father",
+        "father and son"
+      ]
+    },
+    {
+      "id": "w02-parent",
+      "word": "parent",
+      "pos": "n",
+      "ipa": "/ˈpeərənt/",
+      "ru": "ата-ананың бірі (әке не шеше)",
+      "def": "a mother or a father",
+      "example": "My parents live in Shymkent.",
+      "collocations": [
+        "my parents",
+        "parents' meeting"
+      ]
+    },
+    {
+      "id": "w02-brother",
+      "word": "brother",
+      "pos": "n",
+      "ipa": "/ˈbrʌðə/",
+      "ru": "аға, іні, бауыр",
+      "def": "a boy or man who has the same mother and father as you",
+      "example": "I have one brother and two sisters.",
+      "collocations": [
+        "older brother",
+        "younger brother",
+        "little brother"
+      ]
+    },
+    {
+      "id": "w02-sister",
+      "word": "sister",
+      "pos": "n",
+      "ipa": "/ˈsɪstə/",
+      "ru": "әпке, сіңлі, қарындас",
+      "def": "a girl or woman who has the same mother and father as you",
+      "example": "My little sister is five.",
+      "collocations": [
+        "older sister",
+        "little sister"
+      ]
+    },
+    {
+      "id": "w02-son",
+      "word": "son",
+      "pos": "n",
+      "ipa": "/sʌn/",
+      "ru": "ұл (перзент)",
+      "def": "a boy or man who is your child",
+      "example": "They have two sons and one daughter.",
+      "collocations": [
+        "my son",
+        "only son",
+        "oldest son"
+      ]
+    },
+    {
+      "id": "w02-daughter",
+      "word": "daughter",
+      "pos": "n",
+      "ipa": "/ˈdɔːtə/",
+      "ru": "қыз (перзент)",
+      "def": "a girl or woman who is your child",
+      "example": "Their daughter is a student in Almaty.",
+      "collocations": [
+        "my daughter",
+        "only daughter"
+      ]
+    },
+    {
+      "id": "w02-husband",
+      "word": "husband",
+      "pos": "n",
+      "ipa": "/ˈhʌzbənd/",
+      "ru": "күйеу, ер",
+      "def": "a man who has a wife",
+      "example": "Her husband cooks dinner every evening.",
+      "collocations": [
+        "her husband",
+        "husband and wife"
+      ]
+    },
+    {
+      "id": "w02-wife",
+      "word": "wife",
+      "pos": "n",
+      "ipa": "/waɪf/",
+      "ru": "әйел, зайып",
+      "def": "a woman who has a husband",
+      "example": "My uncle and his wife live in Astana.",
+      "collocations": [
+        "his wife",
+        "husband and wife"
+      ]
+    },
+    {
+      "id": "w02-grandmother",
+      "word": "grandmother",
+      "pos": "n",
+      "ipa": "/ˈɡrænmʌðə/",
+      "ru": "әже",
+      "def": "the mother of your mother or your father",
+      "example": "I visit my grandmother every summer.",
+      "collocations": [
+        "my grandmother",
+        "grandmother and grandfather"
+      ]
+    },
+    {
+      "id": "w02-child",
+      "word": "child",
+      "pos": "n",
+      "ipa": "/tʃaɪld/",
+      "ru": "бала (көпше түрі — children)",
+      "def": "a young boy or girl; also a son or daughter",
+      "example": "They have three children.",
+      "collocations": [
+        "only child",
+        "small child",
+        "have children"
+      ]
+    },
+    {
+      "id": "w02-baby",
+      "word": "baby",
+      "pos": "n",
+      "ipa": "/ˈbeɪbi/",
+      "ru": "сәби, нәресте",
+      "def": "a very young child",
+      "example": "My aunt has a new baby.",
+      "collocations": [
+        "new baby",
+        "baby boy",
+        "baby girl"
+      ]
+    },
+    {
+      "id": "w02-boy",
+      "word": "boy",
+      "pos": "n",
+      "ipa": "/bɔɪ/",
+      "ru": "ұл бала, жігіт",
+      "def": "a child or young person who is not a girl",
+      "example": "There are fifteen boys in our class.",
+      "collocations": [
+        "a little boy",
+        "boys and girls"
+      ]
+    },
+    {
+      "id": "w02-girl",
+      "word": "girl",
+      "pos": "n",
+      "ipa": "/ɡɜːl/",
+      "ru": "қыз бала, қыз",
+      "def": "a child or young person who is not a boy",
+      "example": "The new girl in our class is from Taraz.",
+      "collocations": [
+        "a little girl",
+        "the new girl"
+      ]
+    },
+    {
+      "id": "w02-man",
+      "word": "man",
+      "pos": "n",
+      "ipa": "/mæn/",
+      "ru": "ер адам; адам (көпше түрі — men)",
+      "def": "a grown-up person who is not a woman",
+      "example": "The man next to me is my uncle.",
+      "collocations": [
+        "young man",
+        "old man"
+      ]
+    },
+    {
+      "id": "w02-woman",
+      "word": "woman",
+      "pos": "n",
+      "ipa": "/ˈwʊmən/",
+      "ru": "әйел адам (көпше түрі — women)",
+      "def": "a grown-up person who is not a man",
+      "example": "The woman in the photo is my aunt.",
+      "collocations": [
+        "young woman",
+        "old woman"
+      ]
+    },
+    {
+      "id": "w02-people",
+      "word": "people",
+      "pos": "n",
+      "ipa": "/ˈpiːpl/",
+      "ru": "адамдар, халық",
+      "def": "more than one person; men, women and children",
+      "example": "Many people in Kazakhstan speak two languages.",
+      "collocations": [
+        "many people",
+        "young people",
+        "old people"
+      ]
+    },
+    {
+      "id": "w02-friend",
+      "word": "friend",
+      "pos": "n",
+      "ipa": "/frend/",
+      "ru": "дос, құрбы",
+      "def": "a person you like and spend time with",
+      "example": "My best friend lives next door.",
+      "collocations": [
+        "best friend",
+        "old friend",
+        "make friends"
+      ]
+    },
+    {
+      "id": "w02-name",
+      "word": "name",
+      "pos": "n",
+      "ipa": "/neɪm/",
+      "ru": "есім, ат; атау",
+      "def": "the word that people call you",
+      "example": "My name is Aibek. What's your name?",
+      "collocations": [
+        "first name",
+        "last name",
+        "What's your name?"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Әпке, сіңлі, қарындас“ ағылшынша қалай болады?",
+      "options": [
+        "wife",
+        "sister",
+        "brother",
+        "daughter"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Sister — әпке, сіңлі не қарындас. Brother — аға не іні, daughter — қыз (перзент), wife — әйел (зайып)."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Ата-ана“ ағылшынша қалай болады?",
+      "options": [
+        "family",
+        "children",
+        "parents",
+        "people"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Parent — ата-ананың бірі, parents — ата-ана (ана мен әке). Children — балалар, people — адамдар, family — отбасы."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Қыз“ (ата-ананың қыз баласы) ағылшынша қалай болады?",
+      "options": [
+        "daughter",
+        "woman",
+        "son",
+        "girl"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Daughter — біреудің қызы (перзенті), son — ұлы. Girl — жай ғана қыз бала, woman — әйел адам."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Күйеу (ер)“ ағылшынша қалай болады?",
+      "options": [
+        "man",
+        "father",
+        "wife",
+        "husband"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Husband — күйеу, wife — әйел (зайып). Man — кез келген ер адам, father — әке."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: I have two ___: Ali and Dana.",
+      "options": [
+        "childrens",
+        "child",
+        "childs",
+        "children"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Child — ерекше сөз: көпше түрі **children**, *-s* қосылмайды. *Childs* және *childrens* түрлері қате."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Дос, құрбы“ ағылшынша қалай болады?",
+      "options": [
+        "friend",
+        "family",
+        "people",
+        "name"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Friend — дос немесе құрбы (*my best friend*). Family — отбасы, people — адамдар, name — есім."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: What's your ___? — Aruzhan.",
+      "options": [
+        "name",
+        "family",
+        "baby",
+        "people"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "*What's your name?* — Сенің атың кім? Жауап ретінде өз есіміңді айтасың."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Әже“ ағылшынша қалай болады?",
+      "options": [
+        "mother",
+        "woman",
+        "sister",
+        "grandmother"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Grandmother — әже (анаңның не әкеңнің анасы). Ауызекі сөзде жиі *grandma* дейді."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: Many ___ live in this city.",
+      "options": [
+        "child",
+        "man",
+        "people",
+        "person"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Many сөзінен кейін көпше түр керек. Person — адам, **people** — адамдар."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Ұл бала“ ағылшынша қалай болады?",
+      "options": [
+        "baby",
+        "boy",
+        "girl",
+        "son"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Boy — ұл бала, girl — қыз бала, baby — сәби, son — біреудің ұлы (перзенті)."
+    }
+  ]
+}

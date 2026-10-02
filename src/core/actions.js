@@ -1,7 +1,7 @@
 // Действия, меняющие прогресс. Все они проходят через store.update и возвращают новое состояние.
 
 import { getState, setIn, update } from './store.js';
-import { normalizeLang } from './content.js';
+import { isContentLang, normalizeLang, withSubjectLang } from './content.js';
 import { emptyTopicStats } from './mastery.js';
 import { GRADES, gradeFromCorrect, isGraduated, review } from './srs.js';
 import { newlyEarned } from './badges.js';
@@ -306,10 +306,20 @@ export function setSettings(patch) {
   update((state) => ({ ...state, settings: { ...state.settings, ...patch } }));
 }
 
-/** Язык контента (уроки, вопросы, пробники). Возвращает применённый язык. */
+/** Общий язык контента (уроки, вопросы, пробники). Возвращает применённый язык. */
 export function setContentLang(lang) {
   const next = normalizeLang(lang);
   update((state) => (state.settings.contentLang === next ? state : { ...state, settings: { ...state.settings, contentLang: next } }));
+  return next;
+}
+
+/**
+ * Свой язык предмета: уроки и вопросы этого предмета идут на нём независимо от общего языка.
+ * Пустой язык возвращает предмет к общему. Возвращает применённый язык или null.
+ */
+export function setSubjectLang(subjectId, lang) {
+  const next = isContentLang(lang) ? lang : null;
+  update((state) => ((state.settings.subjectLang?.[subjectId] || null) === next ? state : { ...state, settings: withSubjectLang(state.settings, subjectId, next) }));
   return next;
 }
 

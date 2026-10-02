@@ -1,7 +1,7 @@
 // IELTS Speaking: тренажёр трёх частей с таймерами, модельными ответами и самооценкой.
 
 import { h, replaceChildren } from '../../core/dom.js';
-import { langOf, loadTopics, topicsOf } from '../../core/content.js';
+import { loadLocalTopic, topicsOf } from '../../core/content.js';
 import { getState } from '../../core/store.js';
 import { saveSpeaking } from '../../core/actions.js';
 import { renderMarkdown } from '../../core/markdown.js';
@@ -51,7 +51,7 @@ async function loadPrompts() {
   await Promise.all(
     metas.map(async (meta) => {
       try {
-        const [topic] = await loadTopics([meta.id], langOf(getState()));
+        const topic = await loadLocalTopic(getState(), meta.id);
         for (const prompt of topic.prompts) out.push({ ...prompt, topicId: meta.id, topicTitle: topic.title || meta.title });
       } catch (error) {
         console.error(`Не удалось загрузить ${meta.id}:`, error);

@@ -1,0 +1,451 @@
+{
+  "id": "eng-words-03-numbers-time",
+  "subject": "english",
+  "title": "Сандар, күндер және уақыт",
+  "summary": "Уақыт туралы 20 сөз: day, week, today, morning, Monday, hour, first… және барлық апта күндері.",
+  "theory": [
+    "## Бұл сөздерді қалай жаттау керек\nУақытқа қатысты сөздер күн сайын керек: кездесуге келісу, сабақтың қашан болатынын айту және кестені түсіну үшін.\n\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған уақытта карточкалар арқылы қайтала.\n2. **Дауыстап айт**: сөзді, транскрипциясын және мысалын — 3 реттен.\n3. **Өз сөйлемдеріңді жаз**: өз күнің туралы 5 сөйлем (*I get up at seven. On Monday I have English.*).\n4. **Сөздерді өмірде кездестір**: Extra English-те кейіпкерлер «қашан» кездесетінін үнемі келісіп жатады — осы сөздерді естіп қалуға тырыс.",
+    "## Кеңес: апта күндері және in / on / at шағын сөздері\nАпта күндері әрқашан **бас әріппен** жазылады:\n\n| Ағылшынша | Қазақша |\n|---|---|\n| Monday | дүйсенбі |\n| Tuesday | сейсенбі |\n| Wednesday | сәрсенбі |\n| Thursday | бейсенбі |\n| Friday | жұма |\n| Saturday | сенбі |\n| Sunday | жексенбі |\n\nАпта күнінің алдында — *on*: **on** Monday. Тәулік бөлігінің алдында — *in*: **in** the morning, **in** the evening. Нақты уақыттың алдында — *at*: **at** 7 o'clock, **at** night, **at** the weekend."
+  ],
+  "words": [
+    {
+      "id": "w03-time",
+      "word": "time",
+      "pos": "n",
+      "ipa": "/taɪm/",
+      "ru": "уақыт; рет",
+      "def": "what we measure in minutes and hours",
+      "example": "What time is it? — It's seven o'clock.",
+      "collocations": [
+        "what time",
+        "free time",
+        "on time"
+      ]
+    },
+    {
+      "id": "w03-day",
+      "word": "day",
+      "pos": "n",
+      "ipa": "/deɪ/",
+      "ru": "күн, тәулік",
+      "def": "24 hours; also the time when it is light",
+      "example": "I study English every day.",
+      "collocations": [
+        "every day",
+        "all day",
+        "a day off"
+      ]
+    },
+    {
+      "id": "w03-week",
+      "word": "week",
+      "pos": "n",
+      "ipa": "/wiːk/",
+      "ru": "апта",
+      "def": "seven days, from Monday to Sunday",
+      "example": "We have English three times a week.",
+      "collocations": [
+        "next week",
+        "last week",
+        "every week"
+      ]
+    },
+    {
+      "id": "w03-month",
+      "word": "month",
+      "pos": "n",
+      "ipa": "/mʌnθ/",
+      "ru": "ай",
+      "def": "one of the twelve parts of a year, like May or June",
+      "example": "My birthday is next month.",
+      "collocations": [
+        "next month",
+        "last month",
+        "this month"
+      ]
+    },
+    {
+      "id": "w03-year",
+      "word": "year",
+      "pos": "n",
+      "ipa": "/jɪə/",
+      "ru": "жыл",
+      "def": "twelve months, or 365 days",
+      "example": "I am sixteen years old.",
+      "collocations": [
+        "this year",
+        "last year",
+        "years old"
+      ]
+    },
+    {
+      "id": "w03-hour",
+      "word": "hour",
+      "pos": "n",
+      "ipa": "/ˈaʊə/",
+      "ru": "сағат (60 минут)",
+      "def": "sixty minutes",
+      "example": "I do my homework for two hours every evening.",
+      "collocations": [
+        "an hour",
+        "two hours",
+        "for an hour"
+      ]
+    },
+    {
+      "id": "w03-minute",
+      "word": "minute",
+      "pos": "n",
+      "ipa": "/ˈmɪnɪt/",
+      "ru": "минут",
+      "def": "sixty seconds; a short time",
+      "example": "The bus comes in five minutes.",
+      "collocations": [
+        "five minutes",
+        "a minute",
+        "in a minute"
+      ]
+    },
+    {
+      "id": "w03-today",
+      "word": "today",
+      "pos": "adv",
+      "ipa": "/təˈdeɪ/",
+      "ru": "бүгін",
+      "def": "on this day",
+      "example": "Today is Friday.",
+      "collocations": [
+        "today is",
+        "today's lesson"
+      ]
+    },
+    {
+      "id": "w03-tomorrow",
+      "word": "tomorrow",
+      "pos": "adv",
+      "ipa": "/təˈmɒrəʊ/",
+      "ru": "ертең",
+      "def": "on the day after today",
+      "example": "I will see you tomorrow.",
+      "collocations": [
+        "see you tomorrow",
+        "tomorrow morning"
+      ]
+    },
+    {
+      "id": "w03-yesterday",
+      "word": "yesterday",
+      "pos": "adv",
+      "ipa": "/ˈjestədeɪ/",
+      "ru": "кеше",
+      "def": "on the day before today",
+      "example": "Yesterday I was at my grandmother's house.",
+      "collocations": [
+        "yesterday evening",
+        "the day before yesterday"
+      ]
+    },
+    {
+      "id": "w03-morning",
+      "word": "morning",
+      "pos": "n",
+      "ipa": "/ˈmɔːnɪŋ/",
+      "ru": "таң, таңертең",
+      "def": "the early part of the day, before 12 o'clock",
+      "example": "I get up at seven in the morning.",
+      "collocations": [
+        "in the morning",
+        "good morning",
+        "this morning"
+      ]
+    },
+    {
+      "id": "w03-evening",
+      "word": "evening",
+      "pos": "n",
+      "ipa": "/ˈiːvnɪŋ/",
+      "ru": "кеш",
+      "def": "the end of the day, before night",
+      "example": "In the evening I watch TV with my family.",
+      "collocations": [
+        "in the evening",
+        "good evening",
+        "this evening"
+      ]
+    },
+    {
+      "id": "w03-night",
+      "word": "night",
+      "pos": "n",
+      "ipa": "/naɪt/",
+      "ru": "түн; кешкі уақыт",
+      "def": "the time when it is dark and people sleep",
+      "example": "I went to bed late last night.",
+      "collocations": [
+        "at night",
+        "last night",
+        "good night"
+      ]
+    },
+    {
+      "id": "w03-weekend",
+      "word": "weekend",
+      "pos": "n",
+      "ipa": "/ˌwiːkˈend/",
+      "ru": "демалыс күндері",
+      "def": "Saturday and Sunday, when there is no school",
+      "example": "At the weekend I play football with my friends.",
+      "collocations": [
+        "at the weekend",
+        "next weekend",
+        "this weekend"
+      ]
+    },
+    {
+      "id": "w03-monday",
+      "word": "Monday",
+      "pos": "n",
+      "ipa": "/ˈmʌndeɪ/",
+      "ru": "дүйсенбі",
+      "def": "the first day of the school week, after Sunday",
+      "example": "On Monday we have a maths test.",
+      "collocations": [
+        "on Monday",
+        "next Monday",
+        "every Monday"
+      ]
+    },
+    {
+      "id": "w03-sunday",
+      "word": "Sunday",
+      "pos": "n",
+      "ipa": "/ˈsʌndeɪ/",
+      "ru": "жексенбі",
+      "def": "the day after Saturday and before Monday",
+      "example": "On Sunday we visit my grandparents.",
+      "collocations": [
+        "on Sunday",
+        "last Sunday",
+        "Sunday morning"
+      ]
+    },
+    {
+      "id": "w03-first",
+      "word": "first",
+      "pos": "num",
+      "ipa": "/fɜːst/",
+      "ru": "бірінші; алдымен",
+      "def": "number one in order; before all the others",
+      "example": "My first lesson starts at eight.",
+      "collocations": [
+        "the first day",
+        "the first time",
+        "at first"
+      ]
+    },
+    {
+      "id": "w03-second",
+      "word": "second",
+      "pos": "num",
+      "ipa": "/ˈsekənd/",
+      "ru": "екінші; секунд",
+      "def": "number two in order; also a very short time — sixty of them make a minute",
+      "example": "Our classroom is on the second floor.",
+      "collocations": [
+        "the second day",
+        "second floor",
+        "just a second"
+      ]
+    },
+    {
+      "id": "w03-hundred",
+      "word": "hundred",
+      "pos": "num",
+      "ipa": "/ˈhʌndrəd/",
+      "ru": "жүз",
+      "def": "the number 100",
+      "example": "Our school has nine hundred students.",
+      "collocations": [
+        "a hundred",
+        "two hundred",
+        "hundreds of"
+      ]
+    },
+    {
+      "id": "w03-now",
+      "word": "now",
+      "pos": "adv",
+      "ipa": "/naʊ/",
+      "ru": "қазір, енді",
+      "def": "at this time",
+      "example": "My family lives in Astana now.",
+      "collocations": [
+        "right now",
+        "just now",
+        "from now on"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Ертең“ ағылшынша қалай болады?",
+      "options": [
+        "yesterday",
+        "today",
+        "tomorrow",
+        "tonight"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Tomorrow — ертең, yesterday — кеше, today — бүгін, tonight — бүгін кешке."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Апта“ ағылшынша қалай болады?",
+      "options": [
+        "week",
+        "weekend",
+        "month",
+        "year"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Week — апта (7 күн). Weekend — демалыс күндері, month — ай, year — жыл."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Дүйсенбі“ ағылшынша қалай болады?",
+      "options": [
+        "Monday",
+        "Sunday",
+        "Tuesday",
+        "Friday"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Monday — дүйсенбі. Sunday — жексенбі, Friday — жұма, Tuesday — сейсенбі."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Сағат“ (60 минут) ағылшынша қалай болады?",
+      "options": [
+        "hour",
+        "minute",
+        "day",
+        "time"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Hour — сағат (60 минут). h дыбысы оқылмайды: /ˈaʊə/, сондықтан *an hour* деп жазады."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: I get up at 7 in the ___.",
+      "options": [
+        "week",
+        "morning",
+        "night",
+        "year"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "In the morning — таңертең. Сағат 7-де әдетте түнде емес, таңертең тұрады."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: What ___ is it? — It's five o'clock.",
+      "options": [
+        "week",
+        "time",
+        "day",
+        "hour"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*What time is it?* — Сағат неше? Бұл — дайын тіркес, оны тұтас жаттап алу керек."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Кеше“ ағылшынша қалай болады?",
+      "options": [
+        "today",
+        "tomorrow",
+        "now",
+        "yesterday"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Yesterday — кеше. Одан кейін етістікті өткен шаққа қоямыз: *Yesterday I was at home*."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Жүз“ ағылшынша қалай болады?",
+      "options": [
+        "ten",
+        "hundred",
+        "thousand",
+        "first"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Hundred — жүз (100). Thousand — мың, ten — он, first — бірінші."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: Saturday and Sunday are the ___.",
+      "options": [
+        "weekend",
+        "week",
+        "morning",
+        "month"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Weekend — демалыс күндері: сенбі мен жексенбі. Week — тұтас апта."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "„Бірінші“ (реті бойынша) ағылшынша қалай болады?",
+      "options": [
+        "first",
+        "one",
+        "second",
+        "hundred"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "First — бірінші (*my first lesson*). One — «бір» деген сан, second — екінші."
+    }
+  ]
+}

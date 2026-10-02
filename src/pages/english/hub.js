@@ -1,7 +1,7 @@
 // Английский с нуля: план на сегодня, этапы пути A0 → C1 и уроки грамматики.
 
 import { h, replaceChildren } from '../../core/dom.js';
-import { langOf, topicTitle, topicsOf } from '../../core/content.js';
+import { localTitle, topicsOf } from '../../core/content.js';
 import { getState } from '../../core/store.js';
 import { MASTERED_THRESHOLD, masteryOf } from '../../core/mastery.js';
 import { dueIds } from '../../core/srs.js';
@@ -43,7 +43,7 @@ function todayCard(state, metrics) {
       { class: 'list' },
       row(wordsDone, metrics.dueWords ? `Повторить слова: ${metrics.dueWords}` : 'Новые слова: 15', '15 минут, карточки с повторением', h('a', { class: 'btn btn--sm btn--primary', href: metrics.dueWords ? '#/english/words?mode=review' : '#/english/words' }, 'Открыть')),
       row(sentencesToday >= SENTENCES_PER_DAY, `Составить ${SENTENCES_PER_DAY} предложений`, `Из выученных слов · сегодня ${sentencesToday}`, h('a', { class: 'btn btn--sm', href: '#/english/sentences' }, 'Писать')),
-      nextLesson ? row(false, `Грамматика: ${topicTitle(nextLesson, langOf(state))}`, '10 минут теории + практика', h('a', { class: 'btn btn--sm', href: `#/topic/${nextLesson.id}` }, 'Урок')) : null,
+      nextLesson ? row(false, `Грамматика: ${localTitle(state, nextLesson)}`, '10 минут теории + практика', h('a', { class: 'btn btn--sm', href: `#/topic/${nextLesson.id}` }, 'Урок')) : null,
       row(false, 'Серия Extra English — вместо отдыха в телефоне', 'Не входит в учебное время. Посмотрел — отметь в «Этапе 1»', h('a', { class: 'btn btn--sm btn--ghost', href: EXTRA_URL, target: '_blank', rel: 'noopener' }, 'YouTube')),
     ),
   );
@@ -92,7 +92,7 @@ function grammarCard(state, metrics) {
       metrics.lessons.map((t, i) => {
         const m = masteryOf(state, t.id);
         const done = m >= MASTERED_THRESHOLD;
-        return h('a', { class: `list-item${done ? ' done' : ''}`, href: `#/topic/${t.id}` }, h('span', { class: 'list-item__num' }, done ? icon('check', { size: 16 }) : String(i + 1)), h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, topicTitle(t, langOf(state))), h('div', { class: 'list-item__sub' }, `освоено ${Math.round(m * 100)}%`)));
+        return h('a', { class: `list-item${done ? ' done' : ''}`, href: `#/topic/${t.id}` }, h('span', { class: 'list-item__num' }, done ? icon('check', { size: 16 }) : String(i + 1)), h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, localTitle(state, t)), h('div', { class: 'list-item__sub' }, `освоено ${Math.round(m * 100)}%`)));
       }),
     ),
   );

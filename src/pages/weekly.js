@@ -2,7 +2,7 @@
 // Итог по каждой теме хранится в state.weekly[понедельник недели]; забытые темы чаще идут в повторение урока.
 
 import { h, pluralize } from '../core/dom.js';
-import { langOf, loadTopics, topicMeta, topicTitle } from '../core/content.js';
+import { loadLocalTopics, localTitle, topicMeta } from '../core/content.js';
 import { getState } from '../core/store.js';
 import { recordPractice, recordWeeklyTest } from '../core/actions.js';
 import { badgeById } from '../core/badges.js';
@@ -52,7 +52,7 @@ function percent(correct, total) {
 
 /** Таблица «тема → результат → вердикт», сначала самые забытые. */
 function verdictTable(breakdown) {
-  const lang = langOf(getState());
+  const state = getState();
   const rows = Object.entries(breakdown || {})
     .map(([id, stats]) => ({ id, stats, meta: topicMeta(id), verdict: topicVerdict(stats) }))
     .sort((a, b) => a.stats.correct / (a.stats.total || 1) - b.stats.correct / (b.stats.total || 1));
@@ -63,7 +63,7 @@ function verdictTable(breakdown) {
       h(
         'a',
         { class: `verdict verdict--${verdict.key}`, href: `#/topic/${id}` },
-        h('span', { class: 'verdict__main' }, h('span', { class: 'verdict__title' }, meta ? topicTitle(meta, lang) : id), meta ? subjectBadge(meta.subject) : null),
+        h('span', { class: 'verdict__main' }, h('span', { class: 'verdict__title' }, meta ? localTitle(state, meta) : id), meta ? subjectBadge(meta.subject) : null),
         h('span', { class: 'verdict__score' }, `${stats.correct}/${stats.total}`),
         h('span', { class: `badge badge--${verdict.tone}` }, verdict.label),
       ),
@@ -114,13 +114,13 @@ function weekSwitch(week) {
 }
 
 function topicList(ids) {
-  const lang = langOf(getState());
+  const state = getState();
   return h(
     'ul',
     { class: 'weekly-topics' },
     ids.map((id) => {
       const meta = topicMeta(id);
-      return h('li', {}, meta ? subjectBadge(meta.subject) : null, h('span', {}, meta ? topicTitle(meta, lang) : id));
+      return h('li', {}, meta ? subjectBadge(meta.subject) : null, h('span', {}, meta ? localTitle(state, meta) : id));
     }),
   );
 }
@@ -163,7 +163,7 @@ async function startTest(week, ids) {
   show(pageTop(week), h('div', { class: 'card muted' }, 'Собираем задачи…'));
   let topics;
   try {
-    topics = await loadTopics(ids, langOf(getState()));
+    topics = await loadLocalTopics(getState(), ids);
   } catch (error) {
     console.error('Недельный тест не загрузился:', error);
     show(pageTop(week), h('div', { class: 'card stack' }, h('b', {}, 'Не удалось загрузить задачи'), h('p', { class: 'muted' }, String(error?.message || error)), h('button', { class: 'btn btn--primary', onClick: () => startTest(week, ids) }, 'Попробовать снова')));

@@ -1,0 +1,410 @@
+{
+  "id": "eng-grammar-present-simple",
+  "subject": "english",
+  "title": "Present Simple: әдетте не істеймін",
+  "summary": "I work / he works, сұрақ пен болымсыз түрдегі do/does, always/usually/every day.",
+  "theory": [
+    "## Present Simple қашан керек\nPresent Simple — «жай осы шақ». Онымен **әдетте, үнемі, әрқашан** болатын нәрселер туралы айтады: әдеттер, кесте, фактілер.\n\n:::example Мысалдар\n- I go to school every day. — Мен күн сайын мектепке барамын.\n- My dad works in a bank. — Әкем банкте жұмыс істейді.\n- Water boils at 100 degrees. — Су 100 градуста қайнайды.\n:::\n\nБұл дәл қазір, осы секундта болып жатқан нәрсе туралы **емес**. «Қазір» үшін басқа шақ бар, оны кейінірек өтеміз.",
+    "## Түрі: I work / he works\nЕтістікті бастапқы түрінде аламыз (work, play, live). Ол тек бір жағдайда өзгереді: **he, she, it**-тен кейін **-s** қосамыз.\n\n| Кім | Етістік | Мысал | Аудармасы |\n|---|---|---|---|\n| I, you, we, they | work | We work hard. | Біз көп жұмыс істейміз. |\n| he, she, it | work**s** | She works hard. | Ол көп жұмыс істейді. |\n\n:::tip Қалай есте сақтауға болады\nБір адам немесе бір зат, бірақ **мен де емес, сен де емес** (he, she, it, my mum, Aidos, the dog) → етістік **-s**-пен.\n:::",
+    "## Ережелер: -s әлде -es\n| Етістік немен аяқталады | Не істейміз | Мысалдар |\n|---|---|---|\n| етістіктердің көпшілігі | + s | work → works, play → plays |\n| -s, -ss, -sh, -ch, -x, -o | + es | watch → watches, wash → washes, fix → fixes, go → goes, do → does |\n| дауыссыз + y | y → ies | study → studies, fly → flies |\n| дауысты + y | + s | play → plays, buy → buys |\n| have | ерекше түрі | have → **has** |\n\n:::example Мысалдар\n- He watches TV. — Ол теледидар көреді.\n- She studies English. — Ол ағылшын тілін оқиды.\n- My brother has a car. — Ағамның көлігі бар.\n:::",
+    "## Болымсыз түрі: don't / doesn't\n«Жоқ, істемеймін» деп айту үшін **do** көмекшісі керек: етістіктің алдына **don't** (do not) немесе **doesn't** (does not) қоямыз.\n\n| Кім | Болымсыз түрі | Мысал | Аудармасы |\n|---|---|---|---|\n| I, you, we, they | don't + етістік | I don't like milk. | Мен сүтті ұнатпаймын. |\n| he, she, it | doesn't + етістік | She doesn't like milk. | Ол сүтті ұнатпайды. |\n\n:::warn Жиі кездесетін қате\ndoesn't-тен кейін етістік **-s-сіз** тұрады: -s does-тың ішіне «кетіп қалған». Қате: «She doesn't likes». Дұрысы: **She doesn't like milk.**\n:::",
+    "## Сұрақтар: Do / Does\nСұрақ **Do** (I, you, we, they) немесе **Does** (he, she, it) сөзінен басталады. Одан кейін бастауыш пен **-s-сіз** етістік тұрады.\n\n| Сұрау сөзі | Do / Does | Кім | Етістік | Қалғаны |\n|---|---|---|---|---|\n| — | Do | you | speak | English? |\n| — | Does | he | play | football? |\n| Where | do | you | live? | — |\n| What | does | she | do? | — |\n\n- Do you speak English? — Yes, I do. (Сен ағылшынша сөйлейсің бе? — Иә.)\n- Does he play football? — No, he doesn't. (Ол футбол ойнай ма? — Жоқ.)\n- Where do you live? — Сен қайда тұрасың?\n\n:::warn Жиі кездесетін қате\n«You like tea?» — жазбаша ағылшын тілінде бұлай болмайды, сұрақта do керек: **Do you like tea?** — Сен шайды ұнатасың ба?\n:::",
+    "## Маркерлер және сөз тәртібі\nPresent Simple-дің белгі сөздері: **always** (әрқашан), **usually** (әдетте), **often** (жиі), **sometimes** (кейде), **never** (ешқашан), **every day** (күн сайын), **on Mondays** (дүйсенбі сайын).\n\n- always, usually, often, never сөздерін **етістіктің алдына** қоямыз: I usually get up at 7. — Мен әдетте сағат 7-де тұрамын.\n- every day, on Mondays — **сөйлемнің соңында**: She reads every day. — Ол күн сайын кітап оқиды.\n- am/is/are болса — олардан **кейін**: He is always late. — Ол әрқашан кешігеді.\n\n:::warn Жиі кездесетін қате\n«He go to school» — -s ұмыт қалған. Дұрысы: **He goes to school.** — Ол мектепке барады.\n:::",
+    "## Қалай жаттығу керек\n1. Жаңа етістіктермен өзіңнің әдеттегі күнің туралы **5 сөйлем** жаз (*I get up at 7. My mum cooks breakfast.*).\n2. Оларды досың туралы (he/she) қайта жаз — -s қос. Содан кейін do/does арқылы болымсыз сөйлем мен сұрақ жаса.\n3. **Бәрін дауыстап** екі рет **оқы**.\n4. **Extra English** сериалының бір бөлімін қарап, do, does немесе -s-пен тұрған етістігі бар 5 тіркесті тап."
+  ],
+  "cards": [
+    {
+      "front": "Present Simple-ді қашан қолданамыз?",
+      "back": "Әдеттер, үнемі қайталанатын әрекеттер, фактілер: I go to school every day."
+    },
+    {
+      "front": "I / you / we / they + етістік",
+      "back": "өзгеріссіз: I work, they play"
+    },
+    {
+      "front": "he / she / it + етістік",
+      "back": "+ s: he works, she plays"
+    },
+    {
+      "front": "go, do, watch, wash + he",
+      "back": "+ es: goes, does, watches, washes"
+    },
+    {
+      "front": "study, fly + he",
+      "back": "y → ies: studies, flies"
+    },
+    {
+      "front": "have + he / she / it",
+      "back": "has"
+    },
+    {
+      "front": "he / she / it-пен болымсыз түрі",
+      "back": "doesn't + -s-сіз етістік: She doesn't like milk."
+    },
+    {
+      "front": "I / you / we / they-мен сұрақ",
+      "back": "Do + кім + етістік: Do you speak English?"
+    },
+    {
+      "front": "he / she / it-пен сұрақ",
+      "back": "Does + кім + -s-сіз етістік: Does he play football?"
+    },
+    {
+      "front": "usually қайда тұрады?",
+      "back": "етістіктің алдында: I usually get up at 7; am/is/are-ден кейін: He is usually late."
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: She ___ in a bank.",
+      "options": [
+        "works",
+        "work",
+        "working",
+        "is work"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**She** → етістік **-s**-пен: She works in a bank. — Ол банкте жұмыс істейді.",
+      "why": {
+        "1": "Етістік -s-сіз тек I, you, we, they-мен тұрады."
+      }
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: I ___ tea every morning.",
+      "options": [
+        "drink",
+        "drinks",
+        "drinking",
+        "am drink"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**I**-мен етістік өзгермейді: I drink tea every morning. — Мен күнде таңертең шай ішемін."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: They ___ football on Sundays.",
+      "options": [
+        "play",
+        "plays",
+        "playes",
+        "playing"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**They** → етістік -s-сіз: They play football on Sundays. — Олар жексенбі сайын футбол ойнайды."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "he-ден кейін **watch** етістігінің қай түрі керек?",
+      "options": [
+        "watches",
+        "watchs",
+        "watching",
+        "watchies"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Етістік **-ch**-қа аяқталады → **-es** қосамыз: he watches. — Ол көреді."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "she-ден кейін **study** етістігінің қай түрі керек?",
+      "options": [
+        "studies",
+        "studys",
+        "studyes",
+        "studing"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "y-дің алдында дауыссыз d тұр → **y-ді ies-ке ауыстырамыз**: she studies. — Ол оқиды."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: My brother ___ in Astana.",
+      "options": [
+        "lives",
+        "live",
+        "living",
+        "is live"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "My brother — бұл **he** → **lives**: My brother lives in Astana. — Ағам Астанада тұрады."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сөзді таңдаңыз: ___ you like pizza?",
+      "options": [
+        "Do",
+        "Does",
+        "Are",
+        "Is"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Кәдімгі like етістігі бар сұрақ; **you**-мен → **Do**: Do you like pizza? — Сен пиццаны ұнатасың ба?",
+      "why": {
+        "2": "are — to be үшін (Are you hungry?), ал like — кәдімгі етістік, оған do керек."
+      }
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сөзді таңдаңыз: ___ your mother work at school?",
+      "options": [
+        "Does",
+        "Do",
+        "Is",
+        "Are"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Your mother — бұл **she** → **Does**: Does your mother work at school? — Анаң мектепте жұмыс істей ме?"
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс болымсыз сөйлемді таңдаңыз (Ол шахмат ойнамайды).",
+      "options": [
+        "He doesn't play chess.",
+        "He don't play chess.",
+        "He doesn't plays chess.",
+        "He not plays chess."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "He → **doesn't**, одан кейін етістік **-s-сіз**: He doesn't play chess. — Ол шахмат ойнамайды.",
+      "why": {
+        "2": "Қос қате: -s does-тың ішінде бар, оны екінші рет қоймайды."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Сөз тәртібі дұрыс сөйлемді таңдаңыз (Ол әрқашан кофе ішеді).",
+      "options": [
+        "She always drinks coffee.",
+        "She drinks always coffee.",
+        "She always drink coffee.",
+        "Always drinks she coffee."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**always** етістіктің алдында тұрады, ал she-ден кейін етістік -s-пен: She always drinks coffee. — Ол әрқашан кофе ішеді."
+    },
+    {
+      "id": "q11",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс түрін таңдаңыз: Does he ___ English?",
+      "options": [
+        "speak",
+        "speaks",
+        "speaking",
+        "spoke"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**does**-тен кейін етістік бастапқы түрде, -s-сіз: Does he speak English? — Ол ағылшынша сөйлей ме?",
+      "why": {
+        "1": "-s does-тың ішінде бар, етістікте ол болмауы керек."
+      }
+    },
+    {
+      "id": "q12",
+      "type": "single",
+      "difficulty": 3,
+      "text": "**Қатесі бар** сөйлемді табыңыз.",
+      "options": [
+        "She have two cats.",
+        "My friends live in Shymkent.",
+        "He goes to the gym on Mondays.",
+        "We don't eat meat."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "she-мен have орнына **has** керек: She has two cats. — Оның екі мысығы бар. Қалғандары дұрыс: Менің достарым Шымкентте тұрады. Ол дүйсенбі сайын спортзалға барады. Біз ет жемейміз."
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Дұрыс сөзді таңдаңыз: What ___ your father do?",
+      "options": [
+        "does",
+        "do",
+        "is",
+        "are"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Your father — **he** → **does**; соңғы do — «істеу» деген етістік: What does your father do? — Әкең кім болып жұмыс істейді?",
+      "why": {
+        "1": "do сөзі you немесе they-мен дұрыс болар еді: What do you do?"
+      }
+    },
+    {
+      "id": "q14",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті Present Simple түрінде жазыңыз: He ___ (go) to school by bus.",
+      "answer": [
+        "goes"
+      ],
+      "accept": [
+        "goes"
+      ],
+      "explanation": "He → -s керек; go **-o**-ға аяқталады → **goes**. He goes to school by bus. — Ол мектепке автобуспен барады."
+    },
+    {
+      "id": "q15",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті Present Simple түрінде жазыңыз: We ___ (watch) TV in the evening.",
+      "answer": [
+        "watch"
+      ],
+      "accept": [
+        "watch"
+      ],
+      "explanation": "**We** → етістік өзгеріссіз: We watch TV in the evening. — Біз кешке теледидар көреміз."
+    },
+    {
+      "id": "q16",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті Present Simple түрінде жазыңыз: My sister ___ (have) a new phone.",
+      "answer": [
+        "has"
+      ],
+      "accept": [
+        "has"
+      ],
+      "explanation": "My sister — she, ал have he/she/it-пен → **has**: My sister has a new phone. — Әпкемнің жаңа телефоны бар."
+    },
+    {
+      "id": "q17",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Present Simple-дің болымсыз түрін жазыңыз: I ___ (not / like) cold weather.",
+      "answer": [
+        "don't like"
+      ],
+      "accept": [
+        "don't like",
+        "do not like"
+      ],
+      "explanation": "**I**-мен → **don't** + етістік: I don't like cold weather. — Мен суық ауа райын ұнатпаймын."
+    },
+    {
+      "id": "q18",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Present Simple-дің болымсыз түрін жазыңыз: She ___ (not / eat) fish.",
+      "answer": [
+        "doesn't eat"
+      ],
+      "accept": [
+        "doesn't eat",
+        "does not eat"
+      ],
+      "explanation": "**she**-мен → **doesn't** + -s-сіз етістік: She doesn't eat fish. — Ол балық жемейді."
+    },
+    {
+      "id": "q19",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Бір сөз жазыңыз: ___ they live near here? — Yes, they do.",
+      "answer": [
+        "Do"
+      ],
+      "accept": [
+        "Do"
+      ],
+      "explanation": "Кәдімгі етістігі бар сұрақ, **they** → **Do**: Do they live near here? — Олар осы маңда тұра ма? — Иә."
+    },
+    {
+      "id": "q20",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті Present Simple түрінде жазыңыз: My dad ___ (fix) cars.",
+      "answer": [
+        "fixes"
+      ],
+      "accept": [
+        "fixes"
+      ],
+      "explanation": "My dad — he; fix **-x**-ке аяқталады → **-es**: My dad fixes cars. — Әкем көлік жөндейді."
+    },
+    {
+      "id": "q21",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 1,
+      "text": "Бір сөз жазыңыз: ___ Aliya speak Kazakh? — Yes, she does.",
+      "answer": [
+        "Does"
+      ],
+      "accept": [
+        "Does"
+      ],
+      "explanation": "Aliya — қыз бала, яғни **she** → **Does**: Does Aliya speak Kazakh? — Әлия қазақша сөйлей ме? — Иә."
+    },
+    {
+      "id": "q22",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 1,
+      "text": "Етістікті Present Simple түрінде жазыңыз: The baby ___ (cry) at night.",
+      "answer": [
+        "cries"
+      ],
+      "accept": [
+        "cries"
+      ],
+      "explanation": "The baby — it; y-дің алдында дауыссыз r тұр → **y → ies**: The baby cries at night. — Сәби түнде жылайды."
+    }
+  ]
+}

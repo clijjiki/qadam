@@ -72,12 +72,12 @@ export function createLayout(root) {
     'aside',
     { class: 'sidebar' },
     brand(),
-    langSwitch({ withIcon: true, label: 'Язык' }),
+    langSwitch({ withIcon: true, label: 'Язык', followRoute: true }),
     h('nav', { class: 'nav', 'aria-label': 'Главное меню' }, NAV.map((item) => (item.section ? h('div', { class: 'nav__section' }, item.section) : navLink(item)))),
     sidebarUser,
     h('div', { class: 'copyright' }, COPYRIGHT),
   );
-  const topbar = h('header', { class: 'topbar' }, brand(), h('div', { class: 'row', style: { gap: '8px' } }, langSwitch(), topStats));
+  const topbar = h('header', { class: 'topbar' }, brand(), h('div', { class: 'row', style: { gap: '8px' } }, langSwitch({ followRoute: true }), topStats));
   const tabbar = h('nav', { class: 'tabbar', 'aria-label': 'Вкладки' }, TABS.map((tab) => h('a', { href: tab.href, dataset: { key: tab.key } }, h('span', { class: 'ico' }, icon(tab.icon, { size: 20 })), tab.label)));
   const main = h('main', { class: 'main' }, page);
   const shell = h('div', { class: 'shell' }, sidebar, h('div', { class: 'main-col' }, topbar, main), tabbar);

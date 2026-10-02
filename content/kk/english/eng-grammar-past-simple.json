@@ -1,0 +1,419 @@
+{
+  "id": "eng-grammar-past-simple",
+  "subject": "english",
+  "title": "Past Simple: не істедім",
+  "summary": "-ed жалғанатын дұрыс етістіктер, жиі кездесетін 30 бұрыс етістік (went, saw, did), сұрақтағы did, yesterday/ago.",
+  "theory": [
+    "## Past Simple қашан керек\nPast Simple — «жай өткен шақ». Онымен **өткенде болып, аяқталған** әрекет туралы айтады.\n\n:::example Мысалдар\n- I watched a film yesterday. — Мен кеше фильм көрдім.\n- We went to Almaty last summer. — Өткен жазда біз Алматыға бардық.\n- She called me two hours ago. — Ол маған екі сағат бұрын қоңырау шалды.\n:::\n\nБелгі сөздер: **yesterday** (кеше), **last week / last year** (өткен аптада / өткен жылы), **two days ago** (екі күн бұрын), **in 2020** (2020 жылы).\n\n:::tip Жақсы жаңалық\nPast Simple-де түрі **бәріне бірдей**: I worked, he worked, they worked. Ешқандай -s жоқ!\n:::",
+    "## Дұрыс етістіктер: -ed\nЕтістіктердің көпшілігіне **-ed** жалғанады. Бірақ жазылу ережелері бар:\n\n| Ереже | Мысалдар |\n|---|---|\n| әдетте + ed | work → worked, play → played |\n| -e-ге аяқталса → + d | like → liked, live → lived |\n| дауыссыз + y → ied | study → studied, cry → cried |\n| қысқа етістік: дауысты + дауыссыз → қосарлау | stop → stopped, plan → planned |\n\n- He played football yesterday. — Ол кеше футбол ойнады.\n- I studied for two hours. — Мен екі сағат оқыдым.",
+    "## Жиі кездесетін 30 бұрыс етістік\nБұрыс етістіктерге **-ed жалғанбайды** — олардың өткен шақ түрін жаттап алу керек. Мына 30-дан баста:\n\n| Етістік | Past Simple | Аудармасы |\n|---|---|---|\n| be | was / were | болу |\n| go | went | бару, жүру |\n| have | had | бар болу, ие болу |\n| do | did | істеу |\n| see | saw | көру |\n| get | got | алу |\n| make | made | жасау, дайындау |\n| come | came | келу |\n| take | took | алу |\n| say | said | айту |\n| know | knew | білу |\n| think | thought | ойлау |\n| eat | ate | жеу |\n| drink | drank | ішу |\n| buy | bought | сатып алу |\n| give | gave | беру |\n| find | found | табу |\n| tell | told | айтып беру |\n| write | wrote | жазу |\n| read | read | оқу |\n| sleep | slept | ұйықтау |\n| meet | met | кездесу |\n| run | ran | жүгіру |\n| sit | sat | отыру |\n| speak | spoke | сөйлеу |\n| leave | left | кету, жүріп кету |\n| begin | began | бастау |\n| feel | felt | сезіну |\n| put | put | қою |\n| cost | cost | тұру (бағасы) |\n\n:::tip be және read туралы\n**was** — I, he, she, it-пен; **were** — you, we, they-мен. read-тің түрі дәл солай жазылады, бірақ [ред] деп оқылады.\n:::",
+    "## Болымсыз түрі: didn't\nБолымсыз сөйлемде **didn't** (did not) пен **бастапқы түрдегі** етістікті қоямыз — -ed-сіз және екінші түрде емес.\n\n- I didn't go to school yesterday. — Мен кеше мектепке барған жоқпын.\n- She didn't see the message. — Ол хабарламаны көрмеді.\n\nЕрекше жағдай — was/were: оларға жай ғана not қосамыз. I wasn't at home. — Мен үйде болмадым. They weren't late. — Олар кешіккен жоқ.\n\n:::warn Жиі кездесетін қате\n«She didn't went». Өткен шақты **did** сөзі көрсетіп тұр, оны екінші рет көрсетпейді. Дұрысы: **She didn't go.** — Ол барған жоқ.\n:::",
+    "## Сұрақтар: Did you…?\nСұрақ: **Did + кім + бастапқы түрдегі етістік**.\n\n| Сұрақ | Жауап | Аудармасы |\n|---|---|---|\n| Did you see the film? | Yes, I did. | Сен фильмді көрдің бе? — Иә. |\n| Did he call you? | No, he didn't. | Ол саған қоңырау шалды ма? — Жоқ. |\n| Where did you go? | To the park. | Сен қайда бардың? — Саябаққа. |\n\nwas/were-мен did керек емес — сөз тәртібін өзгертеміз: **Were you at home?** — Сен үйде болдың ба? **Was it cold?** — Суық болды ма?\n\n:::warn Жиі кездесетін қате\n«Did you went?» — қате. Дұрысы: **Did you go?** — Сен бардың ба?\n:::",
+    "## Қалай жаттығу керек\n1. Бұрыс етістіктерді күніне 5-тен, дауыстап жатта: *go — went, see — saw*.\n2. Жаңа сөздермен кешегі күн туралы **өзіңнің 5 сөйлеміңді** жаз (*Yesterday I met my friend.*).\n3. Олардан did арқылы болымсыз сөйлем мен сұрақ жасап, **дауыстап айт**.\n4. **Extra English** сериалының бір бөлімін қарап, өткен шақтағы 5 етістікті жазып ал."
+  ],
+  "cards": [
+    {
+      "front": "Past Simple-ді қашан қолданамыз?",
+      "back": "Әрекет өткенде аяқталған: yesterday, last week, ago."
+    },
+    {
+      "front": "Past Simple-дегі дұрыс етістік",
+      "back": "+ ed: work → worked; like → liked; study → studied; stop → stopped"
+    },
+    {
+      "front": "go → ?",
+      "back": "went"
+    },
+    {
+      "front": "see → ?",
+      "back": "saw"
+    },
+    {
+      "front": "buy → ?",
+      "back": "bought"
+    },
+    {
+      "front": "think → ?",
+      "back": "thought"
+    },
+    {
+      "front": "be → ?",
+      "back": "was (I, he, she, it) / were (you, we, they)"
+    },
+    {
+      "front": "Past Simple-дегі болымсыз түрі",
+      "back": "didn't + бастапқы түрі: I didn't go."
+    },
+    {
+      "front": "Past Simple-дегі сұрақ",
+      "back": "Did + кім + бастапқы түрі: Did you go?"
+    },
+    {
+      "front": "ago — қайда қоямыз?",
+      "back": "мерзімнен кейін: two days ago — екі күн бұрын"
+    },
+    {
+      "front": "last week =",
+      "back": "өткен аптада"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: Yesterday I ___ football.",
+      "options": [
+        "played",
+        "play",
+        "plaied",
+        "plays"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Yesterday → өткен шақ; play — дұрыс етістік, y-дің алдында дауысты a тұр → жай ғана **+ed**: I played football yesterday. — Мен кеше футбол ойнадым.",
+      "why": {
+        "2": "y-ді i-ге тек дауыссыздан кейін ауыстырамыз (study → studied), ал play сөзінде y-дің алдында дауысты тұр."
+      }
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "**go** етістігінің өткен шақ түрі қандай?",
+      "options": [
+        "went",
+        "goed",
+        "gone",
+        "wented"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "go — бұрыс етістік: go → **went**. I went home. — Мен үйге бардым.",
+      "why": {
+        "2": "gone — үшінші түрі, ол Past Simple-де емес, басқа шақтарда керек."
+      }
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "**see** етістігінің өткен шақ түрі қандай?",
+      "options": [
+        "saw",
+        "seed",
+        "seen",
+        "sawed"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "see — бұрыс етістік: see → **saw**. I saw a cat. — Мен мысық көрдім."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: She ___ a cake last Sunday.",
+      "options": [
+        "made",
+        "make",
+        "maked",
+        "makes"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Last Sunday → өткен шақ; make — бұрыс етістік: **made**. She made a cake last Sunday. — Ол өткен жексенбіде торт пісірді."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз: We ___ at home yesterday.",
+      "options": [
+        "were",
+        "was",
+        "are",
+        "be"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "To be-нің өткен шағы: **we**-мен → **were**. We were at home yesterday. — Кеше біз үйде болдық.",
+      "why": {
+        "1": "was — тек I, he, she, it-пен."
+      }
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "**buy** етістігінің өткен шақ түрі қандай?",
+      "options": [
+        "bought",
+        "buyed",
+        "brought",
+        "buys"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "buy → **bought**. I bought a book. — Мен кітап сатып алдым. Brought — bring (алып келу) етістігінің өткен шағы.",
+      "why": {
+        "2": "brought — bring «алып келу» етістігінің өткен шағы, ұқсас, бірақ басқа сөз."
+      }
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс түрін таңдаңыз: Did you ___ the new film?",
+      "options": [
+        "see",
+        "saw",
+        "seen",
+        "seeing"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**did**-тен кейін етістік бастапқы түрде тұрады: Did you see the new film? — Сен жаңа фильмді көрдің бе?",
+      "why": {
+        "1": "Өткен шақты did сөзі көрсетіп тұр, сондықтан мұнда saw — қате."
+      }
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс болымсыз сөйлемді таңдаңыз (Мен таңғы ас ішкен жоқпын).",
+      "options": [
+        "I didn't eat breakfast.",
+        "I didn't ate breakfast.",
+        "I not ate breakfast.",
+        "I don't ate breakfast."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**didn't** + eat бастапқы түрі: I didn't eat breakfast. — Мен таңғы ас ішкен жоқпын."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс сөзді таңдаңыз: Where ___ you go last summer?",
+      "options": [
+        "did",
+        "do",
+        "were",
+        "was"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Last summer → өткен шақ, go — кәдімгі етістік → **did** керек: Where did you go last summer? — Өткен жазда сен қайда бардың?"
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "**study** етістігінің өткен шақ түрі қандай?",
+      "options": [
+        "studied",
+        "studyed",
+        "studed",
+        "studies"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Дауыссыз d + y → **y-ді ied-ке ауыстырамыз**: studied. I studied English. — Мен ағылшын тілін оқыдым."
+    },
+    {
+      "id": "q11",
+      "type": "single",
+      "difficulty": 3,
+      "text": "**Қатесі бар** сөйлемді табыңыз.",
+      "options": [
+        "Did she went home?",
+        "He was tired.",
+        "They went to Almaty.",
+        "I met my friend."
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "did-тен кейін етістік бастапқы түрде тұрады: **Did she go home?** — Ол үйге кетті ме? Қалғандары дұрыс: Ол шаршаған еді. Олар Алматыға барды. Мен досымды кездестірдім."
+    },
+    {
+      "id": "q12",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Дұрыс сөзді таңдаңыз: Three days ___ I bought a new bag.",
+      "options": [
+        "ago",
+        "last",
+        "yesterday",
+        "next"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "«Үш күн бұрын» = three days **ago**: ago мерзімнен кейін қойылады. Three days ago I bought a new bag. — Үш күн бұрын мен жаңа сөмке сатып алдым.",
+      "why": {
+        "1": "last сөздің алдына қойылады: last week, ал three days last емес."
+      }
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сөзді таңдаңыз: ___ it cold yesterday? — Yes, it was.",
+      "options": [
+        "Was",
+        "Were",
+        "Did",
+        "Is"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Бұл — өткен шақтағы to be бар сұрақ, did керек емес; **it → was**: Was it cold yesterday? — Кеше суық болды ма? — Иә.",
+      "why": {
+        "2": "did was/were-мен бірге қойылмайды: to be сұрақты өзі жасайды."
+      }
+    },
+    {
+      "id": "q14",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті Past Simple түрінде жазыңыз: I ___ (watch) a film last night.",
+      "answer": [
+        "watched"
+      ],
+      "accept": [
+        "watched"
+      ],
+      "explanation": "Дұрыс етістік → **+ed**: I watched a film last night. — Кеше кешке мен фильм көрдім."
+    },
+    {
+      "id": "q15",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті Past Simple түрінде жазыңыз: She ___ (go) to the shop yesterday.",
+      "answer": [
+        "went"
+      ],
+      "accept": [
+        "went"
+      ],
+      "explanation": "go — бұрыс етістік: **went**. She went to the shop yesterday. — Кеше ол дүкенге барды."
+    },
+    {
+      "id": "q16",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті Past Simple түрінде жазыңыз: We ___ (have) pizza for dinner yesterday.",
+      "answer": [
+        "had"
+      ],
+      "accept": [
+        "had"
+      ],
+      "explanation": "have — бұрыс етістік: **had**. We had pizza for dinner yesterday. — Кеше кешкі асқа біз пицца жедік."
+    },
+    {
+      "id": "q17",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Бір сөз жазыңыз: ___ you finish your homework? — Yes, I did.",
+      "answer": [
+        "Did"
+      ],
+      "accept": [
+        "Did"
+      ],
+      "explanation": "«Yes, I did» деген жауап → сұрақ Past Simple-де, **Did** сөзінен басталады: Did you finish your homework? — Сен үй тапсырмасын орындап болдың ба?"
+    },
+    {
+      "id": "q18",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Past Simple-дің болымсыз түрін жазыңыз: They ___ (not / come) to the party.",
+      "answer": [
+        "didn't come"
+      ],
+      "accept": [
+        "didn't come",
+        "did not come"
+      ],
+      "explanation": "**didn't** + come бастапқы түрі: They didn't come to the party. — Олар кешке келген жоқ."
+    },
+    {
+      "id": "q19",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 1,
+      "text": "Етістікті Past Simple түрінде жазыңыз: He ___ (stop) the car near the school.",
+      "answer": [
+        "stopped"
+      ],
+      "accept": [
+        "stopped"
+      ],
+      "explanation": "stop — дауысты + дауыссызға аяқталатын қысқа етістік → **p әрпін қосарлаймыз**: stopped. He stopped the car near the school. — Ол көлікті мектептің жанына тоқтатты."
+    },
+    {
+      "id": "q20",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 1,
+      "text": "Етістікті Past Simple түрінде жазыңыз: The lesson ___ (begin) at eight.",
+      "answer": [
+        "began"
+      ],
+      "accept": [
+        "began"
+      ],
+      "explanation": "begin — бұрыс етістік: **began**. The lesson began at eight. — Сабақ сегізде басталды."
+    },
+    {
+      "id": "q21",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 2,
+      "text": "To be етістігін Past Simple-де **болымсыз түрде** жазыңыз: I ___ at home yesterday.",
+      "answer": [
+        "wasn't"
+      ],
+      "accept": [
+        "wasn't",
+        "was not"
+      ],
+      "explanation": "I-мен to be-нің өткен шағы — **was**, болымсыз түрі **wasn't** (did-сіз!). I wasn't at home yesterday. — Кеше мен үйде болмадым."
+    },
+    {
+      "id": "q22",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 1,
+      "text": "Етістікті Past Simple түрінде жазыңыз: My dad ___ (tell) me a funny story.",
+      "answer": [
+        "told"
+      ],
+      "accept": [
+        "told"
+      ],
+      "explanation": "tell — бұрыс етістік: **told**. My dad told me a funny story. — Әкем маған күлкілі оқиға айтып берді."
+    }
+  ]
+}

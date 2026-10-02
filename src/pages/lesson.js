@@ -2,7 +2,7 @@
 // Прогресс шагов хранится в state.lessons[день]: можно уйти и вернуться к тому же шагу.
 
 import { formatMinutes, h, pluralize } from '../core/dom.js';
-import { langOf, loadTopic, loadTopics, subject, topicMeta, topicTitle } from '../core/content.js';
+import { loadLocalTopic, loadLocalTopics, localTitle, subject, topicMeta } from '../core/content.js';
 import { getState } from '../core/store.js';
 import { completeLessonStep, recordPractice, recordTheory, startLesson } from '../core/actions.js';
 import { badgeById } from '../core/badges.js';
@@ -31,7 +31,7 @@ import { confirmDialog } from '../ui/modal.js';
 import { toastBadges } from '../ui/toast.js';
 import { subjectColor } from '../ui/components.js';
 import { icon, subjectIcon } from '../ui/icons.js';
-import { translationNote } from '../ui/lang-switch.js';
+import { langSwitch, translationNote } from '../ui/lang-switch.js';
 
 const STEPS = lessonSteps(LESSON_SUBJECTS);
 const GOOD = 0.8;
@@ -40,6 +40,8 @@ const OK = 0.5;
 let root = null;
 let runner = null;
 let today = todayKey();
+// Шаг, к которому нужно вернуться после смены языка: страница при этом перерисовывается целиком.
+let resumeStepId = null;
 
 // ---------- данные ----------
 
@@ -57,7 +59,7 @@ function stepTitle(step) {
 
 function newTopicTitle(step) {
   const meta = topicMeta(lessonRecord()?.newTopics?.[step.subject]);
-  return meta ? topicTitle(meta, langOf(getState())) : null;
+  return meta ? localTitle(getState(), meta) : null;
 }
 
 /** Первый вход за день: выбираем новые темы и фиксируем их до конца дня. */
@@ -282,7 +284,7 @@ async function reviewStep(step) {
   loading(step);
   let topics;
   try {
-    topics = await loadTopics(metas.map((m) => m.id), langOf(state));
+    topics = await loadLocalTopics(state, metas.map((m) => m.id));
   } catch (error) {
     failed(step, error);
     return;
@@ -336,6 +338,8 @@ function showTheory(step, topic, { onNext, nextLabel }) {
   show(
     stepHead(step, 'Прочитай спокойно, разберись в примерах — потом задачи'),
     translationNote(topic),
+    // У пройденного шага («Перечитать теорию») переключателя нет: смена языка перезапустила бы шаг.
+    lessonRecord()?.steps?.[step.id] ? null : langSwitch({ withIcon: true, label: `Язык уроков: ${subjectName(step.subject)}`, subject: step.subject, onBeforeChange: () => { resumeStepId = step.id; } }),
     h('article', { class: 'card stack' }, h('h2', { style: { margin: 0 } }, topic.title), topic.summary ? h('p', { class: 'muted', style: { margin: 0 } }, topic.summary) : null, theoryBody(topic)),
     cardsBody(topic),
     h('div', { class: 'row' }, h('button', { class: 'btn btn--primary btn--lg', onClick: onNext }, nextLabel)),
@@ -372,7 +376,7 @@ async function newStep(step) {
   loading(step);
   let topic;
   try {
-    topic = await loadTopic(meta.id, langOf(getState()));
+    topic = await loadLocalTopic(getState(), meta.id);
   } catch (error) {
     failed(step, error);
     return;
@@ -400,7 +404,8 @@ export async function render({ query }) {
   today = todayKey();
   ensureLesson();
   root = h('div', { class: 'stack lesson' });
-  const step = STEPS.find((s) => s.id === query.step);
+  const step = STEPS.find((s) => s.id === (query.step || resumeStepId));
+  resumeStepId = null;
   if (step) runStep(step);
   else showOverview();
   return root;

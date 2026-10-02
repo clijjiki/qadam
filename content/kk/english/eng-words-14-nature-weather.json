@@ -1,0 +1,436 @@
+{
+  "id": "eng-words-14-nature-weather",
+  "subject": "english",
+  "title": "Табиғат және ауа райы",
+  "summary": "Табиғат пен ауа райы туралы 20 сөз: күн, жаңбыр, қар, жел, ыстық, суық, ағаш, өзен, тау.",
+  "theory": [
+    "## Бұл 20 сөзді қалай жаттау керек\nТізімді бір кеште басынан аяғына дейін жаттама. Қадамдап жұмыс істе:\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған 5 сөзді ертең қайталаумен бірге ал.\n2. **Дауыстап айт.** Күнде таңертең терезеден қарап, ауа райының қандай екенін айт: *It is cold. It is snowing.*\n3. **Қазақстан табиғаты туралы 5 сөйлем жаз**: *There are big mountains near Almaty.*\n4. **Сөздерді қайта кездестір** — карточкаларда және Extra English бөлімінде. Сөзді өзің сөйлегенде қолдана алсаң ғана ол жатталды деп есептеледі.",
+    "## Жинаққа кеңес: It is… және -y жұрнағы\nАуа райы туралы **It is** арқылы айтады: *It is hot. It is cold. It is warm.* «Жаңбыр / қар жауып тұр» — *It is raining. It is snowing.*\n\nЗат есімге **-y** қосып, сын есім жасау оңай:\n\n| Сөз | Ауа райы |\n|---|---|\n| sun | sunny — күн ашық |\n| rain | rainy — жаңбырлы |\n| wind | windy — желді |\n| cloud | cloudy — бұлтты |\n| snow | snowy — қарлы |\n\n:::tip Басты сұрақ\n*What is the weather like today?* — Бүгін ауа райы қандай? — *It is sunny and warm.*\n:::"
+  ],
+  "words": [
+    {
+      "id": "w14-weather",
+      "word": "weather",
+      "pos": "n",
+      "ipa": "/ˈweðə/",
+      "ru": "ауа райы",
+      "def": "how hot, cold, sunny or rainy it is outside",
+      "example": "What is the weather like today?",
+      "collocations": [
+        "good weather",
+        "bad weather",
+        "weather forecast"
+      ]
+    },
+    {
+      "id": "w14-sun",
+      "word": "sun",
+      "pos": "n",
+      "ipa": "/sʌn/",
+      "ru": "күн",
+      "def": "the big hot light in the sky in the day",
+      "example": "The sun is very hot in summer.",
+      "collocations": [
+        "in the sun",
+        "the sun shines"
+      ]
+    },
+    {
+      "id": "w14-rain",
+      "word": "rain",
+      "pos": "n",
+      "ipa": "/reɪn/",
+      "ru": "жаңбыр; жаңбыр жауу",
+      "def": "water that falls from the clouds",
+      "example": "It often rains in April.",
+      "collocations": [
+        "heavy rain",
+        "in the rain"
+      ]
+    },
+    {
+      "id": "w14-snow",
+      "word": "snow",
+      "pos": "n",
+      "ipa": "/snəʊ/",
+      "ru": "қар; қар жауу",
+      "def": "soft white ice that falls from the sky when it is cold",
+      "example": "There is a lot of snow in Astana in winter.",
+      "collocations": [
+        "heavy snow",
+        "it is snowing"
+      ]
+    },
+    {
+      "id": "w14-wind",
+      "word": "wind",
+      "pos": "n",
+      "ipa": "/wɪnd/",
+      "ru": "жел",
+      "def": "air that moves fast outside",
+      "example": "The wind is very strong today.",
+      "collocations": [
+        "strong wind",
+        "cold wind"
+      ]
+    },
+    {
+      "id": "w14-cloud",
+      "word": "cloud",
+      "pos": "n",
+      "ipa": "/klaʊd/",
+      "ru": "бұлт",
+      "def": "a white or grey thing in the sky that can bring rain",
+      "example": "There are no clouds in the sky today.",
+      "collocations": [
+        "dark clouds",
+        "white clouds"
+      ]
+    },
+    {
+      "id": "w14-sky",
+      "word": "sky",
+      "pos": "n",
+      "ipa": "/skaɪ/",
+      "ru": "аспан",
+      "def": "the space above us where we see the sun and stars",
+      "example": "The sky is blue and clear.",
+      "collocations": [
+        "blue sky",
+        "in the sky"
+      ]
+    },
+    {
+      "id": "w14-hot",
+      "word": "hot",
+      "pos": "adj",
+      "ipa": "/hɒt/",
+      "ru": "ыстық",
+      "def": "very warm",
+      "example": "It is very hot today. Let's go to the lake.",
+      "collocations": [
+        "hot day",
+        "hot weather"
+      ]
+    },
+    {
+      "id": "w14-cold",
+      "word": "cold",
+      "pos": "adj",
+      "ipa": "/kəʊld/",
+      "ru": "суық",
+      "def": "not warm at all",
+      "example": "It is cold outside. Put on your coat.",
+      "collocations": [
+        "cold weather",
+        "cold water",
+        "feel cold"
+      ]
+    },
+    {
+      "id": "w14-warm",
+      "word": "warm",
+      "pos": "adj",
+      "ipa": "/wɔːm/",
+      "ru": "жылы",
+      "def": "a little hot, nice and not cold",
+      "example": "It is warm in May.",
+      "collocations": [
+        "warm weather",
+        "warm clothes"
+      ]
+    },
+    {
+      "id": "w14-tree",
+      "word": "tree",
+      "pos": "n",
+      "ipa": "/triː/",
+      "ru": "ағаш",
+      "def": "a big tall plant with leaves",
+      "example": "There is a big apple tree in our garden.",
+      "collocations": [
+        "apple tree",
+        "under a tree"
+      ]
+    },
+    {
+      "id": "w14-flower",
+      "word": "flower",
+      "pos": "n",
+      "ipa": "/ˈflaʊə/",
+      "ru": "гүл",
+      "def": "the beautiful coloured part of a plant",
+      "example": "I gave my mother flowers on her birthday.",
+      "collocations": [
+        "buy flowers",
+        "beautiful flowers"
+      ]
+    },
+    {
+      "id": "w14-grass",
+      "word": "grass",
+      "pos": "n",
+      "ipa": "/ɡrɑːs/",
+      "ru": "шөп",
+      "def": "the short green plant in parks and fields",
+      "example": "We sat on the grass in the park.",
+      "collocations": [
+        "green grass",
+        "on the grass"
+      ]
+    },
+    {
+      "id": "w14-river",
+      "word": "river",
+      "pos": "n",
+      "ipa": "/ˈrɪvə/",
+      "ru": "өзен",
+      "def": "a lot of water that moves across the land to the sea or a lake",
+      "example": "The Irtysh is a long river.",
+      "collocations": [
+        "swim in the river",
+        "along the river"
+      ]
+    },
+    {
+      "id": "w14-lake",
+      "word": "lake",
+      "pos": "n",
+      "ipa": "/leɪk/",
+      "ru": "көл",
+      "def": "a big area of water with land all around it",
+      "example": "Balkhash is a big lake in Kazakhstan.",
+      "collocations": [
+        "swim in the lake",
+        "by the lake"
+      ]
+    },
+    {
+      "id": "w14-sea",
+      "word": "sea",
+      "pos": "n",
+      "ipa": "/siː/",
+      "ru": "теңіз",
+      "def": "a very big area of salt water",
+      "example": "Aktau is on the Caspian Sea.",
+      "collocations": [
+        "by the sea",
+        "swim in the sea"
+      ]
+    },
+    {
+      "id": "w14-mountain",
+      "word": "mountain",
+      "pos": "n",
+      "ipa": "/ˈmaʊntən/",
+      "ru": "тау",
+      "def": "a very high place of land, much higher than a hill",
+      "example": "We went to the mountains near Almaty.",
+      "collocations": [
+        "in the mountains",
+        "climb a mountain"
+      ]
+    },
+    {
+      "id": "w14-forest",
+      "word": "forest",
+      "pos": "n",
+      "ipa": "/ˈfɒrɪst/",
+      "ru": "орман",
+      "def": "a big place with a lot of trees",
+      "example": "There are many animals in the forest.",
+      "collocations": [
+        "in the forest",
+        "a dark forest"
+      ]
+    },
+    {
+      "id": "w14-animal",
+      "word": "animal",
+      "pos": "n",
+      "ipa": "/ˈænɪml/",
+      "ru": "жануар",
+      "def": "a living thing that can move, like a dog or a horse",
+      "example": "A horse is my favourite animal.",
+      "collocations": [
+        "wild animal",
+        "farm animal"
+      ]
+    },
+    {
+      "id": "w14-bird",
+      "word": "bird",
+      "pos": "n",
+      "ipa": "/bɜːd/",
+      "ru": "құс",
+      "def": "an animal with two legs and wings that can fly",
+      "example": "Birds sing in the morning.",
+      "collocations": [
+        "a small bird",
+        "birds fly"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Ауа райы» ағылшынша қалай болады?",
+      "options": [
+        "cloud",
+        "sky",
+        "wind",
+        "weather"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Weather — ауа райы. Wind — жел, sky — аспан, cloud — бұлт."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Ағаш» ағылшынша қалай болады?",
+      "options": [
+        "grass",
+        "forest",
+        "tree",
+        "flower"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Tree — ағаш, forest — орман (көп ағаш). Grass — шөп, flower — гүл."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Тау» ағылшынша қалай болады?",
+      "options": [
+        "river",
+        "sea",
+        "lake",
+        "mountain"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Mountain — тау. River — өзен, lake — көл, sea — теңіз."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "It is ___ today. Take an umbrella.",
+      "options": [
+        "sunny",
+        "rainy",
+        "warm",
+        "hot"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Қолшатырды (umbrella) жаңбырлы күні алады — rainy (rain + -y)."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 2,
+      "text": "«Жылы» ағылшынша қалай болады?",
+      "options": [
+        "cold",
+        "warm",
+        "hot",
+        "wind"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Warm — жылы, жайлы. Hot — ыстық (warm сөзінен күштірек). Cold — суық."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Құс» ағылшынша қалай болады?",
+      "options": [
+        "animal",
+        "tree",
+        "flower",
+        "bird"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Bird — құс. Animal — жалпы жануар."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "In winter there is a lot of ___ in Astana.",
+      "options": [
+        "snow",
+        "grass",
+        "sun",
+        "flower"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Қыста Астанада қар көп болады — snow."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Аспан» ағылшынша қалай болады?",
+      "options": [
+        "sun",
+        "cloud",
+        "sky",
+        "sea"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Sky — аспан: *blue sky*. Sea — теңіз сөзімен шатастырма."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Орман» ағылшынша қалай болады?",
+      "options": [
+        "forest",
+        "grass",
+        "mountain",
+        "river"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Forest — орман, ағаш (trees) көп өсетін жер."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "It is +35 °C. It is very ___ today!",
+      "options": [
+        "snow",
+        "hot",
+        "cold",
+        "warm"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "+35 °C — бұл ыстық: hot. Warm — жай ғана жылы, +35 үшін тым әлсіз сөз."
+    }
+  ]
+}

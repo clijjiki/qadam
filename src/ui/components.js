@@ -1,7 +1,7 @@
 // Переиспользуемые элементы интерфейса: кольца прогресса, полосы, карточки тем, заголовки страниц.
 
 import { h, pluralize } from '../core/dom.js';
-import { langOf, subject, topicTitle, topicWeight } from '../core/content.js';
+import { localTitle, subject, topicWeight } from '../core/content.js';
 import { masteryLevel, masteryOf } from '../core/mastery.js';
 import { formatDate } from '../core/time.js';
 
@@ -106,7 +106,7 @@ export function topicCard(topic, state, { index } = {}) {
       'div',
       { class: 'topic-card__head' },
       h('div', { class: 'topic-card__num' }, index != null ? String(index + 1) : '•'),
-      h('div', { style: { minWidth: 0 } }, h('div', { class: 'card__title' }, topicTitle(topic, langOf(state))), h('div', { class: 'card__sub' }, subLine)),
+      h('div', { style: { minWidth: 0 } }, h('div', { class: 'card__title' }, localTitle(state, topic)), h('div', { class: 'card__sub' }, subLine)),
     ),
     masteryRow(mastery, { color }),
     stats?.answered ? h('div', { class: 'small muted' }, `${pluralize(stats.answered, ['ответ', 'ответа', 'ответов'])}, точность ${Math.round((stats.correct / stats.answered) * 100)}%`) : null,

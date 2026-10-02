@@ -1,0 +1,450 @@
+{
+  "id": "eng-words-06-school",
+  "subject": "english",
+  "title": "Мектеп және оқу",
+  "summary": "Мектеп пен оқу туралы 20 сөз: school, lesson, teacher, book, learn, test, homework…",
+  "theory": [
+    "## Бұл сөздерді қалай жаттау керек\nБұл — күнделікті өміріңнің сөздері: сабақтар, мұғалімдер, тесттер және үй тапсырмасы. Оларды тікелей мектепте жаттықтыру оңай.\n\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған уақытта карточкалар арқылы қайтала.\n2. **Дауыстап айт**: сөзді, транскрипциясын және мысалын — 3 реттен.\n3. **Өз сөйлемдеріңді жаз**: өз мектебің туралы 5 сөйлем (*My favourite subject is history. We have a test tomorrow.*).\n4. **Сөздерді өмірде кездестір**: Extra English-те де, ағылшын тілі сабағында да осы сөздер айтылғанда назар аудар.",
+    "## Кеңес: learn, study және сабаққа пайдалы тіркестер\n**Learn** — үйрену, жаттап алу, жаңа нәрсе білу: *learn new words*. **Study** — оқу (білім алу), пәнмен шұғылдану: *study at university*, *study for a test*. Ал *teach* — біреуді оқыту (мұны teacher істейді).\n\nСабақта көмектесетін тіркестер:\n\n- *Sorry, I don't understand.* — Кешіріңіз, мен түсінбедім.\n- *Can you say it again, please?* — Қайталап жіберіңізші.\n- *How do you say … in English?* — … ағылшынша қалай болады?"
+  ],
+  "words": [
+    {
+      "id": "w06-school",
+      "word": "school",
+      "pos": "n",
+      "ipa": "/skuːl/",
+      "ru": "мектеп",
+      "def": "a place where children go to learn",
+      "example": "My school is ten minutes from my house.",
+      "collocations": [
+        "go to school",
+        "at school",
+        "after school"
+      ]
+    },
+    {
+      "id": "w06-class",
+      "word": "class",
+      "pos": "n",
+      "ipa": "/klɑːs/",
+      "ru": "сынып; сабақ",
+      "def": "a group of students who learn together; also a lesson",
+      "example": "There are twenty-five students in our class.",
+      "collocations": [
+        "in class",
+        "our class",
+        "English class"
+      ]
+    },
+    {
+      "id": "w06-lesson",
+      "word": "lesson",
+      "pos": "n",
+      "ipa": "/ˈlesn/",
+      "ru": "сабақ",
+      "def": "a time when a teacher teaches a subject",
+      "example": "Our first lesson is maths.",
+      "collocations": [
+        "an English lesson",
+        "have a lesson",
+        "after the lesson"
+      ]
+    },
+    {
+      "id": "w06-teacher",
+      "word": "teacher",
+      "pos": "n",
+      "ipa": "/ˈtiːtʃə/",
+      "ru": "мұғалім, ұстаз",
+      "def": "a person whose job is to teach",
+      "example": "Our English teacher is from Almaty.",
+      "collocations": [
+        "English teacher",
+        "class teacher"
+      ]
+    },
+    {
+      "id": "w06-student",
+      "word": "student",
+      "pos": "n",
+      "ipa": "/ˈstjuːdnt/",
+      "ru": "оқушы, студент",
+      "def": "a person who studies at a school or university",
+      "example": "I am a student in the tenth grade.",
+      "collocations": [
+        "a good student",
+        "a new student"
+      ]
+    },
+    {
+      "id": "w06-book",
+      "word": "book",
+      "pos": "n",
+      "ipa": "/bʊk/",
+      "ru": "кітап; оқулық",
+      "def": "many pages with words inside a cover; you read it",
+      "example": "I read an English book every month.",
+      "collocations": [
+        "read a book",
+        "an English book",
+        "open your books"
+      ]
+    },
+    {
+      "id": "w06-pen",
+      "word": "pen",
+      "pos": "n",
+      "ipa": "/pen/",
+      "ru": "қаламсап, қалам",
+      "def": "a thing you write with, using ink",
+      "example": "Can I use your pen, please?",
+      "collocations": [
+        "a blue pen",
+        "pen and paper"
+      ]
+    },
+    {
+      "id": "w06-page",
+      "word": "page",
+      "pos": "n",
+      "ipa": "/peɪdʒ/",
+      "ru": "бет",
+      "def": "one side of a piece of paper in a book",
+      "example": "Open your books at page ten.",
+      "collocations": [
+        "page ten",
+        "on page",
+        "the next page"
+      ]
+    },
+    {
+      "id": "w06-word",
+      "word": "word",
+      "pos": "n",
+      "ipa": "/wɜːd/",
+      "ru": "сөз",
+      "def": "a group of letters that means something",
+      "example": "I learn fifteen new English words every day.",
+      "collocations": [
+        "new words",
+        "in other words",
+        "a word in English"
+      ]
+    },
+    {
+      "id": "w06-question",
+      "word": "question",
+      "pos": "n",
+      "ipa": "/ˈkwestʃən/",
+      "ru": "сұрақ",
+      "def": "what you ask when you want to know something",
+      "example": "Can I ask a question?",
+      "collocations": [
+        "ask a question",
+        "answer a question",
+        "good question"
+      ]
+    },
+    {
+      "id": "w06-answer",
+      "word": "answer",
+      "pos": "n",
+      "ipa": "/ˈɑːnsə/",
+      "ru": "жауап; жауап беру",
+      "def": "what you say or write when someone asks you something",
+      "example": "I know the answer to this question.",
+      "collocations": [
+        "the right answer",
+        "the answer to",
+        "answer the phone"
+      ]
+    },
+    {
+      "id": "w06-homework",
+      "word": "homework",
+      "pos": "n",
+      "ipa": "/ˈhəʊmwɜːk/",
+      "ru": "үй тапсырмасы",
+      "def": "school work that you do at home",
+      "example": "I did my homework yesterday evening.",
+      "collocations": [
+        "do homework",
+        "a lot of homework",
+        "maths homework"
+      ]
+    },
+    {
+      "id": "w06-test",
+      "word": "test",
+      "pos": "n",
+      "ipa": "/test/",
+      "ru": "тест, бақылау жұмысы",
+      "def": "some questions that check what you know",
+      "example": "We have a maths test tomorrow.",
+      "collocations": [
+        "pass a test",
+        "a maths test",
+        "test results"
+      ]
+    },
+    {
+      "id": "w06-exam",
+      "word": "exam",
+      "pos": "n",
+      "ipa": "/ɪɡˈzæm/",
+      "ru": "емтихан",
+      "def": "a big, important test",
+      "example": "I will have a big exam next year.",
+      "collocations": [
+        "take an exam",
+        "pass an exam",
+        "final exam"
+      ]
+    },
+    {
+      "id": "w06-subject",
+      "word": "subject",
+      "pos": "n",
+      "ipa": "/ˈsʌbdʒɪkt/",
+      "ru": "пән (мектептегі); тақырып",
+      "def": "something you study at school, like maths or history",
+      "example": "My favourite subject is history.",
+      "collocations": [
+        "favourite subject",
+        "school subject"
+      ]
+    },
+    {
+      "id": "w06-language",
+      "word": "language",
+      "pos": "n",
+      "ipa": "/ˈlæŋɡwɪdʒ/",
+      "ru": "тіл",
+      "def": "the words people use to speak and write, like English or Kazakh",
+      "example": "I speak Kazakh, Russian and a little English.",
+      "collocations": [
+        "foreign language",
+        "learn a language",
+        "first language"
+      ]
+    },
+    {
+      "id": "w06-learn",
+      "word": "learn",
+      "pos": "v",
+      "ipa": "/lɜːn/",
+      "ru": "үйрену, жаттап алу; біліп алу",
+      "def": "to find out new things or how to do something",
+      "example": "I learn English on my phone every day.",
+      "collocations": [
+        "learn English",
+        "learn new words",
+        "learn to swim"
+      ]
+    },
+    {
+      "id": "w06-study",
+      "word": "study",
+      "pos": "v",
+      "ipa": "/ˈstʌdi/",
+      "ru": "оқу (білім алу), оқып-үйрену, шұғылдану",
+      "def": "to spend time reading and learning about a subject",
+      "example": "My brother studies at university in Almaty.",
+      "collocations": [
+        "study hard",
+        "study for a test",
+        "study English"
+      ]
+    },
+    {
+      "id": "w06-read",
+      "word": "read",
+      "pos": "v",
+      "ipa": "/riːd/",
+      "ru": "оқу (мәтінді) (өткен шағы — read /red/)",
+      "def": "to look at words and understand them",
+      "example": "I read before bed every night.",
+      "collocations": [
+        "read a book",
+        "read aloud",
+        "read the text"
+      ]
+    },
+    {
+      "id": "w06-write",
+      "word": "write",
+      "pos": "v",
+      "ipa": "/raɪt/",
+      "ru": "жазу (өткен шағы — wrote)",
+      "def": "to put words on paper or on a screen",
+      "example": "Write your name at the top of the page.",
+      "collocations": [
+        "write a letter",
+        "write down",
+        "write an essay"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Мұғалім“ ағылшынша қалай болады?",
+      "options": [
+        "class",
+        "school",
+        "student",
+        "teacher"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Teacher — мұғалім (teach — оқыту + -er — сол істі атқарушы). Student — оқушы."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Үй тапсырмасы“ ағылшынша қалай болады?",
+      "options": [
+        "lesson",
+        "housework",
+        "test",
+        "homework"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Homework — үй тапсырмасы. Housework — үй шаруасы (үй жинау, кір жуу)."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Сұрақ“ ағылшынша қалай болады?",
+      "options": [
+        "question",
+        "answer",
+        "page",
+        "word"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Question — сұрақ, answer — жауап: *ask a question* — сұрақ қою."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 2,
+      "text": "„Мектеп пәні“ ағылшынша қалай болады?",
+      "options": [
+        "lesson",
+        "subject",
+        "object",
+        "exam"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Subject — мектеп пәні (*My favourite subject is history*). Object — зат, нысан."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: Open your books at ___ 25.",
+      "options": [
+        "class",
+        "page",
+        "word",
+        "book"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*Open your books at page 25* — кітаптарыңды 25-бетте ашыңдар. Мұғалім жиі айтатын сөйлем."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: We have a maths ___ tomorrow. I need to study!",
+      "options": [
+        "page",
+        "test",
+        "subject",
+        "teacher"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "*A maths test* — математикадан бақылау жұмысы. Оған дайындалу (study) керек."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Оқу“ (кітап оқу) ағылшынша қалай болады?",
+      "options": [
+        "read",
+        "write",
+        "learn",
+        "study"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Read — (кітап) оқу, write — жазу, learn — үйрену, study — оқу (білім алу)."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Тіл“ (қазақ тілі, ағылшын тілі) ағылшынша қалай болады?",
+      "options": [
+        "word",
+        "language",
+        "English",
+        "subject"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Language — тіл: *I speak three languages*. English — бір ғана тілдің атауы."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Сөйлемге сәйкес келетін сөзді таңдаңыз: My brother ___ at university.",
+      "options": [
+        "opens",
+        "writes",
+        "answers",
+        "studies"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "*Study at university* — университетте оқу. He / she сөздерінен кейін етістікке -s қосамыз: study → studies."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "„Сабақ“ ағылшынша қалай болады?",
+      "options": [
+        "exam",
+        "homework",
+        "test",
+        "lesson"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Lesson — сабақ. Exam — емтихан, homework — үй тапсырмасы, test — бақылау жұмысы."
+    }
+  ]
+}

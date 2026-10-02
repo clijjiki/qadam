@@ -2,7 +2,7 @@
 // трек «сначала свой класс, потом с 7-го» и подготовка к БЖБ/ТЖБ.
 
 import { h, replaceChildren } from '../core/dom.js';
-import { curriculumTopicsOf, langOf, topicSummary, topicTitle } from '../core/content.js';
+import { curriculumTopicsOf, localSummary, localTitle } from '../core/content.js';
 import { CURRICULUM_SUBJECTS, GRADES, gradeProgram, normalizeGrade, normalizeTrack, schoolQuarter, trackPhases } from '../core/curriculum.js';
 import { MASTERED_THRESHOLD, masteryOf } from '../core/mastery.js';
 import { setProfile } from '../core/actions.js';
@@ -26,7 +26,7 @@ function statusBadge(state, topic) {
 }
 
 function topicRow(state, topic, number) {
-  const main = h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, topicTitle(topic, langOf(state))), h('div', { class: 'list-item__sub' }, topicSummary(topic, langOf(state))));
+  const main = h('div', { class: 'list-item__main' }, h('div', { class: 'list-item__title' }, localTitle(state, topic)), h('div', { class: 'list-item__sub' }, localSummary(state, topic)));
   const num = h('div', { class: 'list-item__num' }, String(number));
   if (!topic.ready) return h('div', { class: 'list-item curriculum-item--planned' }, num, main, statusBadge(state, topic));
   return h('a', { class: 'list-item', href: `#/topic/${topic.id}` }, num, main, statusBadge(state, topic));
@@ -57,7 +57,7 @@ function quarterCard(state, quarter, program, current) {
 
 function quarterAlert(state, current, grade, program) {
   const quarter = program.quarters.find((q) => q.n === current.quarter);
-  const titles = quarter ? quarter.lines.flatMap((l) => l.topics).map((t) => topicTitle(t, langOf(state))) : [];
+  const titles = quarter ? quarter.lines.flatMap((l) => l.topics).map((t) => localTitle(state, t)) : [];
   const head = current.holiday ? `Каникулы. Впереди ${current.label} ${grade} класса — пройди её темы заранее: ` : `Сейчас ${current.label} ${grade} класса. Это спросят на БЖБ и ТЖБ: `;
   return h('div', { class: 'alert alert--info' }, h('b', {}, head), titles.length ? titles.join(' · ') : 'в этой четверти тем ЕНТ нет — иди по следующему этапу трека.');
 }

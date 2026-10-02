@@ -1,6 +1,6 @@
 // Точка входа Qadam: загрузка манифеста контента, тема, оболочка, роутер и рендер страниц.
 
-import { langOf, loadManifest } from './core/content.js';
+import { langSignature, loadManifest } from './core/content.js';
 import { getState, subscribe } from './core/store.js';
 import { addRoute, currentRoute, navigate, onRoute, startRouter } from './core/router.js';
 import { loadKatex, mountMath, onKatexReady } from './core/math.js';
@@ -101,11 +101,11 @@ function fatal(error) {
   );
 }
 
-/** Смена языка материалов перерисовывает текущую страницу — контент грузится заново. */
+/** Смена языка материалов (общего или любого предмета) перерисовывает текущую страницу — контент грузится заново. */
 function watchContentLang() {
-  let last = langOf(getState());
+  let last = langSignature(getState());
   subscribe((state) => {
-    const next = langOf(state);
+    const next = langSignature(state);
     if (next === last) return;
     last = next;
     showPage(currentRoute());

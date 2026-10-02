@@ -2,7 +2,7 @@
 // Один модуль на два раздела — IELTS (#/ielts/vocab) и английский с нуля (#/english/words).
 
 import { h, formatDuration, pluralize, replaceChildren } from '../../core/dom.js';
-import { langOf, loadTopics, topicsOf } from '../../core/content.js';
+import { loadLocalTopic, topicsOf } from '../../core/content.js';
 import { getState } from '../../core/store.js';
 import { finishVocabSession, recordVocabReview } from '../../core/actions.js';
 import { GRADES, dueIds } from '../../core/srs.js';
@@ -54,7 +54,7 @@ async function loadSets(cfg) {
   await Promise.all(
     metas.map(async (meta) => {
       try {
-        const [topic] = await loadTopics([meta.id], langOf(getState()));
+        const topic = await loadLocalTopic(getState(), meta.id);
         loaded.push({ meta, topic });
       } catch (error) {
         missing.push(meta.title);

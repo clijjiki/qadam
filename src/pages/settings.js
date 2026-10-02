@@ -1,10 +1,11 @@
 // Настройки: профиль, оформление, данные (экспорт/импорт/сброс) и сведения о сайте.
 
 import { h, pluralize } from '../core/dom.js';
-import { CONTENT_LANGS, getManifest, langOf } from '../core/content.js';
+import { CONTENT_LANGS, getManifest, langName, langOf, normalizeSubjectLangs, subjects } from '../core/content.js';
 import { GRADES, TRACKS, normalizeGrade, normalizeTrack } from '../core/curriculum.js';
 import { exportJSON, getState, importJSON, resetState } from '../core/store.js';
-import { setContentLang, setProfile, setSettings } from '../core/actions.js';
+import { setProfile, setSettings } from '../core/actions.js';
+import { applyLang } from '../ui/lang-switch.js';
 import { todayKey } from '../core/time.js';
 import { pageHead } from '../ui/components.js';
 import { confirmDialog } from '../ui/modal.js';
@@ -24,6 +25,8 @@ const THEMES = [
   ['dark', 'Тёмная'],
 ];
 const CONTENT_LANG_OPTIONS = CONTENT_LANGS.map((l) => [l.id, l.id === 'kk' ? `${l.name} (казахский)` : l.name]);
+// Пустое значение — у предмета нет своего языка, он идёт на общем.
+const GENERAL_LANG = '';
 const FONT_SCALES = [
   ['0.9', 'Мелкий'],
   ['1', 'Обычный'],
@@ -245,21 +248,43 @@ function appearanceCard(state, rerender) {
       }),
     ),
     settingRow(
-      'Язык материалов',
+      'Общий язык материалов',
       'Уроки, вопросы и пробники. Интерфейс сайта остаётся русским. Тот же переключатель есть в шапке сайта.',
       selectField({
         options: CONTENT_LANG_OPTIONS,
         value: langOf(state),
         onCommit: (v) => {
-          const applied = setContentLang(v);
-          toast(applied === 'kk' ? 'Материалы на казахском' : 'Материалы на русском', { tone: 'success' });
+          toast(applyLang(null, v), { tone: 'success' });
           rerender();
         },
       }),
     ),
+    ...subjectLangRows(state, rerender),
     settingRow('Перемешивать варианты', 'Чтобы не запоминать «правильная — буква B».', checkboxField({ checked: settings.shuffleOptions, label: 'Включено', onCommit: (v) => saveSettings({ shuffleOptions: !!v }, v ? 'Варианты перемешиваются' : 'Варианты по порядку', rerender) })),
     settingRow('Показывать таймер', 'Секундомер в практике и пробниках.', checkboxField({ checked: settings.showTimer, label: 'Включено', onCommit: (v) => saveSettings({ showTimer: !!v }, v ? 'Таймер включён' : 'Таймер скрыт', rerender) })),
   );
+}
+
+/** Свой язык для каждого предмета: например, математика на казахском, остальное на общем языке. */
+function subjectLangRows(state, rerender) {
+  const own = normalizeSubjectLangs(state.settings.subjectLang);
+  const options = [[GENERAL_LANG, `Как общий (${langName(langOf(state))})`], ...CONTENT_LANG_OPTIONS];
+  return subjects()
+    .filter((s) => s.kind !== 'ielts')
+    .map((s) =>
+      settingRow(
+        `Язык: ${s.name}`,
+        s.id === 'math' ? 'Можно учить предмет на том языке, на котором проходишь его в школе.' : '',
+        selectField({
+          options,
+          value: own[s.id] || GENERAL_LANG,
+          onCommit: (v) => {
+            toast(applyLang(s.id, v || null), { tone: 'success' });
+            rerender();
+          },
+        }),
+      ),
+    );
 }
 
 // ---------- данные ----------

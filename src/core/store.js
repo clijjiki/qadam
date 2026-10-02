@@ -1,6 +1,6 @@
 // Хранилище прогресса в localStorage. Состояние иммутабельно: update(fn) возвращает новый объект.
 
-import { normalizeLang } from './content.js';
+import { normalizeLang, normalizeSubjectLangs } from './content.js';
 import { DEFAULT_GRADE, DEFAULT_TRACK, normalizeGrade, normalizeTrack } from './curriculum.js';
 
 export const STORAGE_KEY = 'qadam.v1';
@@ -31,6 +31,8 @@ export function createDefaultState() {
       shuffleOptions: true,
       showTimer: true,
       contentLang: 'ru',
+      // Свой язык отдельных предметов: математику ученик проходит в школе на казахском.
+      subjectLang: { math: 'kk' },
     },
     topics: {},
     questions: {},
@@ -64,12 +66,14 @@ function safeParse(raw) {
 /**
  * Настройки: `examLang` (язык только для пробников) стал общим `contentLang` —
  * переносим старое значение, чтобы выбор пользователя не сбросился.
+ * Языки отдельных предметов (`subjectLang`) появились позже: старым настройкам достаётся
+ * значение по умолчанию, сохранённый выбор остаётся как есть.
  */
 export function migrateSettings(base, saved = {}) {
   const { examLang, ...rest } = { ...base, ...saved };
   // Порядок важен: у base всегда есть contentLang, поэтому сначала смотрим на сохранённые значения.
   const chosen = saved?.contentLang || examLang || base.contentLang;
-  return { ...rest, contentLang: normalizeLang(chosen) };
+  return { ...rest, contentLang: normalizeLang(chosen), subjectLang: normalizeSubjectLangs(rest.subjectLang) };
 }
 
 /** Профиль: класс и трек появились позже — старым профилям ставим значения по умолчанию. */

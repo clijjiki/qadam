@@ -1,0 +1,436 @@
+{
+  "id": "eng-words-15-feelings",
+  "subject": "english",
+  "title": "Сезімдер мен мінез",
+  "summary": "Сезімдер мен мінез туралы 20 сөз: бақытты, көңілсіз, ашулы, шаршаған, мейірімді, күлкілі, жақсы көру.",
+  "theory": [
+    "## Бұл 20 сөзді қалай жаттау керек\nТізімді бір кеште басынан аяғына дейін жаттама. Қадамдап жұмыс істе:\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған 5 сөзді ертең қайталаумен бірге ал.\n2. **Дауыстап айт.** Күнде кешке өзіңді қалай сезінетініңді айт: *Today I am tired but happy.*\n3. **Достарың туралы 5 сөйлем жаз**: *My friend is funny and kind.*\n4. **Сөздерді қайта кездестір** — карточкаларда және Extra English бөлімінде. Сөзді өзің сөйлегенде қолдана алсаң ғана ол жатталды деп есептеледі.",
+    "## Жинаққа кеңес: -ed және -ing, сезімнен кейінгі кішкентай сөздер\n**-ed** жалғауы — **сенің не сезінетінің**, ал **-ing** — **заттың қандай екені**:\n- *I am bored.* — Мен зерігіп отырмын.\n- *The film is boring.* — Фильм қызықсыз.\n\nӨзің зеріксең, «I am boring» деп айтпа: бұл «мен қызықсыз адаммын» дегенді білдіреді.\n\nСезімді білдіретін көптеген сөзден кейін өзіне тән кішкентай сөз келеді:\n\n| Тіркес | Аудармасы |\n|---|---|\n| afraid **of** | бір нәрседен қорқу |\n| angry **with** | біреуге ашулану |\n| worried **about** | бір нәрсе үшін уайымдау |\n| excited **about** | бір нәрсені қуана күту |\n\n:::tip Қалай сұрауға болады\n*How do you feel?* — Өзіңді қалай сезінесің? — *I feel happy.*\n:::"
+  ],
+  "words": [
+    {
+      "id": "w15-feel",
+      "word": "feel",
+      "pos": "v",
+      "ipa": "/fiːl/",
+      "ru": "сезіну; өзін сезіну",
+      "def": "to have a feeling, like happy or sad, or a feeling in your body",
+      "example": "I feel happy today.",
+      "collocations": [
+        "feel good",
+        "feel bad",
+        "feel tired"
+      ]
+    },
+    {
+      "id": "w15-happy",
+      "word": "happy",
+      "pos": "adj",
+      "ipa": "/ˈhæpi/",
+      "ru": "бақытты, қуанышты",
+      "def": "feeling very good",
+      "example": "I am happy because it is Friday.",
+      "collocations": [
+        "happy birthday",
+        "feel happy"
+      ]
+    },
+    {
+      "id": "w15-sad",
+      "word": "sad",
+      "pos": "adj",
+      "ipa": "/sæd/",
+      "ru": "көңілсіз, мұңды",
+      "def": "not happy",
+      "example": "I was sad after the film.",
+      "collocations": [
+        "feel sad",
+        "a sad song"
+      ]
+    },
+    {
+      "id": "w15-angry",
+      "word": "angry",
+      "pos": "adj",
+      "ipa": "/ˈæŋɡri/",
+      "ru": "ашулы, ызалы",
+      "def": "feeling very bad because of what someone did",
+      "example": "My mum was angry because I came home late.",
+      "collocations": [
+        "get angry",
+        "angry with someone"
+      ]
+    },
+    {
+      "id": "w15-tired",
+      "word": "tired",
+      "pos": "adj",
+      "ipa": "/ˈtaɪəd/",
+      "ru": "шаршаған",
+      "def": "wanting to rest or sleep",
+      "example": "I am very tired after training.",
+      "collocations": [
+        "feel tired",
+        "too tired"
+      ]
+    },
+    {
+      "id": "w15-afraid",
+      "word": "afraid",
+      "pos": "adj",
+      "ipa": "/əˈfreɪd/",
+      "ru": "қорыққан; қорқу (be afraid)",
+      "def": "thinking that something bad can happen to you",
+      "example": "My little brother is afraid of dogs.",
+      "collocations": [
+        "afraid of",
+        "I'm afraid"
+      ]
+    },
+    {
+      "id": "w15-bored",
+      "word": "bored",
+      "pos": "adj",
+      "ipa": "/bɔːd/",
+      "ru": "зеріккен; іші пысқан",
+      "def": "not interested, with nothing to do",
+      "example": "I was bored at home, so I called my friend.",
+      "collocations": [
+        "feel bored",
+        "get bored"
+      ]
+    },
+    {
+      "id": "w15-excited",
+      "word": "excited",
+      "pos": "adj",
+      "ipa": "/ɪkˈsaɪtɪd/",
+      "ru": "қуана толқыған, асыға күткен",
+      "def": "very happy because something good will happen soon",
+      "example": "I am so excited about the concert!",
+      "collocations": [
+        "excited about",
+        "very excited"
+      ]
+    },
+    {
+      "id": "w15-worried",
+      "word": "worried",
+      "pos": "adj",
+      "ipa": "/ˈwʌrid/",
+      "ru": "мазасызданған, уайымдаған",
+      "def": "thinking about problems and not calm",
+      "example": "I am worried about my brother.",
+      "collocations": [
+        "worried about",
+        "look worried"
+      ]
+    },
+    {
+      "id": "w15-surprised",
+      "word": "surprised",
+      "pos": "adj",
+      "ipa": "/səˈpraɪzd/",
+      "ru": "таңғалған",
+      "def": "feeling this when something happens and you did not know it would happen",
+      "example": "I was surprised to see you here!",
+      "collocations": [
+        "very surprised",
+        "surprised to see"
+      ]
+    },
+    {
+      "id": "w15-kind",
+      "word": "kind",
+      "pos": "adj",
+      "ipa": "/kaɪnd/",
+      "ru": "мейірімді",
+      "def": "nice to other people and ready to help",
+      "example": "Our neighbour is very kind.",
+      "collocations": [
+        "kind to someone",
+        "a kind person"
+      ]
+    },
+    {
+      "id": "w15-friendly",
+      "word": "friendly",
+      "pos": "adj",
+      "ipa": "/ˈfrendli/",
+      "ru": "ақжарқын, достық пейілді",
+      "def": "nice and easy to talk to",
+      "example": "The people in my class are friendly.",
+      "collocations": [
+        "friendly smile",
+        "friendly people"
+      ]
+    },
+    {
+      "id": "w15-funny",
+      "word": "funny",
+      "pos": "adj",
+      "ipa": "/ˈfʌni/",
+      "ru": "күлкілі, қызық",
+      "def": "making you laugh",
+      "example": "My friend tells funny stories.",
+      "collocations": [
+        "funny film",
+        "funny story"
+      ]
+    },
+    {
+      "id": "w15-clever",
+      "word": "clever",
+      "pos": "adj",
+      "ipa": "/ˈklevə/",
+      "ru": "ақылды, зерек",
+      "def": "able to learn and understand things quickly",
+      "example": "She is very clever. She speaks three languages.",
+      "collocations": [
+        "very clever",
+        "clever idea"
+      ]
+    },
+    {
+      "id": "w15-lazy",
+      "word": "lazy",
+      "pos": "adj",
+      "ipa": "/ˈleɪzi/",
+      "ru": "жалқау",
+      "def": "not wanting to work or do anything",
+      "example": "I was lazy on Sunday and stayed in bed.",
+      "collocations": [
+        "lazy day",
+        "too lazy"
+      ]
+    },
+    {
+      "id": "w15-shy",
+      "word": "shy",
+      "pos": "adj",
+      "ipa": "/ʃaɪ/",
+      "ru": "ұялшақ, именшек",
+      "def": "afraid to talk to new people",
+      "example": "He is shy, so he doesn't speak much in class.",
+      "collocations": [
+        "a bit shy",
+        "shy person"
+      ]
+    },
+    {
+      "id": "w15-love",
+      "word": "love",
+      "pos": "v",
+      "ipa": "/lʌv/",
+      "ru": "жақсы көру, сүю; махаббат",
+      "def": "to like someone or something very, very much",
+      "example": "I love my family.",
+      "collocations": [
+        "love music",
+        "in love",
+        "with love"
+      ]
+    },
+    {
+      "id": "w15-hate",
+      "word": "hate",
+      "pos": "v",
+      "ipa": "/heɪt/",
+      "ru": "жек көру",
+      "def": "to not like something at all",
+      "example": "I hate cold weather.",
+      "collocations": [
+        "really hate",
+        "hate it when"
+      ]
+    },
+    {
+      "id": "w15-smile",
+      "word": "smile",
+      "pos": "v",
+      "ipa": "/smaɪl/",
+      "ru": "күлімсіреу, жымию; күлкі",
+      "def": "to move your mouth up at the ends because you are happy",
+      "example": "She always smiles at me.",
+      "collocations": [
+        "smile at someone",
+        "a big smile"
+      ]
+    },
+    {
+      "id": "w15-cry",
+      "word": "cry",
+      "pos": "v",
+      "ipa": "/kraɪ/",
+      "ru": "жылау",
+      "def": "to have water come from your eyes because you are sad or hurt",
+      "example": "The baby cried all night.",
+      "collocations": [
+        "start to cry",
+        "cry for help"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Көңілсіз, мұңды» ағылшынша қалай болады?",
+      "options": [
+        "happy",
+        "angry",
+        "sad",
+        "tired"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Sad — көңілсіз, мұңды. Happy — бақытты, angry — ашулы, tired — шаршаған."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Шаршаған» ағылшынша қалай болады?",
+      "options": [
+        "tired",
+        "lazy",
+        "bored",
+        "shy"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Tired — шаршаған. Bored — зеріккен, lazy — жалқау, shy — ұялшақ."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Ашулы, ызалы» ағылшынша қалай болады?",
+      "options": [
+        "funny",
+        "angry",
+        "kind",
+        "afraid"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Angry — ашулы: *My mum was angry.* Afraid — қорыққан, kind — мейірімді."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 2,
+      "text": "My little sister is afraid ___ dogs.",
+      "options": [
+        "with",
+        "of",
+        "on",
+        "about"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Бір нәрседен қорқу — *be afraid of*: *afraid of dogs*."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 2,
+      "text": "«Мейірімді» ағылшынша қалай болады?",
+      "options": [
+        "funny",
+        "friendly",
+        "kind",
+        "clever"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Kind — мейірімді, көмектесуге дайын. Friendly — ақжарқын, онымен сөйлесу оңай. Clever — ақылды, funny — күлкілі."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 2,
+      "text": "The film was very long. I was ___.",
+      "options": [
+        "funny",
+        "excited",
+        "boring",
+        "bored"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Өз сезімің туралы айтқанда -ed жалғауы керек: *I was bored* (мен зеріктім). *I was boring* «мен қызықсыз адам болдым» дегенді білдірер еді."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Күлімсіреу» ағылшынша қалай болады?",
+      "options": [
+        "feel",
+        "smile",
+        "cry",
+        "love"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Smile — күлімсіреу, cry — жылау."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Жалқау» ағылшынша қалай болады?",
+      "options": [
+        "tired",
+        "lazy",
+        "sad",
+        "shy"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Lazy — жалқау: *Don't be lazy!* — Жалқауланба!"
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "I ___ my mum and dad very much. They are the best!",
+      "options": [
+        "cry",
+        "feel",
+        "love",
+        "hate"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Love — жақсы көру. *They are the best* — демек, біз оларды жек көрмейміз (hate), жақсы көреміз."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Ұялшақ» ағылшынша қалай болады?",
+      "options": [
+        "clever",
+        "kind",
+        "shy",
+        "funny"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Shy — ұялшақ, именшек: жаңа адамдармен сөйлесуге қысылады."
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "id": "eng-grammar-simple-mix",
+  "subject": "english",
+  "title": "Simple тобының үш шағы бірге",
+  "summary": "Маркер сөз бойынша Present, Past немесе Future шағын қалай таңдау керек; үш шақтағы сұрақтар мен болымсыз түрлер.",
+  "theory": [
+    "## Шақты қалай таңдау керек: маркерге қара\nКөбінесе шақты сөйлемдегі **маркер сөз** (белгі сөз) көрсетіп тұрады. Маркерді таптың — шақты білдің.\n\n| Шақ | Маркерлер | Мысал | Аудармасы |\n|---|---|---|---|\n| Present Simple | always, usually, often, never, every day, on Mondays | I play chess every day. | Мен күн сайын шахмат ойнаймын. |\n| Past Simple | yesterday, last week, two days ago, in 2020 | I played chess yesterday. | Мен кеше шахмат ойнадым. |\n| Future Simple | tomorrow, next week, soon, in two days, I think | I will play chess tomorrow. | Мен ертең шахмат ойнаймын. |\n\n:::tip Есте сақта\nPresent — «әдетте», Past — «болып кеткен», Future — «әлі болады».\n:::",
+    "## Үш шаққа бір кесте\n| | Present Simple | Past Simple | Future Simple |\n|---|---|---|---|\n| + | I work. He works. | I worked. He went. | I will work. |\n| − | I don't work. He doesn't work. | I didn't work. | I won't work. |\n| ? | Do you work? Does he work? | Did you work? | Will you work? |\n\nАудармалары: I work — мен жұмыс істеймін; he doesn't work — ол жұмыс істемейді; I didn't work — мен жұмыс істеген жоқпын; will you work? — сен жұмыс істейсің бе (келешекте)?\n\n:::tip Басты құпия\nБолымсыз сөйлем мен сұрақта **бір көмекші** бар: do/does, did немесе will. Көмекшіден кейін етістік **әрқашан бастапқы түрде** тұрады: work, go, see — -s-сіз, -ed-сіз, went емес.\n:::",
+    "## To be өз ережесімен өмір сүреді\nam/is/are-мен do/did көмекшісі **керек емес** — to be сұрақ пен болымсыз түрді өзі жасайды.\n\n| Шақ | Хабарлы сөйлем | Сұрақ | Болымсыз түрі |\n|---|---|---|---|\n| Present | He is at home. | Is he at home? | He isn't at home. |\n| Past | He was at home. | Was he at home? | He wasn't at home. |\n| Future | He will be at home. | Will he be at home? | He won't be at home. |\n\nАудармасы: Ол үйде / үйде болды / үйде болады.",
+    "## Қазақ тілді оқушылардың жиі қателері\n| Қате | Дұрысы | Аудармасы | Неліктен |\n|---|---|---|---|\n| He go to school. | He goes to school. | Ол мектепке барады. | he → етістік -s-пен |\n| Did you went? | Did you go? | Сен бардың ба? | өткен шақты did көрсетіп қойған |\n| I will to go. | I will go. | Мен барамын. | will-ден кейін to жоқ |\n| You like tea? | Do you like tea? | Сен шайды ұнатасың ба? | сұрақта do керек |\n| She doesn't likes it. | She doesn't like it. | Оған бұл ұнамайды. | -s does-тың ішінде бар |\n| I not student. | I am not a student. | Мен оқушы емеспін. | to be етістігі керек |\n\n:::warn Жиі кездесетін қате\n«Сен кеше қайда болдың?» — «Where did you was?» емес, **Where were you yesterday?** was/were-мен did керек емес.\n:::",
+    "## 3 қадамдық алгоритм\n1. **Маркерді тап**: every day, yesterday, tomorrow…\n2. **Шақты таңда**: Present, Past немесе Future.\n3. **Әрекетті кім істеп тұрғанын тексер**: Present-те he/she/it-пен — -s немесе does; Past-та to be-мен — was немесе were.\n\n:::example Мысал\nLast week my sister ___ (buy) a dress. **last week** маркері → Past Simple; buy — бұрыс етістік → **bought**. My sister bought a dress last week. — Өткен аптада әпкем көйлек сатып алды.\n:::",
+    "## Қалай жаттығу керек\n1. Жаңа сөздермен өзің туралы **5 сөйлем** жаз: әдетте не істейсің, кеше не істедің, ертең не істейсің.\n2. Әрқайсысын қалған екі шақта қайта жаз (*I read — I read — I will read*).\n3. **15 сөйлемнің бәрін дауыстап айт.**\n4. **Extra English** сериалының бір бөлімін қарап, әр шақтан бір-бір тіркес тап."
+  ],
+  "cards": [
+    {
+      "front": "every day, usually, often",
+      "back": "Present Simple: I play / he plays"
+    },
+    {
+      "front": "yesterday, last week, ago",
+      "back": "Past Simple: I played / I went"
+    },
+    {
+      "front": "tomorrow, next week, soon",
+      "back": "Future Simple: I will play"
+    },
+    {
+      "front": "Сұрақтардағы көмекшілер",
+      "back": "do/does (Present), did (Past), will (Future)"
+    },
+    {
+      "front": "do/does/did/will-ден кейінгі етістік",
+      "back": "әрқашан бастапқы түрде: go, see, work"
+    },
+    {
+      "front": "He go to school — қате ме?",
+      "back": "Иә: He goes to school."
+    },
+    {
+      "front": "Did you went? — қате ме?",
+      "back": "Иә: Did you go?"
+    },
+    {
+      "front": "I will to go — қате ме?",
+      "back": "Иә: I will go."
+    },
+    {
+      "front": "to be үш шақта",
+      "back": "am/is/are — was/were — will be"
+    },
+    {
+      "front": "Where did you was? — дұрысы қалай?",
+      "back": "Where were you?"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз (Біз күн сайын ағылшынша сөйлейміз): We ___ English every day.",
+      "options": [
+        "speak",
+        "spoke",
+        "will speak",
+        "speaks"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Every day → Present Simple; we → -s-сіз: We speak English every day.",
+      "why": {
+        "3": "-s тек he, she, it-пен."
+      }
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз (Ол өткен айда жаңа велосипед сатып алды): He ___ a new bike last month.",
+      "options": [
+        "bought",
+        "buys",
+        "will buy",
+        "buy"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Last month → Past Simple; buy — бұрыс етістік → **bought**: He bought a new bike last month."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз (Олар келесі жазда Түркияға ұшады): They ___ to Turkey next summer.",
+      "options": [
+        "will fly",
+        "fly",
+        "flew",
+        "flies"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Next summer → Future Simple: **will fly**. They will fly to Turkey next summer."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Қай маркер сөз **өткен** шақты көрсетеді?",
+      "options": [
+        "yesterday",
+        "tomorrow",
+        "every day",
+        "next year"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "**yesterday** — кеше → Past Simple. Tomorrow мен next year — келер шақ, every day — осы шақ."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз (Ол әдетте кешке теледидар көреді): She usually ___ TV in the evenings.",
+      "options": [
+        "watches",
+        "watch",
+        "watchs",
+        "will watches"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Usually → Present Simple; she → -s; watch -ch-қа аяқталады → **watches**. She usually watches TV in the evenings."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Дұрыс түрін таңдаңыз (Мен саған ертең қоңырау шаламын, уәде беремін): I ___ you tomorrow, I promise.",
+      "options": [
+        "'ll call",
+        "called",
+        "calls",
+        "am call"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Tomorrow + уәде → Future Simple: I'll call you tomorrow, I promise."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сұрақты таңдаңыз (Сен кеше Айдосты көрдің бе?).",
+      "options": [
+        "Did you see Aidos yesterday?",
+        "Did you saw Aidos yesterday?",
+        "Do you saw Aidos yesterday?",
+        "You did see Aidos yesterday?"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Past Simple: **Did + кім + бастапқы түрі**: Did you see Aidos yesterday?",
+      "why": {
+        "1": "did-тен кейін етістік бастапқы түрде тұрады: saw емес, see."
+      }
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сөзді таңдаңыз: ___ your sister like music? — Yes, she does.",
+      "options": [
+        "Does",
+        "Do",
+        "Did",
+        "Will"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "«she does» деген жауап → Present Simple, she → **Does**: Does your sister like music? — Әпкең музыканы ұната ма? — Иә."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс түрін таңдаңыз (Кеше ол үй тапсырмасын орындаған жоқ): He ___ his homework yesterday.",
+      "options": [
+        "didn't do",
+        "doesn't do",
+        "didn't did",
+        "won't did"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Yesterday → Past Simple, болымсыз түрі **didn't + do бастапқы түрі**: He didn't do his homework yesterday.",
+      "why": {
+        "2": "didn't-тен кейін did қойылмайды: өткен шақ көрсетіліп қойған."
+      }
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сұрақты таңдаңыз (Ол ағылшынша сөйлей ме?).",
+      "options": [
+        "Does he speak English?",
+        "He speak English?",
+        "Does he speaks English?",
+        "Do he speak English?"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Present Simple, he → **Does**, етістік -s-сіз: Does he speak English?"
+    },
+    {
+      "id": "q11",
+      "type": "single",
+      "difficulty": 3,
+      "text": "**Қатесі бар** сөйлемді табыңыз.",
+      "options": [
+        "I will to go home.",
+        "She goes to school by bus.",
+        "We didn't see him.",
+        "Do you like apples?"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "will-ден кейін to жоқ: **I will go home.** — Мен үйге барамын. Қалғандары дұрыс: Ол мектепке автобуспен барады. Біз оны көрген жоқпыз. Сен алманы ұнатасың ба?"
+    },
+    {
+      "id": "q12",
+      "type": "single",
+      "difficulty": 3,
+      "text": "Етістіктер жұбын таңдаңыз (Екі күн бұрын біз жаңа мұғаліммен таныстық, ал ертең ол біздің тестімізді тексереді): Two days ago we ___ a new teacher, and tomorrow she ___ our test.",
+      "options": [
+        "met / will check",
+        "meet / checks",
+        "met / checked",
+        "will meet / will check"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Two days ago → Past: meet → **met**. Tomorrow → Future: **will check**. Two days ago we met a new teacher, and tomorrow she will check our test."
+    },
+    {
+      "id": "q13",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Дұрыс сөзді таңдаңыз (Сен кеше мектепте болдың ба?): ___ you at school yesterday?",
+      "options": [
+        "Were",
+        "Did",
+        "Was",
+        "Do"
+      ],
+      "answer": [
+        0
+      ],
+      "explanation": "Бұл — өткен шақтағы to be, did керек емес; **you → Were**: Were you at school yesterday?",
+      "why": {
+        "1": "was/were-мен did көмекшісі қолданылмайды: «Did you at school» — етістік жоқ."
+      }
+    },
+    {
+      "id": "q14",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті керекті шақта жазыңыз: My mum ___ (cook) dinner every evening.",
+      "answer": [
+        "cooks"
+      ],
+      "accept": [
+        "cooks"
+      ],
+      "explanation": "Every evening → Present Simple; my mum = she → **cooks**. My mum cooks dinner every evening. — Анам күнде кешке кешкі ас әзірлейді."
+    },
+    {
+      "id": "q15",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті керекті шақта жазыңыз: We ___ (play) chess yesterday.",
+      "answer": [
+        "played"
+      ],
+      "accept": [
+        "played"
+      ],
+      "explanation": "Yesterday → Past Simple, дұрыс етістік → **played**. We played chess yesterday. — Кеше біз шахмат ойнадық."
+    },
+    {
+      "id": "q16",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 2,
+      "text": "Етістікті керекті шақта жазыңыз: I ___ (call) you tomorrow.",
+      "answer": [
+        "will call"
+      ],
+      "accept": [
+        "will call",
+        "'ll call"
+      ],
+      "explanation": "Tomorrow → Future Simple → **will call**. I will call you tomorrow. — Мен саған ертең қоңырау шаламын."
+    },
+    {
+      "id": "q17",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Етістікті керекті шақта жазыңыз: Every morning my brother ___ (wash) his face with cold water.",
+      "answer": [
+        "washes"
+      ],
+      "accept": [
+        "washes"
+      ],
+      "explanation": "Every morning → Present; my brother = he; wash -sh-қа аяқталады → **washes**. — Ағам күнде таңертең суық сумен бетін жуады."
+    },
+    {
+      "id": "q18",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Болымсыз түрін керекті шақта жазыңыз: She ___ (not / like) coffee. She drinks only tea.",
+      "answer": [
+        "doesn't like"
+      ],
+      "accept": [
+        "doesn't like",
+        "does not like"
+      ],
+      "explanation": "Екінші сөйлем Present-те (drinks) → әдеттегі нәрсе туралы айтып тұрмыз; she → **doesn't like**. — Ол кофені ұнатпайды. Ол тек шай ішеді."
+    },
+    {
+      "id": "q19",
+      "type": "text",
+      "difficulty": 1,
+      "maxWords": 1,
+      "text": "Бір сөз жазыңыз: ___ you watch the match last night? — Yes, I did.",
+      "answer": [
+        "Did"
+      ],
+      "accept": [
+        "Did"
+      ],
+      "explanation": "Last night және «I did» деген жауап → Past Simple: **Did** you watch the match last night? — Сен кеше кешке матчты көрдің бе?"
+    },
+    {
+      "id": "q20",
+      "type": "text",
+      "difficulty": 2,
+      "maxWords": 3,
+      "text": "Болымсыз түрін керекті шақта жазыңыз: They ___ (not / come) tomorrow, they are busy.",
+      "answer": [
+        "won't come"
+      ],
+      "accept": [
+        "won't come",
+        "will not come"
+      ],
+      "explanation": "Tomorrow → Future, болымсыз түрі **won't / will not + come**. They won't come tomorrow, they are busy. — Ертең олар келмейді, қолдары бос емес."
+    },
+    {
+      "id": "q21",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 1,
+      "text": "Етістікті жазыңыз: Where did you ___ (go) last weekend?",
+      "answer": [
+        "go"
+      ],
+      "accept": [
+        "go"
+      ],
+      "explanation": "**did**-тен кейін — бастапқы түрі: went емес, go. Where did you go last weekend? — Өткен демалыс күндері сен қайда бардың?"
+    },
+    {
+      "id": "q22",
+      "type": "text",
+      "difficulty": 3,
+      "maxWords": 1,
+      "text": "Етістікті керекті шақта жазыңыз: Aigerim ___ (write) a letter to her friend two days ago.",
+      "answer": [
+        "wrote"
+      ],
+      "accept": [
+        "wrote"
+      ],
+      "explanation": "Two days ago → Past Simple; write — бұрыс етістік → **wrote**. — Екі күн бұрын Айгерім құрбысына хат жазды."
+    }
+  ]
+}

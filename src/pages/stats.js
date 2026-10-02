@@ -1,7 +1,7 @@
 // Статистика: сводка, активность, точность, пробники, прогноз по предметам, таблица тем, бейджи.
 
 import { h, formatMinutes, pluralize } from '../core/dom.js';
-import { ieltsSubject, langOf, topicTitle, topicWeight, topicsOf, ubtSubjects } from '../core/content.js';
+import { ieltsSubject, localTitle, topicWeight, topicsOf, ubtSubjects } from '../core/content.js';
 import { ieltsReadiness, masteryLevel, masteryOf, overallReadiness } from '../core/mastery.js';
 import { accuracySeries, activityCells, examSeries, levelInfo, streakInfo } from '../core/stats.js';
 import { addDaysKey, formatDate, todayKey, weekdayShort } from '../core/time.js';
@@ -148,7 +148,7 @@ function forecastCard(state) {
 function collectTopics(state) {
   const subjectsList = [...ubtSubjects(), ieltsSubject()].filter(Boolean);
   return subjectsList.flatMap((s) =>
-    topicsOf(s.id, { kind: 'lesson' }).map((meta) => ({ meta, title: topicTitle(meta, langOf(state)), mastery: masteryOf(state, meta.id), stats: state.topics?.[meta.id] || null, weight: topicWeight(meta) })),
+    topicsOf(s.id, { kind: 'lesson' }).map((meta) => ({ meta, title: localTitle(state, meta), mastery: masteryOf(state, meta.id), stats: state.topics?.[meta.id] || null, weight: topicWeight(meta) })),
   );
 }
 

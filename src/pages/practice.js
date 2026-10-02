@@ -2,7 +2,7 @@
 // После завершения — итоги, разбор и «исправить ошибки».
 
 import { h, pluralize } from '../core/dom.js';
-import { langOf, loadTopic, loadTopics, subject, topicMeta, topicsOf } from '../core/content.js';
+import { loadLocalTopic, loadLocalTopics, subject, topicMeta, topicsOf } from '../core/content.js';
 import { getState } from '../core/store.js';
 import { recordPractice } from '../core/actions.js';
 import { badgeById } from '../core/badges.js';
@@ -34,7 +34,7 @@ function orderByDue(questions, state) {
 async function topicSession(topicId, mode, n, state) {
   const meta = topicMeta(topicId);
   if (!meta) return null;
-  const topic = await loadTopic(topicId, langOf(state));
+  const topic = await loadLocalTopic(state, topicId);
   const base = { meta, topic, topicId, subject: meta.subject, topicsById: { [topicId]: topic }, backHref: `#/topic/${topicId}`, kind: 'practice', shuffleOptions: state.settings.shuffleOptions };
   if (meta.skill === 'reading' || meta.skill === 'listening') {
     return { ...base, title: topic.title, subtitle: meta.skill === 'reading' ? 'IELTS Reading · отвечай по тексту' : 'IELTS Listening · слушай и отвечай', questions: topic.questions, shuffleOptions: false, layout: meta.skill };
@@ -49,14 +49,14 @@ async function topicSession(topicId, mode, n, state) {
 async function reviewSession(state, n) {
   const ids = dueIds(state.questions).slice(0, n);
   const topicIds = [...new Set(ids.map((id) => id.split(':')[0]))].filter((id) => topicMeta(id));
-  const topics = await loadTopics(topicIds, langOf(state));
+  const topics = await loadLocalTopics(state, topicIds);
   const topicsById = Object.fromEntries(topics.map((t) => [t.id, t]));
   const questions = ids.map((id) => topicsById[id.split(':')[0]]?.questions.find((q) => q.id === id)).filter(Boolean);
   return { title: 'Работа над ошибками', subtitle: 'Вопросы, в которых ты ошибался — пора закрыть их', questions, topicsById, kind: 'review', subject: null, topicId: null, backHref: '#/', shuffleOptions: state.settings.shuffleOptions };
 }
 
 async function mixedSession(topicsMeta, n, state, { title, subtitle, subjectId, backHref }) {
-  const topics = await loadTopics(topicsMeta.map((t) => t.id), langOf(state));
+  const topics = await loadLocalTopics(state, topicsMeta.map((t) => t.id));
   const topicsById = Object.fromEntries(topics.map((t) => [t.id, t]));
   const pool = shuffle(topics.flatMap((t) => t.questions.filter((q) => !q.context)));
   return { title, subtitle, questions: pool.slice(0, n), topicsById, kind: 'practice', subject: subjectId, topicId: null, backHref, shuffleOptions: state.settings.shuffleOptions };

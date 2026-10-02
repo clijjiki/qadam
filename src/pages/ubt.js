@@ -1,7 +1,7 @@
 // Хаб ЕНТ: общий прогноз, карточки пяти предметов, формат экзамена.
 
 import { h, pluralize } from '../core/dom.js';
-import { langOf, topicTitle, topicsOf, ubtSubjects } from '../core/content.js';
+import { localTitle, topicsOf, ubtSubjects } from '../core/content.js';
 import { MASTERED_THRESHOLD, masteryOf, overallReadiness } from '../core/mastery.js';
 import { countdown } from '../core/plan.js';
 import { streakInfo } from '../core/stats.js';
@@ -32,7 +32,7 @@ function subjectTile(state, meta, readiness) {
     h('div', { class: 'row row--between' }, h('div', {}, h('div', { class: 'subj__ico', style: { '--subj': subjectColor(meta.id), marginBottom: '8px' } }, subjectIcon(meta.id, { size: 18 })), h('a', { class: 'card__title', href: `#/subject/${meta.id}` }, meta.name)), ring({ value: r.mastery, size: 60, color: subjectColor(meta.id) })),
     h('div', { class: 'stat' }, h('div', { class: 'stat__val' }, `${Math.round(r.predicted)} `, h('span', { class: 'muted', style: { fontSize: '.6em' } }, `/ ${r.maxPoints}`)), h('div', { class: 'stat__label' }, 'прогноз баллов')),
     h('div', { class: 'card__sub' }, `Изучено ${r.studied} из ${r.topics} · освоено ${r.mastered}`),
-    weak.length ? h('div', { class: 'stack', style: { gap: '4px' } }, h('div', { class: 'small muted' }, 'Слабые темы:'), weak.map((x) => h('a', { class: 'small', href: `#/topic/${x.t.id}` }, `• ${topicTitle(x.t, langOf(state))} — ${Math.round(x.m * 100)}%`))) : null,
+    weak.length ? h('div', { class: 'stack', style: { gap: '4px' } }, h('div', { class: 'small muted' }, 'Слабые темы:'), weak.map((x) => h('a', { class: 'small', href: `#/topic/${x.t.id}` }, `• ${localTitle(state, x.t)} — ${Math.round(x.m * 100)}%`))) : null,
     h('div', { class: 'row' }, next ? h('a', { class: 'btn btn--primary btn--sm', href: `#/topic/${next.id}` }, 'Учить дальше') : null, h('a', { class: 'btn btn--sm', href: `#/practice?mode=subject&subject=${meta.id}&n=10` }, 'Микс 10'), CURRICULUM_SUBJECTS.includes(meta.id) ? h('a', { class: 'btn btn--sm', href: '#/curriculum' }, 'По классам') : null),
   );
 }

@@ -1,6 +1,6 @@
 // План подготовки: выбор следующей темы, ежедневные миссии, недельный план, обратный отсчёт.
 
-import { langOf, subject, topicTitle, topicWeight, topicsOf, ubtSubjects } from './content.js';
+import { localTitle, subject, topicWeight, topicsOf, ubtSubjects } from './content.js';
 import { normalizeGrade, sortByCurriculum, usesCurriculum } from './curriculum.js';
 import { MASTERED_THRESHOLD, masteryOf } from './mastery.js';
 import { dueIds } from './srs.js';
@@ -153,7 +153,7 @@ export function dailyMissions(state, nowTs = Date.now()) {
     missions.push({
       id: 'english',
       icon: '🇬🇧',
-      title: `Английский: ${topicTitle(lesson, langOf(state))}`,
+      title: `Английский: ${localTitle(state, lesson)}`,
       sub: 'Короткая теория и практика',
       href: `#/topic/${lesson.id}`,
       minutes: 15,
@@ -228,7 +228,7 @@ export function weeklyPlan(state, { weekStart = weekStartKey(), nowTs = Date.now
       if (pick) {
         used.add(pick.id);
         if (pick.line) usedLines.add(pick.line);
-        items.push({ kind: 'topic', topicId: pick.id, title: topicTitle(pick, langOf(state)), subject: subjectId, href: `#/topic/${pick.id}` });
+        items.push({ kind: 'topic', topicId: pick.id, title: localTitle(state, pick), subject: subjectId, href: `#/topic/${pick.id}` });
       }
     }
     if (!template.rest) items.push({ kind: 'review', title: 'Повторение ошибок (10 мин)', href: '#/practice?mode=review' });

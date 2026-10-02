@@ -1,7 +1,7 @@
 // План подготовки: обратный отсчёт и фазы, недельная сетка, настройки темпа, «что дальше».
 
 import { append, h, pluralize } from '../core/dom.js';
-import { curriculumTopicsOf, langOf, subject, topicTitle } from '../core/content.js';
+import { curriculumTopicsOf, localTitle, subject } from '../core/content.js';
 import { CURRICULUM_SUBJECTS, normalizeGrade, trackPhases, usesCurriculum } from '../core/curriculum.js';
 import { getState } from '../core/store.js';
 import { setProfile } from '../core/actions.js';
@@ -210,7 +210,7 @@ function nextRow(state, topic, index) {
     h(
       'div',
       { class: 'list-item__main' },
-      h('div', { class: 'list-item__title' }, topicTitle(topic, langOf(state))),
+      h('div', { class: 'list-item__title' }, localTitle(state, topic)),
       h('div', { class: 'list-item__sub row', style: { gap: '8px' } }, subjectBadge(topic.subject), h('span', {}, `${subj?.name || topic.subject}${topic.minutes ? ` · ≈ ${topic.minutes} мин` : ''}`)),
       masteryRow(mastery, { color: subjectColor(topic.subject) }),
     ),

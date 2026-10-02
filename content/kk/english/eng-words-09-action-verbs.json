@@ -1,0 +1,445 @@
+{
+  "id": "eng-words-09-action-verbs",
+  "subject": "english",
+  "title": "Іс-әрекет етістіктері",
+  "summary": "Жиі қолданылатын 20 іс-әрекет етістігі: ашу, сатып алу, жіберу, көмектесу, күту, жеңу және басқалары.",
+  "theory": [
+    "## Бұл 20 сөзді қалай жаттау керек\nТізімді бір кеште басынан аяғына дейін жаттама. Қадамдап жұмыс істе:\n1. **Күніне 15 жаңа сөз** — одан көп емес. Қалған 5 сөзді ертең қайталаумен бірге ал.\n2. **Дауыстап айт.** Сөзді, транскрипциясын және мысалды үш рет оқы. Сөзді көз де, құлақ та есте сақтайды.\n3. **Өзің туралы 5 сөйлем жаз**: *I help my mum. I wait for the bus.*\n4. **Сөздерді қайта кездестір** — карточкаларда және Extra English бөлімінде. Сөзді өзің сөйлегенде қолдана алсаң ғана ол жатталды деп есептеледі.",
+    "## Жинаққа кеңес: бұрыс етістіктер\nКөптеген іс-әрекет етістіктері өткен шақта түгелдей өзгереді. Оларды бірден жұбымен жатта:\n\n| Қазір | Кеше |\n|---|---|\n| buy | bought |\n| sell | sold |\n| send | sent |\n| bring | brought |\n| pay | paid |\n| put | put |\n| win | won |\n| lose | lost |\n\nҚалғандары дұрыс етістіктер: open → opened, help → helped, stop → stopped, try → tried.\n\n:::tip Сөз жұбы\nЕтістіктерді мағынасы қарама-қарсы жұптармен жаттау оңай: open ↔ close, buy ↔ sell, start ↔ stop, ask ↔ answer, win ↔ lose.\n:::"
+  ],
+  "words": [
+    {
+      "id": "w09-open",
+      "word": "open",
+      "pos": "v",
+      "ipa": "/ˈəʊpən/",
+      "ru": "ашу",
+      "def": "to move something so people can go in or see inside",
+      "example": "Can you open the window, please?",
+      "collocations": [
+        "open the door",
+        "open a book",
+        "open the window"
+      ]
+    },
+    {
+      "id": "w09-close",
+      "word": "close",
+      "pos": "v",
+      "ipa": "/kləʊz/",
+      "ru": "жабу",
+      "def": "to move something so it is not open",
+      "example": "Please close the door. It is cold.",
+      "collocations": [
+        "close the door",
+        "close your eyes"
+      ]
+    },
+    {
+      "id": "w09-buy",
+      "word": "buy",
+      "pos": "v",
+      "ipa": "/baɪ/",
+      "ru": "сатып алу",
+      "def": "to get something and give money for it",
+      "example": "I bought a new phone yesterday.",
+      "collocations": [
+        "buy food",
+        "buy a ticket",
+        "buy a present"
+      ]
+    },
+    {
+      "id": "w09-sell",
+      "word": "sell",
+      "pos": "v",
+      "ipa": "/sel/",
+      "ru": "сату",
+      "def": "to give something to a person and get money for it",
+      "example": "My uncle sells cars in Almaty.",
+      "collocations": [
+        "sell a car",
+        "sell things online"
+      ]
+    },
+    {
+      "id": "w09-send",
+      "word": "send",
+      "pos": "v",
+      "ipa": "/send/",
+      "ru": "жіберу, жолдау",
+      "def": "to make a letter or message go to a person",
+      "example": "I will send you a message tonight.",
+      "collocations": [
+        "send a message",
+        "send an email",
+        "send a photo"
+      ]
+    },
+    {
+      "id": "w09-help",
+      "word": "help",
+      "pos": "v",
+      "ipa": "/help/",
+      "ru": "көмектесу; көмек",
+      "def": "to do something for a person so it is easier for them",
+      "example": "Can you help me with this bag?",
+      "collocations": [
+        "help me",
+        "ask for help",
+        "help with homework"
+      ]
+    },
+    {
+      "id": "w09-start",
+      "word": "start",
+      "pos": "v",
+      "ipa": "/stɑːt/",
+      "ru": "бастау, басталу",
+      "def": "to begin to do something",
+      "example": "The film starts at seven o'clock.",
+      "collocations": [
+        "start work",
+        "start a new game",
+        "start at eight"
+      ]
+    },
+    {
+      "id": "w09-stop",
+      "word": "stop",
+      "pos": "v",
+      "ipa": "/stɒp/",
+      "ru": "тоқтау, тоқтату; қою (доғару)",
+      "def": "to not move or not do something any more",
+      "example": "Stop! A car is coming.",
+      "collocations": [
+        "stop talking",
+        "stop the car",
+        "bus stop"
+      ]
+    },
+    {
+      "id": "w09-wait",
+      "word": "wait",
+      "pos": "v",
+      "ipa": "/weɪt/",
+      "ru": "күту",
+      "def": "to stay in a place until a person comes or something happens",
+      "example": "Wait for me after school!",
+      "collocations": [
+        "wait for someone",
+        "wait a minute",
+        "can't wait"
+      ]
+    },
+    {
+      "id": "w09-try",
+      "word": "try",
+      "pos": "v",
+      "ipa": "/traɪ/",
+      "ru": "тырысу, байқап көру",
+      "def": "to do your best to do something",
+      "example": "I will try to come to the party.",
+      "collocations": [
+        "try again",
+        "try to do",
+        "try on a jacket"
+      ]
+    },
+    {
+      "id": "w09-bring",
+      "word": "bring",
+      "pos": "v",
+      "ipa": "/brɪŋ/",
+      "ru": "әкелу, алып келу",
+      "def": "to take something or someone with you to a place",
+      "example": "Bring your ball to the park tomorrow.",
+      "collocations": [
+        "bring food",
+        "bring a friend",
+        "bring back"
+      ]
+    },
+    {
+      "id": "w09-carry",
+      "word": "carry",
+      "pos": "v",
+      "ipa": "/ˈkæri/",
+      "ru": "көтеріп жүру, тасу (қолмен)",
+      "def": "to hold something in your hands or on your back and take it with you",
+      "example": "He carries a heavy bag every day.",
+      "collocations": [
+        "carry a bag",
+        "carry a box"
+      ]
+    },
+    {
+      "id": "w09-show",
+      "word": "show",
+      "pos": "v",
+      "ipa": "/ʃəʊ/",
+      "ru": "көрсету",
+      "def": "to let a person see something",
+      "example": "Show me your new phone!",
+      "collocations": [
+        "show a photo",
+        "show someone the way"
+      ]
+    },
+    {
+      "id": "w09-ask",
+      "word": "ask",
+      "pos": "v",
+      "ipa": "/ɑːsk/",
+      "ru": "сұрау, өтіну",
+      "def": "to say a question to a person",
+      "example": "Can I ask you a question?",
+      "collocations": [
+        "ask a question",
+        "ask for help"
+      ]
+    },
+    {
+      "id": "w09-answer",
+      "word": "answer",
+      "pos": "v",
+      "ipa": "/ˈɑːnsə/",
+      "ru": "жауап беру; жауап",
+      "def": "to say or write something when a person asks you",
+      "example": "Please answer my message!",
+      "collocations": [
+        "answer a question",
+        "answer the phone"
+      ]
+    },
+    {
+      "id": "w09-pay",
+      "word": "pay",
+      "pos": "v",
+      "ipa": "/peɪ/",
+      "ru": "төлеу",
+      "def": "to give money for something",
+      "example": "I paid two hundred tenge for the bus.",
+      "collocations": [
+        "pay for",
+        "pay by card",
+        "pay money"
+      ]
+    },
+    {
+      "id": "w09-put",
+      "word": "put",
+      "pos": "v",
+      "ipa": "/pʊt/",
+      "ru": "қою, салу",
+      "def": "to move something to a place",
+      "example": "Put your phone on the table.",
+      "collocations": [
+        "put on",
+        "put it in your bag"
+      ]
+    },
+    {
+      "id": "w09-turn",
+      "word": "turn",
+      "pos": "v",
+      "ipa": "/tɜːn/",
+      "ru": "бұрылу, бұру; қосу/өшіру (on/off)",
+      "def": "to move to a new side or way; to make a light or TV go on or off",
+      "example": "Turn off the TV and go to bed.",
+      "collocations": [
+        "turn left",
+        "turn on the light",
+        "turn off"
+      ]
+    },
+    {
+      "id": "w09-win",
+      "word": "win",
+      "pos": "v",
+      "ipa": "/wɪn/",
+      "ru": "жеңу, ұту",
+      "def": "to be the best in a game or competition",
+      "example": "Our team won the football match!",
+      "collocations": [
+        "win a game",
+        "win a prize"
+      ]
+    },
+    {
+      "id": "w09-lose",
+      "word": "lose",
+      "pos": "v",
+      "ipa": "/luːz/",
+      "ru": "жеңілу, ұтылу; жоғалту",
+      "def": "to not win; to not be able to find something",
+      "example": "I lost my keys yesterday.",
+      "collocations": [
+        "lose a game",
+        "lose your phone"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Сатып алу» ағылшынша қалай болады?",
+      "options": [
+        "sell",
+        "buy",
+        "bring",
+        "pay"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Buy — сатып алу (кеше: bought). Sell — сату, pay — төлеу, bring — әкелу."
+    },
+    {
+      "id": "q02",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Күту» ағылшынша қалай болады?",
+      "options": [
+        "stop",
+        "show",
+        "try",
+        "wait"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Wait — күту: *wait for me* — мені күт. Try — тырысу, stop — тоқтау, show — көрсету."
+    },
+    {
+      "id": "q03",
+      "type": "single",
+      "difficulty": 2,
+      "text": "«Қолмен көтеріп жүру» (мысалы, ауыр сөмкені) ағылшынша қалай болады?",
+      "options": [
+        "bring",
+        "put",
+        "carry",
+        "send"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Carry — қолға ұстап, көтеріп жүру: *carry a bag*. Bring — бір жерге (өзіңмен бірге) әкелу, put — қою, send — жіберу."
+    },
+    {
+      "id": "q04",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Жеңілу; жоғалту» ағылшынша қалай болады?",
+      "options": [
+        "close",
+        "stop",
+        "win",
+        "lose"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Lose — жеңілу және жоғалту (кеше: lost). Қарама-қарсы мағынасы — win (жеңу)."
+    },
+    {
+      "id": "q05",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Жіберу» (хабарлама, хат) ағылшынша қалай болады?",
+      "options": [
+        "start",
+        "sell",
+        "show",
+        "send"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Send — жіберу: *send a message*. Sell — сату сөзімен шатастырма."
+    },
+    {
+      "id": "q06",
+      "type": "single",
+      "difficulty": 1,
+      "text": "Can I ___ you a question?",
+      "options": [
+        "answer",
+        "ask",
+        "show",
+        "help"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Ask a question — сұрақ қою. Answer — сұраққа жауап беру, оны басқа адам жасайды."
+    },
+    {
+      "id": "q07",
+      "type": "single",
+      "difficulty": 2,
+      "text": "Yesterday I went to the shop and ___ new shoes.",
+      "options": [
+        "sell",
+        "bought",
+        "buy",
+        "buys"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Yesterday — кеше, демек өткен шақ керек. Buy — бұрыс етістік: buy → bought."
+    },
+    {
+      "id": "q08",
+      "type": "single",
+      "difficulty": 2,
+      "text": "It is dark. Please ___ on the light.",
+      "options": [
+        "open",
+        "turn",
+        "put",
+        "show"
+      ],
+      "answer": [
+        1
+      ],
+      "explanation": "Turn on the light — шамды жағу (қосу), turn off — өшіру. Open — ашу (есікті, терезені), жарыққа қолданылмайды."
+    },
+    {
+      "id": "q09",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Ашу» ағылшынша қалай болады?",
+      "options": [
+        "turn",
+        "start",
+        "close",
+        "open"
+      ],
+      "answer": [
+        3
+      ],
+      "explanation": "Open — ашу: *open the door*. Close — жабу, бұл оған қарама-қарсы сөз."
+    },
+    {
+      "id": "q10",
+      "type": "single",
+      "difficulty": 1,
+      "text": "«Жеңу, ұту» ағылшынша қалай болады?",
+      "options": [
+        "lose",
+        "try",
+        "win",
+        "pay"
+      ],
+      "answer": [
+        2
+      ],
+      "explanation": "Win — жеңу, ұту (кеше: won). *Our team won!* — Біздің команда жеңді!"
+    }
+  ]
+}

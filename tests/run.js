@@ -9,7 +9,7 @@ import { isActiveDay, levelInfo, streakInfo, xpForLevel } from '../src/core/stat
 import { createRng, hashString, shuffle } from '../src/core/random.js';
 import { addRoute, matchRoute, parseHash } from '../src/core/router.js';
 import { formatDuration, plural, pluralize } from '../src/core/dom.js';
-import { CONTENT_LANGS, isContentLang, langName, langOf, langShort, localizedPath, normalizeLang, topicSummary, topicTitle } from '../src/core/content.js';
+import { CONTENT_LANGS, isContentLang, langName, langOf, langShort, langSignature, localTitle, localizedPath, normalizeLang, normalizeSubjectLangs, ownLangSubjects, routeSubject, topicSummary, topicTitle, withSubjectLang } from '../src/core/content.js';
 import { createDefaultState, migrate, migrateProfile, migrateSettings } from '../src/core/store.js';
 import { ENGLISH_STAGES, activeStageId, recentWordKeys, stageProgress, totalSentences, withCheck, withCounter, withSentences, wordsLearned } from '../src/core/english.js';
 import { compareOutput, evaluateRuns, explainError, findTask, nextTaskId, normalizeOutput, taskProgress, withPyAttempt } from '../src/core/pytrainer.js';
@@ -299,6 +299,85 @@ test('lang: langOf читает язык из настроек', () => {
   equal(langOf({ settings: { contentLang: 'en' } }), 'ru');
   equal(langOf({ settings: {} }), 'ru');
   equal(langOf(undefined), 'ru');
+});
+test('lang: свой язык предмета важнее общего', () => {
+  const state = { settings: { contentLang: 'ru', subjectLang: { math: 'kk' } } };
+  equal(langOf(state, 'math'), 'kk');
+  equal(langOf(state, 'history'), 'ru');
+  equal(langOf(state), 'ru');
+});
+test('lang: неизвестный язык предмета откатывается к общему', () => {
+  equal(langOf({ settings: { contentLang: 'kk', subjectLang: { math: 'en' } } }, 'math'), 'kk');
+  equal(langOf({ settings: { contentLang: 'kk', subjectLang: null } }, 'math'), 'kk');
+});
+test('lang: withSubjectLang задаёт язык предмета и не мутирует настройки', () => {
+  const settings = { contentLang: 'ru', subjectLang: { math: 'kk' } };
+  const next = withSubjectLang(settings, 'history', 'kk');
+  deepEqual(next.subjectLang, { math: 'kk', history: 'kk' });
+  deepEqual(settings.subjectLang, { math: 'kk' });
+  equal(next.contentLang, 'ru');
+});
+test('lang: withSubjectLang без языка возвращает предмет к общему', () => {
+  const settings = { contentLang: 'ru', subjectLang: { math: 'kk', history: 'kk' } };
+  deepEqual(withSubjectLang(settings, 'math', null).subjectLang, { history: 'kk' });
+  deepEqual(withSubjectLang(settings, 'math', 'en').subjectLang, { history: 'kk' });
+  deepEqual(withSubjectLang({ contentLang: 'ru' }, 'math', 'kk').subjectLang, { math: 'kk' });
+});
+test('lang: normalizeSubjectLangs оставляет только известные языки', () => {
+  deepEqual(normalizeSubjectLangs({ math: 'kk', history: 'en', reading: 'ru', x: 5 }), { math: 'kk', reading: 'ru' });
+  deepEqual(normalizeSubjectLangs(null), {});
+  deepEqual(normalizeSubjectLangs(['kk']), {});
+});
+test('lang: ownLangSubjects — предметы, чей язык отличается от общего', () => {
+  const state = { settings: { contentLang: 'ru', subjectLang: { math: 'kk', history: 'ru' } } };
+  deepEqual(ownLangSubjects(state), ['math']);
+  deepEqual(ownLangSubjects({ settings: { contentLang: 'kk', subjectLang: { math: 'kk' } } }), []);
+  deepEqual(ownLangSubjects({ settings: {} }), []);
+});
+test('lang: langSignature меняется при смене любого языка', () => {
+  const a = { settings: { contentLang: 'ru', subjectLang: { math: 'kk' } } };
+  const b = { settings: { contentLang: 'ru', subjectLang: { math: 'ru' } } };
+  const c = { settings: { contentLang: 'kk', subjectLang: { math: 'kk' } } };
+  ok(langSignature(a) !== langSignature(b));
+  ok(langSignature(a) !== langSignature(c));
+  equal(langSignature(a), langSignature({ settings: { contentLang: 'ru', subjectLang: { math: 'kk' }, theme: 'dark' } }));
+});
+test('lang: localTitle берёт язык предмета темы', () => {
+  const state = { settings: { contentLang: 'ru', subjectLang: { math: 'kk' } } };
+  equal(localTitle(state, { id: 'm', subject: 'math', title: 'Производная', titleKk: 'Туынды' }), 'Туынды');
+  equal(localTitle(state, { id: 'h', subject: 'history', title: 'Саки', titleKk: 'Сақтар' }), 'Саки');
+  equal(localTitle(state, null), '');
+});
+test('lang: routeSubject определяет предмет страницы', () => {
+  const topicSubject = (id) => ({ 'math-derivative': 'math', 'eng-grammar-to-be': 'english' })[id] || null;
+  const known = (id) => ['math', 'history', 'english'].includes(id);
+  const at = (path, params = {}, query = {}) => routeSubject({ path, params, query }, { topicSubject, known });
+  equal(at('/topic/math-derivative', { topicId: 'math-derivative' }), 'math');
+  equal(at('/practice/eng-grammar-to-be', { topicId: 'eng-grammar-to-be' }), 'english');
+  equal(at('/subject/history', { subjectId: 'history' }), 'history');
+  equal(at('/subject/nope', { subjectId: 'nope' }), null);
+  equal(at('/practice', {}, { mode: 'subject', subject: 'math' }), 'math');
+  equal(at('/curriculum'), 'math');
+  equal(at('/english/words'), 'english');
+  equal(at('/'), null);
+  equal(at('/exam'), null);
+  equal(at('/topic/unknown', { topicId: 'unknown' }), null);
+  equal(routeSubject(null), null);
+});
+test('settings: по умолчанию математика на казахском, остальное на русском', () => {
+  const state = createDefaultState();
+  equal(langOf(state, 'math'), 'kk');
+  equal(langOf(state, 'informatics'), 'ru');
+  equal(langOf(state), 'ru');
+});
+test('settings: старые настройки получают язык предметов по умолчанию', () => {
+  const base = createDefaultState().settings;
+  deepEqual(migrateSettings(base, { contentLang: 'ru' }).subjectLang, { math: 'kk' });
+});
+test('settings: выбранные языки предметов переживают миграцию', () => {
+  const base = createDefaultState().settings;
+  deepEqual(migrateSettings(base, { subjectLang: { math: 'ru', history: 'kk', bad: 'en' } }).subjectLang, { math: 'ru', history: 'kk' });
+  deepEqual(migrateSettings(base, { subjectLang: {} }).subjectLang, {});
 });
 test('settings: старый examLang становится contentLang', () => {
   const base = createDefaultState().settings;
